@@ -1,0 +1,134 @@
+---
+title: "Distribuição Condicional"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Definição 4.1: Distribuição Condicional
+
+Sejam $X$ e $Y$ duas variáveis aleatórias e $B_1$ e $B_2$ intervalos com $P(Y \in B_2) > 0$. A distribuição condicional de $X$ dado $Y \in B_2$ é dada por:
+$$ P(X \in B_1 | Y \in B_2) = \frac{P([X \in B_1] \cap [Y \in B_2])}{P(Y \in B_2)}. $$
+
+- Se $P(Y \in B_2) = 0$, definimos $P(X \in B_1 | Y \in B_2) = P(X \in B_1)$.
+
+---
+
+## Distribuição Condicional: Caso Discreto
+
+- Se $X$ e $Y$ forem discretas, a probabilidade condicional pode ser escrita na notação de função de probabilidade da seguinte forma:
+$$P(X=x | Y=y) = \frac{P(X=x, Y=y)}{P(Y=y)}$$
+- As demais relações seguem de forma análoga.
+
+---
+
+## Exemplo 4.1
+
+Suponha que $p(x,y)$, a função discreta de probabilidade conjunta de $X$ e $Y$, seja dada por:
+
+- $p(0,0)=0,\!4$
+- $p(0,1)=0,\!2$
+- $p(1,0)=0,\!1$
+- $p(1,1)=0,\!3$
+
+Determine a função de probabilidade condicional de $X$ dado que $Y=1$.
+
+---
+
+## Exemplo 4.2
+
+Suponha que a função de probabilidade conjunta de X e Y seja dada por:
+
+$$p(x,y) = c(x+y), \text{ para } x \in \{1, 2, 3\} \text{ e } y \in \{1, 2\}.$$
+
+a) Determine o valor da constante $c$.
+
+b) Encontre a função de probabilidade marginal de Y, $p_Y(y)$.
+
+c) Determine a função de probabilidade condicional de X dado $Y=1$, ou seja, $P(X=x | Y=1)$.
+
+---
+
+## Caso Discreto: Eventos e Probabilidade Total
+
+- Sendo $X$ uma variável qualquer e $Y$ discreta, temos:
+$$P(X \in B | Y=y) = \frac{P([X \in B] \cap [Y=y])}{P(Y=y)}$$
+
+- Lei da probabilidade total: $P(X \in B) = \sum_y P(Y=y)P(X \in B | Y=y)$.
+- Função de distribuição condicional: $F_{X|Y}(x | Y=y) = \frac{P([X \le x] \cap [Y=y])}{P(Y=y)}$.
+- $F_X(x) = \sum_y P(Y=y)F_{X|Y}(x | Y=y)$.
+
+---
+
+## Exemplo 4.3
+
+Uma seguradora classifica seus clientes em dois perfis de risco: $Y=1$ (Baixo Risco) e $Y=2$ (Alto Risco). A proporção na carteira é $P(Y=1) = 0,\!6$ e $P(Y=2) = 0,\!4$. Seja $X$ o número de sinistros acionados por um cliente em um ano. As probabilidades condicionais de $X$ dado o perfil $Y$ são:
+
+- Se Baixo Risco ($Y=1$): $P(X=0|Y=1) = 0,8$ e $P(X=1|Y=1) = 0,2$
+- Se Alto Risco ($Y=2$): $P(X=0|Y=2) = 0,5$; $P(X=1|Y=2) = 0,3$ e $P(X=2|Y=2) = 0,2$
+
+a) Determine $P(X \in B | Y=1)$ e $P(X \in B | Y=2)$.
+
+b) Utilize a Lei da Probabilidade Total para calcular $P(X \geq 1)$.
+
+---
+
+## Distribuição Condicional: Caso Contínuo
+
+- Se $X$ e $Y$ são variáveis aleatórias contínuas, a densidade condicional de $X$ dado $Y$ é:
+$$f_{X|Y}(x|y) = \frac{f_{X,Y}(x,y)}{f_Y(y)}$$
+(ou seja, a conjunta dividida pela marginal).
+
+- A função de distribuição condicional de $X$ dado $Y$ é:
+$$F_{X|Y}(x|y) = \int_{-\infty}^{x} f_{X|Y}(t|y)dt$$
+
+---
+
+## Distribuição Condicional: Caso Contínuo (Consequências)
+
+Fórmulas válidas:
+
+- $F_{X,Y}(x,y) = \int_{-\infty}^{y} f_Y(t)F_{X|Y}(x|t)dt$
+- $F_X(x) = \int_{-\infty}^{+\infty} f_Y(y)F_{X|Y}(x|y)dy$
+
+---
+
+## Exemplo 4.4
+
+A função de densidade conjunta de $X$ e $Y$ é dada por:
+$$f_{X,Y}(x,y) = \frac{12}{5}x(2-x-y)$$ para $0<x<1, 0<y<1$.
+
+Obtenha a densidade condicional de $X$ dado que $Y=y$, onde $0<y<1$.
+
+---
+
+## Exemplo 4.5
+
+Suponha que a densidade conjunta de X e Y seja dada por:
+$$f_{X,Y}(x, y) = \frac{e^{-x/y}e^{-y}}{y}$$ para $0 < x < \infty, 0 < y < \infty$. Determine $P(X > 1 | Y = y)$.
+
+
+
+# Fim

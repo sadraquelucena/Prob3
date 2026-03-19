@@ -8,6 +8,7 @@ website:
   title: "Probabliidade III"
   sidebar:
     style: "docked"
+    collapse-level: 3
     search: false
     logo: img/ESTAT0075_logo_hex.png
     contents:
@@ -32,6 +33,9 @@ website:
             text: "2- Vetores Aleatórios Discretos"
           - href: aulas/03-Vetores_aleatorios_continuos.qmd
             text: "3- Vetores Aleatórios Contínuos"
+          - href: aulas/04-Distribuicao_condicional.qmd
+            text: "4- Distribuição Condicional"
+      
       
 
 format:

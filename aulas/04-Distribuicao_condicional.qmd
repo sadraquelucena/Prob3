@@ -1,0 +1,43 @@
+---
+title: "Conteúdo 4"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Distribuição Condicional
+
+Este material apresenta o conceito de distribuição condicional no contexto de variáveis aleatórias discretas e contínuas, com ênfase na relação entre distribuições conjuntas, marginais e condicionais. São desenvolvidas as principais fórmulas, incluindo a lei da probabilidade total, e explorados exemplos que envolvem cálculo de probabilidades condicionais e construção de distribuições a partir de informações parciais.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide04_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/04-Distribuicao_condicional.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide04_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/Prob3_Lista4.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista04.png){width=80%}<br>Lista 4
+</a>
+:::
+
+::::
+
+
