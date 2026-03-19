@@ -1,0 +1,420 @@
+[
+  {
+    "objectID": "info/dados_gerais.html",
+    "href": "info/dados_gerais.html",
+    "title": "Probabliidade III",
+    "section": "",
+    "text": "Componente curricular:\nESTAT0075 - Probabilidade III\nDisciplina obrigatória para o curso de Estatística da Universidade Federal de Sergipe",
+    "crumbs": [
+      "Informações da disciplina",
+      "Dados gerais"
+    ]
+  },
+  {
+    "objectID": "info/dados_gerais.html#dados-gerais-da-disciplina",
+    "href": "info/dados_gerais.html#dados-gerais-da-disciplina",
+    "title": "Probabliidade III",
+    "section": "",
+    "text": "Componente curricular:\nESTAT0075 - Probabilidade III\nDisciplina obrigatória para o curso de Estatística da Universidade Federal de Sergipe",
+    "crumbs": [
+      "Informações da disciplina",
+      "Dados gerais"
+    ]
+  },
+  {
+    "objectID": "info/dados_gerais.html#informações-da-disciplina",
+    "href": "info/dados_gerais.html#informações-da-disciplina",
+    "title": "Probabliidade III",
+    "section": "Informações da Disciplina",
+    "text": "Informações da Disciplina\n\nCarga Horária: 60 horas (4 créditos)\nUnidade Responsável: Departamento de Estatística e Ciências Atuariais (DECAT)\nDocente Responsável: Prof. Dr. Sadraque E. F. Lucena\nPlano de Ensino da Disciplina:\n\nPlano de Ensino 2026.1 | Calendário Acadêmico UFS 2026.1\n\n\nOs horários das aulas, datas das avaliações e cronograma de aulas encontram-se no plano de ensino da disciplina.",
+    "crumbs": [
+      "Informações da disciplina",
+      "Dados gerais"
+    ]
+  },
+  {
+    "objectID": "info/conteudo.html",
+    "href": "info/conteudo.html",
+    "title": "Probabliidade III",
+    "section": "",
+    "text": "Variáveis aleatórias \\(n\\)-dimensionais\n1.1. Variáveis aleatórias bidimensionais\n1.2. Distribuição Marginal\n1.3. Distribuição Condicional\n1.4. Esperança e Variância Condicional\n1.5. Independência de variáveis\n1.6. Distribuições multivariadas\nFunção Geradora de Momentos e Função Característica\n2.1. Função Geradora de Momentos\n2.2. Propriedade das FGM e aplicações\n2.3. Função Característica e aplicações 2.4. Propriedades da Função Característica\nFunção de um vetor de variáveis aleatórias\n3.1. Método do Jacobiano\n3.2. Distribuições da soma e da diferença de variáveis\n3.3. Distribuição do quociente e do produto de variáveis\n3.4. Distribuição do Máximo e do Mínimo\nConvergência e Teorema do Limite Central\n4.1. Desigualdade de Chebychev\n4.2. Convergência de variáveis aleatórias\n4.3. Convergência em probabilidade e Convergência Quase certa\n4.4. Convergência em Distribuição\n4.5. Lei dos Grandes números\n4.6. Lei forte e Lei fraca\n4.7. Teorema Central do Limite",
+    "crumbs": [
+      "Informações da disciplina",
+      "Conteúdo"
+    ]
+  },
+  {
+    "objectID": "info/conteudo.html#conteúdo",
+    "href": "info/conteudo.html#conteúdo",
+    "title": "Probabliidade III",
+    "section": "",
+    "text": "Variáveis aleatórias \\(n\\)-dimensionais\n1.1. Variáveis aleatórias bidimensionais\n1.2. Distribuição Marginal\n1.3. Distribuição Condicional\n1.4. Esperança e Variância Condicional\n1.5. Independência de variáveis\n1.6. Distribuições multivariadas\nFunção Geradora de Momentos e Função Característica\n2.1. Função Geradora de Momentos\n2.2. Propriedade das FGM e aplicações\n2.3. Função Característica e aplicações 2.4. Propriedades da Função Característica\nFunção de um vetor de variáveis aleatórias\n3.1. Método do Jacobiano\n3.2. Distribuições da soma e da diferença de variáveis\n3.3. Distribuição do quociente e do produto de variáveis\n3.4. Distribuição do Máximo e do Mínimo\nConvergência e Teorema do Limite Central\n4.1. Desigualdade de Chebychev\n4.2. Convergência de variáveis aleatórias\n4.3. Convergência em probabilidade e Convergência Quase certa\n4.4. Convergência em Distribuição\n4.5. Lei dos Grandes números\n4.6. Lei forte e Lei fraca\n4.7. Teorema Central do Limite",
+    "crumbs": [
+      "Informações da disciplina",
+      "Conteúdo"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bem-vindo(a)!",
+    "section": "",
+    "text": "Bem-vindo(a)!\nEsta página foi criada pelo Prof. Dr. Sadraque E. F. Lucena para centralizar os conteúdos, atividades, cronograma e materiais da disciplina ESTAT0075 — Probabilidade III, ofertada pelo Departamento de Estatística e Ciências Atuariais da Universidade Federal de Sergipe. Ao longo do semestre, estudaremos estruturas mais avançadas da teoria da probabilidade, com foco em vetores aleatórios, distribuições conjuntas e condicionais, função geradora de momentos, função característica, transformações de variáveis (método do Jacobiano) e teoria de convergência de variáveis aleatórias, culminando no Teorema Central do Limite.\nA disciplina será conduzida com uma abordagem prática e orientada por problemas, conectando os conceitos teóricos a aplicações em Estatística. Serão propostas atividades semanais que estimulem o raciocínio probabilístico, a análise de modelos multivariados e a compreensão dos resultados assintóticos fundamentais.\nFique atento(a) às atualizações — este espaço será constantemente revisado com avisos, novos materiais e mudanças no cronograma."
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#por-que-estudar-probabilidade-iii",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#por-que-estudar-probabilidade-iii",
+    "title": "Apresentação da Disciplina",
+    "section": "Por que estudar Probabilidade III?",
+    "text": "Por que estudar Probabilidade III?\n\nNas disciplinas anteriores, vimos variáveis isoladas. Aqui, estudaremos como elas interagem (Vetores) e para onde elas caminham quando \\(n \\to \\infty\\) (Convergência).\n\nObjetivo Final: Provar por que a média de uma amostra realmente converge para a verdade populacional."
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#canais-de-comunicação-e-materiais-da-disciplina",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#canais-de-comunicação-e-materiais-da-disciplina",
+    "title": "Apresentação da Disciplina",
+    "section": "Canais de Comunicação e Materiais da Disciplina",
+    "text": "Canais de Comunicação e Materiais da Disciplina\n\nSite: http://sadraquelucena.github.io/Prob3\nGrupo no WhatsApp: http://tiny.cc/prob3wpp"
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#informações-da-disciplina",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#informações-da-disciplina",
+    "title": "Apresentação da Disciplina",
+    "section": "Informações da disciplina",
+    "text": "Informações da disciplina\n\nComponente curricular: ESTAT0075 – Probabilidade III\nVagas Reservadas: Estatística\nCarga horária: 60 horas (4 créditos)\nHorário:\n\nTerças – 19h00 às 20h30\nQuintas – 20h45 às 22h15\n\nDocente: Prof. Dr. Sadraque E. F. Lucena"
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#objetivos",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#objetivos",
+    "title": "Apresentação da Disciplina",
+    "section": "Objetivos",
+    "text": "Objetivos\n\nCapacitar o aluno na utilização e compreensão da teoria probabilística.\nIdentificar problemas que requerem o uso de\n\nDistribuições condicionadas;\nFunção Característica;\nTeorema Central do Limite."
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#ementa",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#ementa",
+    "title": "Apresentação da Disciplina",
+    "section": "Ementa",
+    "text": "Ementa\n\nDistribuições marginais e condicionais.\nEsperanças condicionais.\nFunção geratriz de momentos.\nFunção característica.\nDistribuição de funções de variáveis aleatórias.\nMétodo do Jacobiano e aplicações.\nSequências de eventos e lema de Borel-Cantelli.\nConvergências de variáveis aleatórias.\nLeis dos Grandes Números.\nTeorema Central do Limite."
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#conteúdo-programático",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#conteúdo-programático",
+    "title": "Apresentação da Disciplina",
+    "section": "Conteúdo programático",
+    "text": "Conteúdo programático\n\nVariáveis aleatórias n-dimensionais\n1.1. Variáveis aleatórias bidimensionais\n1.2. Distribuição Marginal\n1.3. Distribuição Condicional\n1.4. Esperança e Variância Condicional\n1.5. Independência de variáveis\n1.6. Distribuições multivariadas"
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#conteúdo-programático-1",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#conteúdo-programático-1",
+    "title": "Apresentação da Disciplina",
+    "section": "Conteúdo programático",
+    "text": "Conteúdo programático\n\nFunção Geradora de Momentos e Função Característica\n2.1. Função Geradora de Momentos\n2.2. Propriedade das FGM e aplicações\n2.3. Função Característica e aplicações\n2.4. Propriedades da Função Característica"
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#conteúdo-programático-2",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#conteúdo-programático-2",
+    "title": "Apresentação da Disciplina",
+    "section": "Conteúdo programático",
+    "text": "Conteúdo programático\n\nFunção de um vetor de variáveis aleatórias\n3.1. Método do Jacobiano\n3.2. Distribuições da soma e da diferença de variáveis\n3.3. Distribuição do quociente e do produto de variáveis\n3.4. Distribuição do Máximo e do Mínimo"
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#conteúdo-programático-3",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#conteúdo-programático-3",
+    "title": "Apresentação da Disciplina",
+    "section": "Conteúdo programático",
+    "text": "Conteúdo programático\n\nConvergência e Teorema Central do Limite\n4.1. Desigualdade de Chebychev 4.2. Convergência de variáveis aleatórias 4.3. Convergência em probabilidade e Convergência Quase certa 4.4. Convergência em Distribuição 4.5. Lei dos Grandes Números 4.6. Lei forte e Lei fraca 4.7. Teorema Central do Limite"
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#bibliografia-recomendada",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#bibliografia-recomendada",
+    "title": "Apresentação da Disciplina",
+    "section": "Bibliografia Recomendada",
+    "text": "Bibliografia Recomendada"
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#metodologia",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#metodologia",
+    "title": "Apresentação da Disciplina",
+    "section": "Metodologia",
+    "text": "Metodologia\n\n2 encontros semanais, com 90 minutos de aula presencial cada\n30 minutos de atividades extraclasse (hora-trabalho) para cada aula, indicadas pelo docente"
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#datas-importantes",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#datas-importantes",
+    "title": "Apresentação da Disciplina",
+    "section": "Datas Importantes",
+    "text": "Datas Importantes\nAvaliações\n\nAvaliação 1: 12/05/2026 (terça)\nAvaliação 2: 16/06/2026 (terça)\nAvaliação 3: 14/07/2026 (terça)\nAvaliação Repositiva: 16/07/2026 (quinta)\n\nNão haverá aula\n\n02/04/2026: Quinta-feira santa (recesso acadêmico)\n21/04/2026: Tiradentes (feriado nacional)\n04/06/2026: Corpus Christi (recesso acadêmico)\n23/06/2026: Véspera de São João (recesso acadêmico)"
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#por-que-revisar-derivadas-e-integrais",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#por-que-revisar-derivadas-e-integrais",
+    "title": "Apresentação da Disciplina",
+    "section": "Por que revisar derivadas e integrais?",
+    "text": "Por que revisar derivadas e integrais?\n\nDerivadas: Essenciais para o Método do Jacobiano (Transformação de Variáveis).\nIntegrais: A ferramenta para calcular Esperanças e Probabilidades em modelos contínuos.\nAtenção! Revisar especialmente Integrais de Funções Exponenciais e Logaritmos."
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#exemplo-1.1",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#exemplo-1.1",
+    "title": "Apresentação da Disciplina",
+    "section": "Exemplo 1.1",
+    "text": "Exemplo 1.1\nObtenha a derivada das seguintes funções:\n\n\\(f(t) = e^{\\lambda(t-1)}\\). Calcule \\(f'(t)\\).\n\\(f(x) = x^2 \\cdot e^{-ax}\\). Calcule \\(\\frac{df}{dx}\\).\n\\(f(z) = e^{-\\frac{1}{2}z^2}\\). Calcule \\(f'(z)\\).\nDada a função \\(u(x, y) = \\frac{x}{x+y}\\), calcule \\(\\frac{\\partial u}{\\partial x}\\).\nDada \\(f(x, y) = 7x^2y + 5y^3\\log(x)\\), calcule as derivadas de primeira ordem \\(\\frac{\\partial f}{\\partial x}\\) e \\(\\frac{\\partial f}{\\partial y}\\)."
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#exemplo-1.2",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#exemplo-1.2",
+    "title": "Apresentação da Disciplina",
+    "section": "Exemplo 1.2",
+    "text": "Exemplo 1.2\nResolva as seguintes integrais:\n\nCalcule \\(\\int_{0}^{\\infty} e^{-3x} dx\\).\nCalcule \\(\\int x \\cdot e^{-x^2} dx\\).\nCalcule \\(\\int_{0}^{\\infty} x \\cdot e^{-x} dx\\).\nCalcule \\(\\int x^2 \\cdot e^{-x} dx\\).\nDada a densidade conjunta \\(f(x, y) = c(x+y)\\) no domínio \\(0 &lt; x &lt; 1\\) e \\(0 &lt; y &lt; 1\\), calcule a integral dupla \\(\\int_{0}^{1} \\int_{0}^{1} (x+y) dy dx\\)."
+  },
+  {
+    "objectID": "aulas/02-Vetores_aleatorios_discretos.html",
+    "href": "aulas/02-Vetores_aleatorios_discretos.html",
+    "title": "Conteúdo 2",
+    "section": "",
+    "text": "Este material apresenta a introdução aos vetores aleatórios discretos, com foco na definição da função de probabilidade conjunta e em suas propriedades fundamentais. São discutidos os conceitos de distribuição marginal e formas de representação, como tabelas de dupla entrada, além de exemplos que exploram a modelagem de fenômenos envolvendo múltiplas variáveis aleatórias.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 2",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "2- Vetores Aleatórios Discretos"
+    ]
+  },
+  {
+    "objectID": "aulas/02-Vetores_aleatorios_discretos.html#vetores-aleatórios-discretos",
+    "href": "aulas/02-Vetores_aleatorios_discretos.html#vetores-aleatórios-discretos",
+    "title": "Conteúdo 2",
+    "section": "",
+    "text": "Este material apresenta a introdução aos vetores aleatórios discretos, com foco na definição da função de probabilidade conjunta e em suas propriedades fundamentais. São discutidos os conceitos de distribuição marginal e formas de representação, como tabelas de dupla entrada, além de exemplos que exploram a modelagem de fenômenos envolvendo múltiplas variáveis aleatórias.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 2",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "2- Vetores Aleatórios Discretos"
+    ]
+  },
+  {
+    "objectID": "aulas/03-Vetores_aleatorios_continuos.html",
+    "href": "aulas/03-Vetores_aleatorios_continuos.html",
+    "title": "Conteúdo 3",
+    "section": "",
+    "text": "Este material apresenta a introdução aos vetores aleatórios contínuos, com ênfase na definição e interpretação da função densidade conjunta e de suas propriedades fundamentais. São abordados os conceitos de distribuição marginal por meio de integração, bem como a relação entre densidade e função de distribuição.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 3",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "3- Vetores Aleatórios Contínuos"
+    ]
+  },
+  {
+    "objectID": "aulas/03-Vetores_aleatorios_continuos.html#vetores-aleatórios-contínuos",
+    "href": "aulas/03-Vetores_aleatorios_continuos.html#vetores-aleatórios-contínuos",
+    "title": "Conteúdo 3",
+    "section": "",
+    "text": "Este material apresenta a introdução aos vetores aleatórios contínuos, com ênfase na definição e interpretação da função densidade conjunta e de suas propriedades fundamentais. São abordados os conceitos de distribuição marginal por meio de integração, bem como a relação entre densidade e função de distribuição.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 3",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "3- Vetores Aleatórios Contínuos"
+    ]
+  },
+  {
+    "objectID": "aulas/01-Apresetacao_da_disciplina.html",
+    "href": "aulas/01-Apresetacao_da_disciplina.html",
+    "title": "Conteúdo 1",
+    "section": "",
+    "text": "Este material apresenta a estrutura da disciplina Probabilidade I, com informações sobre carga horária, cronograma, datas importantes, metodologia e objetivos do curso. Também introduz os primeiros conceitos da teoria dos conjuntos, fundamentais para o estudo da probabilidade, incluindo definições formais, operações entre conjuntos e propriedades básicas.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 1",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "1- Apresentação da Disciplina"
+    ]
+  },
+  {
+    "objectID": "aulas/01-Apresetacao_da_disciplina.html#apresentação-da-disciplina",
+    "href": "aulas/01-Apresetacao_da_disciplina.html#apresentação-da-disciplina",
+    "title": "Conteúdo 1",
+    "section": "",
+    "text": "Este material apresenta a estrutura da disciplina Probabilidade I, com informações sobre carga horária, cronograma, datas importantes, metodologia e objetivos do curso. Também introduz os primeiros conceitos da teoria dos conjuntos, fundamentais para o estudo da probabilidade, incluindo definições formais, operações entre conjuntos e propriedades básicas.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 1",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "1- Apresentação da Disciplina"
+    ]
+  },
+  {
+    "objectID": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#definição-3.1-vetor-aleatório-contínuo",
+    "href": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#definição-3.1-vetor-aleatório-contínuo",
+    "title": "Vetores Aleatórios Contínuos",
+    "section": "Definição 3.1: Vetor Aleatório Contínuo",
+    "text": "Definição 3.1: Vetor Aleatório Contínuo\n\nUm vetor aleatório é contínuo se sua distribuição pode ser descrita por uma densidade conjunta.\nAqui a probabilidade não é mais uma soma, mas o volume sob uma superfície \\(f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{x}}}{x})\\):\n\n\\[F_\\underset{\\widetilde{\\phantom{X}}}{X}(\\underset{\\widetilde{\\phantom{x}}}{x}) = \\int_{-\\infty}^{x_1} \\dots \\int_{-\\infty}^{x_n} f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{y}}}{y}) dy_1 \\dots dy_n\\]"
+  },
+  {
+    "objectID": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#propriedades-fundamentais",
+    "href": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#propriedades-fundamentais",
+    "title": "Vetores Aleatórios Contínuos",
+    "section": "Propriedades Fundamentais",
+    "text": "Propriedades Fundamentais\nA função densidade conjunta satisfaz:\nP3.1. Não existe probabilidade negativa. \\[f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{x}}}{x}) \\ge 0 \\text{ para todo } \\underset{\\widetilde{\\phantom{x}}}{x}.\\]\nP3.2. A “massa” total é 1. \\[\\int_{-\\infty}^{\\infty} \\dots \\int_{-\\infty}^{\\infty} f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{x}}}{x}) d\\underset{\\widetilde{\\phantom{x}}}{x} = 1.\\]"
+  },
+  {
+    "objectID": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#definição-3.2-densidade-marginal",
+    "href": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#definição-3.2-densidade-marginal",
+    "title": "Vetores Aleatórios Contínuos",
+    "section": "Definição 3.2: Densidade Marginal",
+    "text": "Definição 3.2: Densidade Marginal\n\nPara encontrar a densidade de apenas uma variável, realizamos uma “projeção” integrando sobre todas as outras:\n\n\\[f_{X_k}(x_k) = \\int_{-\\infty}^{\\infty} \\dots \\int_{-\\infty}^{\\infty} f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{x}}}{x}) \\,dx_1 \\cdots dx_{k-1}\\, dx_{k+1} \\cdots dx_n\\]\n\n\n\n\n\n\nNota\n\n\nA densidade conjunta é obtida da distribuição através de derivadas parciais sucessivas."
+  },
+  {
+    "objectID": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.1",
+    "href": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.1",
+    "title": "Vetores Aleatórios Contínuos",
+    "section": "Exemplo 3.1",
+    "text": "Exemplo 3.1\nA função de densidade conjunta de X e Y é dada por \\[f_{X,Y}(x,y) = 2e^{-x}e^{-2y}, \\quad 0 &lt; x, y &lt; \\infty\\]\nCalcule\n\n\\(P(X &gt; 1, Y &lt; 1)\\) (Região retangular)\n\\(P(X &lt; Y)\\) (Região triangular - Cuidado com os limites!)\nas densidades marginais de \\(X\\) e de \\(Y\\)."
+  },
+  {
+    "objectID": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.2",
+    "href": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.2",
+    "title": "Vetores Aleatórios Contínuos",
+    "section": "Exemplo 3.2",
+    "text": "Exemplo 3.2\nConsidere um círculo de raio \\(R\\) e um ponto escolhido aleatoriamente em seu interior, com distribuição uniforme (todas as regiões são igualmente prováveis). Se o centro está na origem e \\(X,Y\\) são as coordenadas do ponto, então \\((X,Y)\\) tem a mesma probabilidade em qualquer região do círculo, e sua densidade conjunta é dada por \\[f_{X,Y}(x,y) = c, \\text{ se } x^2 + y^2 \\le R^2.\\]\n\nDeterminar a constante \\(c\\) (Dica: Use a área do círculo).\nDetermine a marginal de \\(X\\) e a de \\(Y\\).\nCalcular \\(E[D]\\), onde \\(D\\) é a distância da origem."
+  },
+  {
+    "objectID": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.3",
+    "href": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.3",
+    "title": "Vetores Aleatórios Contínuos",
+    "section": "Exemplo 3.3",
+    "text": "Exemplo 3.3\nDada a densidade conjunta \\(f_{X,Y}(x,y) = e^{-(x+y)}\\) para \\(x, y &gt; 0\\), determine a densidade da variável \\(Z = X/Y\\)."
+  },
+  {
+    "objectID": "slides/02-Vetores_aleatorios_discretos/02-Vetores_aleatorios_discretos.html#definição-2.1-vetor-aleatório-discreto",
+    "href": "slides/02-Vetores_aleatorios_discretos/02-Vetores_aleatorios_discretos.html#definição-2.1-vetor-aleatório-discreto",
+    "title": "Vetores Aleatórios Discretos",
+    "section": "Definição 2.1: Vetor Aleatório Discreto",
+    "text": "Definição 2.1: Vetor Aleatório Discreto\nSe \\(\\mathbf{X} = (X_1, X_2, \\dots, X_n)\\) é um vetor aleatório que assume valores em um conjunto finito ou enumerável, ele é chamado de vetor aleatório discreto.\n\nOu seja, cada componente assume valores discretos.\nFunção de Probabilidade Conjunta (FPC): \\[\n\\begin{aligned}\np(\\mathbf{x}) &= p(x_1,x_2,\\ldots,x_n)\\\\\n&=P(X_1 = x_1, X_2 = x_2, \\dots, X_n = x_n)\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "slides/02-Vetores_aleatorios_discretos/02-Vetores_aleatorios_discretos.html#propriedades-fundamentais",
+    "href": "slides/02-Vetores_aleatorios_discretos/02-Vetores_aleatorios_discretos.html#propriedades-fundamentais",
+    "title": "Vetores Aleatórios Discretos",
+    "section": "Propriedades Fundamentais",
+    "text": "Propriedades Fundamentais\nSeja \\(\\mathbf{X}\\) um vetor aleatório discreto. Então sua função de probabilidade continua satisfaz as regras de probabilidade:\nP2.1. Não existe probabilidade negativa. \\[P(X_1 = x_1, \\dots, X_n = x_n)\\geq 0, ~\\text{para todo ponto do suporte}.\\]\nP2.2. A soma das probabilidades é igual a 1. \\[\\sum\\limits_{x_1}\\ldots\\sum\\limits_{x_n}P(X_1 = x_1, \\dots, X_n = x_n)=1.\\]"
+  },
+  {
+    "objectID": "slides/02-Vetores_aleatorios_discretos/02-Vetores_aleatorios_discretos.html#definição-2.2-distribuição-marginal",
+    "href": "slides/02-Vetores_aleatorios_discretos/02-Vetores_aleatorios_discretos.html#definição-2.2-distribuição-marginal",
+    "title": "Vetores Aleatórios Discretos",
+    "section": "Definição 2.2: Distribuição Marginal",
+    "text": "Definição 2.2: Distribuição Marginal\n\nÀs vezes temos o vetor completo, mas queremos olhar apenas para uma variável, ignorando as outras.\nA função de probabilidade marginal de \\(X_k\\) (\\(k = 1, \\ldots, n\\)) é dada por \\[\nP(X_k=x_k) = \\sum\\limits_{x_i, \\forall i \\neq k} P(X_1 = x_1, X_2 = x_2, \\dots, X_n = x_n).\n\\]\nOu seja, a marginal de \\(X_k\\) é a soma sobre todas as demais variáveis, exceto \\(X_k\\)."
+  },
+  {
+    "objectID": "slides/02-Vetores_aleatorios_discretos/02-Vetores_aleatorios_discretos.html#tabela-de-dupla-entrada",
+    "href": "slides/02-Vetores_aleatorios_discretos/02-Vetores_aleatorios_discretos.html#tabela-de-dupla-entrada",
+    "title": "Vetores Aleatórios Discretos",
+    "section": "Tabela de dupla entrada",
+    "text": "Tabela de dupla entrada\n\nNo caso especial de duas variáveis discretas, é conveniente a representação da função de probabilidade utilizando uma tabela de dupla entrada:\n\n\n\n\n\n\n\n\n\n\n\n\\(X\\downarrow \\backslash Y \\rightarrow\\)\n\\(y_1\\)\n\\(\\cdots\\)\n\\(y_n\\)\nMarginal \\(X\\)\n\n\n\n\n\\(x_1\\)\n\\(P(x_1,y_1)\\)\n\\(\\cdots\\)\n\\(P(x_1,y_n)\\)\n\\(P(X=x_1)\\)\n\n\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\\(\\vdots\\)\n\n\n\\(x_n\\)\n\\(P(x_n,y_1)\\)\n\\(\\cdots\\)\n\\(P(x_n,y_n)\\)\n\\(P(X=x_n)\\)\n\n\nMarginal \\(Y\\)\n\\(P(Y=y_1)\\)\n\\(\\cdots\\)\n\\(P(Y=y_n)\\)\n\\(1\\)"
+  },
+  {
+    "objectID": "slides/02-Vetores_aleatorios_discretos/02-Vetores_aleatorios_discretos.html#exemplo-2.1",
+    "href": "slides/02-Vetores_aleatorios_discretos/02-Vetores_aleatorios_discretos.html#exemplo-2.1",
+    "title": "Vetores Aleatórios Discretos",
+    "section": "Exemplo 2.1",
+    "text": "Exemplo 2.1\nDuas moedas equilibradas são lançadas de forma independente e definimos as variáveis aleatórias \\(X\\) e \\(Y\\) da seguinte forma:\n\n\\(X\\): número de caras nos dois lançamentos;\n\\(Y\\): função indicadora de faces iguais nos dois lançamentos.\n\n\nObtenha a função de probabilidade conjunta de X e Y .\nDefinimos uma nova variável \\(W = X\\cdot Y\\). Qual é a distribuição marginal de \\(W\\)?"
+  },
+  {
+    "objectID": "slides/02-Vetores_aleatorios_discretos/02-Vetores_aleatorios_discretos.html#exemplo-2.2",
+    "href": "slides/02-Vetores_aleatorios_discretos/02-Vetores_aleatorios_discretos.html#exemplo-2.2",
+    "title": "Vetores Aleatórios Discretos",
+    "section": "Exemplo 2.2",
+    "text": "Exemplo 2.2\nSuponha que 2 bolas sejam sorteadas de uma urna contendo 3 bolas vermelhas, 4 bolas brancas e 5 bolas azuis. Se \\(X\\) e \\(Y\\) representam, respectivamente, o número de bolas vermelhas e brancas escolhidas:\n\nDetermine a função de probabilidade conjunta de \\(X\\) e \\(Y\\).\nDetermine a marginal de \\(X\\) e a de \\(Y\\).\nQual é a distribuição da variável \\(S = X+Y\\) (total de bolas vermelhas e brancas)?"
+  },
+  {
+    "objectID": "slides/02-Vetores_aleatorios_discretos/02-Vetores_aleatorios_discretos.html#exemplo-2.3",
+    "href": "slides/02-Vetores_aleatorios_discretos/02-Vetores_aleatorios_discretos.html#exemplo-2.3",
+    "title": "Vetores Aleatórios Discretos",
+    "section": "Exemplo 2.3",
+    "text": "Exemplo 2.3\nSuponha que 15% das famı́lias de certa comunidade não tenham filhos, 30% tenham 1 filho, 55% tenham 2 filhos. Suponha também que, em cada família, cada filho tenha a mesma probabilidade (independente) de ser menino ou menina. Se uma família dessa comunidade é escolhida aleatoriamente, então \\(M\\), o número de meninos, e \\(F\\), o número de meninas nesta família:\n\nDetermine a função de probabilidade conjunta do número de meninos e meninas na família.\nSe uma família selecionada tem exatamente 2 filhos, qual é o número esperado de meninos?"
+  },
+  {
+    "objectID": "info/ementa.html",
+    "href": "info/ementa.html",
+    "title": "Probabliidade III",
+    "section": "",
+    "text": "Distribuições marginais e condicionais. Esperanças condicionais. Função geratriz de momentos. Função característica. Distribuição de funções de variáveis aleatórias. Método do Jacobiano e aplicações. Sequências de eventos e lema de Borel-Cantelli. Convergências de variáveis aleatórias. Leis dos Grandes Números. Teorema Central do Limite.",
+    "crumbs": [
+      "Informações da disciplina",
+      "Ementa e objetivos"
+    ]
+  },
+  {
+    "objectID": "info/ementa.html#ementa",
+    "href": "info/ementa.html#ementa",
+    "title": "Probabliidade III",
+    "section": "",
+    "text": "Distribuições marginais e condicionais. Esperanças condicionais. Função geratriz de momentos. Função característica. Distribuição de funções de variáveis aleatórias. Método do Jacobiano e aplicações. Sequências de eventos e lema de Borel-Cantelli. Convergências de variáveis aleatórias. Leis dos Grandes Números. Teorema Central do Limite.",
+    "crumbs": [
+      "Informações da disciplina",
+      "Ementa e objetivos"
+    ]
+  },
+  {
+    "objectID": "info/ementa.html#objetivos",
+    "href": "info/ementa.html#objetivos",
+    "title": "Probabliidade III",
+    "section": "Objetivos",
+    "text": "Objetivos\nCapacitar o aluno na utilização e compreensão da teoria probabilística. Identificando e reconhecendo os problemas que necessitam da utilização de distribuições condicionadas, Função Característica e teorema do limite central.",
+    "crumbs": [
+      "Informações da disciplina",
+      "Ementa e objetivos"
+    ]
+  },
+  {
+    "objectID": "info/ementa.html#metodologia",
+    "href": "info/ementa.html#metodologia",
+    "title": "Probabliidade III",
+    "section": "Metodologia",
+    "text": "Metodologia\nSerão ministradas aulas teóricas expositivas; utilizados recursos visuais; resolução de exercícios em sala de aula; solicitação de atividades extraclasse.",
+    "crumbs": [
+      "Informações da disciplina",
+      "Ementa e objetivos"
+    ]
+  },
+  {
+    "objectID": "info/ementa.html#habilidades-e-competências",
+    "href": "info/ementa.html#habilidades-e-competências",
+    "title": "Probabliidade III",
+    "section": "Habilidades e Competências",
+    "text": "Habilidades e Competências\nAo final da disciplina o aluno estará apto a desenvolver a teoria envolvendo distribuições \\(n\\)-dimensionais, estimar momentos a partir de funções geradoras de momentos e conhecer os conceitos de convergência de variáveis aleatórias.",
+    "crumbs": [
+      "Informações da disciplina",
+      "Ementa e objetivos"
+    ]
+  },
+  {
+    "objectID": "info/ementa.html#avaliação",
+    "href": "info/ementa.html#avaliação",
+    "title": "Probabliidade III",
+    "section": "Avaliação",
+    "text": "Avaliação\nSerão realizadas três avaliações ao longo do semestre. As avaliações poderão ser provas, trabalhos ou outras atividades solicitadas pelo professor.",
+    "crumbs": [
+      "Informações da disciplina",
+      "Ementa e objetivos"
+    ]
+  },
+  {
+    "objectID": "info/bibliografia.html",
+    "href": "info/bibliografia.html",
+    "title": "Probabliidade III",
+    "section": "",
+    "text": "MAGALHÃES, Marcos Nascimento. Probabilidade e variáveis aleatórias. Edusp, 2006.\nROSS, Sheldon. Probabilidade: um curso moderno com aplicações. Bookman Editora, 2009.\nJAMES, Barry R. Probabilidade: um curso em nível intermediário. 1996.\nMEYER, Paul L. Probabilidade: Aplicações à Estatística. 2. ed. Livros Técnicos e Científicos Editora SA, 1983.\nSPIEGEL, Murray R; SCHILLER, John J; SRINIVASAN, R. Alu. Probabilidade e estatística. 3. ed. Porto Alegre: Bookman, 2013.\n\n\n\n\n\nDANTAS, Carlos A. B. Probabilidade: um curso introdutório. 3. ed. rev. São Paulo: EDUSP, 2008.",
+    "crumbs": [
+      "Informações da disciplina",
+      "Bibliografia"
+    ]
+  },
+  {
+    "objectID": "info/bibliografia.html#bibliografia",
+    "href": "info/bibliografia.html#bibliografia",
+    "title": "Probabliidade III",
+    "section": "",
+    "text": "MAGALHÃES, Marcos Nascimento. Probabilidade e variáveis aleatórias. Edusp, 2006.\nROSS, Sheldon. Probabilidade: um curso moderno com aplicações. Bookman Editora, 2009.\nJAMES, Barry R. Probabilidade: um curso em nível intermediário. 1996.\nMEYER, Paul L. Probabilidade: Aplicações à Estatística. 2. ed. Livros Técnicos e Científicos Editora SA, 1983.\nSPIEGEL, Murray R; SCHILLER, John J; SRINIVASAN, R. Alu. Probabilidade e estatística. 3. ed. Porto Alegre: Bookman, 2013.\n\n\n\n\n\nDANTAS, Carlos A. B. Probabilidade: um curso introdutório. 3. ed. rev. São Paulo: EDUSP, 2008.",
+    "crumbs": [
+      "Informações da disciplina",
+      "Bibliografia"
+    ]
+  }
+]

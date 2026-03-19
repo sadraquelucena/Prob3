@@ -1,0 +1,223 @@
+---
+title: "Apresentação da Disciplina"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Por que estudar Probabilidade III?
+
+- Nas disciplinas anteriores, vimos variáveis isoladas. Aqui, estudaremos como elas interagem (Vetores) e para onde elas caminham quando $n \to \infty$ (Convergência).
+
+    - **Objetivo Final:** Provar por que a média de uma amostra realmente converge para a verdade populacional.
+
+---
+
+## Canais de Comunicação e Materiais da Disciplina
+
+- Site: <http://sadraquelucena.github.io/Prob3>
+
+- Grupo no WhatsApp: <http://tiny.cc/prob3wpp>
+
+![](imagens/WhatsApp.jpeg){fig-align="center"}
+
+---
+
+## Informações da disciplina
+
+- **Componente curricular:** ESTAT0075 -- Probabilidade III
+- **Vagas Reservadas:** Estatística
+- **Carga horária:** 60 horas (4 créditos)
+- **Horário:**
+  - Terças -- 19h00 às 20h30
+  - Quintas -- 20h45 às 22h15
+- **Docente:** Prof. Dr. Sadraque E. F. Lucena
+
+---
+
+## Objetivos
+
+- Capacitar o aluno na utilização e compreensão da teoria probabilística.
+- Identificar problemas que requerem o uso de
+
+    - Distribuições condicionadas;
+    - Função Característica;
+    - Teorema Central do Limite.
+
+---
+
+## Ementa
+
+- Distribuições marginais e condicionais.
+- Esperanças condicionais.
+- Função geratriz de momentos.
+- Função característica.
+- Distribuição de funções de variáveis aleatórias.
+- Método do Jacobiano e aplicações.
+- Sequências de eventos e lema de Borel-Cantelli.
+- Convergências de variáveis aleatórias.
+- Leis dos Grandes Números.
+- Teorema Central do Limite.
+
+---
+
+## Conteúdo programático
+
+1. Variáveis aleatórias n-dimensionais
+
+    1.1. Variáveis aleatórias bidimensionais
+    
+    1.2. Distribuição Marginal
+    
+    1.3. Distribuição Condicional
+    
+    1.4. Esperança e Variância Condicional
+    
+    1.5. Independência de variáveis
+    
+    1.6. Distribuições multivariadas
+
+---
+
+## Conteúdo programático
+
+2.  Função Geradora de Momentos e Função Característica
+
+    2.1. Função Geradora de Momentos
+    
+    2.2. Propriedade das FGM e aplicações
+    
+    2.3. Função Característica e aplicações
+    
+    2.4. Propriedades da Função Característica
+
+---
+
+## Conteúdo programático
+
+3. Função de um vetor de variáveis aleatórias
+
+    3.1. Método do Jacobiano
+    
+    3.2. Distribuições da soma e da diferença de variáveis
+    
+    3.3. Distribuição do quociente e do produto de variáveis
+    
+    3.4. Distribuição do Máximo e do Mínimo
+
+---
+
+## Conteúdo programático
+
+4. Convergência e Teorema Central do Limite
+
+    4.1. Desigualdade de Chebychev
+    4.2. Convergência de variáveis aleatórias
+    4.3. Convergência em probabilidade e Convergência Quase certa
+    4.4. Convergência em Distribuição
+    4.5. Lei dos Grandes Números
+    4.6. Lei forte e Lei fraca
+    4.7. Teorema Central do Limite
+
+---
+
+## Bibliografia Recomendada
+
+::: {.columns}
+::: {.column width="33%"}
+![](imagens/magalhaes.jpg)
+:::
+::: {.column width="33%"}
+![](imagens/ross.jpg)
+:::
+::: {.column width="33%"}
+![](imagens/barryjames.jpg)
+:::
+:::
+
+---
+
+## Metodologia
+
+- 2 encontros semanais, com 90 minutos de aula presencial cada
+- 30 minutos de atividades extraclasse (hora-trabalho) para cada aula, indicadas pelo docente
+
+---
+
+## Datas Importantes
+
+### Avaliações
+
+- **Avaliação 1:** 12/05/2026 (terça)
+- **Avaliação 2:** 16/06/2026 (terça)
+- **Avaliação 3:** 14/07/2026 (terça)
+- **Avaliação Repositiva:** 16/07/2026 (quinta)
+
+
+### Não haverá aula
+
+- **02/04/2026:** Quinta-feira santa (recesso acadêmico)
+- **21/04/2026:** Tiradentes (feriado nacional)
+- **04/06/2026:** Corpus Christi (recesso acadêmico)
+- **23/06/2026:** Véspera de São João (recesso acadêmico)
+
+
+
+# Relembrando Derivadas e Integrais
+
+---
+
+## Por que revisar derivadas e integrais?
+
+- **Derivadas:** Essenciais para o Método do Jacobiano (Transformação de Variáveis).
+- **Integrais:** A ferramenta para calcular Esperanças e Probabilidades em modelos contínuos.
+- *Atenção!* Revisar especialmente Integrais de Funções Exponenciais e Logaritmos.
+
+---
+
+## Exemplo 1.1
+
+Obtenha a derivada das seguintes funções:
+
+a) $f(t) = e^{\lambda(t-1)}$. Calcule $f'(t)$.
+b) $f(x) = x^2 \cdot e^{-ax}$. Calcule $\frac{df}{dx}$.
+c) $f(z) = e^{-\frac{1}{2}z^2}$. Calcule $f'(z)$.
+d) Dada a função $u(x, y) = \frac{x}{x+y}$, calcule $\frac{\partial u}{\partial x}$.
+e) Dada $f(x, y) = 7x^2y + 5y^3\log(x)$, calcule as derivadas de primeira ordem $\frac{\partial f}{\partial x}$ e $\frac{\partial f}{\partial y}$.
+
+---
+
+## Exemplo 1.2
+
+Resolva as seguintes integrais:
+
+a) Calcule $\int_{0}^{\infty} e^{-3x} dx$.
+b) Calcule $\int x \cdot e^{-x^2} dx$.
+c) Calcule $\int_{0}^{\infty} x \cdot e^{-x} dx$.
+d) Calcule $\int x^2 \cdot e^{-x} dx$.
+e) Dada a densidade conjunta $f(x, y) = c(x+y)$ no domínio $0 < x < 1$ e $0 < y < 1$, calcule a integral dupla $\int_{0}^{1} \int_{0}^{1} (x+y) dy dx$.
+
+
+# Fim

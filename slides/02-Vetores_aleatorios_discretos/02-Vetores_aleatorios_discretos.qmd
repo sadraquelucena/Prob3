@@ -1,0 +1,126 @@
+---
+title: "Vetores Aleatórios Discretos"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Definição 2.1: Vetor Aleatório Discreto
+
+Se $\mathbf{X} = (X_1, X_2, \dots, X_n)$ é um vetor aleatório que assume valores em um conjunto finito ou enumerável, ele é chamado de **vetor aleatório discreto**.
+
+- Ou seja, cada componente assume valores discretos.
+
+- **Função de Probabilidade Conjunta (FPC):**
+$$
+\begin{aligned}
+p(\mathbf{x}) &= p(x_1,x_2,\ldots,x_n)\\
+&=P(X_1 = x_1, X_2 = x_2, \dots, X_n = x_n)
+\end{aligned}
+$$
+
+---
+
+## Propriedades Fundamentais
+
+Seja $\mathbf{X}$ um vetor aleatório discreto. Então sua função de probabilidade continua satisfaz as regras de probabilidade:
+
+**P2.1.** *Não existe probabilidade negativa.*
+$$P(X_1 = x_1, \dots, X_n = x_n)\geq 0, ~\text{para todo ponto do suporte}.$$
+
+**P2.2.** *A soma das probabilidades é igual a 1.*
+$$\sum\limits_{x_1}\ldots\sum\limits_{x_n}P(X_1 = x_1, \dots, X_n = x_n)=1.$$
+
+---
+
+## Definição 2.2: Distribuição Marginal
+
+- Às vezes temos o vetor completo, mas queremos olhar **apenas para uma variável**, ignorando as outras.
+- A função de probabilidade marginal de $X_k$ ($k = 1, \ldots, n$) é dada por
+$$
+  P(X_k=x_k) = \sum\limits_{x_i, \forall i \neq k} P(X_1 = x_1, X_2 = x_2, \dots, X_n = x_n).
+$$
+
+- Ou seja, a marginal de $X_k$ é a soma sobre todas as demais variáveis, exceto $X_k$.
+
+---
+
+## Tabela de dupla entrada
+
+- No caso especial de duas variáveis discretas, é conveniente a
+representação da função de probabilidade utilizando uma **tabela de dupla entrada**:
+
+| $X\downarrow \backslash Y \rightarrow$ | $y_1$ | $\cdots$ | $y_n$ | **Marginal $X$** |
+|:-----|:---:|:---:|:---:|:-----:|
+| **$x_1$** | $P(x_1,y_1)$ | $\cdots$ | $P(x_1,y_n)$ | $P(X=x_1)$ |
+| **$\vdots$** | $\vdots$ | $\vdots$ | $\vdots$ | $\vdots$ |
+| **$x_n$** | $P(x_n,y_1)$ | $\cdots$ | $P(x_n,y_n)$ | $P(X=x_n)$ |
+| **Marginal $Y$** | **$P(Y=y_1)$** | **$\cdots$** | **$P(Y=y_n)$** | **$1$** |
+
+---
+
+## Exemplo 2.1
+
+Duas moedas equilibradas são lançadas de forma independente e
+definimos as variáveis aleatórias $X$ e $Y$ da seguinte forma:
+
+- $X$: número de caras nos dois lançamentos;
+- $Y$: função indicadora de faces iguais nos dois lançamentos.
+
+a) Obtenha a função de probabilidade conjunta de X e Y .
+b) Definimos uma nova variável $W = X\cdot Y$. Qual é a distribuição marginal de $W$?
+
+---
+
+## Exemplo 2.2
+
+Suponha que 2 bolas sejam sorteadas de uma urna contendo 3
+bolas vermelhas, 4 bolas brancas e 5 bolas azuis. Se $X$ e $Y$
+representam, respectivamente, o número de bolas vermelhas e
+brancas escolhidas:
+
+a) Determine a função de probabilidade conjunta
+de $X$ e $Y$.
+
+b) Determine a marginal de $X$ e a de $Y$.
+
+c) Qual é a distribuição da variável $S = X+Y$ (total de bolas vermelhas e brancas)?
+
+---
+
+## Exemplo 2.3
+
+Suponha que 15% das famı́lias de certa comunidade não tenham
+filhos, 30% tenham 1 filho, 55% tenham 2 filhos. Suponha
+também que, em cada família, cada filho tenha a mesma
+probabilidade (independente) de ser menino ou menina. Se uma
+família dessa comunidade é escolhida aleatoriamente, então $M$, o número de meninos, e $F$, o número de meninas nesta família:
+
+a) Determine a função de probabilidade conjunta do número de
+meninos e meninas na família.
+
+b) Se uma família selecionada tem exatamente 2 filhos, qual é o número esperado de meninos?
+
+# Fim

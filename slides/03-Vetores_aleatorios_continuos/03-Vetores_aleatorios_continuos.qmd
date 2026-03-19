@@ -1,0 +1,97 @@
+---
+title: "Vetores Aleatórios Contínuos"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Definição 3.1: Vetor Aleatório Contínuo
+
+- Um vetor aleatório é **contínuo** se sua distribuição pode ser descrita por uma densidade conjunta.
+
+- Aqui a probabilidade não é mais uma soma, mas o **volume** sob uma superfície $f_{\underset{\widetilde{\phantom{X}}}{X}}(\underset{\widetilde{\phantom{x}}}{x})$:
+
+$$F_\underset{\widetilde{\phantom{X}}}{X}(\underset{\widetilde{\phantom{x}}}{x}) = \int_{-\infty}^{x_1} \dots \int_{-\infty}^{x_n} f_{\underset{\widetilde{\phantom{X}}}{X}}(\underset{\widetilde{\phantom{y}}}{y}) dy_1 \dots dy_n$$
+
+---
+
+## Propriedades Fundamentais
+
+A função densidade conjunta satisfaz:
+
+**P3.1.** *Não existe probabilidade negativa.*
+$$f_{\underset{\widetilde{\phantom{X}}}{X}}(\underset{\widetilde{\phantom{x}}}{x}) \ge 0 \text{ para todo } \underset{\widetilde{\phantom{x}}}{x}.$$
+
+**P3.2.** *A "massa" total é 1.*
+$$\int_{-\infty}^{\infty} \dots \int_{-\infty}^{\infty} f_{\underset{\widetilde{\phantom{X}}}{X}}(\underset{\widetilde{\phantom{x}}}{x}) d\underset{\widetilde{\phantom{x}}}{x} = 1.$$
+
+---
+
+## Definição 3.2: Densidade Marginal
+
+- Para encontrar a densidade de apenas uma variável, realizamos uma **"projeção"** integrando sobre todas as outras:
+
+$$f_{X_k}(x_k) = \int_{-\infty}^{\infty} \dots \int_{-\infty}^{\infty} f_{\underset{\widetilde{\phantom{X}}}{X}}(\underset{\widetilde{\phantom{x}}}{x}) \,dx_1 \cdots dx_{k-1}\, dx_{k+1} \cdots dx_n$$
+
+::: {.callout-note}
+A densidade conjunta é obtida da distribuição através de **derivadas parciais sucessivas**.
+:::
+
+
+
+---
+
+## Exemplo 3.1
+
+A função de densidade conjunta de X e Y é dada por $$f_{X,Y}(x,y) = 2e^{-x}e^{-2y}, \quad 0 < x, y < \infty$$
+
+Calcule
+
+a) $P(X > 1, Y < 1)$ (Região retangular)
+b) $P(X < Y)$ (Região triangular - Cuidado com os limites!)
+c) as densidades marginais de $X$ e de $Y$.
+
+---
+
+## Exemplo 3.2
+
+Considere um círculo de raio $R$ e um ponto escolhido aleatoriamente em seu interior, com distribuição uniforme (todas as regiões são igualmente prováveis). Se o centro está na origem e $X,Y$ são as coordenadas do ponto, então $(X,Y)$ tem a mesma probabilidade em qualquer região do círculo, e sua densidade conjunta é dada por
+$$f_{X,Y}(x,y) = c, \text{ se } x^2 + y^2 \le R^2.$$
+
+a) Determinar a constante $c$ (Dica: Use a área do círculo).
+
+b) Determine a marginal de $X$ e a de $Y$.
+
+c) Calcular $E[D]$, onde $D$ é a distância da origem.
+
+---
+
+## Exemplo 3.3
+
+Dada a densidade conjunta $f_{X,Y}(x,y) = e^{-(x+y)}$ para $x, y > 0$, determine a densidade da variável $Z = X/Y$.
+
+
+
+# Fim

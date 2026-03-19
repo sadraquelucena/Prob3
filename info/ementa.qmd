@@ -1,0 +1,27 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Ementa
+
+Distribuições marginais e condicionais. Esperanças condicionais. Função geratriz de momentos. Função característica. Distribuição de funções de variáveis aleatórias. Método do Jacobiano e aplicações. Sequências de eventos e lema de Borel-Cantelli. Convergências de variáveis aleatórias. Leis dos Grandes Números. Teorema Central do Limite.
+
+
+## Objetivos
+
+Capacitar o aluno na utilização e compreensão da teoria probabilística. Identificando e reconhecendo os problemas que necessitam da utilização de distribuições condicionadas, Função Característica e teorema do limite central.
+
+## Metodologia
+
+Serão ministradas aulas teóricas expositivas; utilizados recursos visuais; resolução de exercícios em sala de aula; solicitação de atividades extraclasse.
+
+## Habilidades e Competências
+
+Ao final da disciplina o aluno estará apto a desenvolver a teoria envolvendo distribuições $n$-dimensionais, estimar momentos a partir de funções geradoras de momentos e conhecer os conceitos de convergência de variáveis aleatórias.
+
+## Avaliação
+Serão realizadas três avaliações ao longo do semestre. As avaliações poderão ser provas, trabalhos ou outras atividades solicitadas pelo professor.

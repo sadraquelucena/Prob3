@@ -1,0 +1,22 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Bibliografia
+
+### Básica
+
+- MAGALHÃES, Marcos Nascimento. Probabilidade e variáveis aleatórias. Edusp, 2006.
+- ROSS, Sheldon. Probabilidade: um curso moderno com aplicações. Bookman Editora, 2009.
+- JAMES, Barry R. Probabilidade: um curso em nível intermediário. 1996.
+- MEYER, Paul L. Probabilidade: Aplicações à Estatística. 2. ed. Livros Técnicos e Científicos Editora SA, 1983.
+- SPIEGEL, Murray R; SCHILLER, John J; SRINIVASAN, R. Alu. Probabilidade e estatística. 3. ed. Porto Alegre: Bookman, 2013.
+
+
+### Complementar
+
+- DANTAS, Carlos A. B. Probabilidade: um curso introdutório. 3. ed. rev. São Paulo: EDUSP, 2008.

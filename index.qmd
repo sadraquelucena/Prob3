@@ -1,0 +1,15 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+# Bem-vindo(a)!
+
+Esta página foi criada pelo Prof. Dr. Sadraque E. F. Lucena para centralizar os conteúdos, atividades, cronograma e materiais da disciplina **ESTAT0075 — Probabilidade III**, ofertada pelo Departamento de Estatística e Ciências Atuariais da Universidade Federal de Sergipe. Ao longo do semestre, estudaremos estruturas mais avançadas da teoria da probabilidade, com foco em vetores aleatórios, distribuições conjuntas e condicionais, função geradora de momentos, função característica, transformações de variáveis (método do Jacobiano) e teoria de convergência de variáveis aleatórias, culminando no Teorema Central do Limite.
+
+A disciplina será conduzida com uma abordagem prática e orientada por problemas, conectando os conceitos teóricos a aplicações em Estatística. Serão propostas atividades semanais que estimulem o raciocínio probabilístico, a análise de modelos multivariados e a compreensão dos resultados assintóticos fundamentais.
+
+Fique atento(a) às atualizações — este espaço será constantemente revisado com avisos, novos materiais e mudanças no cronograma.

@@ -1,0 +1,43 @@
+---
+title: "Conteúdo 2"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Vetores Aleatórios Discretos
+
+Este material apresenta a introdução aos vetores aleatórios discretos, com foco na definição da função de probabilidade conjunta e em suas propriedades fundamentais. São discutidos os conceitos de distribuição marginal e formas de representação, como tabelas de dupla entrada, além de exemplos que exploram a modelagem de fenômenos envolvendo múltiplas variáveis aleatórias.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/02-Vetores_aleatorios_discretos/02-Vetores_aleatorios_discretos.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide02_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/02-Vetores_aleatorios_discretos.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide02_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/Prob3_Lista2.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista02.png){width=80%}<br>Lista 2
+</a>
+:::
+
+::::
+
+

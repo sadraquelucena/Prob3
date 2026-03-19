@@ -1,0 +1,43 @@
+---
+title: "Conteúdo 3"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Vetores Aleatórios Contínuos
+
+Este material apresenta a introdução aos vetores aleatórios contínuos, com ênfase na definição e interpretação da função densidade conjunta e de suas propriedades fundamentais. São abordados os conceitos de distribuição marginal por meio de integração, bem como a relação entre densidade e função de distribuição.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide03_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/03-Vetores_aleatorios_continuos.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide03_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/Prob3_Lista3.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista03.png){width=80%}<br>Lista 3
+</a>
+:::
+
+::::
+
+

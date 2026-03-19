@@ -1,0 +1,58 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Conteúdo
+
+1. Variáveis aleatórias $n$-dimensionais
+
+    1.1. Variáveis aleatórias bidimensionais
+    
+    1.2. Distribuição Marginal
+    
+    1.3. Distribuição Condicional
+    
+    1.4. Esperança e Variância Condicional
+    
+    1.5. Independência de variáveis
+    
+    1.6. Distribuições multivariadas
+
+2. Função Geradora de Momentos e Função Característica
+    
+    2.1. Função Geradora de Momentos
+    
+    2.2. Propriedade das FGM e aplicações
+    
+    2.3. Função Característica e aplicações
+    2.4. Propriedades da Função Característica
+
+3. Função de um vetor de variáveis aleatórias
+
+    3.1. Método do Jacobiano
+    
+    3.2. Distribuições da soma e da diferença de variáveis
+    
+    3.3. Distribuição do quociente e do produto de variáveis
+    
+    3.4. Distribuição do Máximo e do Mínimo
+
+4. Convergência e Teorema do Limite Central
+
+    4.1. Desigualdade de Chebychev
+    
+    4.2. Convergência de variáveis aleatórias
+    
+    4.3. Convergência em probabilidade e Convergência Quase certa
+    
+    4.4. Convergência em Distribuição
+    
+    4.5. Lei dos Grandes números
+    
+    4.6. Lei forte e Lei fraca
+    
+    4.7. Teorema Central do Limite
