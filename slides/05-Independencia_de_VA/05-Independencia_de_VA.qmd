@@ -1,0 +1,103 @@
+---
+title: "Independência entre Variáveis"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Definição 5.1: Independência de V.A.
+
+- Para quaisquer conjuntos de Borel $B_1, B_2 \in \mathfrak{B}(\mathbb{R})$: $$P(X \in B_1 | Y \in B_2) = P(X \in B_1)$$
+
+- **Definição Equivalente (Regra do Produto):** $X$ e $Y$ são independentes se, e somente se $$P(X \in B_1, Y \in B_2) = P(X \in B_1)P(Y \in B_2).$$ 
+
+- **Intuição:** Duas variáveis aleatórias, $X$ e $Y$, são independentes se a informação sobre o resultado de uma delas não altera a probabilidade de ocorrência da outra.
+
+---
+
+## Definições Alternativas
+
+- A independência implica que as funções conjuntas se fatoram no produto das marginais.
+- **FDA:** $F_{X,Y}(x,y) = F_X(x)F_Y(y)$
+- **Discretas:** $P(X=x, Y=y) = P(X=x)P(Y=y)$
+- **Contínuas:** $f_{X,Y}(x,y) = f_X(x)f_Y(y)$ 
+
+---
+
+## Generalização para $n$ Variáveis
+
+- Para $n$ variáveis $X_1, X_2, ..., X_n$, a independência exige que, para qualquer sub-família e quaisquer intervalos $B_i$ 
+$$P(X_1 \in B_1, ..., X_n \in B_n) = \prod_{i=1}^{n} P(X_i \in B_i)$$
+
+- **Lembre:** A independência mútua (de todo o grupo) exige que todas as possíveis sub-famílias também sejam independentes entre si.
+
+---
+
+## Exemplo 5.1
+
+Com base em dados de um posto de saúde, definiu-se a distribuição conjunta dos números diários de atendimentos por alergia ($X$) e pneumonia ($Y$):
+
+::: {.small-table}
+| $Y \setminus X$ | $0$ | $1$ | $2$ | **$P(Y=y)$** |
+|:---:|:---:|:---:|:---:|:---:|
+| **$0$** | $1/16$ | $1/16$ | $1/8$ | **$1/4$** |
+| **$1$** | $1/8$ | $1/8$ | $0$ | **$1/4$** |
+| **$2$** | $1/16$ | $1/8$ | $1/8$ | **$5/16$** |
+| **$3$** | $0$ | $1/8$ | $1/8$ | **$3/16$** |
+| **$P(X=x)$** | **$1/4$** | **$7/16$** | **$3/8$** | **$1$** |
+:::
+
+a) $X$ e $Y$ são independentes?
+b) Compare as probabilidades condicionais de $X$ dado $Y>0$ com o condicionamento em $Y=0$.
+
+---
+
+## Quando o Domínio é Contínuo
+
+- Antes de fazer contas com variáveis contínuas, observe o domínio da função densidade conjunta.
+
+- **Teorema Prático:** Se o suporte da função conjunta $f_{X,Y}(x,y)$ não for um "retângulo" (produto cartesiano dos suportes marginais), ou seja, se os limites de integração de uma variável dependerem da outra, então $X$ e $Y$ são dependentes.
+
+---
+
+## Exemplo 5.2
+
+A densidade conjunta de $X$ e $Y$ é: $$f_{X,Y}(x,y) = \frac{1}{2x} I_{[0,2]}(x)I_{[0,x]}(y).$$
+
+a) $f_{X,Y}(x,y)$ é mesmo uma função de densidade?
+
+b) $X$ e $Y$ são independentes?
+
+c) Qual a função de densidade condicional de $X$ dado $Y$ e de $Y$ dado $X$?
+
+---
+
+## Exemplo 5.3
+
+Se $X$ e $Y$ são variáveis aleatórias de Poisson independentes com respectivos parâmetros $\lambda_1$ e $\lambda_2$, obtenha a distribuição condicional de $X$ dado $X+Y=n$.
+
+
+
+# Fim

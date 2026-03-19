@@ -35,6 +35,8 @@ website:
             text: "3- Vetores Aleatórios Contínuos"
           - href: aulas/04-Distribuicao_condicional.qmd
             text: "4- Distribuição Condicional"
+          - href: aulas/05-Independencia_de_VA.qmd
+            text: "5- Indepedência de VAs"
       
       
 
