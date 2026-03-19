@@ -1,0 +1,151 @@
+---
+title: "Distribuição Multinomial e Normal Bivariada"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## A Distribuição Multinomial
+
+É a generalização natural da distribuição Binomial.
+
+- **Binomial:** 2 resultados mutuamente exclusivos (Ex: Sucesso ou Fracasso).
+- **Multinomial:** $k$ resultados mutuamente exclusivos. 
+
+    - O experimento é repetido $n$ vezes de forma independente.
+    - Em cada repetição, há $k$ resultados possíveis mutuamente exclusivos $(R_1, R_2, ..., R_k)$.
+    - Cada resultado $R_i$ tem uma probabilidade constante de ocorrer denotada por $p_i$, onde $\sum p_i = 1$.
+    - Seja $X_i$ o número de vezes que o resultado $R_i$ ocorre nos $n$ ensaios. Dessa forma, o vetor diz-se ter distribuição Multinomial: $(X_1,\ldots, X_k) \sim$ Multinomial$(n, p_1, \ldots, p_k)$.
+
+---
+
+## Exemplos de V.A. Multinomial
+
+- **Resultado do arremesso de uma bola à cesta:** {errou, 1 ponto, 2 pontos, 3 pontos}
+- **Ação resultado de uma propaganda direta por e-mail:** {não viu, acessou, wishlist, compra}
+- **Categoria de veículo alugado por cliente em um site:** {SUV, Sedan, Hatch, Utilitário, ...}
+- **Classificação de um estudante em relação à área do Curso:** {Exatas, Humanas, Biológicas}
+- **Outros:** Dia da semana de acidente de trabalho; Grau de uma infração de trânsito; Estado civil. ---
+
+---
+
+## Função de Probabilidade Multinomial
+
+Se o vetor $\mathbf{X} = (X_1, X_2, ..., X_k)$ segue a distribuição Multinomial, sua função de probabilidade conjunta é dada por:
+$$ \begin{aligned}
+  P(X_1=x_1, ..., X_k=x_k) = \frac{n!}{x_1! x_2! \cdot\cdot\cdot x_k!} p_1^{x_1} p_2^{x_2} \cdot\cdot\cdot p_k^{x_k}\\
+  &= \frac{n!}{\prod_{i=1}^{k} x_i!} \prod_{i=1}^{k} p_i^{x_i}
+  \end{aligned}
+$$
+
+**Propriedades:**
+
+- **Esperança:** $E(X_i) = n p_i$
+- **Variância:** $V(X_i) = n p_i (1 - p_i)$
+- **Covariância:** $Cov(X_i, X_j) = -n p_i p_j$ *(nota: são negativamente correlacionadas!)*
+
+---
+
+## Exemplo 6.1
+
+Para 10 lançamentos independentes de um dado equilibrado, seja $X_i$ o número de ocorrências da face $i$, para $i=1,...,6$. Escreva a função de probabilidade conjunta de $\mathbf{X} = (X_1, ..., X_6)$.
+
+
+---
+
+## Exemplo 6.2
+
+Em uma urna há 2 bolas vermelhas, 3 verdes e 5 azuis. São selecionadas 4 bolas ao acaso da urna, **com reposição**. Qual a probabilidade de retirar 2 verdes e 2 azuis?
+
+---
+
+## Distribuição Normal Bivariada
+
+Um vetor aleatório contínuo $\underset{\widetilde{\phantom{C}}}{X} = (X_1, X_2)$ tem distribuição Normal Bivariada, denotado por $\underset{\widetilde{\phantom{C}}}{X} \sim N_2(\mu_1, \mu_2, \sigma_1^2, \sigma_2^2, \rho)$, se sua densidade conjunta é dada por:
+
+::: {style="font-size: 60%;"}
+$$f(x_1, x_2) = \frac{1}{2\pi\sigma_1\sigma_2\sqrt{1-\rho^2}} \exp \left\{ -\frac{1}{2(1-\rho^2)} \left[ \left(\frac{x_1-\mu_1}{\sigma_1}\right)^2 + \left(\frac{x_2-\mu_2}{\sigma_2}\right)^2 - 2\rho\left(\frac{x_1-\mu_1}{\sigma_1}\right)\left(\frac{x_2-\mu_2}{\sigma_2}\right) \right] \right\}$$
+:::
+
+Onde:
+
+- $\mu_1, \mu_2 \in \mathbb{R}$ (Médias das marginais)
+- $\sigma_1 > 0, \sigma_2 > 0$ (Desvios-padrão)
+- $-1 < \rho < 1$ (Coeficiente de correlação populacional) *(Nota: Se $\rho = 0$, o termo cruzado some e a função se fatora no produto de duas Normais independentes).*
+
+---
+
+## Exemplo 6.3
+
+O vetor $(X, Y)$ segue a distribuição normal bivariada com os seguintes parâmetros: $\mu_X = \mu_Y = 0$, $\sigma_X = \sigma_Y = 1$ e $\rho = 1/2$.
+
+a) Como fica a função de densidade conjunta $f_{X,Y}(x,y)$? 
+
+b) Qual a distribuição marginal de $X$?
+
+---
+
+## A Generalização: Normal Multivariada
+
+Um vetor aleatório contínuo $\underset{\widetilde{\phantom{X}}}{X}$$_{p \times 1}$ tem distribuição Normal multivariada, denotado por $\underset{\widetilde{\phantom{X}}}{X} \sim N_p(\underset{\widetilde{\phantom{\mu}}}{\mu}, \underset{\widetilde{\phantom{\Sigma}}}{\Sigma})$, se sua densidade conjunta é dada matricialmente por: $$f_{\underset{\widetilde{\phantom{X}}}{X}}(\underset{\widetilde{\phantom{x}}}{x}) = \frac{1}{(2\pi)^{p/2} |\underset{\widetilde{\phantom{\Sigma}}}{\Sigma}|^{1/2}} \exp \left\{ -\frac{1}{2} (\underset{\widetilde{\phantom{x}}}{x} - \underset{\widetilde{\phantom{\mu}}}{\mu})^\top \underset{\widetilde{\phantom{\Sigma}}}{\Sigma}^{-1} (\mathbf{x} - \underset{\widetilde{\phantom{\mu}}}{\mu}) \right\}$$
+
+- $\underset{\widetilde{\phantom{\mu}}}{\mu}$ é o vetor de médias (Esperança do vetor $E(\underset{\widetilde{\phantom{X}}}{X})$).
+- $\underset{\widetilde{\phantom{\Sigma}}}{\Sigma}$ é a matriz de variâncias-covariâncias do vetor ($V(\mathbf{X})$).
+- $|\underset{\widetilde{\phantom{\Sigma}}}{\Sigma}|$ é o determinante da matriz de covariância.
+- $p$ é a dimensão do vetor aleatório (número de variáveis).
+
+---
+
+## Exemplos e Natureza da Normal Multivariada
+
+- Individualmente as variáveis são Normais, portanto simétricas.
+- A matriz $\underset{\widetilde{\phantom{\Sigma}}}{\Sigma}$ captura a relação linear (covariância) entre elas.
+- Ocorrem frequentemente na natureza por resultarem da combinação de muitos fatores de pequena contribuição (Teorema Central do Limite).
+
+**Exemplos Práticos:**
+
+- Características genéticas e morfológicas (Ex: Peso, comprimento e circunferência de uma banana ou crânio fóssil).
+- Índices econômicos (Variação conjunta de preços, inflação e câmbio).
+
+---
+
+## Importância e Aplicações
+
+A grande força da Normal Multivariada está em **modelar a estrutura de correlação ou dependência** entre múltiplas variáveis simultaneamente. **É a base teórica para diversas áreas da estatística avançada:**
+
+- Séries Temporais e Geoestatística.
+
+- **Eixo central das Técnicas de Análise Multivariada:**
+    
+    - Análise de Discriminante Linear.
+    - Análise Fatorial (Exploratória e Confirmatória) e Componentes Principais.
+    - Análise de Correlação Canônica.
+    - Análise de Variância Multivariada (MANOVA).
+
+
+
+# Fim
+<div style="text-align: left; font-size: 0.7em;">
+  Baseado nas notas de aula do Prof. Walmes M. Zeviani (UFPR). </div>

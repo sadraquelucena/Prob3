@@ -37,6 +37,8 @@ website:
             text: "4- Distribuição Condicional"
           - href: aulas/05-Independencia_de_VA.qmd
             text: "5- Indepedência de VAs"
+          - href: aulas/06-Dist_multinomial_normal_bivariada.qmd
+            text: "6- Dist. Multinomial e Normal Bivariada"
       
       
 
