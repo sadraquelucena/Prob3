@@ -22,24 +22,27 @@ format:
     
     1.6. Distribuições multivariadas
 
-2. Função Geradora de Momentos e Função Característica
-    
-    2.1. Função Geradora de Momentos
-    
-    2.2. Propriedade das FGM e aplicações
-    
-    2.3. Função Característica e aplicações
-    2.4. Propriedades da Função Característica
+2. Função de um vetor de variáveis aleatórias
 
-3. Função de um vetor de variáveis aleatórias
+    2.1. Método do Jacobiano
+    
+    2.2. Distribuições da soma e da diferença de variáveis
+    
+    2.3. Distribuição do quociente e do produto de variáveis
+    
+    2.4. Distribuição do Máximo e do Mínimo
+    
+3. Função Geradora de Momentos e Função Característica
+    
+    3.1. Função Geradora de Momentos
+    
+    3.2. Propriedade das FGM e aplicações
+    
+    3.3. Função Característica e aplicações
+    
+    3.4. Propriedades da Função Característica
 
-    3.1. Método do Jacobiano
-    
-    3.2. Distribuições da soma e da diferença de variáveis
-    
-    3.3. Distribuição do quociente e do produto de variáveis
-    
-    3.4. Distribuição do Máximo e do Mínimo
+
 
 4. Convergência e Teorema do Limite Central
 

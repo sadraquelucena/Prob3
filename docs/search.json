@@ -37,7 +37,7 @@
     "href": "info/conteudo.html",
     "title": "Probabliidade III",
     "section": "",
-    "text": "Variáveis aleatórias \\(n\\)-dimensionais\n1.1. Variáveis aleatórias bidimensionais\n1.2. Distribuição Marginal\n1.3. Distribuição Condicional\n1.4. Esperança e Variância Condicional\n1.5. Independência de variáveis\n1.6. Distribuições multivariadas\nFunção Geradora de Momentos e Função Característica\n2.1. Função Geradora de Momentos\n2.2. Propriedade das FGM e aplicações\n2.3. Função Característica e aplicações 2.4. Propriedades da Função Característica\nFunção de um vetor de variáveis aleatórias\n3.1. Método do Jacobiano\n3.2. Distribuições da soma e da diferença de variáveis\n3.3. Distribuição do quociente e do produto de variáveis\n3.4. Distribuição do Máximo e do Mínimo\nConvergência e Teorema do Limite Central\n4.1. Desigualdade de Chebychev\n4.2. Convergência de variáveis aleatórias\n4.3. Convergência em probabilidade e Convergência Quase certa\n4.4. Convergência em Distribuição\n4.5. Lei dos Grandes números\n4.6. Lei forte e Lei fraca\n4.7. Teorema Central do Limite",
+    "text": "Variáveis aleatórias \\(n\\)-dimensionais\n1.1. Variáveis aleatórias bidimensionais\n1.2. Distribuição Marginal\n1.3. Distribuição Condicional\n1.4. Esperança e Variância Condicional\n1.5. Independência de variáveis\n1.6. Distribuições multivariadas\nFunção de um vetor de variáveis aleatórias\n2.1. Método do Jacobiano\n2.2. Distribuições da soma e da diferença de variáveis\n2.3. Distribuição do quociente e do produto de variáveis\n2.4. Distribuição do Máximo e do Mínimo\nFunção Geradora de Momentos e Função Característica\n3.1. Função Geradora de Momentos\n3.2. Propriedade das FGM e aplicações\n3.3. Função Característica e aplicações\n3.4. Propriedades da Função Característica\nConvergência e Teorema do Limite Central\n4.1. Desigualdade de Chebychev\n4.2. Convergência de variáveis aleatórias\n4.3. Convergência em probabilidade e Convergência Quase certa\n4.4. Convergência em Distribuição\n4.5. Lei dos Grandes números\n4.6. Lei forte e Lei fraca\n4.7. Teorema Central do Limite",
     "crumbs": [
       "Informações da disciplina",
       "Conteúdo"
@@ -48,7 +48,7 @@
     "href": "info/conteudo.html#conteúdo",
     "title": "Probabliidade III",
     "section": "",
-    "text": "Variáveis aleatórias \\(n\\)-dimensionais\n1.1. Variáveis aleatórias bidimensionais\n1.2. Distribuição Marginal\n1.3. Distribuição Condicional\n1.4. Esperança e Variância Condicional\n1.5. Independência de variáveis\n1.6. Distribuições multivariadas\nFunção Geradora de Momentos e Função Característica\n2.1. Função Geradora de Momentos\n2.2. Propriedade das FGM e aplicações\n2.3. Função Característica e aplicações 2.4. Propriedades da Função Característica\nFunção de um vetor de variáveis aleatórias\n3.1. Método do Jacobiano\n3.2. Distribuições da soma e da diferença de variáveis\n3.3. Distribuição do quociente e do produto de variáveis\n3.4. Distribuição do Máximo e do Mínimo\nConvergência e Teorema do Limite Central\n4.1. Desigualdade de Chebychev\n4.2. Convergência de variáveis aleatórias\n4.3. Convergência em probabilidade e Convergência Quase certa\n4.4. Convergência em Distribuição\n4.5. Lei dos Grandes números\n4.6. Lei forte e Lei fraca\n4.7. Teorema Central do Limite",
+    "text": "Variáveis aleatórias \\(n\\)-dimensionais\n1.1. Variáveis aleatórias bidimensionais\n1.2. Distribuição Marginal\n1.3. Distribuição Condicional\n1.4. Esperança e Variância Condicional\n1.5. Independência de variáveis\n1.6. Distribuições multivariadas\nFunção de um vetor de variáveis aleatórias\n2.1. Método do Jacobiano\n2.2. Distribuições da soma e da diferença de variáveis\n2.3. Distribuição do quociente e do produto de variáveis\n2.4. Distribuição do Máximo e do Mínimo\nFunção Geradora de Momentos e Função Característica\n3.1. Função Geradora de Momentos\n3.2. Propriedade das FGM e aplicações\n3.3. Função Característica e aplicações\n3.4. Propriedades da Função Característica\nConvergência e Teorema do Limite Central\n4.1. Desigualdade de Chebychev\n4.2. Convergência de variáveis aleatórias\n4.3. Convergência em probabilidade e Convergência Quase certa\n4.4. Convergência em Distribuição\n4.5. Lei dos Grandes números\n4.6. Lei forte e Lei fraca\n4.7. Teorema Central do Limite",
     "crumbs": [
       "Informações da disciplina",
       "Conteúdo"
@@ -62,379 +62,88 @@
     "text": "Bem-vindo(a)!\nEsta página foi criada pelo Prof. Dr. Sadraque E. F. Lucena para centralizar os conteúdos, atividades, cronograma e materiais da disciplina ESTAT0075 — Probabilidade III, ofertada pelo Departamento de Estatística e Ciências Atuariais da Universidade Federal de Sergipe. Ao longo do semestre, estudaremos estruturas mais avançadas da teoria da probabilidade, com foco em vetores aleatórios, distribuições conjuntas e condicionais, função geradora de momentos, função característica, transformações de variáveis (método do Jacobiano) e teoria de convergência de variáveis aleatórias, culminando no Teorema Central do Limite.\nA disciplina será conduzida com uma abordagem prática e orientada por problemas, conectando os conceitos teóricos a aplicações em Estatística. Serão propostas atividades semanais que estimulem o raciocínio probabilístico, a análise de modelos multivariados e a compreensão dos resultados assintóticos fundamentais.\nFique atento(a) às atualizações — este espaço será constantemente revisado com avisos, novos materiais e mudanças no cronograma."
   },
   {
-    "objectID": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#definição-5.1-independência-de-v.a.",
-    "href": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#definição-5.1-independência-de-v.a.",
-    "title": "Independência entre Variáveis",
-    "section": "Definição 5.1: Independência de V.A.",
-    "text": "Definição 5.1: Independência de V.A.\n\nPara quaisquer conjuntos de Borel \\(B_1, B_2 \\in \\mathfrak{B}(\\mathbb{R})\\): \\[P(X \\in B_1 | Y \\in B_2) = P(X \\in B_1)\\]\nDefinição Equivalente (Regra do Produto): \\(X\\) e \\(Y\\) são independentes se, e somente se \\[P(X \\in B_1, Y \\in B_2) = P(X \\in B_1)P(Y \\in B_2).\\]\nIntuição: Duas variáveis aleatórias, \\(X\\) e \\(Y\\), são independentes se a informação sobre o resultado de uma delas não altera a probabilidade de ocorrência da outra."
+    "objectID": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#por-que-transformar-variáveis-aleatórias",
+    "href": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#por-que-transformar-variáveis-aleatórias",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "Por que transformar Variáveis Aleatórias?",
+    "text": "Por que transformar Variáveis Aleatórias?\n1. Inferência Estatística\n\nNa prática, coletamos uma amostra: \\(X_1, X_2, \\dots, X_n\\).\nA partir dela, calculamos a média amostral: \\(\\overline{X} = \\frac{\\sum X_i}{n}\\).\nO estimador \\(\\overline{X}\\) é uma função de variáveis aleatórias. Se não soubermos encontrar a distribuição de probabilidade dessa função, testes de hipótese e intervalos de confiança simplesmente não existem."
   },
   {
-    "objectID": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#definições-alternativas",
-    "href": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#definições-alternativas",
-    "title": "Independência entre Variáveis",
-    "section": "Definições Alternativas",
-    "text": "Definições Alternativas\n\nA independência implica que as funções conjuntas se fatoram no produto das marginais.\nFDA: \\(F_{X,Y}(x,y) = F_X(x)F_Y(y)\\)\nDiscretas: \\(P(X=x, Y=y) = P(X=x)P(Y=y)\\)\nContínuas: \\(f_{X,Y}(x,y) = f_X(x)f_Y(y)\\)"
+    "objectID": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#por-que-transformar-variáveis-aleatórias-1",
+    "href": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#por-que-transformar-variáveis-aleatórias-1",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "Por que transformar Variáveis Aleatórias?",
+    "text": "Por que transformar Variáveis Aleatórias?\n2. Distribuições Clássicas\n\nAs distribuições Qui-Quadrado, t de Student e F de Snedecor (base da regressão e da ANOVA) são construídas a partir de transformações da distribuição Normal.\n\n3. Simulação Computacional\n\nOs processadores só sabem gerar números de uma única distribuição: a Uniforme(0,1).\nR ou Python geram dados de outras distribuições usando transformações sobre essa Uniforme para gerar a distribuição que desejarmos."
   },
   {
-    "objectID": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#generalização-para-n-variáveis",
-    "href": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#generalização-para-n-variáveis",
-    "title": "Independência entre Variáveis",
-    "section": "Generalização para \\(n\\) Variáveis",
-    "text": "Generalização para \\(n\\) Variáveis\n\nPara \\(n\\) variáveis \\(X_1, X_2, ..., X_n\\), a independência exige que, para qualquer sub-família e quaisquer intervalos \\(B_i\\) \\[P(X_1 \\in B_1, ..., X_n \\in B_n) = \\prod_{i=1}^{n} P(X_i \\in B_i)\\]\nLembre: A independência mútua (de todo o grupo) exige que todas as possíveis sub-famílias também sejam independentes entre si."
+    "objectID": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#transformações-de-variáveis-aleatórias",
+    "href": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#transformações-de-variáveis-aleatórias",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "Transformações de Variáveis Aleatórias",
+    "text": "Transformações de Variáveis Aleatórias\n\nSe \\(X\\) é uma variável aleatória, qualquer função ou transformação \\(h: X \\rightarrow \\mathbb{R}\\) também será uma variável aleatória.\nProblema: A partir do conhecimento de \\(X\\) (sua densidade ou probabilidade), como obter o comportamento probabilístico de \\(Y = h(X)\\)?\n\nGeneralização para Vetores:\n\nPodemos ter uma família de funções atuando sobre um vetor aleatório \\(\\underset{\\widetilde{\\phantom{X}}}{X} = (X_1, ..., X_m)\\) para produzir um novo vetor \\(\\underset{\\widetilde{\\phantom{Y}}}{Y} = (Y_1, ..., Y_r)\\)."
   },
   {
-    "objectID": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#exemplo-5.1",
-    "href": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#exemplo-5.1",
-    "title": "Independência entre Variáveis",
-    "section": "Exemplo 5.1",
-    "text": "Exemplo 5.1\nCom base em dados de um posto de saúde, definiu-se a distribuição conjunta dos números diários de atendimentos por alergia (\\(X\\)) e pneumonia (\\(Y\\)):\n\n\n\n\n\\(Y \\setminus X\\)\n\\(0\\)\n\\(1\\)\n\\(2\\)\n\\(P(Y=y)\\)\n\n\n\n\n\\(0\\)\n\\(1/16\\)\n\\(1/16\\)\n\\(1/8\\)\n\\(1/4\\)\n\n\n\\(1\\)\n\\(1/8\\)\n\\(1/8\\)\n\\(0\\)\n\\(1/4\\)\n\n\n\\(2\\)\n\\(1/16\\)\n\\(1/8\\)\n\\(1/8\\)\n\\(5/16\\)\n\n\n\\(3\\)\n\\(0\\)\n\\(1/8\\)\n\\(1/8\\)\n\\(3/16\\)\n\n\n\\(P(X=x)\\)\n\\(1/4\\)\n\\(7/16\\)\n\\(3/8\\)\n\\(1\\)\n\n\n\n\n\n\\(X\\) e \\(Y\\) são independentes?\nCompare as probabilidades condicionais de \\(X\\) dado \\(Y&gt;0\\) com o condicionamento em \\(Y=0\\)."
+    "objectID": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#o-método-direto-ou-método-da-fda",
+    "href": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#o-método-direto-ou-método-da-fda",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "O Método Direto (ou Método da FDA)",
+    "text": "O Método Direto (ou Método da FDA)\n\nPara obter a distribuição de uma transformação, uma técnica muito intuitiva e geral é o chamado Método Direto (ou Método da Função de Distribuição Acumulada - FDA).\nEle consiste em operações algébricas simples baseadas na própria definição de probabilidade: \\[F_Y(y) = P(Y \\le y) = P(h(X) \\le y)\\]\nA partir daí, manipulamos a desigualdade \\(h(X) \\le y\\) para isolar \\(X\\) e calcularmos a probabilidade usando a distribuição que já conhecemos de \\(X\\)."
   },
   {
-    "objectID": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#quando-o-domínio-é-contínuo",
-    "href": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#quando-o-domínio-é-contínuo",
-    "title": "Independência entre Variáveis",
-    "section": "Quando o Domínio é Contínuo",
-    "text": "Quando o Domínio é Contínuo\n\nAntes de fazer contas com variáveis contínuas, observe o domínio da função densidade conjunta.\nTeorema Prático: Se o suporte da função conjunta \\(f_{X,Y}(x,y)\\) não for um “retângulo” (produto cartesiano dos suportes marginais), ou seja, se os limites de integração de uma variável dependerem da outra, então \\(X\\) e \\(Y\\) são dependentes."
+    "objectID": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#o-método-direto-caso-discreto",
+    "href": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#o-método-direto-caso-discreto",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "O Método Direto: Caso Discreto",
+    "text": "O Método Direto: Caso Discreto\n\nSejam \\(X_1\\) e \\(X_2\\) duas variáveis discretas com função de probabilidade conjunta \\(p(x_1, x_2)\\) e defina \\(Y = h(X_1, X_2)\\).\nA variável \\(Y\\) também será discreta. Sua função de probabilidade é dada por: \\[p(Y=y) = P(h(X_1, X_2) = y) = \\sum_{(x_1,x_2) \\in A_y} p(x_1, x_2)\\]\n\nOnde \\(A_y = \\{(x_1, x_2) : h(x_1, x_2) = y\\}\\).\n\nOu seja, para cada \\(y\\) fixado, somamos as probabilidades de todos os pares \\((x_1, x_2)\\) que, aplicados na função \\(h\\), resultam no exato valor \\(y\\)."
   },
   {
-    "objectID": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#exemplo-5.2",
-    "href": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#exemplo-5.2",
-    "title": "Independência entre Variáveis",
-    "section": "Exemplo 5.2",
-    "text": "Exemplo 5.2\nA densidade conjunta de \\(X\\) e \\(Y\\) é: \\[f_{X,Y}(x,y) = \\frac{1}{2x} I_{[0,2]}(x)I_{[0,x]}(y).\\]\n\n\\(f_{X,Y}(x,y)\\) é mesmo uma função de densidade?\n\\(X\\) e \\(Y\\) são independentes?\nQual a função de densidade condicional de \\(X\\) dado \\(Y\\) e de \\(Y\\) dado \\(X\\)?"
+    "objectID": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#procedimento-do-método-direto-caso-discreto",
+    "href": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#procedimento-do-método-direto-caso-discreto",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "Procedimento do Método Direto (Caso Discreto)",
+    "text": "Procedimento do Método Direto (Caso Discreto)\nSejam \\(X_1\\) e \\(X_2\\) variáveis discretas com função de probabilidade conjunta \\(p(x_1,x_2)\\). Para obter a distribuição de \\(Y=h(X_1,X_2)\\), proceda da seguinte forma:\n\nDetermine os valores possíveis que \\(Y\\) pode assumir a partir dos pares \\((x_1, x_2)\\).\nPara cada valor de \\(y\\), identifique todos os pares \\((x_1,x_2)\\) tais que \\(h(x_1, x_2)=y\\).\nA probabilidade de \\(Y=y\\) é a soma das probabilidades desses pares: \\[P(Y=y) = \\sum_{(x_1,x_2) \\in A_y} p(x_1, x_2)\\]"
   },
   {
-    "objectID": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#exemplo-5.3",
-    "href": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#exemplo-5.3",
-    "title": "Independência entre Variáveis",
-    "section": "Exemplo 5.3",
-    "text": "Exemplo 5.3\nSe \\(X\\) e \\(Y\\) são variáveis aleatórias de Poisson independentes com respectivos parâmetros \\(\\lambda_1\\) e \\(\\lambda_2\\), obtenha a distribuição condicional de \\(X\\) dado \\(X+Y=n\\)."
+    "objectID": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#exemplo-7.1",
+    "href": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#exemplo-7.1",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "Exemplo 7.1",
+    "text": "Exemplo 7.1\nA função de probabilidade conjunta de \\(X\\) e \\(Y\\) é dada na tabela abaixo:\n\n\n\n\\(X \\setminus Y\\)\n0\n1\n2\n\n\n\n\n0\n1/4\n1/8\n1/8\n\n\n1\n1/4\n0\n1/4\n\n\n\nObtenha a função de probabilidade de \\(U = X+Y\\) e de \\(V = X-Y\\), bem como a conjunta de \\(U\\) e \\(V\\)."
   },
   {
-    "objectID": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#a-distribuição-multinomial",
-    "href": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#a-distribuição-multinomial",
-    "title": "Distribuição Multinomial e Normal Bivariada",
-    "section": "A Distribuição Multinomial",
-    "text": "A Distribuição Multinomial\nÉ a generalização natural da distribuição Binomial.\n\nBinomial: 2 resultados mutuamente exclusivos (Ex: Sucesso ou Fracasso).\nMultinomial: \\(k\\) resultados mutuamente exclusivos.\n\nO experimento é repetido \\(n\\) vezes de forma independente.\nEm cada repetição, há \\(k\\) resultados possíveis mutuamente exclusivos \\((R_1, R_2, ..., R_k)\\).\nCada resultado \\(R_i\\) tem uma probabilidade constante de ocorrer denotada por \\(p_i\\), onde \\(\\sum p_i = 1\\).\nSeja \\(X_i\\) o número de vezes que o resultado \\(R_i\\) ocorre nos \\(n\\) ensaios. Dessa forma, o vetor diz-se ter distribuição Multinomial: \\((X_1,\\ldots, X_k) \\sim\\) Multinomial\\((n, p_1, \\ldots, p_k)\\)."
+    "objectID": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#o-método-direto-caso-contínuo",
+    "href": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#o-método-direto-caso-contínuo",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "O Método Direto: Caso Contínuo",
+    "text": "O Método Direto: Caso Contínuo\n\nNo caso contínuo, obtemos a distribuição de \\(Y\\) via função de distribuição acumulada (FDA). Seguimos então seguintes passos:\n\n\nObtemos a FDA reescrevendo o evento em termos de \\(X_1\\) e \\(X_2\\): \\[F_Y(y) = P(Y\\le y) = P(h(X_1, X_2) \\le y)\\]\nDeterminamos a região de integração \\(B_y = \\{(x_1, x_2) : h(x_1, x_2) \\le y\\}\\) e calculamos \\[F_Y(y) = \\iint_{B_y} f_{X_1, X_2}(x_1, x_2) dx_1 dx_2\\]"
   },
   {
-    "objectID": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#exemplos-de-v.a.-multinomial",
-    "href": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#exemplos-de-v.a.-multinomial",
-    "title": "Distribuição Multinomial e Normal Bivariada",
-    "section": "Exemplos de V.A. Multinomial",
-    "text": "Exemplos de V.A. Multinomial\n\nResultado do arremesso de uma bola à cesta: {errou, 1 ponto, 2 pontos, 3 pontos}\nAção resultado de uma propaganda direta por e-mail: {não viu, acessou, wishlist, compra}\nCategoria de veículo alugado por cliente em um site: {SUV, Sedan, Hatch, Utilitário, …}\nClassificação de um estudante em relação à área do Curso: {Exatas, Humanas, Biológicas}\nOutros: Dia da semana de acidente de trabalho; Grau de uma infração de trânsito; Estado civil. —"
+    "objectID": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#o-método-direto-caso-contínuo-1",
+    "href": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#o-método-direto-caso-contínuo-1",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "O Método Direto: Caso Contínuo",
+    "text": "O Método Direto: Caso Contínuo\n\nDerivamos a FDA para achar a densidade: \\[f_Y(y) = \\frac{d}{dy} F_Y(y)\\]\n\nObservação importante:\n\nEm alguns casos, a integral pode ser escrita como: \\[F_Y(y) = \\int_{-\\infty}^{y} g(w) dw\\] Nesse caso, a função \\(g(y)\\) obtida diretamente já é a densidade de \\(Y\\)."
   },
   {
-    "objectID": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#função-de-probabilidade-multinomial",
-    "href": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#função-de-probabilidade-multinomial",
-    "title": "Distribuição Multinomial e Normal Bivariada",
-    "section": "Função de Probabilidade Multinomial",
-    "text": "Função de Probabilidade Multinomial\nSe o vetor \\(\\mathbf{X} = (X_1, X_2, ..., X_k)\\) segue a distribuição Multinomial, sua função de probabilidade conjunta é dada por: \\[ \\begin{aligned}\n  P(X_1=x_1, ..., X_k=x_k) = \\frac{n!}{x_1! x_2! \\cdot\\cdot\\cdot x_k!} p_1^{x_1} p_2^{x_2} \\cdot\\cdot\\cdot p_k^{x_k}\\\\\n  &= \\frac{n!}{\\prod_{i=1}^{k} x_i!} \\prod_{i=1}^{k} p_i^{x_i}\n  \\end{aligned}\n\\]\nPropriedades:\n\nEsperança: \\(E(X_i) = n p_i\\)\nVariância: \\(V(X_i) = n p_i (1 - p_i)\\)\nCovariância: \\(Cov(X_i, X_j) = -n p_i p_j\\) (nota: são negativamente correlacionadas!)"
+    "objectID": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#exemplo-7.2",
+    "href": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#exemplo-7.2",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "Exemplo 7.2",
+    "text": "Exemplo 7.2\nSeja \\(X\\) uma variável aleatória contínua com densidade \\(f(x) = \\frac{1}{2}\\), para \\(1 \\le x \\le 3\\). Obtenha a função de distribuição acumulada (FDA) e a densidade da nova variável \\(Y = e^X\\)."
   },
   {
-    "objectID": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#exemplo-6.1",
-    "href": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#exemplo-6.1",
-    "title": "Distribuição Multinomial e Normal Bivariada",
-    "section": "Exemplo 6.1",
-    "text": "Exemplo 6.1\nPara 10 lançamentos independentes de um dado equilibrado, seja \\(X_i\\) o número de ocorrências da face \\(i\\), para \\(i=1,...,6\\). Escreva a função de probabilidade conjunta de \\(\\mathbf{X} = (X_1, ..., X_6)\\)."
+    "objectID": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#exemplo-7.3",
+    "href": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#exemplo-7.3",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "Exemplo 7.3",
+    "text": "Exemplo 7.3\nSeja \\(X\\) uma variável aleatória contínua com densidade \\(f(x) = \\frac{1}{3} I_{[0,3]}(x)\\). A partir dessa variável, uma nova variável é definida por: \\[\n  Y = \\begin{cases}\n        3, & \\text{se } 2 &lt; X \\le 3; \\\\\n        X, & \\text{se } 0 \\le X \\le 2.\n  \\end{cases}\n\\] Determine a distribuição de \\(Y\\).\n\nNote que a distribuição tem uma parte discreta e outra contínua."
   },
   {
-    "objectID": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#exemplo-6.2",
-    "href": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#exemplo-6.2",
-    "title": "Distribuição Multinomial e Normal Bivariada",
-    "section": "Exemplo 6.2",
-    "text": "Exemplo 6.2\nEm uma urna há 2 bolas vermelhas, 3 verdes e 5 azuis. São selecionadas 4 bolas ao acaso da urna, com reposição. Qual a probabilidade de retirar 2 verdes e 2 azuis?"
-  },
-  {
-    "objectID": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#distribuição-normal-bivariada",
-    "href": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#distribuição-normal-bivariada",
-    "title": "Distribuição Multinomial e Normal Bivariada",
-    "section": "Distribuição Normal Bivariada",
-    "text": "Distribuição Normal Bivariada\nUm vetor aleatório contínuo \\(\\underset{\\widetilde{\\phantom{C}}}{X} = (X_1, X_2)\\) tem distribuição Normal Bivariada, denotado por \\(\\underset{\\widetilde{\\phantom{C}}}{X} \\sim N_2(\\mu_1, \\mu_2, \\sigma_1^2, \\sigma_2^2, \\rho)\\), se sua densidade conjunta é dada por:\n\n\\[f(x_1, x_2) = \\frac{1}{2\\pi\\sigma_1\\sigma_2\\sqrt{1-\\rho^2}} \\exp \\left\\{ -\\frac{1}{2(1-\\rho^2)} \\left[ \\left(\\frac{x_1-\\mu_1}{\\sigma_1}\\right)^2 + \\left(\\frac{x_2-\\mu_2}{\\sigma_2}\\right)^2 - 2\\rho\\left(\\frac{x_1-\\mu_1}{\\sigma_1}\\right)\\left(\\frac{x_2-\\mu_2}{\\sigma_2}\\right) \\right] \\right\\}\\]\n\nOnde:\n\n\\(\\mu_1, \\mu_2 \\in \\mathbb{R}\\) (Médias das marginais)\n\\(\\sigma_1 &gt; 0, \\sigma_2 &gt; 0\\) (Desvios-padrão)\n\\(-1 &lt; \\rho &lt; 1\\) (Coeficiente de correlação populacional) (Nota: Se \\(\\rho = 0\\), o termo cruzado some e a função se fatora no produto de duas Normais independentes)."
-  },
-  {
-    "objectID": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#exemplo-6.3",
-    "href": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#exemplo-6.3",
-    "title": "Distribuição Multinomial e Normal Bivariada",
-    "section": "Exemplo 6.3",
-    "text": "Exemplo 6.3\nO vetor \\((X, Y)\\) segue a distribuição normal bivariada com os seguintes parâmetros: \\(\\mu_X = \\mu_Y = 0\\), \\(\\sigma_X = \\sigma_Y = 1\\) e \\(\\rho = 1/2\\).\n\nComo fica a função de densidade conjunta \\(f_{X,Y}(x,y)\\)?\nQual a distribuição marginal de \\(X\\)?"
-  },
-  {
-    "objectID": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#a-generalização-normal-multivariada",
-    "href": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#a-generalização-normal-multivariada",
-    "title": "Distribuição Multinomial e Normal Bivariada",
-    "section": "A Generalização: Normal Multivariada",
-    "text": "A Generalização: Normal Multivariada\nUm vetor aleatório contínuo \\(\\underset{\\widetilde{\\phantom{X}}}{X}\\)\\(_{p \\times 1}\\) tem distribuição Normal multivariada, denotado por \\(\\underset{\\widetilde{\\phantom{X}}}{X} \\sim N_p(\\underset{\\widetilde{\\phantom{\\mu}}}{\\mu}, \\underset{\\widetilde{\\phantom{\\Sigma}}}{\\Sigma})\\), se sua densidade conjunta é dada matricialmente por: \\[f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{x}}}{x}) = \\frac{1}{(2\\pi)^{p/2} |\\underset{\\widetilde{\\phantom{\\Sigma}}}{\\Sigma}|^{1/2}} \\exp \\left\\{ -\\frac{1}{2} (\\underset{\\widetilde{\\phantom{x}}}{x} - \\underset{\\widetilde{\\phantom{\\mu}}}{\\mu})^\\top \\underset{\\widetilde{\\phantom{\\Sigma}}}{\\Sigma}^{-1} (\\mathbf{x} - \\underset{\\widetilde{\\phantom{\\mu}}}{\\mu}) \\right\\}\\]\n\n\\(\\underset{\\widetilde{\\phantom{\\mu}}}{\\mu}\\) é o vetor de médias (Esperança do vetor \\(E(\\underset{\\widetilde{\\phantom{X}}}{X})\\)).\n\\(\\underset{\\widetilde{\\phantom{\\Sigma}}}{\\Sigma}\\) é a matriz de variâncias-covariâncias do vetor (\\(V(\\mathbf{X})\\)).\n\\(|\\underset{\\widetilde{\\phantom{\\Sigma}}}{\\Sigma}|\\) é o determinante da matriz de covariância.\n\\(p\\) é a dimensão do vetor aleatório (número de variáveis)."
-  },
-  {
-    "objectID": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#exemplos-e-natureza-da-normal-multivariada",
-    "href": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#exemplos-e-natureza-da-normal-multivariada",
-    "title": "Distribuição Multinomial e Normal Bivariada",
-    "section": "Exemplos e Natureza da Normal Multivariada",
-    "text": "Exemplos e Natureza da Normal Multivariada\n\nIndividualmente as variáveis são Normais, portanto simétricas.\nA matriz \\(\\underset{\\widetilde{\\phantom{\\Sigma}}}{\\Sigma}\\) captura a relação linear (covariância) entre elas.\nOcorrem frequentemente na natureza por resultarem da combinação de muitos fatores de pequena contribuição (Teorema Central do Limite).\n\nExemplos Práticos:\n\nCaracterísticas genéticas e morfológicas (Ex: Peso, comprimento e circunferência de uma banana ou crânio fóssil).\nÍndices econômicos (Variação conjunta de preços, inflação e câmbio)."
-  },
-  {
-    "objectID": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#importância-e-aplicações",
-    "href": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#importância-e-aplicações",
-    "title": "Distribuição Multinomial e Normal Bivariada",
-    "section": "Importância e Aplicações",
-    "text": "Importância e Aplicações\nA grande força da Normal Multivariada está em modelar a estrutura de correlação ou dependência entre múltiplas variáveis simultaneamente. É a base teórica para diversas áreas da estatística avançada:\n\nSéries Temporais e Geoestatística.\nEixo central das Técnicas de Análise Multivariada:\n\nAnálise de Discriminante Linear.\nAnálise Fatorial (Exploratória e Confirmatória) e Componentes Principais.\nAnálise de Correlação Canônica.\nAnálise de Variância Multivariada (MANOVA)."
-  },
-  {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#definição-4.1-distribuição-condicional",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#definição-4.1-distribuição-condicional",
-    "title": "Distribuição Condicional",
-    "section": "Definição 4.1: Distribuição Condicional",
-    "text": "Definição 4.1: Distribuição Condicional\nSejam \\(X\\) e \\(Y\\) duas variáveis aleatórias e \\(B_1\\) e \\(B_2\\) intervalos com \\(P(Y \\in B_2) &gt; 0\\). A distribuição condicional de \\(X\\) dado \\(Y \\in B_2\\) é dada por: \\[ P(X \\in B_1 | Y \\in B_2) = \\frac{P([X \\in B_1] \\cap [Y \\in B_2])}{P(Y \\in B_2)}. \\]\n\nSe \\(P(Y \\in B_2) = 0\\), definimos \\(P(X \\in B_1 | Y \\in B_2) = P(X \\in B_1)\\)."
-  },
-  {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-discreto",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-discreto",
-    "title": "Distribuição Condicional",
-    "section": "Distribuição Condicional: Caso Discreto",
-    "text": "Distribuição Condicional: Caso Discreto\n\nSe \\(X\\) e \\(Y\\) forem discretas, a probabilidade condicional pode ser escrita na notação de função de probabilidade da seguinte forma: \\[P(X=x | Y=y) = \\frac{P(X=x, Y=y)}{P(Y=y)}\\]\nAs demais relações seguem de forma análoga."
-  },
-  {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.1",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.1",
-    "title": "Distribuição Condicional",
-    "section": "Exemplo 4.1",
-    "text": "Exemplo 4.1\nSuponha que \\(p(x,y)\\), a função discreta de probabilidade conjunta de \\(X\\) e \\(Y\\), seja dada por:\n\n\\(p(0,0)=0,\\!4\\)\n\\(p(0,1)=0,\\!2\\)\n\\(p(1,0)=0,\\!1\\)\n\\(p(1,1)=0,\\!3\\)\n\nDetermine a função de probabilidade condicional de \\(X\\) dado que \\(Y=1\\)."
-  },
-  {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.2",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.2",
-    "title": "Distribuição Condicional",
-    "section": "Exemplo 4.2",
-    "text": "Exemplo 4.2\nSuponha que a função de probabilidade conjunta de X e Y seja dada por:\n\\[p(x,y) = c(x+y), \\text{ para } x \\in \\{1, 2, 3\\} \\text{ e } y \\in \\{1, 2\\}.\\]\n\nDetermine o valor da constante \\(c\\).\nEncontre a função de probabilidade marginal de Y, \\(p_Y(y)\\).\nDetermine a função de probabilidade condicional de X dado \\(Y=1\\), ou seja, \\(P(X=x | Y=1)\\)."
-  },
-  {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#caso-discreto-eventos-e-probabilidade-total",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#caso-discreto-eventos-e-probabilidade-total",
-    "title": "Distribuição Condicional",
-    "section": "Caso Discreto: Eventos e Probabilidade Total",
-    "text": "Caso Discreto: Eventos e Probabilidade Total\n\nSendo \\(X\\) uma variável qualquer e \\(Y\\) discreta, temos: \\[P(X \\in B | Y=y) = \\frac{P([X \\in B] \\cap [Y=y])}{P(Y=y)}\\]\nLei da probabilidade total: \\(P(X \\in B) = \\sum_y P(Y=y)P(X \\in B | Y=y)\\).\nFunção de distribuição condicional: \\(F_{X|Y}(x | Y=y) = \\frac{P([X \\le x] \\cap [Y=y])}{P(Y=y)}\\).\n\\(F_X(x) = \\sum_y P(Y=y)F_{X|Y}(x | Y=y)\\)."
-  },
-  {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.3",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.3",
-    "title": "Distribuição Condicional",
-    "section": "Exemplo 4.3",
-    "text": "Exemplo 4.3\nUma seguradora classifica seus clientes em dois perfis de risco: \\(Y=1\\) (Baixo Risco) e \\(Y=2\\) (Alto Risco). A proporção na carteira é \\(P(Y=1) = 0,\\!6\\) e \\(P(Y=2) = 0,\\!4\\). Seja \\(X\\) o número de sinistros acionados por um cliente em um ano. As probabilidades condicionais de \\(X\\) dado o perfil \\(Y\\) são:\n\nSe Baixo Risco (\\(Y=1\\)): \\(P(X=0|Y=1) = 0,8\\) e \\(P(X=1|Y=1) = 0,2\\)\nSe Alto Risco (\\(Y=2\\)): \\(P(X=0|Y=2) = 0,5\\); \\(P(X=1|Y=2) = 0,3\\) e \\(P(X=2|Y=2) = 0,2\\)\n\n\nDetermine \\(P(X \\in B | Y=1)\\) e \\(P(X \\in B | Y=2)\\).\nUtilize a Lei da Probabilidade Total para calcular \\(P(X \\geq 1)\\)."
-  },
-  {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-contínuo",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-contínuo",
-    "title": "Distribuição Condicional",
-    "section": "Distribuição Condicional: Caso Contínuo",
-    "text": "Distribuição Condicional: Caso Contínuo\n\nSe \\(X\\) e \\(Y\\) são variáveis aleatórias contínuas, a densidade condicional de \\(X\\) dado \\(Y\\) é: \\[f_{X|Y}(x|y) = \\frac{f_{X,Y}(x,y)}{f_Y(y)}\\] (ou seja, a conjunta dividida pela marginal).\nA função de distribuição condicional de \\(X\\) dado \\(Y\\) é: \\[F_{X|Y}(x|y) = \\int_{-\\infty}^{x} f_{X|Y}(t|y)dt\\]"
-  },
-  {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-contínuo-consequências",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-contínuo-consequências",
-    "title": "Distribuição Condicional",
-    "section": "Distribuição Condicional: Caso Contínuo (Consequências)",
-    "text": "Distribuição Condicional: Caso Contínuo (Consequências)\nFórmulas válidas:\n\n\\(F_{X,Y}(x,y) = \\int_{-\\infty}^{y} f_Y(t)F_{X|Y}(x|t)dt\\)\n\\(F_X(x) = \\int_{-\\infty}^{+\\infty} f_Y(y)F_{X|Y}(x|y)dy\\)"
-  },
-  {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.4",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.4",
-    "title": "Distribuição Condicional",
-    "section": "Exemplo 4.4",
-    "text": "Exemplo 4.4\nA função de densidade conjunta de \\(X\\) e \\(Y\\) é dada por: \\[f_{X,Y}(x,y) = \\frac{12}{5}x(2-x-y)\\] para \\(0&lt;x&lt;1, 0&lt;y&lt;1\\).\nObtenha a densidade condicional de \\(X\\) dado que \\(Y=y\\), onde \\(0&lt;y&lt;1\\)."
-  },
-  {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.5",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.5",
-    "title": "Distribuição Condicional",
-    "section": "Exemplo 4.5",
-    "text": "Exemplo 4.5\nSuponha que a densidade conjunta de X e Y seja dada por: \\[f_{X,Y}(x, y) = \\frac{e^{-x/y}e^{-y}}{y}\\] para \\(0 &lt; x &lt; \\infty, 0 &lt; y &lt; \\infty\\). Determine \\(P(X &gt; 1 | Y = y)\\)."
-  },
-  {
-    "objectID": "aulas/06-Dist_multinomial_normal_bivariada.html",
-    "href": "aulas/06-Dist_multinomial_normal_bivariada.html",
-    "title": "Conteúdo 6",
-    "section": "",
-    "text": "Este material aborda duas distribuições fundamentais em modelos multivariados: a distribuição multinomial, como generalização da binomial para múltiplas categorias, e a distribuição normal bivariada, como caso particular da normal multivariada. São apresentados os principais resultados teóricos, incluindo a função de probabilidade da multinomial, suas propriedades e exemplos aplicados, bem como a estrutura da densidade normal bivariada, interpretação do parâmetro de correlação e generalização para dimensões maiores.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 6",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: V.A. $n$-dimensionais",
-      "6- Dist. Multinomial e Normal Bivariada"
-    ]
-  },
-  {
-    "objectID": "aulas/06-Dist_multinomial_normal_bivariada.html#distribuição-multinomial-e-normal-bivariada",
-    "href": "aulas/06-Dist_multinomial_normal_bivariada.html#distribuição-multinomial-e-normal-bivariada",
-    "title": "Conteúdo 6",
-    "section": "",
-    "text": "Este material aborda duas distribuições fundamentais em modelos multivariados: a distribuição multinomial, como generalização da binomial para múltiplas categorias, e a distribuição normal bivariada, como caso particular da normal multivariada. São apresentados os principais resultados teóricos, incluindo a função de probabilidade da multinomial, suas propriedades e exemplos aplicados, bem como a estrutura da densidade normal bivariada, interpretação do parâmetro de correlação e generalização para dimensões maiores.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 6",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: V.A. $n$-dimensionais",
-      "6- Dist. Multinomial e Normal Bivariada"
-    ]
-  },
-  {
-    "objectID": "aulas/05-Independencia_de_VA.html",
-    "href": "aulas/05-Independencia_de_VA.html",
-    "title": "Conteúdo 5",
-    "section": "",
-    "text": "Este material apresenta o conceito de independência entre variáveis aleatórias, destacando suas diferentes caracterizações em termos de probabilidades, funções de distribuição e densidades. São discutidas as condições equivalentes de independência, sua generalização para múltiplas variáveis e critérios práticos para identificação de dependência, especialmente no caso contínuo.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 5",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: V.A. $n$-dimensionais",
-      "5- Indepedência de VAs"
-    ]
-  },
-  {
-    "objectID": "aulas/05-Independencia_de_VA.html#independência-entre-variáveis-aleatórias",
-    "href": "aulas/05-Independencia_de_VA.html#independência-entre-variáveis-aleatórias",
-    "title": "Conteúdo 5",
-    "section": "",
-    "text": "Este material apresenta o conceito de independência entre variáveis aleatórias, destacando suas diferentes caracterizações em termos de probabilidades, funções de distribuição e densidades. São discutidas as condições equivalentes de independência, sua generalização para múltiplas variáveis e critérios práticos para identificação de dependência, especialmente no caso contínuo.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 5",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: V.A. $n$-dimensionais",
-      "5- Indepedência de VAs"
-    ]
-  },
-  {
-    "objectID": "aulas/03-Vetores_aleatorios_continuos.html",
-    "href": "aulas/03-Vetores_aleatorios_continuos.html",
-    "title": "Conteúdo 3",
-    "section": "",
-    "text": "Este material apresenta a introdução aos vetores aleatórios contínuos, com ênfase na definição e interpretação da função densidade conjunta e de suas propriedades fundamentais. São abordados os conceitos de distribuição marginal por meio de integração, bem como a relação entre densidade e função de distribuição.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 3",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: V.A. $n$-dimensionais",
-      "3- Vetores Aleatórios Contínuos"
-    ]
-  },
-  {
-    "objectID": "aulas/03-Vetores_aleatorios_continuos.html#vetores-aleatórios-contínuos",
-    "href": "aulas/03-Vetores_aleatorios_continuos.html#vetores-aleatórios-contínuos",
-    "title": "Conteúdo 3",
-    "section": "",
-    "text": "Este material apresenta a introdução aos vetores aleatórios contínuos, com ênfase na definição e interpretação da função densidade conjunta e de suas propriedades fundamentais. São abordados os conceitos de distribuição marginal por meio de integração, bem como a relação entre densidade e função de distribuição.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 3",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: V.A. $n$-dimensionais",
-      "3- Vetores Aleatórios Contínuos"
-    ]
-  },
-  {
-    "objectID": "aulas/01-Apresetacao_da_disciplina.html",
-    "href": "aulas/01-Apresetacao_da_disciplina.html",
-    "title": "Conteúdo 1",
-    "section": "",
-    "text": "Este material apresenta a estrutura da disciplina Probabilidade I, com informações sobre carga horária, cronograma, datas importantes, metodologia e objetivos do curso. Também introduz os primeiros conceitos da teoria dos conjuntos, fundamentais para o estudo da probabilidade, incluindo definições formais, operações entre conjuntos e propriedades básicas.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 1",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: V.A. $n$-dimensionais",
-      "1- Apresentação da Disciplina"
-    ]
-  },
-  {
-    "objectID": "aulas/01-Apresetacao_da_disciplina.html#apresentação-da-disciplina",
-    "href": "aulas/01-Apresetacao_da_disciplina.html#apresentação-da-disciplina",
-    "title": "Conteúdo 1",
-    "section": "",
-    "text": "Este material apresenta a estrutura da disciplina Probabilidade I, com informações sobre carga horária, cronograma, datas importantes, metodologia e objetivos do curso. Também introduz os primeiros conceitos da teoria dos conjuntos, fundamentais para o estudo da probabilidade, incluindo definições formais, operações entre conjuntos e propriedades básicas.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 1",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: V.A. $n$-dimensionais",
-      "1- Apresentação da Disciplina"
-    ]
-  },
-  {
-    "objectID": "aulas/04-Distribuicao_condicional.html",
-    "href": "aulas/04-Distribuicao_condicional.html",
-    "title": "Conteúdo 4",
-    "section": "",
-    "text": "Este material apresenta o conceito de distribuição condicional no contexto de variáveis aleatórias discretas e contínuas, com ênfase na relação entre distribuições conjuntas, marginais e condicionais. São desenvolvidas as principais fórmulas, incluindo a lei da probabilidade total, e explorados exemplos que envolvem cálculo de probabilidades condicionais e construção de distribuições a partir de informações parciais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: V.A. $n$-dimensionais",
-      "4- Distribuição Condicional"
-    ]
-  },
-  {
-    "objectID": "aulas/04-Distribuicao_condicional.html#distribuição-condicional",
-    "href": "aulas/04-Distribuicao_condicional.html#distribuição-condicional",
-    "title": "Conteúdo 4",
-    "section": "",
-    "text": "Este material apresenta o conceito de distribuição condicional no contexto de variáveis aleatórias discretas e contínuas, com ênfase na relação entre distribuições conjuntas, marginais e condicionais. São desenvolvidas as principais fórmulas, incluindo a lei da probabilidade total, e explorados exemplos que envolvem cálculo de probabilidades condicionais e construção de distribuições a partir de informações parciais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: V.A. $n$-dimensionais",
-      "4- Distribuição Condicional"
-    ]
-  },
-  {
-    "objectID": "aulas/02-Vetores_aleatorios_discretos.html",
-    "href": "aulas/02-Vetores_aleatorios_discretos.html",
-    "title": "Conteúdo 2",
-    "section": "",
-    "text": "Este material apresenta a introdução aos vetores aleatórios discretos, com foco na definição da função de probabilidade conjunta e em suas propriedades fundamentais. São discutidos os conceitos de distribuição marginal e formas de representação, como tabelas de dupla entrada, além de exemplos que exploram a modelagem de fenômenos envolvendo múltiplas variáveis aleatórias.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 2",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: V.A. $n$-dimensionais",
-      "2- Vetores Aleatórios Discretos"
-    ]
-  },
-  {
-    "objectID": "aulas/02-Vetores_aleatorios_discretos.html#vetores-aleatórios-discretos",
-    "href": "aulas/02-Vetores_aleatorios_discretos.html#vetores-aleatórios-discretos",
-    "title": "Conteúdo 2",
-    "section": "",
-    "text": "Este material apresenta a introdução aos vetores aleatórios discretos, com foco na definição da função de probabilidade conjunta e em suas propriedades fundamentais. São discutidos os conceitos de distribuição marginal e formas de representação, como tabelas de dupla entrada, além de exemplos que exploram a modelagem de fenômenos envolvendo múltiplas variáveis aleatórias.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 2",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: V.A. $n$-dimensionais",
-      "2- Vetores Aleatórios Discretos"
-    ]
-  },
-  {
-    "objectID": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#definição-3.1-vetor-aleatório-contínuo",
-    "href": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#definição-3.1-vetor-aleatório-contínuo",
-    "title": "Vetores Aleatórios Contínuos",
-    "section": "Definição 3.1: Vetor Aleatório Contínuo",
-    "text": "Definição 3.1: Vetor Aleatório Contínuo\n\nUm vetor aleatório é contínuo se sua distribuição pode ser descrita por uma densidade conjunta.\nAqui a probabilidade não é mais uma soma, mas o volume sob uma superfície \\(f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{x}}}{x})\\):\n\n\\[F_\\underset{\\widetilde{\\phantom{X}}}{X}(\\underset{\\widetilde{\\phantom{x}}}{x}) = \\int_{-\\infty}^{x_1} \\dots \\int_{-\\infty}^{x_n} f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{y}}}{y}) dy_1 \\dots dy_n\\]"
-  },
-  {
-    "objectID": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#propriedades-fundamentais",
-    "href": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#propriedades-fundamentais",
-    "title": "Vetores Aleatórios Contínuos",
-    "section": "Propriedades Fundamentais",
-    "text": "Propriedades Fundamentais\nA função densidade conjunta satisfaz:\nP3.1. Não existe probabilidade negativa. \\[f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{x}}}{x}) \\ge 0 \\text{ para todo } \\underset{\\widetilde{\\phantom{x}}}{x}.\\]\nP3.2. A “massa” total é 1. \\[\\int_{-\\infty}^{\\infty} \\dots \\int_{-\\infty}^{\\infty} f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{x}}}{x}) d\\underset{\\widetilde{\\phantom{x}}}{x} = 1.\\]"
-  },
-  {
-    "objectID": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#definição-3.2-densidade-marginal",
-    "href": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#definição-3.2-densidade-marginal",
-    "title": "Vetores Aleatórios Contínuos",
-    "section": "Definição 3.2: Densidade Marginal",
-    "text": "Definição 3.2: Densidade Marginal\n\nPara encontrar a densidade de apenas uma variável, realizamos uma “projeção” integrando sobre todas as outras:\n\n\\[f_{X_k}(x_k) = \\int_{-\\infty}^{\\infty} \\dots \\int_{-\\infty}^{\\infty} f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{x}}}{x}) \\,dx_1 \\cdots dx_{k-1}\\, dx_{k+1} \\cdots dx_n\\]\n\n\n\n\n\n\nNota\n\n\nA densidade conjunta é obtida da distribuição através de derivadas parciais sucessivas."
-  },
-  {
-    "objectID": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.1",
-    "href": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.1",
-    "title": "Vetores Aleatórios Contínuos",
-    "section": "Exemplo 3.1",
-    "text": "Exemplo 3.1\nA função de densidade conjunta de X e Y é dada por \\[f_{X,Y}(x,y) = 2e^{-x}e^{-2y}, \\quad 0 &lt; x, y &lt; \\infty\\]\nCalcule\n\n\\(P(X &gt; 1, Y &lt; 1)\\) (Região retangular)\n\\(P(X &lt; Y)\\) (Região triangular - Cuidado com os limites!)\nas densidades marginais de \\(X\\) e de \\(Y\\)."
-  },
-  {
-    "objectID": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.2",
-    "href": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.2",
-    "title": "Vetores Aleatórios Contínuos",
-    "section": "Exemplo 3.2",
-    "text": "Exemplo 3.2\nConsidere um círculo de raio \\(R\\) e um ponto escolhido aleatoriamente em seu interior, com distribuição uniforme (todas as regiões são igualmente prováveis). Se o centro está na origem e \\(X,Y\\) são as coordenadas do ponto, então \\((X,Y)\\) tem a mesma probabilidade em qualquer região do círculo, e sua densidade conjunta é dada por \\[f_{X,Y}(x,y) = c, \\text{ se } x^2 + y^2 \\le R^2.\\]\n\nDeterminar a constante \\(c\\) (Dica: Use a área do círculo).\nDetermine a marginal de \\(X\\) e a de \\(Y\\).\nCalcular \\(E[D]\\), onde \\(D\\) é a distância da origem."
-  },
-  {
-    "objectID": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.3",
-    "href": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.3",
-    "title": "Vetores Aleatórios Contínuos",
-    "section": "Exemplo 3.3",
-    "text": "Exemplo 3.3\nDada a densidade conjunta \\(f_{X,Y}(x,y) = e^{-(x+y)}\\) para \\(x, y &gt; 0\\), determine a densidade da variável \\(Z = X/Y\\)."
+    "objectID": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#exemplo-7.4",
+    "href": "slides/07-Funcoes_de_VAs/07-Funcoes_de_VAs.html#exemplo-7.4",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "Exemplo 7.4",
+    "text": "Exemplo 7.4\nA função de densidade conjunta de \\(X\\) e \\(Y\\) é dada por: \\[f_{X,Y}(x, y) = e^{-(x+y)}, \\quad x &gt; 0, y &gt; 0\\] Determine a função de distribuição acumulada (FDA) da variável \\(Z = 2X + Y\\)."
   },
   {
     "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#por-que-estudar-probabilidade-iii",
@@ -540,6 +249,405 @@
     "title": "Apresentação da Disciplina",
     "section": "Exemplo 1.2",
     "text": "Exemplo 1.2\nResolva as seguintes integrais:\n\nCalcule \\(\\int_{0}^{\\infty} e^{-3x} dx\\).\nCalcule \\(\\int x \\cdot e^{-x^2} dx\\).\nCalcule \\(\\int_{0}^{\\infty} x \\cdot e^{-x} dx\\).\nCalcule \\(\\int x^2 \\cdot e^{-x} dx\\).\nDada a densidade conjunta \\(f(x, y) = c(x+y)\\) no domínio \\(0 &lt; x &lt; 1\\) e \\(0 &lt; y &lt; 1\\), calcule a integral dupla \\(\\int_{0}^{1} \\int_{0}^{1} (x+y) dy dx\\)."
+  },
+  {
+    "objectID": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#definição-3.1-vetor-aleatório-contínuo",
+    "href": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#definição-3.1-vetor-aleatório-contínuo",
+    "title": "Vetores Aleatórios Contínuos",
+    "section": "Definição 3.1: Vetor Aleatório Contínuo",
+    "text": "Definição 3.1: Vetor Aleatório Contínuo\n\nUm vetor aleatório é contínuo se sua distribuição pode ser descrita por uma densidade conjunta.\nAqui a probabilidade não é mais uma soma, mas o volume sob uma superfície \\(f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{x}}}{x})\\):\n\n\\[F_\\underset{\\widetilde{\\phantom{X}}}{X}(\\underset{\\widetilde{\\phantom{x}}}{x}) = \\int_{-\\infty}^{x_1} \\dots \\int_{-\\infty}^{x_n} f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{y}}}{y}) dy_1 \\dots dy_n\\]"
+  },
+  {
+    "objectID": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#propriedades-fundamentais",
+    "href": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#propriedades-fundamentais",
+    "title": "Vetores Aleatórios Contínuos",
+    "section": "Propriedades Fundamentais",
+    "text": "Propriedades Fundamentais\nA função densidade conjunta satisfaz:\nP3.1. Não existe probabilidade negativa. \\[f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{x}}}{x}) \\ge 0 \\text{ para todo } \\underset{\\widetilde{\\phantom{x}}}{x}.\\]\nP3.2. A “massa” total é 1. \\[\\int_{-\\infty}^{\\infty} \\dots \\int_{-\\infty}^{\\infty} f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{x}}}{x}) d\\underset{\\widetilde{\\phantom{x}}}{x} = 1.\\]"
+  },
+  {
+    "objectID": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#definição-3.2-densidade-marginal",
+    "href": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#definição-3.2-densidade-marginal",
+    "title": "Vetores Aleatórios Contínuos",
+    "section": "Definição 3.2: Densidade Marginal",
+    "text": "Definição 3.2: Densidade Marginal\n\nPara encontrar a densidade de apenas uma variável, realizamos uma “projeção” integrando sobre todas as outras:\n\n\\[f_{X_k}(x_k) = \\int_{-\\infty}^{\\infty} \\dots \\int_{-\\infty}^{\\infty} f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{x}}}{x}) \\,dx_1 \\cdots dx_{k-1}\\, dx_{k+1} \\cdots dx_n\\]\n\n\n\n\n\n\nNota\n\n\nA densidade conjunta é obtida da distribuição através de derivadas parciais sucessivas."
+  },
+  {
+    "objectID": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.1",
+    "href": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.1",
+    "title": "Vetores Aleatórios Contínuos",
+    "section": "Exemplo 3.1",
+    "text": "Exemplo 3.1\nA função de densidade conjunta de X e Y é dada por \\[f_{X,Y}(x,y) = 2e^{-x}e^{-2y}, \\quad 0 &lt; x, y &lt; \\infty\\]\nCalcule\n\n\\(P(X &gt; 1, Y &lt; 1)\\) (Região retangular)\n\\(P(X &lt; Y)\\) (Região triangular - Cuidado com os limites!)\nas densidades marginais de \\(X\\) e de \\(Y\\)."
+  },
+  {
+    "objectID": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.2",
+    "href": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.2",
+    "title": "Vetores Aleatórios Contínuos",
+    "section": "Exemplo 3.2",
+    "text": "Exemplo 3.2\nConsidere um círculo de raio \\(R\\) e um ponto escolhido aleatoriamente em seu interior, com distribuição uniforme (todas as regiões são igualmente prováveis). Se o centro está na origem e \\(X,Y\\) são as coordenadas do ponto, então \\((X,Y)\\) tem a mesma probabilidade em qualquer região do círculo, e sua densidade conjunta é dada por \\[f_{X,Y}(x,y) = c, \\text{ se } x^2 + y^2 \\le R^2.\\]\n\nDeterminar a constante \\(c\\) (Dica: Use a área do círculo).\nDetermine a marginal de \\(X\\) e a de \\(Y\\).\nCalcular \\(E[D]\\), onde \\(D\\) é a distância da origem."
+  },
+  {
+    "objectID": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.3",
+    "href": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.3",
+    "title": "Vetores Aleatórios Contínuos",
+    "section": "Exemplo 3.3",
+    "text": "Exemplo 3.3\nDada a densidade conjunta \\(f_{X,Y}(x,y) = e^{-(x+y)}\\) para \\(x, y &gt; 0\\), determine a densidade da variável \\(Z = X/Y\\)."
+  },
+  {
+    "objectID": "aulas/02-Vetores_aleatorios_discretos.html",
+    "href": "aulas/02-Vetores_aleatorios_discretos.html",
+    "title": "Conteúdo 2",
+    "section": "",
+    "text": "Este material apresenta a introdução aos vetores aleatórios discretos, com foco na definição da função de probabilidade conjunta e em suas propriedades fundamentais. São discutidos os conceitos de distribuição marginal e formas de representação, como tabelas de dupla entrada, além de exemplos que exploram a modelagem de fenômenos envolvendo múltiplas variáveis aleatórias.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 2",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "2- Vetores Aleatórios Discretos"
+    ]
+  },
+  {
+    "objectID": "aulas/02-Vetores_aleatorios_discretos.html#vetores-aleatórios-discretos",
+    "href": "aulas/02-Vetores_aleatorios_discretos.html#vetores-aleatórios-discretos",
+    "title": "Conteúdo 2",
+    "section": "",
+    "text": "Este material apresenta a introdução aos vetores aleatórios discretos, com foco na definição da função de probabilidade conjunta e em suas propriedades fundamentais. São discutidos os conceitos de distribuição marginal e formas de representação, como tabelas de dupla entrada, além de exemplos que exploram a modelagem de fenômenos envolvendo múltiplas variáveis aleatórias.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 2",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "2- Vetores Aleatórios Discretos"
+    ]
+  },
+  {
+    "objectID": "aulas/04-Distribuicao_condicional.html",
+    "href": "aulas/04-Distribuicao_condicional.html",
+    "title": "Conteúdo 4",
+    "section": "",
+    "text": "Este material apresenta o conceito de distribuição condicional no contexto de variáveis aleatórias discretas e contínuas, com ênfase na relação entre distribuições conjuntas, marginais e condicionais. São desenvolvidas as principais fórmulas, incluindo a lei da probabilidade total, e explorados exemplos que envolvem cálculo de probabilidades condicionais e construção de distribuições a partir de informações parciais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "4- Distribuição Condicional"
+    ]
+  },
+  {
+    "objectID": "aulas/04-Distribuicao_condicional.html#distribuição-condicional",
+    "href": "aulas/04-Distribuicao_condicional.html#distribuição-condicional",
+    "title": "Conteúdo 4",
+    "section": "",
+    "text": "Este material apresenta o conceito de distribuição condicional no contexto de variáveis aleatórias discretas e contínuas, com ênfase na relação entre distribuições conjuntas, marginais e condicionais. São desenvolvidas as principais fórmulas, incluindo a lei da probabilidade total, e explorados exemplos que envolvem cálculo de probabilidades condicionais e construção de distribuições a partir de informações parciais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "4- Distribuição Condicional"
+    ]
+  },
+  {
+    "objectID": "aulas/07-Funcoes_de_VAs.html",
+    "href": "aulas/07-Funcoes_de_VAs.html",
+    "title": "Conteúdo 7",
+    "section": "",
+    "text": "Este material aborda o estudo de funções de variáveis aleatórias, com foco em como obter a distribuição de variáveis transformadas a partir de distribuições conhecidas. São explorados o método direto para casos discretos e contínuos, incluindo a utilização da função de distribuição acumulada e a análise de regiões de integração.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 6",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Função de Variáveis Aleatórias",
+      "7- Método Direto"
+    ]
+  },
+  {
+    "objectID": "aulas/07-Funcoes_de_VAs.html#funções-de-variáveis-aleatórias-método-direto",
+    "href": "aulas/07-Funcoes_de_VAs.html#funções-de-variáveis-aleatórias-método-direto",
+    "title": "Conteúdo 7",
+    "section": "",
+    "text": "Este material aborda o estudo de funções de variáveis aleatórias, com foco em como obter a distribuição de variáveis transformadas a partir de distribuições conhecidas. São explorados o método direto para casos discretos e contínuos, incluindo a utilização da função de distribuição acumulada e a análise de regiões de integração.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 6",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Função de Variáveis Aleatórias",
+      "7- Método Direto"
+    ]
+  },
+  {
+    "objectID": "aulas/03-Vetores_aleatorios_continuos.html",
+    "href": "aulas/03-Vetores_aleatorios_continuos.html",
+    "title": "Conteúdo 3",
+    "section": "",
+    "text": "Este material apresenta a introdução aos vetores aleatórios contínuos, com ênfase na definição e interpretação da função densidade conjunta e de suas propriedades fundamentais. São abordados os conceitos de distribuição marginal por meio de integração, bem como a relação entre densidade e função de distribuição.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 3",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "3- Vetores Aleatórios Contínuos"
+    ]
+  },
+  {
+    "objectID": "aulas/03-Vetores_aleatorios_continuos.html#vetores-aleatórios-contínuos",
+    "href": "aulas/03-Vetores_aleatorios_continuos.html#vetores-aleatórios-contínuos",
+    "title": "Conteúdo 3",
+    "section": "",
+    "text": "Este material apresenta a introdução aos vetores aleatórios contínuos, com ênfase na definição e interpretação da função densidade conjunta e de suas propriedades fundamentais. São abordados os conceitos de distribuição marginal por meio de integração, bem como a relação entre densidade e função de distribuição.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 3",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "3- Vetores Aleatórios Contínuos"
+    ]
+  },
+  {
+    "objectID": "aulas/01-Apresetacao_da_disciplina.html",
+    "href": "aulas/01-Apresetacao_da_disciplina.html",
+    "title": "Conteúdo 1",
+    "section": "",
+    "text": "Este material apresenta a estrutura da disciplina Probabilidade I, com informações sobre carga horária, cronograma, datas importantes, metodologia e objetivos do curso. Também introduz os primeiros conceitos da teoria dos conjuntos, fundamentais para o estudo da probabilidade, incluindo definições formais, operações entre conjuntos e propriedades básicas.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 1",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "1- Apresentação da Disciplina"
+    ]
+  },
+  {
+    "objectID": "aulas/01-Apresetacao_da_disciplina.html#apresentação-da-disciplina",
+    "href": "aulas/01-Apresetacao_da_disciplina.html#apresentação-da-disciplina",
+    "title": "Conteúdo 1",
+    "section": "",
+    "text": "Este material apresenta a estrutura da disciplina Probabilidade I, com informações sobre carga horária, cronograma, datas importantes, metodologia e objetivos do curso. Também introduz os primeiros conceitos da teoria dos conjuntos, fundamentais para o estudo da probabilidade, incluindo definições formais, operações entre conjuntos e propriedades básicas.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 1",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "1- Apresentação da Disciplina"
+    ]
+  },
+  {
+    "objectID": "aulas/05-Independencia_de_VA.html",
+    "href": "aulas/05-Independencia_de_VA.html",
+    "title": "Conteúdo 5",
+    "section": "",
+    "text": "Este material apresenta o conceito de independência entre variáveis aleatórias, destacando suas diferentes caracterizações em termos de probabilidades, funções de distribuição e densidades. São discutidas as condições equivalentes de independência, sua generalização para múltiplas variáveis e critérios práticos para identificação de dependência, especialmente no caso contínuo.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 5",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "5- Indepedência de VAs"
+    ]
+  },
+  {
+    "objectID": "aulas/05-Independencia_de_VA.html#independência-entre-variáveis-aleatórias",
+    "href": "aulas/05-Independencia_de_VA.html#independência-entre-variáveis-aleatórias",
+    "title": "Conteúdo 5",
+    "section": "",
+    "text": "Este material apresenta o conceito de independência entre variáveis aleatórias, destacando suas diferentes caracterizações em termos de probabilidades, funções de distribuição e densidades. São discutidas as condições equivalentes de independência, sua generalização para múltiplas variáveis e critérios práticos para identificação de dependência, especialmente no caso contínuo.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 5",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "5- Indepedência de VAs"
+    ]
+  },
+  {
+    "objectID": "aulas/06-Dist_multinomial_normal_bivariada.html",
+    "href": "aulas/06-Dist_multinomial_normal_bivariada.html",
+    "title": "Conteúdo 6",
+    "section": "",
+    "text": "Este material aborda duas distribuições fundamentais em modelos multivariados: a distribuição multinomial, como generalização da binomial para múltiplas categorias, e a distribuição normal bivariada, como caso particular da normal multivariada. São apresentados os principais resultados teóricos, incluindo a função de probabilidade da multinomial, suas propriedades e exemplos aplicados, bem como a estrutura da densidade normal bivariada, interpretação do parâmetro de correlação e generalização para dimensões maiores.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 6",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "6- Dist. Multinomial e Normal Bivariada"
+    ]
+  },
+  {
+    "objectID": "aulas/06-Dist_multinomial_normal_bivariada.html#distribuição-multinomial-e-normal-bivariada",
+    "href": "aulas/06-Dist_multinomial_normal_bivariada.html#distribuição-multinomial-e-normal-bivariada",
+    "title": "Conteúdo 6",
+    "section": "",
+    "text": "Este material aborda duas distribuições fundamentais em modelos multivariados: a distribuição multinomial, como generalização da binomial para múltiplas categorias, e a distribuição normal bivariada, como caso particular da normal multivariada. São apresentados os principais resultados teóricos, incluindo a função de probabilidade da multinomial, suas propriedades e exemplos aplicados, bem como a estrutura da densidade normal bivariada, interpretação do parâmetro de correlação e generalização para dimensões maiores.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 6",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "6- Dist. Multinomial e Normal Bivariada"
+    ]
+  },
+  {
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#definição-4.1-distribuição-condicional",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#definição-4.1-distribuição-condicional",
+    "title": "Distribuição Condicional",
+    "section": "Definição 4.1: Distribuição Condicional",
+    "text": "Definição 4.1: Distribuição Condicional\nSejam \\(X\\) e \\(Y\\) duas variáveis aleatórias e \\(B_1\\) e \\(B_2\\) intervalos com \\(P(Y \\in B_2) &gt; 0\\). A distribuição condicional de \\(X\\) dado \\(Y \\in B_2\\) é dada por: \\[ P(X \\in B_1 | Y \\in B_2) = \\frac{P([X \\in B_1] \\cap [Y \\in B_2])}{P(Y \\in B_2)}. \\]\n\nSe \\(P(Y \\in B_2) = 0\\), definimos \\(P(X \\in B_1 | Y \\in B_2) = P(X \\in B_1)\\)."
+  },
+  {
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-discreto",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-discreto",
+    "title": "Distribuição Condicional",
+    "section": "Distribuição Condicional: Caso Discreto",
+    "text": "Distribuição Condicional: Caso Discreto\n\nSe \\(X\\) e \\(Y\\) forem discretas, a probabilidade condicional pode ser escrita na notação de função de probabilidade da seguinte forma: \\[P(X=x | Y=y) = \\frac{P(X=x, Y=y)}{P(Y=y)}\\]\nAs demais relações seguem de forma análoga."
+  },
+  {
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.1",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.1",
+    "title": "Distribuição Condicional",
+    "section": "Exemplo 4.1",
+    "text": "Exemplo 4.1\nSuponha que \\(p(x,y)\\), a função discreta de probabilidade conjunta de \\(X\\) e \\(Y\\), seja dada por:\n\n\\(p(0,0)=0,\\!4\\)\n\\(p(0,1)=0,\\!2\\)\n\\(p(1,0)=0,\\!1\\)\n\\(p(1,1)=0,\\!3\\)\n\nDetermine a função de probabilidade condicional de \\(X\\) dado que \\(Y=1\\)."
+  },
+  {
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.2",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.2",
+    "title": "Distribuição Condicional",
+    "section": "Exemplo 4.2",
+    "text": "Exemplo 4.2\nSuponha que a função de probabilidade conjunta de X e Y seja dada por:\n\\[p(x,y) = c(x+y), \\text{ para } x \\in \\{1, 2, 3\\} \\text{ e } y \\in \\{1, 2\\}.\\]\n\nDetermine o valor da constante \\(c\\).\nEncontre a função de probabilidade marginal de Y, \\(p_Y(y)\\).\nDetermine a função de probabilidade condicional de X dado \\(Y=1\\), ou seja, \\(P(X=x | Y=1)\\)."
+  },
+  {
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#caso-discreto-eventos-e-probabilidade-total",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#caso-discreto-eventos-e-probabilidade-total",
+    "title": "Distribuição Condicional",
+    "section": "Caso Discreto: Eventos e Probabilidade Total",
+    "text": "Caso Discreto: Eventos e Probabilidade Total\n\nSendo \\(X\\) uma variável qualquer e \\(Y\\) discreta, temos: \\[P(X \\in B | Y=y) = \\frac{P([X \\in B] \\cap [Y=y])}{P(Y=y)}\\]\nLei da probabilidade total: \\(P(X \\in B) = \\sum_y P(Y=y)P(X \\in B | Y=y)\\).\nFunção de distribuição condicional: \\(F_{X|Y}(x | Y=y) = \\frac{P([X \\le x] \\cap [Y=y])}{P(Y=y)}\\).\n\\(F_X(x) = \\sum_y P(Y=y)F_{X|Y}(x | Y=y)\\)."
+  },
+  {
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.3",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.3",
+    "title": "Distribuição Condicional",
+    "section": "Exemplo 4.3",
+    "text": "Exemplo 4.3\nUma seguradora classifica seus clientes em dois perfis de risco: \\(Y=1\\) (Baixo Risco) e \\(Y=2\\) (Alto Risco). A proporção na carteira é \\(P(Y=1) = 0,\\!6\\) e \\(P(Y=2) = 0,\\!4\\). Seja \\(X\\) o número de sinistros acionados por um cliente em um ano. As probabilidades condicionais de \\(X\\) dado o perfil \\(Y\\) são:\n\nSe Baixo Risco (\\(Y=1\\)): \\(P(X=0|Y=1) = 0,8\\) e \\(P(X=1|Y=1) = 0,2\\)\nSe Alto Risco (\\(Y=2\\)): \\(P(X=0|Y=2) = 0,5\\); \\(P(X=1|Y=2) = 0,3\\) e \\(P(X=2|Y=2) = 0,2\\)\n\n\nDetermine \\(P(X \\in B | Y=1)\\) e \\(P(X \\in B | Y=2)\\).\nUtilize a Lei da Probabilidade Total para calcular \\(P(X \\geq 1)\\)."
+  },
+  {
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-contínuo",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-contínuo",
+    "title": "Distribuição Condicional",
+    "section": "Distribuição Condicional: Caso Contínuo",
+    "text": "Distribuição Condicional: Caso Contínuo\n\nSe \\(X\\) e \\(Y\\) são variáveis aleatórias contínuas, a densidade condicional de \\(X\\) dado \\(Y\\) é: \\[f_{X|Y}(x|y) = \\frac{f_{X,Y}(x,y)}{f_Y(y)}\\] (ou seja, a conjunta dividida pela marginal).\nA função de distribuição condicional de \\(X\\) dado \\(Y\\) é: \\[F_{X|Y}(x|y) = \\int_{-\\infty}^{x} f_{X|Y}(t|y)dt\\]"
+  },
+  {
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-contínuo-consequências",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-contínuo-consequências",
+    "title": "Distribuição Condicional",
+    "section": "Distribuição Condicional: Caso Contínuo (Consequências)",
+    "text": "Distribuição Condicional: Caso Contínuo (Consequências)\nFórmulas válidas:\n\n\\(F_{X,Y}(x,y) = \\int_{-\\infty}^{y} f_Y(t)F_{X|Y}(x|t)dt\\)\n\\(F_X(x) = \\int_{-\\infty}^{+\\infty} f_Y(y)F_{X|Y}(x|y)dy\\)"
+  },
+  {
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.4",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.4",
+    "title": "Distribuição Condicional",
+    "section": "Exemplo 4.4",
+    "text": "Exemplo 4.4\nA função de densidade conjunta de \\(X\\) e \\(Y\\) é dada por: \\[f_{X,Y}(x,y) = \\frac{12}{5}x(2-x-y)\\] para \\(0&lt;x&lt;1, 0&lt;y&lt;1\\).\nObtenha a densidade condicional de \\(X\\) dado que \\(Y=y\\), onde \\(0&lt;y&lt;1\\)."
+  },
+  {
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.5",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.5",
+    "title": "Distribuição Condicional",
+    "section": "Exemplo 4.5",
+    "text": "Exemplo 4.5\nSuponha que a densidade conjunta de X e Y seja dada por: \\[f_{X,Y}(x, y) = \\frac{e^{-x/y}e^{-y}}{y}\\] para \\(0 &lt; x &lt; \\infty, 0 &lt; y &lt; \\infty\\). Determine \\(P(X &gt; 1 | Y = y)\\)."
+  },
+  {
+    "objectID": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#a-distribuição-multinomial",
+    "href": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#a-distribuição-multinomial",
+    "title": "Distribuição Multinomial e Normal Bivariada",
+    "section": "A Distribuição Multinomial",
+    "text": "A Distribuição Multinomial\nÉ a generalização natural da distribuição Binomial.\n\nBinomial: 2 resultados mutuamente exclusivos (Ex: Sucesso ou Fracasso).\nMultinomial: \\(k\\) resultados mutuamente exclusivos.\n\nO experimento é repetido \\(n\\) vezes de forma independente.\nEm cada repetição, há \\(k\\) resultados possíveis mutuamente exclusivos \\((R_1, R_2, ..., R_k)\\).\nCada resultado \\(R_i\\) tem uma probabilidade constante de ocorrer denotada por \\(p_i\\), onde \\(\\sum p_i = 1\\).\nSeja \\(X_i\\) o número de vezes que o resultado \\(R_i\\) ocorre nos \\(n\\) ensaios. Dessa forma, o vetor diz-se ter distribuição Multinomial: \\((X_1,\\ldots, X_k) \\sim\\) Multinomial\\((n, p_1, \\ldots, p_k)\\)."
+  },
+  {
+    "objectID": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#exemplos-de-v.a.-multinomial",
+    "href": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#exemplos-de-v.a.-multinomial",
+    "title": "Distribuição Multinomial e Normal Bivariada",
+    "section": "Exemplos de V.A. Multinomial",
+    "text": "Exemplos de V.A. Multinomial\n\nResultado do arremesso de uma bola à cesta: {errou, 1 ponto, 2 pontos, 3 pontos}\nAção resultado de uma propaganda direta por e-mail: {não viu, acessou, wishlist, compra}\nCategoria de veículo alugado por cliente em um site: {SUV, Sedan, Hatch, Utilitário, …}\nClassificação de um estudante em relação à área do Curso: {Exatas, Humanas, Biológicas}\nOutros: Dia da semana de acidente de trabalho; Grau de uma infração de trânsito; Estado civil. —"
+  },
+  {
+    "objectID": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#função-de-probabilidade-multinomial",
+    "href": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#função-de-probabilidade-multinomial",
+    "title": "Distribuição Multinomial e Normal Bivariada",
+    "section": "Função de Probabilidade Multinomial",
+    "text": "Função de Probabilidade Multinomial\nSe o vetor \\(\\mathbf{X} = (X_1, X_2, ..., X_k)\\) segue a distribuição Multinomial, sua função de probabilidade conjunta é dada por: \\[ \\begin{aligned}\n  P(X_1=x_1, ..., X_k=x_k) = \\frac{n!}{x_1! x_2! \\cdot\\cdot\\cdot x_k!} p_1^{x_1} p_2^{x_2} \\cdot\\cdot\\cdot p_k^{x_k}\\\\\n  &= \\frac{n!}{\\prod_{i=1}^{k} x_i!} \\prod_{i=1}^{k} p_i^{x_i}\n  \\end{aligned}\n\\]\nPropriedades:\n\nEsperança: \\(E(X_i) = n p_i\\)\nVariância: \\(V(X_i) = n p_i (1 - p_i)\\)\nCovariância: \\(Cov(X_i, X_j) = -n p_i p_j\\) (nota: são negativamente correlacionadas!)"
+  },
+  {
+    "objectID": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#exemplo-6.1",
+    "href": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#exemplo-6.1",
+    "title": "Distribuição Multinomial e Normal Bivariada",
+    "section": "Exemplo 6.1",
+    "text": "Exemplo 6.1\nPara 10 lançamentos independentes de um dado equilibrado, seja \\(X_i\\) o número de ocorrências da face \\(i\\), para \\(i=1,...,6\\). Escreva a função de probabilidade conjunta de \\(\\mathbf{X} = (X_1, ..., X_6)\\)."
+  },
+  {
+    "objectID": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#exemplo-6.2",
+    "href": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#exemplo-6.2",
+    "title": "Distribuição Multinomial e Normal Bivariada",
+    "section": "Exemplo 6.2",
+    "text": "Exemplo 6.2\nEm uma urna há 2 bolas vermelhas, 3 verdes e 5 azuis. São selecionadas 4 bolas ao acaso da urna, com reposição. Qual a probabilidade de retirar 2 verdes e 2 azuis?"
+  },
+  {
+    "objectID": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#distribuição-normal-bivariada",
+    "href": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#distribuição-normal-bivariada",
+    "title": "Distribuição Multinomial e Normal Bivariada",
+    "section": "Distribuição Normal Bivariada",
+    "text": "Distribuição Normal Bivariada\nUm vetor aleatório contínuo \\(\\underset{\\widetilde{\\phantom{C}}}{X} = (X_1, X_2)\\) tem distribuição Normal Bivariada, denotado por \\(\\underset{\\widetilde{\\phantom{C}}}{X} \\sim N_2(\\mu_1, \\mu_2, \\sigma_1^2, \\sigma_2^2, \\rho)\\), se sua densidade conjunta é dada por:\n\n\\[f(x_1, x_2) = \\frac{1}{2\\pi\\sigma_1\\sigma_2\\sqrt{1-\\rho^2}} \\exp \\left\\{ -\\frac{1}{2(1-\\rho^2)} \\left[ \\left(\\frac{x_1-\\mu_1}{\\sigma_1}\\right)^2 + \\left(\\frac{x_2-\\mu_2}{\\sigma_2}\\right)^2 - 2\\rho\\left(\\frac{x_1-\\mu_1}{\\sigma_1}\\right)\\left(\\frac{x_2-\\mu_2}{\\sigma_2}\\right) \\right] \\right\\}\\]\n\nOnde:\n\n\\(\\mu_1, \\mu_2 \\in \\mathbb{R}\\) (Médias das marginais)\n\\(\\sigma_1 &gt; 0, \\sigma_2 &gt; 0\\) (Desvios-padrão)\n\\(-1 &lt; \\rho &lt; 1\\) (Coeficiente de correlação populacional) (Nota: Se \\(\\rho = 0\\), o termo cruzado some e a função se fatora no produto de duas Normais independentes)."
+  },
+  {
+    "objectID": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#exemplo-6.3",
+    "href": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#exemplo-6.3",
+    "title": "Distribuição Multinomial e Normal Bivariada",
+    "section": "Exemplo 6.3",
+    "text": "Exemplo 6.3\nO vetor \\((X, Y)\\) segue a distribuição normal bivariada com os seguintes parâmetros: \\(\\mu_X = \\mu_Y = 0\\), \\(\\sigma_X = \\sigma_Y = 1\\) e \\(\\rho = 1/2\\).\n\nComo fica a função de densidade conjunta \\(f_{X,Y}(x,y)\\)?\nQual a distribuição marginal de \\(X\\)?"
+  },
+  {
+    "objectID": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#a-generalização-normal-multivariada",
+    "href": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#a-generalização-normal-multivariada",
+    "title": "Distribuição Multinomial e Normal Bivariada",
+    "section": "A Generalização: Normal Multivariada",
+    "text": "A Generalização: Normal Multivariada\nUm vetor aleatório contínuo \\(\\underset{\\widetilde{\\phantom{X}}}{X}\\)\\(_{p \\times 1}\\) tem distribuição Normal multivariada, denotado por \\(\\underset{\\widetilde{\\phantom{X}}}{X} \\sim N_p(\\underset{\\widetilde{\\phantom{\\mu}}}{\\mu}, \\underset{\\widetilde{\\phantom{\\Sigma}}}{\\Sigma})\\), se sua densidade conjunta é dada matricialmente por: \\[f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{x}}}{x}) = \\frac{1}{(2\\pi)^{p/2} |\\underset{\\widetilde{\\phantom{\\Sigma}}}{\\Sigma}|^{1/2}} \\exp \\left\\{ -\\frac{1}{2} (\\underset{\\widetilde{\\phantom{x}}}{x} - \\underset{\\widetilde{\\phantom{\\mu}}}{\\mu})^\\top \\underset{\\widetilde{\\phantom{\\Sigma}}}{\\Sigma}^{-1} (\\mathbf{x} - \\underset{\\widetilde{\\phantom{\\mu}}}{\\mu}) \\right\\}\\]\n\n\\(\\underset{\\widetilde{\\phantom{\\mu}}}{\\mu}\\) é o vetor de médias (Esperança do vetor \\(E(\\underset{\\widetilde{\\phantom{X}}}{X})\\)).\n\\(\\underset{\\widetilde{\\phantom{\\Sigma}}}{\\Sigma}\\) é a matriz de variâncias-covariâncias do vetor (\\(V(\\mathbf{X})\\)).\n\\(|\\underset{\\widetilde{\\phantom{\\Sigma}}}{\\Sigma}|\\) é o determinante da matriz de covariância.\n\\(p\\) é a dimensão do vetor aleatório (número de variáveis)."
+  },
+  {
+    "objectID": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#exemplos-e-natureza-da-normal-multivariada",
+    "href": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#exemplos-e-natureza-da-normal-multivariada",
+    "title": "Distribuição Multinomial e Normal Bivariada",
+    "section": "Exemplos e Natureza da Normal Multivariada",
+    "text": "Exemplos e Natureza da Normal Multivariada\n\nIndividualmente as variáveis são Normais, portanto simétricas.\nA matriz \\(\\underset{\\widetilde{\\phantom{\\Sigma}}}{\\Sigma}\\) captura a relação linear (covariância) entre elas.\nOcorrem frequentemente na natureza por resultarem da combinação de muitos fatores de pequena contribuição (Teorema Central do Limite).\n\nExemplos Práticos:\n\nCaracterísticas genéticas e morfológicas (Ex: Peso, comprimento e circunferência de uma banana ou crânio fóssil).\nÍndices econômicos (Variação conjunta de preços, inflação e câmbio)."
+  },
+  {
+    "objectID": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#importância-e-aplicações",
+    "href": "slides/06-Dist_multinomial_normal_bivariada/06-Dist_multinomial_normal_bivariada.html#importância-e-aplicações",
+    "title": "Distribuição Multinomial e Normal Bivariada",
+    "section": "Importância e Aplicações",
+    "text": "Importância e Aplicações\nA grande força da Normal Multivariada está em modelar a estrutura de correlação ou dependência entre múltiplas variáveis simultaneamente. É a base teórica para diversas áreas da estatística avançada:\n\nSéries Temporais e Geoestatística.\nEixo central das Técnicas de Análise Multivariada:\n\nAnálise de Discriminante Linear.\nAnálise Fatorial (Exploratória e Confirmatória) e Componentes Principais.\nAnálise de Correlação Canônica.\nAnálise de Variância Multivariada (MANOVA)."
+  },
+  {
+    "objectID": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#definição-5.1-independência-de-v.a.",
+    "href": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#definição-5.1-independência-de-v.a.",
+    "title": "Independência entre Variáveis",
+    "section": "Definição 5.1: Independência de V.A.",
+    "text": "Definição 5.1: Independência de V.A.\n\nPara quaisquer conjuntos de Borel \\(B_1, B_2 \\in \\mathfrak{B}(\\mathbb{R})\\): \\[P(X \\in B_1 | Y \\in B_2) = P(X \\in B_1)\\]\nDefinição Equivalente (Regra do Produto): \\(X\\) e \\(Y\\) são independentes se, e somente se \\[P(X \\in B_1, Y \\in B_2) = P(X \\in B_1)P(Y \\in B_2).\\]\nIntuição: Duas variáveis aleatórias, \\(X\\) e \\(Y\\), são independentes se a informação sobre o resultado de uma delas não altera a probabilidade de ocorrência da outra."
+  },
+  {
+    "objectID": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#definições-alternativas",
+    "href": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#definições-alternativas",
+    "title": "Independência entre Variáveis",
+    "section": "Definições Alternativas",
+    "text": "Definições Alternativas\n\nA independência implica que as funções conjuntas se fatoram no produto das marginais.\nFDA: \\(F_{X,Y}(x,y) = F_X(x)F_Y(y)\\)\nDiscretas: \\(P(X=x, Y=y) = P(X=x)P(Y=y)\\)\nContínuas: \\(f_{X,Y}(x,y) = f_X(x)f_Y(y)\\)"
+  },
+  {
+    "objectID": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#generalização-para-n-variáveis",
+    "href": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#generalização-para-n-variáveis",
+    "title": "Independência entre Variáveis",
+    "section": "Generalização para \\(n\\) Variáveis",
+    "text": "Generalização para \\(n\\) Variáveis\n\nPara \\(n\\) variáveis \\(X_1, X_2, ..., X_n\\), a independência exige que, para qualquer sub-família e quaisquer intervalos \\(B_i\\) \\[P(X_1 \\in B_1, ..., X_n \\in B_n) = \\prod_{i=1}^{n} P(X_i \\in B_i)\\]\nLembre: A independência mútua (de todo o grupo) exige que todas as possíveis sub-famílias também sejam independentes entre si."
+  },
+  {
+    "objectID": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#exemplo-5.1",
+    "href": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#exemplo-5.1",
+    "title": "Independência entre Variáveis",
+    "section": "Exemplo 5.1",
+    "text": "Exemplo 5.1\nCom base em dados de um posto de saúde, definiu-se a distribuição conjunta dos números diários de atendimentos por alergia (\\(X\\)) e pneumonia (\\(Y\\)):\n\n\n\n\n\\(Y \\setminus X\\)\n\\(0\\)\n\\(1\\)\n\\(2\\)\n\\(P(Y=y)\\)\n\n\n\n\n\\(0\\)\n\\(1/16\\)\n\\(1/16\\)\n\\(1/8\\)\n\\(1/4\\)\n\n\n\\(1\\)\n\\(1/8\\)\n\\(1/8\\)\n\\(0\\)\n\\(1/4\\)\n\n\n\\(2\\)\n\\(1/16\\)\n\\(1/8\\)\n\\(1/8\\)\n\\(5/16\\)\n\n\n\\(3\\)\n\\(0\\)\n\\(1/8\\)\n\\(1/8\\)\n\\(3/16\\)\n\n\n\\(P(X=x)\\)\n\\(1/4\\)\n\\(7/16\\)\n\\(3/8\\)\n\\(1\\)\n\n\n\n\n\n\\(X\\) e \\(Y\\) são independentes?\nCompare as probabilidades condicionais de \\(X\\) dado \\(Y&gt;0\\) com o condicionamento em \\(Y=0\\)."
+  },
+  {
+    "objectID": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#quando-o-domínio-é-contínuo",
+    "href": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#quando-o-domínio-é-contínuo",
+    "title": "Independência entre Variáveis",
+    "section": "Quando o Domínio é Contínuo",
+    "text": "Quando o Domínio é Contínuo\n\nAntes de fazer contas com variáveis contínuas, observe o domínio da função densidade conjunta.\nTeorema Prático: Se o suporte da função conjunta \\(f_{X,Y}(x,y)\\) não for um “retângulo” (produto cartesiano dos suportes marginais), ou seja, se os limites de integração de uma variável dependerem da outra, então \\(X\\) e \\(Y\\) são dependentes."
+  },
+  {
+    "objectID": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#exemplo-5.2",
+    "href": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#exemplo-5.2",
+    "title": "Independência entre Variáveis",
+    "section": "Exemplo 5.2",
+    "text": "Exemplo 5.2\nA densidade conjunta de \\(X\\) e \\(Y\\) é: \\[f_{X,Y}(x,y) = \\frac{1}{2x} I_{[0,2]}(x)I_{[0,x]}(y).\\]\n\n\\(f_{X,Y}(x,y)\\) é mesmo uma função de densidade?\n\\(X\\) e \\(Y\\) são independentes?\nQual a função de densidade condicional de \\(X\\) dado \\(Y\\) e de \\(Y\\) dado \\(X\\)?"
+  },
+  {
+    "objectID": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#exemplo-5.3",
+    "href": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#exemplo-5.3",
+    "title": "Independência entre Variáveis",
+    "section": "Exemplo 5.3",
+    "text": "Exemplo 5.3\nSe \\(X\\) e \\(Y\\) são variáveis aleatórias de Poisson independentes com respectivos parâmetros \\(\\lambda_1\\) e \\(\\lambda_2\\), obtenha a distribuição condicional de \\(X\\) dado \\(X+Y=n\\)."
   },
   {
     "objectID": "slides/02-Vetores_aleatorios_discretos/02-Vetores_aleatorios_discretos.html#definição-2.1-vetor-aleatório-discreto",
