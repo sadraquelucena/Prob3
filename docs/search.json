@@ -293,51 +293,128 @@
     "text": "Exemplo 3.3\nDada a densidade conjunta \\(f_{X,Y}(x,y) = e^{-(x+y)}\\) para \\(x, y &gt; 0\\), determine a densidade da variável \\(Z = X/Y\\)."
   },
   {
-    "objectID": "aulas/02-Vetores_aleatorios_discretos.html",
-    "href": "aulas/02-Vetores_aleatorios_discretos.html",
-    "title": "Conteúdo 2",
+    "objectID": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#introdução",
+    "href": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#introdução",
+    "title": "Densidade da Soma e da Diferença de Variáveis Aletórias",
+    "section": "Introdução",
+    "text": "Introdução\nUma das aplicações mais comuns das transformações de variáveis é encontrar a distribuição da soma e da diferença entre elas. Na prática, isso representa situações como:\n\nSoma (\\(X+Y\\)): Tempo total de um processo dividido em duas etapas; Risco agregado de dois ativos.\nDiferença (\\(X-Y\\)): Lucro (Receita – Despesa); Diferença de tempo de falha entre dois componentes.\nNão precisamos de fórmulas mágicas para isso. A densidade dessas operações é encontrada entendendo onde essas combinações ocorrem no plano \\((x,y)\\)."
+  },
+  {
+    "objectID": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#densidade-da-soma",
+    "href": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#densidade-da-soma",
+    "title": "Densidade da Soma e da Diferença de Variáveis Aletórias",
+    "section": "Densidade da Soma",
+    "text": "Densidade da Soma\nSeja \\((X,Y)\\) um vetor aleatório contínuo com densidade conjunta \\(f_{X,Y}(x,y)\\). Suponha que queremos a densidade de \\(Z = X + Y\\).\n\nQueremos que a soma seja igual a \\(z\\).\nSe \\(X=x\\), necessariamente \\(Y=z-x\\).\nAssim, avaliamos a densidade conjunta em \\(y=z-x\\), isto é, \\(f_{X,Y}(x, z-x)\\).\nSe integrarmos com relação a \\(x\\), obtemos a densidade de \\(z\\): \\[f_Z(z) = \\int_{-\\infty}^{\\infty} f_{X,Y}(x, z - x)\\, dx\\]\nEssa integral soma as contribuições de todos os pares \\((x,y)\\) cuja soma é \\(z\\)."
+  },
+  {
+    "objectID": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#densidade-da-soma-1",
+    "href": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#densidade-da-soma-1",
+    "title": "Densidade da Soma e da Diferença de Variáveis Aletórias",
+    "section": "Densidade da Soma",
+    "text": "Densidade da Soma\nE se decidirmos fixar o valor de \\(Y\\) em vez de \\(X\\)?\n\nSe \\(Y=y\\), necessariamente \\(X=z-y\\).\nAvaliamos a densidade conjunta em \\(x=z-y\\), isto é, \\(f_{X,Y}(z-y, y)\\).\nSe integrarmos com relação a \\(y\\), obtemos a mesma densidade de \\(z\\): \\[f_Z(z) = \\int_{-\\infty}^{\\infty} f_{X,Y}(z - y, y)\\, dy\\]\n\nObservação: A escolha entre integrar em \\(x\\) ou em \\(y\\) depende exclusivamente de qual integral apresenta os limites mais fáceis de resolver."
+  },
+  {
+    "objectID": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#proposição-8.1",
+    "href": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#proposição-8.1",
+    "title": "Densidade da Soma e da Diferença de Variáveis Aletórias",
+    "section": "Proposição 8.1",
+    "text": "Proposição 8.1\nFormalizando o que acabamos de construir, temos a seguinte proposição:\n\nSe \\(X\\) e \\(Y\\) têm densidade conjunta \\(f_{X,Y}\\), então \\(Z = X + Y\\) tem densidade: \\[f_Z(z) = \\int_{-\\infty}^{\\infty} f_{X,Y}(x, z - x)\\, dx\\] ou, equivalentemente, \\[f_Z(z) = \\int_{-\\infty}^{\\infty} f_{X,Y}(z - y, y)\\, dy\\]"
+  },
+  {
+    "objectID": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#exemplo-8.1",
+    "href": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#exemplo-8.1",
+    "title": "Densidade da Soma e da Diferença de Variáveis Aletórias",
+    "section": "Exemplo 8.1",
+    "text": "Exemplo 8.1\nSeja \\((X,Y)\\) um vetor aleatório com densidade conjunta \\(f_{X,Y}(x,y) = \\frac{1}{3}(x+y)\\), definida para \\(0 &lt; x &lt; 2\\) e \\(0 &lt; y &lt; 1\\).Determine a densidade de \\(Z = X+Y\\)."
+  },
+  {
+    "objectID": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#densidade-da-diferença",
+    "href": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#densidade-da-diferença",
+    "title": "Densidade da Soma e da Diferença de Variáveis Aletórias",
+    "section": "Densidade da Diferença",
+    "text": "Densidade da Diferença\nAgora suponha que queremos a densidade de \\(W = X - Y\\).\n\nQueremos que a diferença seja igual a \\(w\\).\nSe \\(X=x\\), necessariamente \\(Y=x-w\\).\nAvaliamos a densidade conjunta em \\(y=x-w\\), isto é, \\(f_{X,Y}(x, x-w)\\).\nSe integrarmos com relação a \\(x\\), obtemos a densidade de \\(w\\): \\[f_W(w) = \\int_{-\\infty}^{\\infty} f_{X,Y}(x, x - w)\\, dx\\]\nDe forma equivalente, fixando \\(Y=y\\), teríamos \\(X=w+y\\) e integraríamos \\(f_{X,Y}(w+y, y)\\) em relação a \\(y\\)."
+  },
+  {
+    "objectID": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#proposição-8.2",
+    "href": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#proposição-8.2",
+    "title": "Densidade da Soma e da Diferença de Variáveis Aletórias",
+    "section": "Proposição 8.2",
+    "text": "Proposição 8.2\n\nSe \\(X\\) e \\(Y\\) têm densidade conjunta \\(f_{X,Y}\\), então \\(W = X - Y\\) tem densidade: \\[f_W(w) = \\int_{-\\infty}^{\\infty} f_{X,Y}(x, x-w)\\, dx\\] ou, equivalentemente, \\[f_W(w) = \\int_{-\\infty}^{\\infty} f_{X,Y}(w + y, y)\\, dy\\]"
+  },
+  {
+    "objectID": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#exemplo-8.2",
+    "href": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#exemplo-8.2",
+    "title": "Densidade da Soma e da Diferença de Variáveis Aletórias",
+    "section": "Exemplo 8.2",
+    "text": "Exemplo 8.2\nSeja \\((X,Y)\\) um vetor aleatório com densidade conjunta \\(f_{X,Y}(x,y) = x + y\\), definida para \\(0 &lt; x &lt; 1\\) e \\(0 &lt; y &lt; 1\\). Determine a densidade de \\(W = X - Y\\)."
+  },
+  {
+    "objectID": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#o-caso-independente-convolução",
+    "href": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#o-caso-independente-convolução",
+    "title": "Densidade da Soma e da Diferença de Variáveis Aletórias",
+    "section": "O Caso Independente (Convolução)",
+    "text": "O Caso Independente (Convolução)\nNa maioria das aplicações, \\(X\\) e \\(Y\\) são independentes.\n\nNesse caso, a densidade conjunta é o produto das marginais: \\[f_{X,Y}(x,y) = f_X(x) \\cdot f_Y(y)\\]\nSubstituindo essa propriedade nas fórmulas que acabamos de construir, obtemos: \\[\n\\begin{aligned}\n& \\text{Para a Soma:}\\quad f_Z(z) = \\int_{-\\infty}^{\\infty} f_X(x) f_Y(z - x)\\, dx\\\\\n& \\text{Para a Diferença:} \\quad f_W(w) = \\int_{-\\infty}^{\\infty} f_X(x) f_Y(x - w)\\, dx\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#exemplo-8.3",
+    "href": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#exemplo-8.3",
+    "title": "Densidade da Soma e da Diferença de Variáveis Aletórias",
+    "section": "Exemplo 8.3",
+    "text": "Exemplo 8.3\nSejam \\(X\\) e \\(Y\\) variáveis aleatórias independentes, ambas com distribuição Uniforme no intervalo \\((0,1)\\). Determine a densidade de \\(Z = X+Y\\)."
+  },
+  {
+    "objectID": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#exemplo-8.4",
+    "href": "slides/08-Densidade_soma_diferenca/08-Densidade_soma_diferenca.html#exemplo-8.4",
+    "title": "Densidade da Soma e da Diferença de Variáveis Aletórias",
+    "section": "Exemplo 8.4",
+    "text": "Exemplo 8.4\nSejam \\(X\\) e \\(Y\\) variáveis independentes com distribuição Exponencial de parâmetro \\(\\lambda\\), ou seja, \\(f(x) = \\lambda e^{-\\lambda x}\\) para \\(x &gt; 0\\). Determine a densidade de \\(Z = X+Y\\)."
+  },
+  {
+    "objectID": "aulas/06-Dist_multinomial_normal_bivariada.html",
+    "href": "aulas/06-Dist_multinomial_normal_bivariada.html",
+    "title": "Conteúdo 6",
     "section": "",
-    "text": "Este material apresenta a introdução aos vetores aleatórios discretos, com foco na definição da função de probabilidade conjunta e em suas propriedades fundamentais. São discutidos os conceitos de distribuição marginal e formas de representação, como tabelas de dupla entrada, além de exemplos que exploram a modelagem de fenômenos envolvendo múltiplas variáveis aleatórias.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 2",
+    "text": "Este material aborda duas distribuições fundamentais em modelos multivariados: a distribuição multinomial, como generalização da binomial para múltiplas categorias, e a distribuição normal bivariada, como caso particular da normal multivariada. São apresentados os principais resultados teóricos, incluindo a função de probabilidade da multinomial, suas propriedades e exemplos aplicados, bem como a estrutura da densidade normal bivariada, interpretação do parâmetro de correlação e generalização para dimensões maiores.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 6",
     "crumbs": [
       "Aulas",
       "Parte 1: V.A. $n$-dimensionais",
-      "2- Vetores Aleatórios Discretos"
+      "6- Dist. Multinomial e Normal Bivariada"
     ]
   },
   {
-    "objectID": "aulas/02-Vetores_aleatorios_discretos.html#vetores-aleatórios-discretos",
-    "href": "aulas/02-Vetores_aleatorios_discretos.html#vetores-aleatórios-discretos",
-    "title": "Conteúdo 2",
+    "objectID": "aulas/06-Dist_multinomial_normal_bivariada.html#distribuição-multinomial-e-normal-bivariada",
+    "href": "aulas/06-Dist_multinomial_normal_bivariada.html#distribuição-multinomial-e-normal-bivariada",
+    "title": "Conteúdo 6",
     "section": "",
-    "text": "Este material apresenta a introdução aos vetores aleatórios discretos, com foco na definição da função de probabilidade conjunta e em suas propriedades fundamentais. São discutidos os conceitos de distribuição marginal e formas de representação, como tabelas de dupla entrada, além de exemplos que exploram a modelagem de fenômenos envolvendo múltiplas variáveis aleatórias.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 2",
+    "text": "Este material aborda duas distribuições fundamentais em modelos multivariados: a distribuição multinomial, como generalização da binomial para múltiplas categorias, e a distribuição normal bivariada, como caso particular da normal multivariada. São apresentados os principais resultados teóricos, incluindo a função de probabilidade da multinomial, suas propriedades e exemplos aplicados, bem como a estrutura da densidade normal bivariada, interpretação do parâmetro de correlação e generalização para dimensões maiores.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 6",
     "crumbs": [
       "Aulas",
       "Parte 1: V.A. $n$-dimensionais",
-      "2- Vetores Aleatórios Discretos"
+      "6- Dist. Multinomial e Normal Bivariada"
     ]
   },
   {
-    "objectID": "aulas/04-Distribuicao_condicional.html",
-    "href": "aulas/04-Distribuicao_condicional.html",
-    "title": "Conteúdo 4",
+    "objectID": "aulas/05-Independencia_de_VA.html",
+    "href": "aulas/05-Independencia_de_VA.html",
+    "title": "Conteúdo 5",
     "section": "",
-    "text": "Este material apresenta o conceito de distribuição condicional no contexto de variáveis aleatórias discretas e contínuas, com ênfase na relação entre distribuições conjuntas, marginais e condicionais. São desenvolvidas as principais fórmulas, incluindo a lei da probabilidade total, e explorados exemplos que envolvem cálculo de probabilidades condicionais e construção de distribuições a partir de informações parciais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
+    "text": "Este material apresenta o conceito de independência entre variáveis aleatórias, destacando suas diferentes caracterizações em termos de probabilidades, funções de distribuição e densidades. São discutidas as condições equivalentes de independência, sua generalização para múltiplas variáveis e critérios práticos para identificação de dependência, especialmente no caso contínuo.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 5",
     "crumbs": [
       "Aulas",
       "Parte 1: V.A. $n$-dimensionais",
-      "4- Distribuição Condicional"
+      "5- Indepedência de VAs"
     ]
   },
   {
-    "objectID": "aulas/04-Distribuicao_condicional.html#distribuição-condicional",
-    "href": "aulas/04-Distribuicao_condicional.html#distribuição-condicional",
-    "title": "Conteúdo 4",
+    "objectID": "aulas/05-Independencia_de_VA.html#independência-entre-variáveis-aleatórias",
+    "href": "aulas/05-Independencia_de_VA.html#independência-entre-variáveis-aleatórias",
+    "title": "Conteúdo 5",
     "section": "",
-    "text": "Este material apresenta o conceito de distribuição condicional no contexto de variáveis aleatórias discretas e contínuas, com ênfase na relação entre distribuições conjuntas, marginais e condicionais. São desenvolvidas as principais fórmulas, incluindo a lei da probabilidade total, e explorados exemplos que envolvem cálculo de probabilidades condicionais e construção de distribuições a partir de informações parciais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
+    "text": "Este material apresenta o conceito de independência entre variáveis aleatórias, destacando suas diferentes caracterizações em termos de probabilidades, funções de distribuição e densidades. São discutidas as condições equivalentes de independência, sua generalização para múltiplas variáveis e critérios práticos para identificação de dependência, especialmente no caso contínuo.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 5",
     "crumbs": [
       "Aulas",
       "Parte 1: V.A. $n$-dimensionais",
-      "4- Distribuição Condicional"
+      "5- Indepedência de VAs"
     ]
   },
   {
@@ -345,7 +422,7 @@
     "href": "aulas/07-Funcoes_de_VAs.html",
     "title": "Conteúdo 7",
     "section": "",
-    "text": "Este material aborda o estudo de funções de variáveis aleatórias, com foco em como obter a distribuição de variáveis transformadas a partir de distribuições conhecidas. São explorados o método direto para casos discretos e contínuos, incluindo a utilização da função de distribuição acumulada e a análise de regiões de integração.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 6",
+    "text": "Este material aborda o estudo de funções de variáveis aleatórias, com foco em como obter a distribuição de variáveis transformadas a partir de distribuições conhecidas. São explorados o método direto para casos discretos e contínuos, incluindo a utilização da função de distribuição acumulada e a análise de regiões de integração.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 7",
     "crumbs": [
       "Aulas",
       "Parte 2: Função de Variáveis Aleatórias",
@@ -357,7 +434,7 @@
     "href": "aulas/07-Funcoes_de_VAs.html#funções-de-variáveis-aleatórias-método-direto",
     "title": "Conteúdo 7",
     "section": "",
-    "text": "Este material aborda o estudo de funções de variáveis aleatórias, com foco em como obter a distribuição de variáveis transformadas a partir de distribuições conhecidas. São explorados o método direto para casos discretos e contínuos, incluindo a utilização da função de distribuição acumulada e a análise de regiões de integração.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 6",
+    "text": "Este material aborda o estudo de funções de variáveis aleatórias, com foco em como obter a distribuição de variáveis transformadas a partir de distribuições conhecidas. São explorados o método direto para casos discretos e contínuos, incluindo a utilização da função de distribuição acumulada e a análise de regiões de integração.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 7",
     "crumbs": [
       "Aulas",
       "Parte 2: Função de Variáveis Aleatórias",
@@ -413,51 +490,75 @@
     ]
   },
   {
-    "objectID": "aulas/05-Independencia_de_VA.html",
-    "href": "aulas/05-Independencia_de_VA.html",
-    "title": "Conteúdo 5",
+    "objectID": "aulas/08-Densidade_soma_diferenca.html",
+    "href": "aulas/08-Densidade_soma_diferenca.html",
+    "title": "Conteúdo 8",
     "section": "",
-    "text": "Este material apresenta o conceito de independência entre variáveis aleatórias, destacando suas diferentes caracterizações em termos de probabilidades, funções de distribuição e densidades. São discutidas as condições equivalentes de independência, sua generalização para múltiplas variáveis e critérios práticos para identificação de dependência, especialmente no caso contínuo.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 5",
+    "text": "Este material aborda a obtenção das densidades da soma e da diferença de variáveis aleatórias contínuas. São explorados o procedimento direto de reescrita das variáveis e integração ao longo das combinações que geram o valor desejado, tanto no caso geral quanto no caso de variáveis independentes.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 8",
     "crumbs": [
       "Aulas",
-      "Parte 1: V.A. $n$-dimensionais",
-      "5- Indepedência de VAs"
+      "Parte 2: Função de Variáveis Aleatórias",
+      "8- Densidade da Soma e da Diferença de VAs"
     ]
   },
   {
-    "objectID": "aulas/05-Independencia_de_VA.html#independência-entre-variáveis-aleatórias",
-    "href": "aulas/05-Independencia_de_VA.html#independência-entre-variáveis-aleatórias",
-    "title": "Conteúdo 5",
+    "objectID": "aulas/08-Densidade_soma_diferenca.html#densidade-da-soma-e-da-diferença-de-variáveis-aleatórias",
+    "href": "aulas/08-Densidade_soma_diferenca.html#densidade-da-soma-e-da-diferença-de-variáveis-aleatórias",
+    "title": "Conteúdo 8",
     "section": "",
-    "text": "Este material apresenta o conceito de independência entre variáveis aleatórias, destacando suas diferentes caracterizações em termos de probabilidades, funções de distribuição e densidades. São discutidas as condições equivalentes de independência, sua generalização para múltiplas variáveis e critérios práticos para identificação de dependência, especialmente no caso contínuo.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 5",
+    "text": "Este material aborda a obtenção das densidades da soma e da diferença de variáveis aleatórias contínuas. São explorados o procedimento direto de reescrita das variáveis e integração ao longo das combinações que geram o valor desejado, tanto no caso geral quanto no caso de variáveis independentes.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 8",
     "crumbs": [
       "Aulas",
-      "Parte 1: V.A. $n$-dimensionais",
-      "5- Indepedência de VAs"
+      "Parte 2: Função de Variáveis Aleatórias",
+      "8- Densidade da Soma e da Diferença de VAs"
     ]
   },
   {
-    "objectID": "aulas/06-Dist_multinomial_normal_bivariada.html",
-    "href": "aulas/06-Dist_multinomial_normal_bivariada.html",
-    "title": "Conteúdo 6",
+    "objectID": "aulas/04-Distribuicao_condicional.html",
+    "href": "aulas/04-Distribuicao_condicional.html",
+    "title": "Conteúdo 4",
     "section": "",
-    "text": "Este material aborda duas distribuições fundamentais em modelos multivariados: a distribuição multinomial, como generalização da binomial para múltiplas categorias, e a distribuição normal bivariada, como caso particular da normal multivariada. São apresentados os principais resultados teóricos, incluindo a função de probabilidade da multinomial, suas propriedades e exemplos aplicados, bem como a estrutura da densidade normal bivariada, interpretação do parâmetro de correlação e generalização para dimensões maiores.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 6",
+    "text": "Este material apresenta o conceito de distribuição condicional no contexto de variáveis aleatórias discretas e contínuas, com ênfase na relação entre distribuições conjuntas, marginais e condicionais. São desenvolvidas as principais fórmulas, incluindo a lei da probabilidade total, e explorados exemplos que envolvem cálculo de probabilidades condicionais e construção de distribuições a partir de informações parciais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
     "crumbs": [
       "Aulas",
       "Parte 1: V.A. $n$-dimensionais",
-      "6- Dist. Multinomial e Normal Bivariada"
+      "4- Distribuição Condicional"
     ]
   },
   {
-    "objectID": "aulas/06-Dist_multinomial_normal_bivariada.html#distribuição-multinomial-e-normal-bivariada",
-    "href": "aulas/06-Dist_multinomial_normal_bivariada.html#distribuição-multinomial-e-normal-bivariada",
-    "title": "Conteúdo 6",
+    "objectID": "aulas/04-Distribuicao_condicional.html#distribuição-condicional",
+    "href": "aulas/04-Distribuicao_condicional.html#distribuição-condicional",
+    "title": "Conteúdo 4",
     "section": "",
-    "text": "Este material aborda duas distribuições fundamentais em modelos multivariados: a distribuição multinomial, como generalização da binomial para múltiplas categorias, e a distribuição normal bivariada, como caso particular da normal multivariada. São apresentados os principais resultados teóricos, incluindo a função de probabilidade da multinomial, suas propriedades e exemplos aplicados, bem como a estrutura da densidade normal bivariada, interpretação do parâmetro de correlação e generalização para dimensões maiores.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 6",
+    "text": "Este material apresenta o conceito de distribuição condicional no contexto de variáveis aleatórias discretas e contínuas, com ênfase na relação entre distribuições conjuntas, marginais e condicionais. São desenvolvidas as principais fórmulas, incluindo a lei da probabilidade total, e explorados exemplos que envolvem cálculo de probabilidades condicionais e construção de distribuições a partir de informações parciais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
     "crumbs": [
       "Aulas",
       "Parte 1: V.A. $n$-dimensionais",
-      "6- Dist. Multinomial e Normal Bivariada"
+      "4- Distribuição Condicional"
+    ]
+  },
+  {
+    "objectID": "aulas/02-Vetores_aleatorios_discretos.html",
+    "href": "aulas/02-Vetores_aleatorios_discretos.html",
+    "title": "Conteúdo 2",
+    "section": "",
+    "text": "Este material apresenta a introdução aos vetores aleatórios discretos, com foco na definição da função de probabilidade conjunta e em suas propriedades fundamentais. São discutidos os conceitos de distribuição marginal e formas de representação, como tabelas de dupla entrada, além de exemplos que exploram a modelagem de fenômenos envolvendo múltiplas variáveis aleatórias.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 2",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "2- Vetores Aleatórios Discretos"
+    ]
+  },
+  {
+    "objectID": "aulas/02-Vetores_aleatorios_discretos.html#vetores-aleatórios-discretos",
+    "href": "aulas/02-Vetores_aleatorios_discretos.html#vetores-aleatórios-discretos",
+    "title": "Conteúdo 2",
+    "section": "",
+    "text": "Este material apresenta a introdução aos vetores aleatórios discretos, com foco na definição da função de probabilidade conjunta e em suas propriedades fundamentais. São discutidos os conceitos de distribuição marginal e formas de representação, como tabelas de dupla entrada, além de exemplos que exploram a modelagem de fenômenos envolvendo múltiplas variáveis aleatórias.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 2",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "2- Vetores Aleatórios Discretos"
     ]
   },
   {

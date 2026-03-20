@@ -1,0 +1,142 @@
+---
+title: "Densidade da Soma e da Diferença de Variáveis Aletórias"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Introdução
+
+Uma das aplicações mais comuns das transformações de variáveis é encontrar a distribuição da soma e da diferença entre elas. Na prática, isso representa situações como:
+
+- **Soma ($X+Y$):** Tempo total de um processo dividido em duas etapas; Risco agregado de dois ativos.
+- **Diferença ($X-Y$):** Lucro (Receita -- Despesa); Diferença de tempo de falha entre dois componentes.
+
+- Não precisamos de fórmulas mágicas para isso. A densidade dessas operações é encontrada entendendo onde essas combinações ocorrem no plano $(x,y)$.
+
+---
+
+## Densidade da Soma
+
+Seja $(X,Y)$ um vetor aleatório contínuo com densidade conjunta $f_{X,Y}(x,y)$. Suponha que queremos a densidade de $Z = X + Y$.
+
+- Queremos que a soma seja igual a $z$.
+- Se $X=x$, necessariamente $Y=z-x$.
+- Assim, avaliamos a densidade conjunta em $y=z-x$, isto é, $f_{X,Y}(x, z-x)$.
+- Se integrarmos com relação a $x$, obtemos a densidade de $z$:
+$$f_Z(z) = \int_{-\infty}^{\infty} f_{X,Y}(x, z - x)\, dx$$
+
+- Essa integral soma as contribuições de todos os pares $(x,y)$ cuja soma é $z$.
+
+---
+
+## Densidade da Soma
+
+E se decidirmos fixar o valor de $Y$ em vez de $X$?
+
+- Se $Y=y$, necessariamente $X=z-y$.
+- Avaliamos a densidade conjunta em $x=z-y$, isto é, $f_{X,Y}(z-y, y)$.
+- Se integrarmos com relação a $y$, obtemos a mesma densidade de $z$:
+$$f_Z(z) = \int_{-\infty}^{\infty} f_{X,Y}(z - y, y)\, dy$$
+
+**Observação:** A escolha entre integrar em $x$ ou em $y$ depende exclusivamente de qual integral apresenta os limites mais fáceis de resolver.
+
+---
+
+## Proposição 8.1
+
+Formalizando o que acabamos de construir, temos a seguinte proposição:
+
+- Se $X$ e $Y$ têm densidade conjunta $f_{X,Y}$, então $Z = X + Y$ tem densidade:
+$$f_Z(z) = \int_{-\infty}^{\infty} f_{X,Y}(x, z - x)\, dx$$
+ou, equivalentemente,
+$$f_Z(z) = \int_{-\infty}^{\infty} f_{X,Y}(z - y, y)\, dy$$
+
+---
+
+## Exemplo 8.1
+
+Seja $(X,Y)$ um vetor aleatório com densidade conjunta $f_{X,Y}(x,y) = \frac{1}{3}(x+y)$, definida para $0 < x < 2$ e $0 < y < 1$.Determine a densidade de $Z = X+Y$.
+
+---
+
+## Densidade da Diferença
+
+Agora suponha que queremos a densidade de $W = X - Y$.
+
+- Queremos que a diferença seja igual a $w$.
+- Se $X=x$, necessariamente $Y=x-w$.
+- Avaliamos a densidade conjunta em $y=x-w$, isto é, $f_{X,Y}(x, x-w)$.
+- Se integrarmos com relação a $x$, obtemos a densidade de $w$:
+$$f_W(w) = \int_{-\infty}^{\infty} f_{X,Y}(x, x - w)\, dx$$
+
+- De forma equivalente, fixando $Y=y$, teríamos $X=w+y$ e integraríamos $f_{X,Y}(w+y, y)$ em relação a $y$.
+
+---
+
+## Proposição 8.2
+
+- Se $X$ e $Y$ têm densidade conjunta $f_{X,Y}$, então $W = X - Y$ tem densidade:
+$$f_W(w) = \int_{-\infty}^{\infty} f_{X,Y}(x, x-w)\, dx$$
+ou, equivalentemente,
+$$f_W(w) = \int_{-\infty}^{\infty} f_{X,Y}(w + y, y)\, dy$$
+
+---
+
+## Exemplo 8.2
+
+Seja $(X,Y)$ um vetor aleatório com densidade conjunta $f_{X,Y}(x,y) = x + y$, definida para $0 < x < 1$ e $0 < y < 1$. Determine a densidade de $W = X - Y$.
+
+---
+
+## O Caso Independente (Convolução)
+
+Na maioria das aplicações, $X$ e $Y$ são **independentes**. 
+
+- Nesse caso, a densidade conjunta é o produto das marginais: 
+$$f_{X,Y}(x,y) = f_X(x) \cdot f_Y(y)$$
+
+- Substituindo essa propriedade nas fórmulas que acabamos de construir, obtemos:
+$$
+\begin{aligned}
+& \text{Para a Soma:}\quad f_Z(z) = \int_{-\infty}^{\infty} f_X(x) f_Y(z - x)\, dx\\
+& \text{Para a Diferença:} \quad f_W(w) = \int_{-\infty}^{\infty} f_X(x) f_Y(x - w)\, dx
+\end{aligned}
+$$
+
+---
+
+## Exemplo 8.3
+
+Sejam $X$ e $Y$ variáveis aleatórias independentes, ambas com distribuição Uniforme no intervalo $(0,1)$. Determine a densidade de $Z = X+Y$.
+
+---
+
+## Exemplo 8.4
+
+Sejam $X$ e $Y$ variáveis independentes com distribuição Exponencial de parâmetro $\lambda$, ou seja, $f(x) = \lambda e^{-\lambda x}$ para $x > 0$. Determine a densidade de $Z = X+Y$.
+
+
+# Fim

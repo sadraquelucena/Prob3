@@ -43,6 +43,8 @@ website:
         contents:
           - href: aulas/07-Funcoes_de_VAs.qmd
             text: "7- Método Direto"
+          - href: aulas/08-Densidade_soma_diferenca.qmd
+            text: "8- Densidade da Soma e da Diferença de VAs"
       
       
 
