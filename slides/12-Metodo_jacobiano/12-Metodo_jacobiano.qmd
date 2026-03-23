@@ -1,0 +1,116 @@
+---
+title: "O Método do Jacobiano"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Introdução
+
+Já vimos como encontrar a densidade de operações simples (como soma e diferença). Mas e se precisarmos transformar **múltiplas variáveis ao mesmo tempo**?
+
+- Seja $\underset{\widetilde{\phantom{X}}}{X} = (X_1, \dots, X_n)$ um vetor aleatório conhecido.
+- Queremos encontrar a densidade de um novo vetor $\underset{\widetilde{\phantom{Y}}}{Y} = (Y_1, \dots, Y_m)$, gerado por um sistema de funções $Y_i = g_i(\underset{\widetilde{\phantom{X}}}{X})$.
+- O Método direto torna-se extremamente complexo em múltiplas dimensões.
+- A solução é o **Método do Jacobiano**.
+
+---
+
+## O Método em 4 Passos
+
+Para aplicar o Método do Jacobiano sem erro, siga esta lógica:
+
+1. Expresse as variáveis antigas ($X$) em função das novas ($Y$). Ou seja, encontre $\underset{\widetilde{\phantom{x}}}{x} = h(\underset{\widetilde{\phantom{y}}}{y})$.
+2. Calcule a matriz de derivadas parciais de $h(\underset{\widetilde{\phantom{x}}}{x})$ em relação a $Y$ e obtenha o módulo do seu determinante $|J|$.
+3. Pegue a densidade original $f_{\underset{\widetilde{\phantom{X}}}{X}}(\underset{\widetilde{\phantom{x}}}{x})$ e troque todos os "$x$" pelas suas respectivas funções de $y$. Multiplique o resultado por $|J|$.
+4. Substitua as funções de $y$ nas restrições originais de $x$ para descobrir o domínio válido do novo vetor $\underset{\widetilde{\phantom{Y}}}{Y}$.
+
+---
+
+## O Jacobiano e a Fórmula Geral
+
+A matriz Jacobiana da transformação inversa ($x$ em função de $y$) é dada por:
+
+$$
+J = \det \begin{bmatrix}
+\frac{\partial x_1}{\partial y_1} & \cdots & \frac{\partial x_1}{\partial y_n} \\
+\vdots & \ddots & \vdots \\
+\frac{\partial x_n}{\partial y_1} & \cdots & \frac{\partial x_n}{\partial y_n}
+\end{bmatrix}
+$$
+
+A densidade conjunta do novo vetor $\underset{\widetilde{\phantom{Y}}}{Y}$ é:
+$$f_{\underset{\widetilde{\phantom{Y}}}{Y}}(\underset{\widetilde{\phantom{y}}}{y}) = f_{\underset{\widetilde{\phantom{X}}}{X}}(h(\underset{\widetilde{\phantom{y}}}{y})) \cdot |J|$$
+
+---
+
+## O Jacobiano e a Fórmula Geral
+
+- Na literatura, pode-se encontrar o Jacobiano calculado das funções originais $g(x)$.
+- Nesse caso, a fórmula utiliza $|J|^{-1}$. Calcular pela inversa costuma ser mais direto.
+
+---
+
+## Condições e Casos Especiais
+
+O método exige que a função seja **bijetora** (um-para-um) e que as dimensões sejam iguais ($m = n$). E se não forem?
+
+**1. A função não é bijetora (Ex: $Y = X^2$):**
+
+- Particionamos o domínio original em pedaços onde a função não se repete (ex: $x<0$ e $x>0$).
+- Aplicamos os 4 passos para cada pedaço separadamente.
+- A densidade final será a **soma** dos resultados.
+
+---
+
+## Condições e Casos Especiais
+
+**2. As dimensões são diferentes (Ex: $\dim(Y) < \dim(X)$):**
+
+- Criamos "variáveis artificiais" fáceis (Ex: $Y_2 = X_2$) para igualar as dimensões.
+- Aplicamos o método normalmente para achar a conjunta.
+- No fim, calculamos a **distribuição marginal**, "integrando fora" a variável artificial!
+
+---
+
+## Exemplo 12.1
+
+Seja $\underset{\widetilde{\phantom{X}}}{X}$ com densidade $f_{\underset{\widetilde{\phantom{X}}}{X}}(\underset{\widetilde{\phantom{x}}}{x}) = \lambda^3 e^{-\lambda(x_1+x_2+x_3)}$, para $x_i > 0$. Determine a densidade de $\underset{\widetilde{\phantom{Y}}}{Y}$ tal que $Y_1 = X_1$, $Y_2 = X_1+X_2$, $Y_3 = X_1+X_2+X_3$.
+
+---
+
+## Exemplo 12.2
+
+Considere $\underset{\widetilde{\phantom{X}}}{X}$ com densidade $$f_{\underset{\widetilde{\phantom{X}}}{X}}(\underset{\widetilde{\phantom{x}}}{x}) = 4x_1x_2, \qquad 0 < x_1 < 1, 0 < x_2 < 1.$$ Obtenha a densidade conjunta de $Y_1 = X_1/X_2$ e $Y_2 = X_1X_2$.
+
+---
+
+## Exemplo 12.3
+
+Sejam $X_1, X_2, X_3$ independentes com densidade $N(0,1)$.
+Obtenha a densidade conjunta de $Y_1 = X_1+X_2$, $Y_2 = X_1-X_2$, $Y_3 = X_1-X_3$.
+
+
+# Fim

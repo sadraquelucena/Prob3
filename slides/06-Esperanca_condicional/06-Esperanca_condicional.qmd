@@ -1,0 +1,112 @@
+---
+title: "Esperança Condicional"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Introdução
+
+Como fica o valor esperado de uma variável $X$ se tivermos acesso a uma **nova informação** sobre a ocorrência de uma variável $Y$?
+
+**Na Prática:**
+
+- Qual é o tempo esperado para um cliente ser atendido? (Esperança clássica).
+- Qual é o tempo esperado para um cliente ser atendido, **sabendo que** já há 5 pessoas na fila? (Esperança Condicional).
+
+- **A lógica é simples:** calculamos uma esperança comum, mas o nosso espaço amostral foi "reduzido" para conter apenas os cenários onde a informação $Y=y$ é verdadeira.
+
+---
+
+## Definições: O Caso Discreto e Contínuo
+
+**1. Caso Discreto:**
+
+Se $P(Y=y) > 0$, o valor esperado de $X$ dado $Y=y$ é:
+$$E(X|Y=y) = \sum_{x} x \cdot P(X=x|Y=y)$$
+Onde $P(X=x|Y=y) = \frac{P(X=x, Y=y)}{P(Y=y)}$.
+
+**2. Caso Contínuo:**
+
+Se $f_Y(y) > 0$, a esperança condicional é a integral:
+$$E(X|Y=y) = \int_{-\infty}^{\infty} x \cdot f_{X|Y}(x|y)\, dx$$
+Onde $f_{X|Y}(x|y) = \frac{f_{X,Y}(x,y)}{f_Y(y)}$.
+
+---
+
+## Propriedades da Esperança Condicional
+
+- **Esperança de uma Função:**
+$$E[g(X)|Y=y] = \int_{-\infty}^{\infty} g(x) \cdot f_{X|Y}(x|y)\, dx$$
+*(Substitua a integral por somatório no caso discreto).*
+
+- **Linearidade:** A esperança da soma continua sendo a soma das esperanças:
+$$E\left(\sum_{i=1}^n X_i \Big| Y=y\right) = \sum_{i=1}^n E(X_i|Y=y)$$
+
+---
+
+## Exemplo 6.1
+
+Seja a densidade conjunta $f_{X,Y}(x,y) = \frac{e^{-x/y}e^{-y}}{y}$, para $x>0$ e $y>0$. Calcule $E(X|Y=y)$.
+
+---
+
+## Teorema 6.1: Esperança Total
+
+- A partir da esperança condicional $E(X|Y)$, podemos obter a esperança de $X$ fazendo uma média ponderada sobre todos os valores possíveis de $Y$.
+
+**Teorema:**
+$$E(X) = E[E(X|Y)]$$
+
+- **Interpretação:** Calculamos a média de $X$ em cada cenário ($Y$) e depois agregamos pelos pesos de $Y$.
+
+- **Caso discreto:** $E(X) = \sum_y E(X|Y=y) P(Y=y)$
+- **Caso contínuo:** $E(X) = \int_{-\infty}^{\infty} E(X|Y=y) f_Y(y)\, dy$
+
+---
+
+## Exemplo 6.2
+
+Um ponto $Y$ é escolhido de acordo com uma Uniforme em $[0, 1]$. A seguir, um ponto $X$ é escolhido segundo uma Uniforme no intervalo $[0, Y]$. Obtenha a esperança de $X$.
+
+---
+
+## Exemplo 6.3
+
+Um minerador está preso. Ele escolhe aleatoriamente entre 3 portas(1/3 de chance cada):
+
+- **Porta 1:** Leva à saída após 3h.
+- **Porta 2:** Retorna à mina após 5h. 
+- **Porta 3:** Retorna à mina após 7h.
+
+Qual o tempo esperado para ele sair?
+
+---
+
+## Exemplo 6.4
+
+Se $X \sim B(n,p)$ e $Y \sim B(n,p)$ são independentes, calcule a esperança condicional $E(X | X+Y=m)$. *(Dica: A soma de duas binomiais independentes com mesmo p é $X+Y \sim B(2n, p)$).*
+
+# Fim

@@ -1,0 +1,43 @@
+---
+title: "Conteúdo 7"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Variância Condicional
+
+Nesta aula, estendemos o conceito de condicionamento para analisar não apenas a média, mas também a variabilidade de uma variável aleatória diante de nova informação. Introduzimos a variância condicional, destacando sua interpretação como a dispersão de $X$ em torno de $E(X|Y=y)$ dentro de um cenário fixo. Em seguida, apresentamos a Lei da Variância Total, que decompõe a variância de $X$ em duas componentes: a variabilidade interna aos cenários e a variabilidade entre cenários. Também discutimos a covariância condicional, enfatizando como relações entre variáveis podem mudar ao controlar um fator adicional.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/07-Variancia_condicional/07-Variancia_condicional.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide07_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/07-Variancia_condicional.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide07_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/Prob3_Lista7.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista07.png){width=80%}<br>Lista 7
+</a>
+:::
+
+::::
+
+

@@ -37,14 +37,22 @@ website:
             text: "4- Distribuição Condicional"
           - href: aulas/05-Independencia_de_VA.qmd
             text: "5- Indepedência de VAs"
-          - href: aulas/06-Dist_multinomial_normal_bivariada.qmd
-            text: "6- Dist. Multinomial e Normal Bivariada"
+          - href: aulas/06-Esperanca_condicional.qmd
+            text: "6- Esperança Condicional"
+          - href: aulas/07-Variancia_condicional.qmd
+            text: "7- variância Condicional"
+          - href: aulas/08-Dist_multinomial_normal_bivariada.qmd
+            text: "8- Dist. Multinomial e Normal Bivariada"
       - section: "Parte 2: Função de Variáveis Aleatórias"
         contents:
-          - href: aulas/07-Funcoes_de_VAs.qmd
-            text: "7- Método Direto"
-          - href: aulas/08-Densidade_soma_diferenca.qmd
-            text: "8- Densidade da Soma e da Diferença de VAs"
+          - href: aulas/09-Funcoes_de_VAs.qmd
+            text: "9- Método Direto"
+          - href: aulas/10-Densidade_soma_diferenca.qmd
+            text: "10- Densidade da Soma e da Diferença de VAs"
+          - href: aulas/11-Distribuicao_maximo_minimo.qmd
+            text: "11- Distribuição do Máximo e do Mínimo"
+          - href: aulas/12-Metodo_jacobiano.qmd
+            text: "12- Método do Jacobiano"
       
       
 

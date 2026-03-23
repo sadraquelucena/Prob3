@@ -1,0 +1,43 @@
+---
+title: "Conteúdo 11"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Distribuição do Máximo e do Mínimo
+
+Nesta aula, introduzimos as estatísticas de ordem, com foco nos extremos: o máximo e o mínimo de um conjunto de variáveis aleatórias independentes. A partir da função de distribuição acumulada, construímos essas distribuições explorando a lógica dos eventos conjuntos: o máximo depende do comportamento simultâneo de todas as variáveis abaixo de um limite, enquanto o mínimo é obtido de forma mais eficiente via evento complementar.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide11_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/11-Distribuicao_maximo_minimo.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide11_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/Prob3_Lista11.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista11.png){width=80%}<br>Lista 11
+</a>
+:::
+
+::::
+
+

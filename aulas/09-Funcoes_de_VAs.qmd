@@ -1,0 +1,43 @@
+---
+title: "Conteúdo 9"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Funções de Variáveis Aleatórias: Método Direto
+
+Este material aborda o estudo de funções de variáveis aleatórias, com foco em como obter a distribuição de variáveis transformadas a partir de distribuições conhecidas. São explorados o método direto para casos discretos e contínuos, incluindo a utilização da função de distribuição acumulada e a análise de regiões de integração.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide09_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/09-Funcoes_de_VAs.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide09_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/Prob3_Lista9.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista09.png){width=80%}<br>Lista 9
+</a>
+:::
+
+::::
+
+

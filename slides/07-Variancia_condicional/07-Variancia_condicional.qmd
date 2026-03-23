@@ -1,0 +1,99 @@
+---
+title: "Variância Condicional"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Introdução
+
+- Na aula anterior, vimos como a ocorrência de um evento $Y=y$ altera o valor esperado de uma variável aleatória $X$.
+- Mas como essa mesma informação afeta a **dispersão** (ou incerteza) dos dados ao redor dessa nova média?
+- **A lógica permanece a mesma:** a variância condicional comporta-se exatamente como a variância clássica, mas calculada no espaço amostral "reduzido" pela informação de que $Y=y$ já ocorreu.
+
+---
+
+## Definição 7.1: Variância Condicional
+
+Sejam $X$ e $Y$ variáveis aleatórias. A variância condicional de $X$, dado que $Y=y$, é o valor esperado dos desvios da variável em relação à sua esperança condicional.
+
+- **Fórmula Teórica:**
+$$Var(X|Y=y) = E\{[X - E(X|Y=y)]^2\}$$
+
+- **Fórmula Prática:**
+Assim como na variância comum, é quase sempre mais fácil calcular usando a diferença entre a esperança do quadrado e o quadrado da esperança:
+$$Var(X|Y=y) = E(X^2|Y=y) - E^2(X|Y=y)$$
+*(Supondo que todas as esperanças envolvidas existam).*
+
+---
+
+## Exemplo 7.1
+
+Seja $(X, Y)$ um vetor aleatório contínuo com função de densidade de probabilidade (f.d.p.) conjunta dada por:
+$$f_{X,Y}(x,y) = e^{-y}, \quad x>0, \quad y>0$$
+
+Obtenha $E(Y|X=x)$ e a variância condicional $Var(Y|X=x)$.
+
+---
+
+## Teorema 7.1: Lei da Variância Total
+
+- Assim como na esperança, podemos usar $Y$ para decompor a variabilidade de $X$. Separamos em duas partes:
+
+    1. A variabilidade de $X$ dentro de cada cenário de $Y$
+    2. A variabilidade entre os cenários (mudança das médias)
+
+$$V(X) = E[Var(X|Y)] + Var[E(X|Y)]$$
+
+**Interpretação:**
+
+  - $E[Var(X|Y)]$: variância interna média (o quanto $X$ ainda varia mesmo fixando $Y$).
+  - $Var[E(X|Y)]$: variância entre cenários (o quanto as médias mudam quando $Y$ muda).
+
+---
+
+## Definição 7.2: Covariância Condicional
+
+**Fórmula:**
+$$Cov[(X,Y)|Z=z] = E(XY|Z=z) - E(X|Z=z)E(Y|Z=z)$$
+*(Supondo que as esperanças envolvidas existam).*
+
+**O que isso significa?**
+
+- Duas variáveis podem parecer correlacionadas no geral, mas quando fixamos uma terceira variável (fator de confusão), essa correlação pode desaparecer (ou vice-versa).
+
+---
+
+## Exemplo 7.2
+
+Seja o vetor aleatório $(X,Y)$ com densidade conjunta $f(x,y) = 2$ restrita à região triangular $0 < x < y < 1$. Calcule a variância condicional $Var(X|Y=y)$.
+
+---
+
+## Exemplo 7.3
+
+Uma fábrica produz $n$ peças por dia. A probabilidade $Y$ de uma peça ser defeituosa varia diariamente segundo uma distribuição Uniforme em $(0,1)$. O número de peças defeituosas num dia é $X$. Sabendo que $X|Y=y \sim \text{Binomial}(n, y)$, use a Lei da Variância Total para calcular $V(X)$.
+
+# Fim

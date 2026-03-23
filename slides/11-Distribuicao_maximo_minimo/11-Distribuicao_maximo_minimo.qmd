@@ -1,0 +1,123 @@
+---
+title: "Distribuição do Máximo e do Mínimo"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Introdução
+
+- Hoje avançamos para as **Estatísticas de Ordem**, focando nos extremos: o Máximo e o Mínimo de um conjunto de variáveis aleatórias.
+
+- Na prática, onde isso é usado?
+    
+    - **O Mínimo ($Y_{(1)}$):** Tempo de falha de um sistema em **série** (o sistema para quando o *primeiro* componente quebra).
+    - **O Máximo ($Y_{(n)}$):** Tempo de falha de um sistema em **paralelo** (o sistema só para quando o *último* componente quebra).
+
+- Vamos construir essas distribuições usando pura lógica e a **Função de Distribuição Acumulada (FDA)**.
+
+---
+
+## Distribuição do Máximo
+
+- Considere $X_1, \dots, X_n$ v.a. independentes e
+$$Y_{(n)} = \max\{X_1, \dots, X_n\}.$$
+
+- Suponha que queremos encontrar a probabilidade do máximo ser menor ou igual a $w$: $P(Y_{(n)} \le w)$.
+- Para que o **maior valor de todos** seja menor ou igual a $w$, **todos** os valores têm que ser menores ou iguais a $w$.
+- Ou seja, precisamos que: $X_1 \le w$ **E** $X_2 \le w$ **E** $\dots$ **E** $X_n \le w$.
+- Como são eventos independentes, multiplicamos as probabilidades:
+$$F_{Y_{(n)}}(w) = P(X_1 \le w) \cdot P(X_2 \le w) \cdots P(X_n \le w)$$
+
+---
+
+## Distribuição do Mínimo
+
+- Agora queremos a distribuição do mínimo: $$Y_{(1)} = \min\{X_1, \dots, X_n\}$$
+
+- Queremos $P(Y_{(1)} \le z)$,  que é difícil de tratar diretamente.
+- Analisando o complementar [$P(Y_{(1)}> z)$] é mais simples, pois
+$$ Y_{(1)}> z \Leftrightarrow X_1>z, \ldots, X_n>z$$
+
+
+- Como as variáveis são independentes:
+$$ P(Y_{(1)}>z) = \prod\limits_{i=1}^n P(X_i>z) $$
+
+---
+
+## Distribuição do Mínimo
+
+- Voltando para a Acumulada:
+$$ F_{Y_{(1)}}(z) = P(Y_{(1)}>z) = 1 - \prod\limits_{i=1}^n P(X_i>z) $$
+
+---
+
+## Proposição 11.1: Formalização
+
+Seja $X_1, \dots, X_n$ v.a.i. com distribuições acumuladas $F_{X_i}$.
+
+- **Distribuição do Máximo** -- a acumulada é o produto das acumuladas individuais:
+$$F_{Y_{(n)}}(w) = \prod_{i=1}^n F_{X_i}(w)$$
+
+- **Distribuição do Mínimo** -- a acumulada depende do produto das probabilidades complementares:
+$$F_{Y_{(1)}}(z) = 1 - \prod_{i=1}^n [1 - F_{X_i}(z)]$$ 
+
+---
+
+## Aplicação: Confiabilidade de Sistemas
+
+Suponha $X_1,\dots,X_n$ = tempos de vida de componentes.
+
+- Sistema em Série: Falha quando o primeiro quebra
+    - Tempo de vida do sistema: $\min(X_1,\ldots,X_n)$
+    - Exemplos: pisca-pisca antigo, linha de produção
+
+- Sistema em Paralelo: Falha quando o último quebra
+    - Tempo de vida do sistema: $\max(X_1,\ldots,X_n)$
+    - Exemplos: motores de avião, servidores com backup
+
+---
+
+## Exemplo 11.1
+
+Sejam $X_1, \dots, X_n$ independentes com distribuição Uniforme(0, 1).
+
+a) Determine a distribuição do máximo.
+b) Determine a distribuição do mínimo.
+c) Determine a função de densidade do máximo
+
+---
+
+## Exemplo 11.2
+
+Sejam $X_1, \dots, X_n$ variáveis independentes com distribuição Exponencial de média $\mathbb{E}(X_i) = \lambda_i$.
+
+
+a) Determine a distribuição do mínimo.
+b) Determine a distribuição do máximo.
+c) Determine a função de densidade do mínimo
+
+
+# Fim
