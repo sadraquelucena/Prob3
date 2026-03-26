@@ -236,7 +236,13 @@
 <h2>Conteúdo programático</h2>
 <ol start="4" type="1">
 <li><p>Convergência e Teorema Central do Limite</p>
-<p>4.1. Desigualdade de Chebychev 4.2. Convergência de variáveis aleatórias 4.3. Convergência em probabilidade e Convergência Quase certa 4.4. Convergência em Distribuição 4.5. Lei dos Grandes Números 4.6. Lei forte e Lei fraca 4.7. Teorema Central do Limite</p></li>
+<p>4.1. Desigualdade de Chebychev</p>
+<p>4.2. Convergência de variáveis aleatórias</p>
+<p>4.3. Convergência em probabilidade e Convergência Quase certa</p>
+<p>4.4. Convergência em Distribuição</p>
+<p>4.5. Lei dos Grandes Números</p>
+<p>4.6. Lei forte e Lei fraca</p>
+<p>4.7. Teorema Central do Limite</p></li>
 </ol>
 </section>
 <section id="bibliografia-recomendada" class="slide level2">
@@ -287,6 +293,52 @@
 <li><em>Atenção!</em> Revisar especialmente Integrais de Funções Exponenciais e Logaritmos.</li>
 </ul>
 </section>
+<section id="sobre-derivadas" class="slide level2">
+<h2>Sobre Derivadas</h2>
+<ul>
+<li><p><strong>Derivada de uma Constante:</strong> A derivada de qualquer número sozinho é zero. <span class="math display">\[f(x) = c \Rightarrow f'(x) = 0\]</span></p></li>
+<li><p><strong>Regra da Potência:</strong> <span class="math display">\[f(x) = x^n \Rightarrow f'(x) = nx^{n-1}\]</span></p></li>
+</ul>
+</section>
+<section id="sobre-derivadas-1" class="slide level2">
+<h2>Sobre Derivadas</h2>
+<p><strong>Derivadas de Funções Exponenciais</strong></p>
+<ul>
+<li><p>Exponencial Natural Simples: <span class="math display">\[ \text{Se } f(x) = e^x\text{, então: } f'(x) = e^x\]</span></p></li>
+<li><p>Exponencial Natural com Regra da Cadeia (Mais comum em estatística): <span class="math display">\[ \text{Se } f(x) = e^{u(x)}\text{, então: } f'(x) = e^{u(x)} \cdot u'(x)\]</span></p></li>
+<li><p>Exponencial de Base Qualquer (<span class="math inline">\(a\)</span>): <span class="math display">\[ \text{Se } f(x) = a^x\text{, então: } f'(x) = a^x \log(a)\]</span></p></li>
+</ul>
+</section>
+<section id="sobre-derivadas-2" class="slide level2">
+<h2>Sobre Derivadas</h2>
+<p><strong>Derivadas de Funções Logarítmicas</strong></p>
+<ul>
+<li><p>Em estatística é comum usarmos <span class="math inline">\(\log(x)\)</span> para logaritmo natural ao invés de <span class="math inline">\(\ln(x)\)</span>.</p></li>
+<li><p>Logaritmo Natural Simples: <span class="math display">\[ \text{Se }f(x) = \log(x)\text{, então: }f'(x) = \frac{1}{x} \]</span></p></li>
+<li><p>Logaritmo Natural com Regra da Cadeia: <span class="math display">\[ \text{Se }f(x) = \log(u(x))\text{, então: }f'(x) = \frac{u'(x)}{u(x)} \]</span></p></li>
+</ul>
+</section>
+<section id="sobre-derivadas-3" class="slide level2">
+<h2>Sobre Derivadas</h2>
+<p><strong>Derivadas de Funções Logarítmicas</strong></p>
+<ul>
+<li>Logaritmo de Base Qualquer (<span class="math inline">\(a\)</span>): <span class="math display">\[ \text{Se }f(x) = \log_a(x)\text{, então: }f'(x) = \frac{1}{x\log(a)} \]</span></li>
+</ul>
+</section>
+<section id="sobre-derivadas-4" class="slide level2">
+<h2>Sobre Derivadas</h2>
+<ul>
+<li><p><strong>Regra da Cadeia:</strong> Usada para funções compostas. Derivamos “de fora para dentro”. <span class="math display">\[h(x) = f(g(x)) \Rightarrow h'(x) = f'(g(x)) \cdot g'(x)\]</span></p></li>
+<li><p><strong>Regra do Produto:</strong> <span class="math display">\[ (fg)' = f'g + fg'\]</span></p></li>
+<li><p><strong>Regra do Quociente:</strong> <span class="math display">\[ \left(\frac{f}{g}\right)' = \frac{f'g -fg'}{g^2}\]</span></p></li>
+</ul>
+</section>
+<section id="sobre-derivadas-5" class="slide level2">
+<h2>Sobre Derivadas</h2>
+<ul>
+<li><strong>Derivadas Parciais:</strong> Para funções com mais de uma variável (como <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span>). Derivamos em relação a uma variável e tratamos a outra como constante. Notação: <span class="math display">\[\frac{\partial f(x,y)}{\partial x}\]</span></li>
+</ul>
+</section>
 <section id="exemplo-1.1" class="slide level2">
 <h2>Exemplo 1.1</h2>
 <p>Obtenha a derivada das seguintes funções:</p>
@@ -297,6 +349,103 @@
 <li>Dada a função <span class="math inline">\(u(x, y) = \frac{x}{x+y}\)</span>, calcule <span class="math inline">\(\frac{\partial u}{\partial x}\)</span>.</li>
 <li>Dada <span class="math inline">\(f(x, y) = 7x^2y + 5y^3\log(x)\)</span>, calcule as derivadas de primeira ordem <span class="math inline">\(\frac{\partial f}{\partial x}\)</span> e <span class="math inline">\(\frac{\partial f}{\partial y}\)</span>.</li>
 </ol>
+</section>
+<section id="sobre-integrais" class="slide level2">
+<h2>Sobre Integrais</h2>
+<ul>
+<li><p><strong>Integral de uma Constante:</strong> <span class="math display">\[\int k \, dx = kx + C\]</span></p></li>
+<li><p><strong>Regra da Potência:</strong> Válido para <span class="math inline">\(n \neq -1\)</span>. <span class="math display">\[\int x^n \, dx = \frac{x^{n+1}}{n+1} + C\]</span></p></li>
+<li><p><strong>Caso Especial (<span class="math inline">\(n = -1\)</span>):</strong> Quando temos <span class="math inline">\(\frac{1}{x}\)</span>, a integral é o logaritmo natural. <span class="math display">\[\int \frac{1}{x} \, dx = \log|x| + C\]</span></p></li>
+</ul>
+</section>
+<section id="sobre-integrais-1" class="slide level2">
+<h2>Sobre Integrais</h2>
+<p><strong>Integrais de Funções Exponenciais</strong></p>
+<ul>
+<li><p>Exponencial Natural Simples: <span class="math display">\[\int e^x \, dx = e^x + C\]</span></p></li>
+<li><p>Exponencial com Constante no Expoente: Se há uma constante <span class="math inline">\(a\)</span> multiplicando o <span class="math inline">\(x\)</span>, ela desce dividindo. <span class="math display">\[\int e^{ax} \, dx = \frac{1}{a}e^{ax} + C\]</span></p></li>
+</ul>
+</section>
+<section id="sobre-integrais-2" class="slide level2">
+<h2>Sobre Integrais</h2>
+<p><strong>Integrais de Funções Logarítmicas</strong></p>
+<ul>
+<li><strong>Atenção:</strong> A integral do logaritmo não é <span class="math inline">\(\frac{1}{x}\)</span> (isso é a derivada!).</li>
+<li>A integral de <span class="math inline">\(\log(x)\)</span> é resolvida usando a técnica de Integração por Partes, mas o resultado final é muito útil de se ter em mente: <span class="math display">\[\int \log(x) \, dx = x\log(x) - x + C\]</span></li>
+</ul>
+</section>
+<section id="sobre-integrais-3" class="slide level2">
+<h2>Sobre Integrais</h2>
+<ul>
+<li><p><strong>Regra da Soma e Subtração:</strong> <span class="math display">\[\int [f(x) \pm g(x)] \, dx = \int f(x) \, dx \pm \int g(x) \, dx\]</span></p></li>
+<li><p><strong>Regra da Constante Multiplicativa:</strong> Constantes “saem” da integral. <span class="math display">\[\int c \cdot f(x) \, dx = c \int f(x) \, dx\]</span></p></li>
+</ul>
+</section>
+<section id="sobre-integrais-4" class="slide level2">
+<h2>Sobre Integrais</h2>
+<p><strong>Integração por Substituição</strong></p>
+<ul>
+<li><p>Pense na substituição como o <strong>inverso da Regra da Cadeia</strong>.</p></li>
+<li><p>Se definirmos uma função de dentro como <span class="math inline">\(u = g(x)\)</span>, a sua diferencial (derivada) será <span class="math inline">\(du = g'(x) dx\)</span>. Substituindo na integral, temos:<span class="math display">\[\int f(g(x)) \cdot g'(x) dx = \int f(u) du\]</span></p></li>
+<li><p>O objetivo é encontrar uma parte da integral para chamar de <span class="math inline">\(u\)</span>, de modo que a derivada dessa parte (<span class="math inline">\(du\)</span>) também esteja presente na integral, permitindo trocar todas as variáveis <span class="math inline">\(x\)</span> por <span class="math inline">\(u\)</span>. Após integrar em <span class="math inline">\(u\)</span>, desfazemos a substituição.</p></li>
+</ul>
+</section>
+<section id="sobre-integrais-5" class="slide level2">
+<h2>Sobre Integrais</h2>
+<p><strong>Integração por Substituição</strong></p>
+<ul>
+<li><p><strong>Quando usar:</strong> Quando identificar uma função “principal” e a derivada do seu “miolo” multiplicando do lado de fora.</p></li>
+<li><p>Sinais de que é Substituição:</p>
+<ul>
+<li><strong>O grau da variável muda em 1:</strong> Se você tem um <span class="math inline">\(x^2\)</span> dentro de uma raiz ou expoente, e um <span class="math inline">\(x\)</span> do lado de fora. (Ex: <span class="math inline">\(\int x e^{x^2} dx\)</span>).</li>
+<li><strong>Função e sua derivada estão presentes:</strong> Se você vê um <span class="math inline">\(\ln(x)\)</span> e também vê um <span class="math inline">\(\frac{1}{x}\)</span> na mesma integral. (Ex: <span class="math inline">\(\int \frac{\ln(x)}{x} dx\)</span>).</li>
+<li><strong>Funções trigonométricas pareadas:</strong> Se você vê um seno e um cosseno juntos. (Ex: <span class="math inline">\(\int \sin^3(x)\cos(x) dx\)</span>).</li>
+</ul></li>
+</ul>
+</section>
+<section id="sobre-integrais-6" class="slide level2">
+<h2>Sobre Integrais</h2>
+<p><strong>Integração por partes</strong></p>
+<ul>
+<li><p>A integração por partes é o <strong>inverso da Regra do Produto</strong>.</p></li>
+<li><p>Se <span class="math inline">\(u\)</span> e <span class="math inline">\(v\)</span> são funções contínuas e diferenciáveis de <span class="math inline">\(x\)</span>, então a integral do produto é dada por:<span class="math display">\[\int u \, dv = u \cdot v - \int v \, du\]</span></p></li>
+<li><p>Você escolhe uma parte da integral original para ser o <span class="math inline">\(u\)</span> (que você vai derivar para achar <span class="math inline">\(du\)</span>) e o restante para ser o <span class="math inline">\(dv\)</span> (que você vai integrar para achar <span class="math inline">\(v\)</span>).</p></li>
+</ul>
+</section>
+<section id="sobre-integrais-7" class="slide level2">
+<h2>Sobre Integrais</h2>
+<p><strong>Integração por partes</strong></p>
+<ul>
+<li><p>Geralmente as funções dentro da integral não têm nenhuma relação de derivada entre si.</p></li>
+<li><p>Sinais de que é por Partes:</p>
+<ul>
+<li><strong>Produto de funções de “famílias” diferentes:</strong> Um polinômio multiplicando uma exponencial (Ex: <span class="math inline">\(\int x e^x dx\)</span>), ou um polinômio multiplicando uma função trigonométrica (Ex: <span class="math inline">\(\int x^2 \sin(x) dx\)</span>).</li>
+<li><strong>Funções “solitárias” difíceis de integrar:</strong> Se a integral tem apenas um logaritmo ou uma função trigonométrica inversa sozinha. (Ex: <span class="math inline">\(\int \ln(x) dx\)</span> ou <span class="math inline">\(\int \arctan(x) dx\)</span>). Nesses casos, o truque é usar <span class="math inline">\(u = \ln(x)\)</span> e <span class="math inline">\(dv = 1 dx\)</span>.</li>
+</ul></li>
+</ul>
+</section>
+<section id="sobre-integrais-8" class="slide level2">
+<h2>Sobre Integrais</h2>
+<p><strong>Integração por partes</strong></p>
+<ul>
+<li><p>Em integração por partes você precisa escolher quem é <span class="math inline">\(u\)</span>.</p></li>
+<li><p>Siga a ordem da sigla <strong>LIATE</strong> para escolher o <span class="math inline">\(u\)</span> (o que vier primeiro na lista ganha):</p>
+<ul>
+<li><p>Logarítmicas (ex: <span class="math inline">\(\ln(x)\)</span>)</p></li>
+<li><p>Inversas trigonométricas (ex: <span class="math inline">\(\arcsin(x)\)</span>)</p></li>
+<li><p>Algébricas / Polinômios (ex: <span class="math inline">\(x^2\)</span>, <span class="math inline">\(3x\)</span>)</p></li>
+<li><p>Trigonométricas (ex: <span class="math inline">\(\sin(x)\)</span>, <span class="math inline">\(\cos(x)\)</span>)</p></li>
+<li><p>Exponenciais (ex: <span class="math inline">\(e^x\)</span>, <span class="math inline">\(2^x\)</span>)</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="sobre-integrais-9" class="slide level2">
+<h2>Sobre Integrais</h2>
+<p><strong>Integrais Duplas</strong></p>
+<ul>
+<li>Usadas em funções de múltiplas variáveis (ex: densidade conjunta <span class="math inline">\(f(x,y)\)</span>).</li>
+<li>Calculamos de “dentro para fora”. Integramos primeiro em relação a uma variável (tratando a outra como constante) e depois integramos o resultado.<span class="math display">\[\int_{0}^{1} \left( \int_{0}^{1} (x+y) dy \right) dx\]</span></li>
+</ul>
 </section>
 <section id="exemplo-1.2" class="slide level2">
 <h2>Exemplo 1.2</h2>

@@ -963,7 +963,7 @@
     "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#conteúdo-programático-3",
     "title": "Apresentação da Disciplina",
     "section": "Conteúdo programático",
-    "text": "Conteúdo programático\n\nConvergência e Teorema Central do Limite\n4.1. Desigualdade de Chebychev 4.2. Convergência de variáveis aleatórias 4.3. Convergência em probabilidade e Convergência Quase certa 4.4. Convergência em Distribuição 4.5. Lei dos Grandes Números 4.6. Lei forte e Lei fraca 4.7. Teorema Central do Limite"
+    "text": "Conteúdo programático\n\nConvergência e Teorema Central do Limite\n4.1. Desigualdade de Chebychev\n4.2. Convergência de variáveis aleatórias\n4.3. Convergência em probabilidade e Convergência Quase certa\n4.4. Convergência em Distribuição\n4.5. Lei dos Grandes Números\n4.6. Lei forte e Lei fraca\n4.7. Teorema Central do Limite"
   },
   {
     "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#bibliografia-recomendada",
@@ -994,11 +994,123 @@
     "text": "Por que revisar derivadas e integrais?\n\nDerivadas: Essenciais para o Método do Jacobiano (Transformação de Variáveis).\nIntegrais: A ferramenta para calcular Esperanças e Probabilidades em modelos contínuos.\nAtenção! Revisar especialmente Integrais de Funções Exponenciais e Logaritmos."
   },
   {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-derivadas",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-derivadas",
+    "title": "Apresentação da Disciplina",
+    "section": "Sobre Derivadas",
+    "text": "Sobre Derivadas\n\nDerivada de uma Constante: A derivada de qualquer número sozinho é zero. \\[f(x) = c \\Rightarrow f'(x) = 0\\]\nRegra da Potência: \\[f(x) = x^n \\Rightarrow f'(x) = nx^{n-1}\\]"
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-derivadas-1",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-derivadas-1",
+    "title": "Apresentação da Disciplina",
+    "section": "Sobre Derivadas",
+    "text": "Sobre Derivadas\nDerivadas de Funções Exponenciais\n\nExponencial Natural Simples: \\[ \\text{Se } f(x) = e^x\\text{, então: } f'(x) = e^x\\]\nExponencial Natural com Regra da Cadeia (Mais comum em estatística): \\[ \\text{Se } f(x) = e^{u(x)}\\text{, então: } f'(x) = e^{u(x)} \\cdot u'(x)\\]\nExponencial de Base Qualquer (\\(a\\)): \\[ \\text{Se } f(x) = a^x\\text{, então: } f'(x) = a^x \\log(a)\\]"
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-derivadas-2",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-derivadas-2",
+    "title": "Apresentação da Disciplina",
+    "section": "Sobre Derivadas",
+    "text": "Sobre Derivadas\nDerivadas de Funções Logarítmicas\n\nEm estatística é comum usarmos \\(\\log(x)\\) para logaritmo natural ao invés de \\(\\ln(x)\\).\nLogaritmo Natural Simples: \\[ \\text{Se }f(x) = \\log(x)\\text{, então: }f'(x) = \\frac{1}{x} \\]\nLogaritmo Natural com Regra da Cadeia: \\[ \\text{Se }f(x) = \\log(u(x))\\text{, então: }f'(x) = \\frac{u'(x)}{u(x)} \\]"
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-derivadas-3",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-derivadas-3",
+    "title": "Apresentação da Disciplina",
+    "section": "Sobre Derivadas",
+    "text": "Sobre Derivadas\nDerivadas de Funções Logarítmicas\n\nLogaritmo de Base Qualquer (\\(a\\)): \\[ \\text{Se }f(x) = \\log_a(x)\\text{, então: }f'(x) = \\frac{1}{x\\log(a)} \\]"
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-derivadas-4",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-derivadas-4",
+    "title": "Apresentação da Disciplina",
+    "section": "Sobre Derivadas",
+    "text": "Sobre Derivadas\n\nRegra da Cadeia: Usada para funções compostas. Derivamos “de fora para dentro”. \\[h(x) = f(g(x)) \\Rightarrow h'(x) = f'(g(x)) \\cdot g'(x)\\]\nRegra do Produto: \\[ (fg)' = f'g + fg'\\]\nRegra do Quociente: \\[ \\left(\\frac{f}{g}\\right)' = \\frac{f'g -fg'}{g^2}\\]"
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-derivadas-5",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-derivadas-5",
+    "title": "Apresentação da Disciplina",
+    "section": "Sobre Derivadas",
+    "text": "Sobre Derivadas\n\nDerivadas Parciais: Para funções com mais de uma variável (como \\(x\\) e \\(y\\)). Derivamos em relação a uma variável e tratamos a outra como constante. Notação: \\[\\frac{\\partial f(x,y)}{\\partial x}\\]"
+  },
+  {
     "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#exemplo-1.1",
     "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#exemplo-1.1",
     "title": "Apresentação da Disciplina",
     "section": "Exemplo 1.1",
     "text": "Exemplo 1.1\nObtenha a derivada das seguintes funções:\n\n\\(f(t) = e^{\\lambda(t-1)}\\). Calcule \\(f'(t)\\).\n\\(f(x) = x^2 \\cdot e^{-ax}\\). Calcule \\(\\frac{df}{dx}\\).\n\\(f(z) = e^{-\\frac{1}{2}z^2}\\). Calcule \\(f'(z)\\).\nDada a função \\(u(x, y) = \\frac{x}{x+y}\\), calcule \\(\\frac{\\partial u}{\\partial x}\\).\nDada \\(f(x, y) = 7x^2y + 5y^3\\log(x)\\), calcule as derivadas de primeira ordem \\(\\frac{\\partial f}{\\partial x}\\) e \\(\\frac{\\partial f}{\\partial y}\\)."
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-integrais",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-integrais",
+    "title": "Apresentação da Disciplina",
+    "section": "Sobre Integrais",
+    "text": "Sobre Integrais\n\nIntegral de uma Constante: \\[\\int k \\, dx = kx + C\\]\nRegra da Potência: Válido para \\(n \\neq -1\\). \\[\\int x^n \\, dx = \\frac{x^{n+1}}{n+1} + C\\]\nCaso Especial (\\(n = -1\\)): Quando temos \\(\\frac{1}{x}\\), a integral é o logaritmo natural. \\[\\int \\frac{1}{x} \\, dx = \\log|x| + C\\]"
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-integrais-1",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-integrais-1",
+    "title": "Apresentação da Disciplina",
+    "section": "Sobre Integrais",
+    "text": "Sobre Integrais\nIntegrais de Funções Exponenciais\n\nExponencial Natural Simples: \\[\\int e^x \\, dx = e^x + C\\]\nExponencial com Constante no Expoente: Se há uma constante \\(a\\) multiplicando o \\(x\\), ela desce dividindo. \\[\\int e^{ax} \\, dx = \\frac{1}{a}e^{ax} + C\\]"
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-integrais-2",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-integrais-2",
+    "title": "Apresentação da Disciplina",
+    "section": "Sobre Integrais",
+    "text": "Sobre Integrais\nIntegrais de Funções Logarítmicas\n\nAtenção: A integral do logaritmo não é \\(\\frac{1}{x}\\) (isso é a derivada!).\nA integral de \\(\\log(x)\\) é resolvida usando a técnica de Integração por Partes, mas o resultado final é muito útil de se ter em mente: \\[\\int \\log(x) \\, dx = x\\log(x) - x + C\\]"
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-integrais-3",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-integrais-3",
+    "title": "Apresentação da Disciplina",
+    "section": "Sobre Integrais",
+    "text": "Sobre Integrais\n\nRegra da Soma e Subtração: \\[\\int [f(x) \\pm g(x)] \\, dx = \\int f(x) \\, dx \\pm \\int g(x) \\, dx\\]\nRegra da Constante Multiplicativa: Constantes “saem” da integral. \\[\\int c \\cdot f(x) \\, dx = c \\int f(x) \\, dx\\]"
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-integrais-4",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-integrais-4",
+    "title": "Apresentação da Disciplina",
+    "section": "Sobre Integrais",
+    "text": "Sobre Integrais\nIntegração por Substituição\n\nPense na substituição como o inverso da Regra da Cadeia.\nSe definirmos uma função de dentro como \\(u = g(x)\\), a sua diferencial (derivada) será \\(du = g'(x) dx\\). Substituindo na integral, temos:\\[\\int f(g(x)) \\cdot g'(x) dx = \\int f(u) du\\]\nO objetivo é encontrar uma parte da integral para chamar de \\(u\\), de modo que a derivada dessa parte (\\(du\\)) também esteja presente na integral, permitindo trocar todas as variáveis \\(x\\) por \\(u\\). Após integrar em \\(u\\), desfazemos a substituição."
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-integrais-5",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-integrais-5",
+    "title": "Apresentação da Disciplina",
+    "section": "Sobre Integrais",
+    "text": "Sobre Integrais\nIntegração por Substituição\n\nQuando usar: Quando identificar uma função “principal” e a derivada do seu “miolo” multiplicando do lado de fora.\nSinais de que é Substituição:\n\nO grau da variável muda em 1: Se você tem um \\(x^2\\) dentro de uma raiz ou expoente, e um \\(x\\) do lado de fora. (Ex: \\(\\int x e^{x^2} dx\\)).\nFunção e sua derivada estão presentes: Se você vê um \\(\\ln(x)\\) e também vê um \\(\\frac{1}{x}\\) na mesma integral. (Ex: \\(\\int \\frac{\\ln(x)}{x} dx\\)).\nFunções trigonométricas pareadas: Se você vê um seno e um cosseno juntos. (Ex: \\(\\int \\sin^3(x)\\cos(x) dx\\))."
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-integrais-6",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-integrais-6",
+    "title": "Apresentação da Disciplina",
+    "section": "Sobre Integrais",
+    "text": "Sobre Integrais\nIntegração por partes\n\nA integração por partes é o inverso da Regra do Produto.\nSe \\(u\\) e \\(v\\) são funções contínuas e diferenciáveis de \\(x\\), então a integral do produto é dada por:\\[\\int u \\, dv = u \\cdot v - \\int v \\, du\\]\nVocê escolhe uma parte da integral original para ser o \\(u\\) (que você vai derivar para achar \\(du\\)) e o restante para ser o \\(dv\\) (que você vai integrar para achar \\(v\\))."
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-integrais-7",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-integrais-7",
+    "title": "Apresentação da Disciplina",
+    "section": "Sobre Integrais",
+    "text": "Sobre Integrais\nIntegração por partes\n\nGeralmente as funções dentro da integral não têm nenhuma relação de derivada entre si.\nSinais de que é por Partes:\n\nProduto de funções de “famílias” diferentes: Um polinômio multiplicando uma exponencial (Ex: \\(\\int x e^x dx\\)), ou um polinômio multiplicando uma função trigonométrica (Ex: \\(\\int x^2 \\sin(x) dx\\)).\nFunções “solitárias” difíceis de integrar: Se a integral tem apenas um logaritmo ou uma função trigonométrica inversa sozinha. (Ex: \\(\\int \\ln(x) dx\\) ou \\(\\int \\arctan(x) dx\\)). Nesses casos, o truque é usar \\(u = \\ln(x)\\) e \\(dv = 1 dx\\)."
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-integrais-8",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-integrais-8",
+    "title": "Apresentação da Disciplina",
+    "section": "Sobre Integrais",
+    "text": "Sobre Integrais\nIntegração por partes\n\nEm integração por partes você precisa escolher quem é \\(u\\).\nSiga a ordem da sigla LIATE para escolher o \\(u\\) (o que vier primeiro na lista ganha):\n\nLogarítmicas (ex: \\(\\ln(x)\\))\nInversas trigonométricas (ex: \\(\\arcsin(x)\\))\nAlgébricas / Polinômios (ex: \\(x^2\\), \\(3x\\))\nTrigonométricas (ex: \\(\\sin(x)\\), \\(\\cos(x)\\))\nExponenciais (ex: \\(e^x\\), \\(2^x\\))"
+  },
+  {
+    "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-integrais-9",
+    "href": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#sobre-integrais-9",
+    "title": "Apresentação da Disciplina",
+    "section": "Sobre Integrais",
+    "text": "Sobre Integrais\nIntegrais Duplas\n\nUsadas em funções de múltiplas variáveis (ex: densidade conjunta \\(f(x,y)\\)).\nCalculamos de “dentro para fora”. Integramos primeiro em relação a uma variável (tratando a outra como constante) e depois integramos o resultado.\\[\\int_{0}^{1} \\left( \\int_{0}^{1} (x+y) dy \\right) dx\\]"
   },
   {
     "objectID": "slides/01-Apresetacao_da_disciplina/01-Apresetacao_da_disciplina.html#exemplo-1.2",

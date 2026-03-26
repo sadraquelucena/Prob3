@@ -134,11 +134,17 @@ lang: pt-BR
 4. Convergência e Teorema Central do Limite
 
     4.1. Desigualdade de Chebychev
+    
     4.2. Convergência de variáveis aleatórias
+    
     4.3. Convergência em probabilidade e Convergência Quase certa
+    
     4.4. Convergência em Distribuição
+    
     4.5. Lei dos Grandes Números
+    
     4.6. Lei forte e Lei fraca
+    
     4.7. Teorema Central do Limite
 
 ---
@@ -197,6 +203,62 @@ lang: pt-BR
 
 ---
 
+## Sobre Derivadas
+
+- **Derivada de uma Constante:** A derivada de qualquer número sozinho é zero. $$f(x) = c \Rightarrow f'(x) = 0$$
+
+- **Regra da Potência:** $$f(x) = x^n \Rightarrow f'(x) = nx^{n-1}$$
+
+---
+
+## Sobre Derivadas
+
+**Derivadas de Funções Exponenciais**
+
+- Exponencial Natural Simples: $$ \text{Se } f(x) = e^x\text{, então: } f'(x) = e^x$$
+    
+- Exponencial Natural com Regra da Cadeia (Mais comum em estatística): $$ \text{Se } f(x) = e^{u(x)}\text{, então: } f'(x) = e^{u(x)} \cdot u'(x)$$
+    
+- Exponencial de Base Qualquer ($a$): $$ \text{Se } f(x) = a^x\text{, então: } f'(x) = a^x \log(a)$$
+
+---
+
+## Sobre Derivadas
+
+**Derivadas de Funções Logarítmicas**
+
+- Em estatística é comum usarmos $\log(x)$ para logaritmo natural ao invés de $\ln(x)$.
+
+- Logaritmo Natural Simples: $$ \text{Se }f(x) = \log(x)\text{, então: }f'(x) = \frac{1}{x} $$
+
+- Logaritmo Natural com Regra da Cadeia: $$ \text{Se }f(x) = \log(u(x))\text{, então: }f'(x) = \frac{u'(x)}{u(x)} $$
+
+---
+
+## Sobre Derivadas
+
+**Derivadas de Funções Logarítmicas**
+
+- Logaritmo de Base Qualquer ($a$): $$ \text{Se }f(x) = \log_a(x)\text{, então: }f'(x) = \frac{1}{x\log(a)} $$
+
+---
+
+## Sobre Derivadas
+
+- **Regra da Cadeia:** Usada para funções compostas. Derivamos "de fora para dentro". $$h(x) = f(g(x)) \Rightarrow h'(x) = f'(g(x)) \cdot g'(x)$$
+
+- **Regra do Produto:** $$ (fg)' = f'g + fg'$$
+    
+- **Regra do Quociente:** $$ \left(\frac{f}{g}\right)' = \frac{f'g -fg'}{g^2}$$
+
+---
+
+## Sobre Derivadas
+
+- **Derivadas Parciais:** Para funções com mais de uma variável (como $x$ e $y$). Derivamos em relação a uma variável e tratamos a outra como constante. Notação: $$\frac{\partial f(x,y)}{\partial x}$$
+
+---
+
 ## Exemplo 1.1
 
 Obtenha a derivada das seguintes funções:
@@ -209,6 +271,119 @@ e) Dada $f(x, y) = 7x^2y + 5y^3\log(x)$, calcule as derivadas de primeira ordem 
 
 ---
 
+## Sobre Integrais
+
+- **Integral de uma Constante:** $$\int k \, dx = kx + C$$
+
+- **Regra da Potência:** Válido para $n \neq -1$. $$\int x^n \, dx = \frac{x^{n+1}}{n+1} + C$$
+
+- **Caso Especial ($n = -1$):** Quando temos $\frac{1}{x}$, a integral é o logaritmo natural. $$\int \frac{1}{x} \, dx = \log|x| + C$$
+
+---
+
+## Sobre Integrais
+
+**Integrais de Funções Exponenciais**
+
+- Exponencial Natural Simples: $$\int e^x \, dx = e^x + C$$
+
+- Exponencial com Constante no Expoente: Se há uma constante $a$ multiplicando o $x$, ela desce dividindo. $$\int e^{ax} \, dx = \frac{1}{a}e^{ax} + C$$
+
+---
+
+## Sobre Integrais
+
+**Integrais de Funções Logarítmicas**
+
+- **Atenção:** A integral do logaritmo não é $\frac{1}{x}$ (isso é a derivada!).
+- A integral de $\log(x)$ é resolvida usando a técnica de Integração por Partes, mas o resultado final é muito útil de se ter em mente: $$\int \log(x) \, dx = x\log(x) - x + C$$
+
+---
+
+## Sobre Integrais
+
+- **Regra da Soma e Subtração:** $$\int [f(x) \pm g(x)] \, dx = \int f(x) \, dx \pm \int g(x) \, dx$$
+
+- **Regra da Constante Multiplicativa:** Constantes "saem" da integral. $$\int c \cdot f(x) \, dx = c \int f(x) \, dx$$
+
+---
+
+## Sobre Integrais
+
+**Integração por Substituição**
+
+- Pense na substituição como o **inverso da Regra da Cadeia**.
+
+- Se definirmos uma função de dentro como $u = g(x)$, a sua diferencial (derivada) será $du = g'(x) dx$. Substituindo na integral, temos:$$\int f(g(x)) \cdot g'(x) dx = \int f(u) du$$
+
+- O objetivo é encontrar uma parte da integral para chamar de $u$, de modo que a derivada dessa parte ($du$) também esteja presente na integral, permitindo trocar todas as variáveis $x$ por $u$. Após integrar em $u$, desfazemos a substituição.
+
+---
+
+## Sobre Integrais
+
+**Integração por Substituição**
+
+- **Quando usar:** Quando identificar uma função "principal" e a derivada do seu "miolo" multiplicando do lado de fora.
+- Sinais de que é Substituição:
+
+    - **O grau da variável muda em 1:** Se você tem um $x^2$ dentro de uma raiz ou expoente, e um $x$ do lado de fora. (Ex: $\int x e^{x^2} dx$).
+    - **Função e sua derivada estão presentes:** Se você vê um $\ln(x)$ e também vê um $\frac{1}{x}$ na mesma integral. (Ex: $\int \frac{\ln(x)}{x} dx$).
+    - **Funções trigonométricas pareadas:** Se você vê um seno e um cosseno juntos. (Ex: $\int \sin^3(x)\cos(x) dx$).
+
+---
+
+## Sobre Integrais
+
+**Integração por partes**
+
+- A integração por partes é o **inverso da Regra do Produto**.
+- Se $u$ e $v$ são funções contínuas e diferenciáveis de $x$, então a integral do produto é dada por:$$\int u \, dv = u \cdot v - \int v \, du$$
+
+- Você escolhe uma parte da integral original para ser o $u$ (que você vai derivar para achar $du$) e o restante para ser o $dv$ (que você vai integrar para achar $v$).
+
+---
+
+## Sobre Integrais
+
+**Integração por partes**
+
+- Geralmente as funções dentro da integral não têm nenhuma relação de derivada entre si.
+- Sinais de que é por Partes:
+
+    - **Produto de funções de "famílias" diferentes:** Um polinômio multiplicando uma exponencial (Ex: $\int x e^x dx$), ou um polinômio multiplicando uma função trigonométrica (Ex: $\int x^2 \sin(x) dx$).
+    - **Funções "solitárias" difíceis de integrar:** Se a integral tem apenas um logaritmo ou uma função trigonométrica inversa sozinha. (Ex: $\int \ln(x) dx$ ou $\int \arctan(x) dx$). Nesses casos, o truque é usar $u = \ln(x)$ e $dv = 1 dx$.
+
+---
+
+## Sobre Integrais
+
+**Integração por partes**
+
+- Em integração por partes você precisa escolher quem é $u$.
+- Siga a ordem da sigla **LIATE** para escolher o $u$ (o que vier primeiro na lista ganha):
+
+    - Logarítmicas (ex: $\ln(x)$)
+    
+    - Inversas trigonométricas (ex: $\arcsin(x)$)
+    
+    - Algébricas / Polinômios (ex: $x^2$, $3x$)
+    
+    - Trigonométricas (ex: $\sin(x)$, $\cos(x)$)
+    
+    - Exponenciais (ex: $e^x$, $2^x$)
+
+---
+
+## Sobre Integrais
+
+**Integrais Duplas**
+
+- Usadas em funções de múltiplas variáveis (ex: densidade conjunta $f(x,y)$).
+- Calculamos de "dentro para fora". Integramos primeiro em relação a uma variável (tratando a outra como constante) e depois integramos o resultado.$$\int_{0}^{1} \left( \int_{0}^{1} (x+y) dy \right) dx$$
+
+---
+
 ## Exemplo 1.2
 
 Resolva as seguintes integrais:
@@ -218,6 +393,7 @@ b) Calcule $\int x \cdot e^{-x^2} dx$.
 c) Calcule $\int_{0}^{\infty} x \cdot e^{-x} dx$.
 d) Calcule $\int x^2 \cdot e^{-x} dx$.
 e) Dada a densidade conjunta $f(x, y) = c(x+y)$ no domínio $0 < x < 1$ e $0 < y < 1$, calcule a integral dupla $\int_{0}^{1} \int_{0}^{1} (x+y) dy dx$.
+
 
 
 # Fim
