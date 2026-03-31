@@ -29,15 +29,15 @@ lang: pt-BR
 
 ## Definição 2.1: Vetor Aleatório Discreto
 
-Se $\mathbf{X} = (X_1, X_2, \dots, X_n)$ é um vetor aleatório que assume valores em um conjunto finito ou enumerável, ele é chamado de **vetor aleatório discreto**.
+Se $\underset{\widetilde{\phantom{X}}}{X} = (X_1, X_2, \dots, X_n)$ é um vetor aleatório que assume valores em um conjunto finito ou enumerável, ele é chamado de **vetor aleatório discreto**.
 
 - Ou seja, cada componente assume valores discretos.
 
 - **Função de Probabilidade Conjunta (FPC):**
 $$
 \begin{aligned}
-p(\mathbf{x}) &= p(x_1,x_2,\ldots,x_n)\\
-&=P(X_1 = x_1, X_2 = x_2, \dots, X_n = x_n)
+  p(\underset{\widetilde{\phantom{x}}}{x}) &=  p(x_1,x_2,\ldots,x_n)\\
+  &=P(X_1 = x_1, X_2 = x_2, \dots, X_n = x_n)
 \end{aligned}
 $$
 
@@ -45,7 +45,7 @@ $$
 
 ## Propriedades Fundamentais
 
-Seja $\mathbf{X}$ um vetor aleatório discreto. Então sua função de probabilidade continua satisfaz as regras de probabilidade:
+Seja $\underset{\widetilde{\phantom{X}}}{X}$ um vetor aleatório discreto. Então sua função de probabilidade continua satisfaz as regras de probabilidade:
 
 **P2.1.** *Não existe probabilidade negativa.*
 $$P(X_1 = x_1, \dots, X_n = x_n)\geq 0, ~\text{para todo ponto do suporte}.$$
@@ -69,7 +69,7 @@ $$
 
 ## Tabela de dupla entrada
 
-- No caso especial de duas variáveis discretas, é conveniente a
+- No caso de duas variáveis discretas, é conveniente a
 representação da função de probabilidade utilizando uma **tabela de dupla entrada**:
 
 | $X\downarrow \backslash Y \rightarrow$ | $y_1$ | $\cdots$ | $y_n$ | **Marginal $X$** |
@@ -96,8 +96,7 @@ b) Definimos uma nova variável $W = X\cdot Y$. Qual é a distribuição margina
 
 ## Exemplo 2.2
 
-Suponha que 2 bolas sejam sorteadas de uma urna contendo 3
-bolas vermelhas, 4 bolas brancas e 5 bolas azuis. Se $X$ e $Y$
+Suponha que 2 bolas sejam sorteadas sem reposição de uma urna contendo 3 bolas vermelhas, 4 bolas brancas e 5 bolas azuis. Se $X$ e $Y$
 representam, respectivamente, o número de bolas vermelhas e
 brancas escolhidas:
 

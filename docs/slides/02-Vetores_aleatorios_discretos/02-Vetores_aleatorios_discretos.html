@@ -144,12 +144,12 @@
 </section>
 <section id="definição-2.1-vetor-aleatório-discreto" class="slide level2">
 <h2>Definição 2.1: Vetor Aleatório Discreto</h2>
-<p>Se <span class="math inline">\(\mathbf{X} = (X_1, X_2, \dots, X_n)\)</span> é um vetor aleatório que assume valores em um conjunto finito ou enumerável, ele é chamado de <strong>vetor aleatório discreto</strong>.</p>
+<p>Se <span class="math inline">\(\underset{\widetilde{\phantom{X}}}{X} = (X_1, X_2, \dots, X_n)\)</span> é um vetor aleatório que assume valores em um conjunto finito ou enumerável, ele é chamado de <strong>vetor aleatório discreto</strong>.</p>
 <ul>
 <li><p>Ou seja, cada componente assume valores discretos.</p></li>
 <li><p><strong>Função de Probabilidade Conjunta (FPC):</strong> <span class="math display">\[
 \begin{aligned}
-p(\mathbf{x}) &amp;= p(x_1,x_2,\ldots,x_n)\\
+p(\underset{\widetilde{\phantom{x}}}{x}) &amp;=  p(x_1,x_2,\ldots,x_n)\\
 &amp;=P(X_1 = x_1, X_2 = x_2, \dots, X_n = x_n)
 \end{aligned}
 \]</span></p></li>
@@ -157,7 +157,7 @@ p(\mathbf{x}) &amp;= p(x_1,x_2,\ldots,x_n)\\
 </section>
 <section id="propriedades-fundamentais" class="slide level2">
 <h2>Propriedades Fundamentais</h2>
-<p>Seja <span class="math inline">\(\mathbf{X}\)</span> um vetor aleatório discreto. Então sua função de probabilidade continua satisfaz as regras de probabilidade:</p>
+<p>Seja <span class="math inline">\(\underset{\widetilde{\phantom{X}}}{X}\)</span> um vetor aleatório discreto. Então sua função de probabilidade continua satisfaz as regras de probabilidade:</p>
 <p><strong>P2.1.</strong> <em>Não existe probabilidade negativa.</em> <span class="math display">\[P(X_1 = x_1, \dots, X_n = x_n)\geq 0, ~\text{para todo ponto do suporte}.\]</span></p>
 <p><strong>P2.2.</strong> <em>A soma das probabilidades é igual a 1.</em> <span class="math display">\[\sum\limits_{x_1}\ldots\sum\limits_{x_n}P(X_1 = x_1, \dots, X_n = x_n)=1.\]</span></p>
 </section>
@@ -174,7 +174,7 @@ P(X_k=x_k) = \sum\limits_{x_i, \forall i \neq k} P(X_1 = x_1, X_2 = x_2, \dots, 
 <section id="tabela-de-dupla-entrada" class="slide level2">
 <h2>Tabela de dupla entrada</h2>
 <ul>
-<li>No caso especial de duas variáveis discretas, é conveniente a representação da função de probabilidade utilizando uma <strong>tabela de dupla entrada</strong>:</li>
+<li>No caso de duas variáveis discretas, é conveniente a representação da função de probabilidade utilizando uma <strong>tabela de dupla entrada</strong>:</li>
 </ul>
 <table class="caption-top">
 <colgroup>
@@ -239,7 +239,7 @@ P(X_k=x_k) = \sum\limits_{x_i, \forall i \neq k} P(X_1 = x_1, X_2 = x_2, \dots, 
 </section>
 <section id="exemplo-2.2" class="slide level2">
 <h2>Exemplo 2.2</h2>
-<p>Suponha que 2 bolas sejam sorteadas de uma urna contendo 3 bolas vermelhas, 4 bolas brancas e 5 bolas azuis. Se <span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span> representam, respectivamente, o número de bolas vermelhas e brancas escolhidas:</p>
+<p>Suponha que 2 bolas sejam sorteadas sem reposição de uma urna contendo 3 bolas vermelhas, 4 bolas brancas e 5 bolas azuis. Se <span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span> representam, respectivamente, o número de bolas vermelhas e brancas escolhidas:</p>
 <ol type="a">
 <li><p>Determine a função de probabilidade conjunta de <span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span>.</p></li>
 <li><p>Determine a marginal de <span class="math inline">\(X\)</span> e a de <span class="math inline">\(Y\)</span>.</p></li>
