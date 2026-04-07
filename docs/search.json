@@ -199,14 +199,14 @@
     "href": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.2",
     "title": "Vetores Aleatórios Contínuos",
     "section": "Exemplo 3.2",
-    "text": "Exemplo 3.2\nConsidere um círculo de raio \\(R\\) e um ponto escolhido aleatoriamente em seu interior, com distribuição uniforme (todas as regiões são igualmente prováveis). Se o centro está na origem e \\(X,Y\\) são as coordenadas do ponto, então \\((X,Y)\\) tem a mesma probabilidade em qualquer região do círculo, e sua densidade conjunta é dada por \\[f_{X,Y}(x,y) = c, \\text{ se } x^2 + y^2 \\le R^2.\\]\n\nDeterminar a constante \\(c\\) (Dica: Use a área do círculo).\nDetermine a marginal de \\(X\\) e a de \\(Y\\).\nCalcular \\(E[D]\\), onde \\(D\\) é a distância da origem."
+    "text": "Exemplo 3.2\nConsidere um círculo de raio \\(R\\) e um ponto escolhido aleatoriamente em seu interior, com distribuição uniforme (todas as regiões são igualmente prováveis). Se o centro está na origem e \\(X,Y\\) são as coordenadas do ponto, então \\((X,Y)\\) tem a mesma probabilidade em qualquer região do círculo, e sua densidade conjunta é dada por \\[f_{X,Y}(x,y) = c, \\text{ se } x^2 + y^2 \\le R^2.\\]\nDetermine a constante \\(c\\) (Dica: Use a área do círculo)."
   },
   {
     "objectID": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.3",
     "href": "slides/03-Vetores_aleatorios_continuos/03-Vetores_aleatorios_continuos.html#exemplo-3.3",
     "title": "Vetores Aleatórios Contínuos",
     "section": "Exemplo 3.3",
-    "text": "Exemplo 3.3\nDada a densidade conjunta \\(f_{X,Y}(x,y) = e^{-(x+y)}\\) para \\(x, y &gt; 0\\), determine a densidade da variável \\(Z = X/Y\\)."
+    "text": "Exemplo 3.3\nDada a densidade conjunta \\(f_{X,Y}(x,y) = e^{-(x+y)}\\) para \\(x, y &gt; 0\\), determine a densidade marginal de \\(X\\) e a de \\(Y\\)."
   },
   {
     "objectID": "slides/07-Variancia_condicional/07-Variancia_condicional.html#introdução",
