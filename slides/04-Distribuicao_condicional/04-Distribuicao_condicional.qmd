@@ -71,25 +71,45 @@ c) Determine a função de probabilidade condicional de X dado $Y=1$, ou seja, $
 
 ---
 
-## Caso Discreto: Eventos e Probabilidade Total
+## Lei da Probabilidade Total
 
-- Sendo $X$ uma variável qualquer e $Y$ discreta, temos:
-$$P(X \in B | Y=y) = \frac{P([X \in B] \cap [Y=y])}{P(Y=y)}$$
+$$P(X \in B) = \sum_y P(Y=y)P(X \in B | Y=y).$$
 
-- Lei da probabilidade total: $P(X \in B) = \sum_y P(Y=y)P(X \in B | Y=y)$.
-- Função de distribuição condicional: $F_{X|Y}(x | Y=y) = \frac{P([X \le x] \cap [Y=y])}{P(Y=y)}$.
-- $F_X(x) = \sum_y P(Y=y)F_{X|Y}(x | Y=y)$.
+- **Interpretação:** probabilidade total = média ponderada das condicionais
+
+---
+
+## Aplicação à função de distribuição
+
+#### Definição condicional
+$$ F_{X|Y}(x|y) = P(X\leq x | Y=y) $$
+
+### Lei da Probabilidade Total
+$$ F_X(x) = \sum_y P(Y=y)F_{X|Y}(x|y) $$
+
 
 ---
 
 ## Exemplo 4.3
 
-Uma seguradora classifica seus clientes em dois perfis de risco: $Y=1$ (Baixo Risco) e $Y=2$ (Alto Risco). A proporção na carteira é $P(Y=1) = 0,\!6$ e $P(Y=2) = 0,\!4$. Seja $X$ o número de sinistros acionados por um cliente em um ano. As probabilidades condicionais de $X$ dado o perfil $Y$ são:
+Uma seguradora classifica seus clientes em dois perfis de risco:
 
-- Se Baixo Risco ($Y=1$): $P(X=0|Y=1) = 0,8$ e $P(X=1|Y=1) = 0,2$
-- Se Alto Risco ($Y=2$): $P(X=0|Y=2) = 0,5$; $P(X=1|Y=2) = 0,3$ e $P(X=2|Y=2) = 0,2$
+- $Y=1$: Baixo risco, com $P(Y=1) = 0,\!6$
+- $Y=2$: Alto risco, com $P(Y=2) = 0,\!4$
 
-a) Determine $P(X \in B | Y=1)$ e $P(X \in B | Y=2)$.
+Seja $X$ o número de sinistros acionados por um cliente em um ano. As probabilidades condicionais de $X$ dado o perfil $Y$ são:
+
+- Para $Y=1$ (baixo risco):
+
+    - $P(X=0|Y=1) = 0,8$ e $P(X=1|Y=1) = 0,2$
+    
+- Para $Y=2$ (alto risco): 
+
+    - $P(X=0|Y=2) = 0,5$ e $P(X=1|Y=2) = 0,3$ e $P(X=2|Y=2) = 0,2$
+
+## Exemplo 4.3
+
+a) Determine $P(X \geq 1 | Y=1)$ e $P(X \geq 1 | Y=2)$.
 
 b) Utilize a Lei da Probabilidade Total para calcular $P(X \geq 1)$.
 
