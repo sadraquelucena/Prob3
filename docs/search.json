@@ -714,18 +714,32 @@
     "text": "Exemplo 4.2\nSuponha que a função de probabilidade conjunta de X e Y seja dada por:\n\\[p(x,y) = c(x+y), \\text{ para } x \\in \\{1, 2, 3\\} \\text{ e } y \\in \\{1, 2\\}.\\]\n\nDetermine o valor da constante \\(c\\).\nEncontre a função de probabilidade marginal de Y, \\(p_Y(y)\\).\nDetermine a função de probabilidade condicional de X dado \\(Y=1\\), ou seja, \\(P(X=x | Y=1)\\)."
   },
   {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#caso-discreto-eventos-e-probabilidade-total",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#caso-discreto-eventos-e-probabilidade-total",
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#lei-da-probabilidade-total",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#lei-da-probabilidade-total",
     "title": "Distribuição Condicional",
-    "section": "Caso Discreto: Eventos e Probabilidade Total",
-    "text": "Caso Discreto: Eventos e Probabilidade Total\n\nSendo \\(X\\) uma variável qualquer e \\(Y\\) discreta, temos: \\[P(X \\in B | Y=y) = \\frac{P([X \\in B] \\cap [Y=y])}{P(Y=y)}\\]\nLei da probabilidade total: \\(P(X \\in B) = \\sum_y P(Y=y)P(X \\in B | Y=y)\\).\nFunção de distribuição condicional: \\(F_{X|Y}(x | Y=y) = \\frac{P([X \\le x] \\cap [Y=y])}{P(Y=y)}\\).\n\\(F_X(x) = \\sum_y P(Y=y)F_{X|Y}(x | Y=y)\\)."
+    "section": "Lei da Probabilidade Total",
+    "text": "Lei da Probabilidade Total\n\\[P(X \\in B) = \\sum_y P(Y=y)P(X \\in B | Y=y).\\]\n\nInterpretação: probabilidade total = média ponderada das condicionais"
+  },
+  {
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#aplicação-à-função-de-distribuição",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#aplicação-à-função-de-distribuição",
+    "title": "Distribuição Condicional",
+    "section": "Aplicação à função de distribuição",
+    "text": "Aplicação à função de distribuição\nDefinição condicional\n\\[ F_{X|Y}(x|y) = P(X\\leq x | Y=y) \\]\nLei da Probabilidade Total\n\\[ F_X(x) = \\sum_y P(Y=y)F_{X|Y}(x|y) \\]"
   },
   {
     "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.3",
     "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.3",
     "title": "Distribuição Condicional",
     "section": "Exemplo 4.3",
-    "text": "Exemplo 4.3\nUma seguradora classifica seus clientes em dois perfis de risco: \\(Y=1\\) (Baixo Risco) e \\(Y=2\\) (Alto Risco). A proporção na carteira é \\(P(Y=1) = 0,\\!6\\) e \\(P(Y=2) = 0,\\!4\\). Seja \\(X\\) o número de sinistros acionados por um cliente em um ano. As probabilidades condicionais de \\(X\\) dado o perfil \\(Y\\) são:\n\nSe Baixo Risco (\\(Y=1\\)): \\(P(X=0|Y=1) = 0,8\\) e \\(P(X=1|Y=1) = 0,2\\)\nSe Alto Risco (\\(Y=2\\)): \\(P(X=0|Y=2) = 0,5\\); \\(P(X=1|Y=2) = 0,3\\) e \\(P(X=2|Y=2) = 0,2\\)\n\n\nDetermine \\(P(X \\in B | Y=1)\\) e \\(P(X \\in B | Y=2)\\).\nUtilize a Lei da Probabilidade Total para calcular \\(P(X \\geq 1)\\)."
+    "text": "Exemplo 4.3\nUma seguradora classifica seus clientes em dois perfis de risco:\n\n\\(Y=1\\): Baixo risco, com \\(P(Y=1) = 0,\\!6\\)\n\\(Y=2\\): Alto risco, com \\(P(Y=2) = 0,\\!4\\)\n\nSeja \\(X\\) o número de sinistros acionados por um cliente em um ano. As probabilidades condicionais de \\(X\\) dado o perfil \\(Y\\) são:\n\nPara \\(Y=1\\) (baixo risco):\n\n\\(P(X=0|Y=1) = 0,8\\) e \\(P(X=1|Y=1) = 0,2\\)\n\nPara \\(Y=2\\) (alto risco):\n\n\\(P(X=0|Y=2) = 0,5\\) e \\(P(X=1|Y=2) = 0,3\\) e \\(P(X=2|Y=2) = 0,2\\)"
+  },
+  {
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.3-1",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.3-1",
+    "title": "Distribuição Condicional",
+    "section": "Exemplo 4.3",
+    "text": "Exemplo 4.3\n\nDetermine \\(P(X \\geq 1 | Y=1)\\) e \\(P(X \\geq 1 | Y=2)\\).\nUtilize a Lei da Probabilidade Total para calcular \\(P(X \\geq 1)\\)."
   },
   {
     "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-contínuo",

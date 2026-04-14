@@ -177,24 +177,43 @@
 <li><p>Determine a função de probabilidade condicional de X dado <span class="math inline">\(Y=1\)</span>, ou seja, <span class="math inline">\(P(X=x | Y=1)\)</span>.</p></li>
 </ol>
 </section>
-<section id="caso-discreto-eventos-e-probabilidade-total" class="slide level2">
-<h2>Caso Discreto: Eventos e Probabilidade Total</h2>
+<section id="lei-da-probabilidade-total" class="slide level2">
+<h2>Lei da Probabilidade Total</h2>
+<p><span class="math display">\[P(X \in B) = \sum_y P(Y=y)P(X \in B | Y=y).\]</span></p>
 <ul>
-<li><p>Sendo <span class="math inline">\(X\)</span> uma variável qualquer e <span class="math inline">\(Y\)</span> discreta, temos: <span class="math display">\[P(X \in B | Y=y) = \frac{P([X \in B] \cap [Y=y])}{P(Y=y)}\]</span></p></li>
-<li><p>Lei da probabilidade total: <span class="math inline">\(P(X \in B) = \sum_y P(Y=y)P(X \in B | Y=y)\)</span>.</p></li>
-<li><p>Função de distribuição condicional: <span class="math inline">\(F_{X|Y}(x | Y=y) = \frac{P([X \le x] \cap [Y=y])}{P(Y=y)}\)</span>.</p></li>
-<li><p><span class="math inline">\(F_X(x) = \sum_y P(Y=y)F_{X|Y}(x | Y=y)\)</span>.</p></li>
+<li><strong>Interpretação:</strong> probabilidade total = média ponderada das condicionais</li>
 </ul>
+</section>
+<section id="aplicação-à-função-de-distribuição" class="slide level2">
+<h2>Aplicação à função de distribuição</h2>
+<h4 id="definição-condicional">Definição condicional</h4>
+<p><span class="math display">\[ F_{X|Y}(x|y) = P(X\leq x | Y=y) \]</span></p>
+<h3 id="lei-da-probabilidade-total-1">Lei da Probabilidade Total</h3>
+<p><span class="math display">\[ F_X(x) = \sum_y P(Y=y)F_{X|Y}(x|y) \]</span></p>
 </section>
 <section id="exemplo-4.3" class="slide level2">
 <h2>Exemplo 4.3</h2>
-<p>Uma seguradora classifica seus clientes em dois perfis de risco: <span class="math inline">\(Y=1\)</span> (Baixo Risco) e <span class="math inline">\(Y=2\)</span> (Alto Risco). A proporção na carteira é <span class="math inline">\(P(Y=1) = 0,\!6\)</span> e <span class="math inline">\(P(Y=2) = 0,\!4\)</span>. Seja <span class="math inline">\(X\)</span> o número de sinistros acionados por um cliente em um ano. As probabilidades condicionais de <span class="math inline">\(X\)</span> dado o perfil <span class="math inline">\(Y\)</span> são:</p>
+<p>Uma seguradora classifica seus clientes em dois perfis de risco:</p>
 <ul>
-<li>Se Baixo Risco (<span class="math inline">\(Y=1\)</span>): <span class="math inline">\(P(X=0|Y=1) = 0,8\)</span> e <span class="math inline">\(P(X=1|Y=1) = 0,2\)</span></li>
-<li>Se Alto Risco (<span class="math inline">\(Y=2\)</span>): <span class="math inline">\(P(X=0|Y=2) = 0,5\)</span>; <span class="math inline">\(P(X=1|Y=2) = 0,3\)</span> e <span class="math inline">\(P(X=2|Y=2) = 0,2\)</span></li>
+<li><span class="math inline">\(Y=1\)</span>: Baixo risco, com <span class="math inline">\(P(Y=1) = 0,\!6\)</span></li>
+<li><span class="math inline">\(Y=2\)</span>: Alto risco, com <span class="math inline">\(P(Y=2) = 0,\!4\)</span></li>
 </ul>
+<p>Seja <span class="math inline">\(X\)</span> o número de sinistros acionados por um cliente em um ano. As probabilidades condicionais de <span class="math inline">\(X\)</span> dado o perfil <span class="math inline">\(Y\)</span> são:</p>
+<ul>
+<li><p>Para <span class="math inline">\(Y=1\)</span> (baixo risco):</p>
+<ul>
+<li><span class="math inline">\(P(X=0|Y=1) = 0,8\)</span> e <span class="math inline">\(P(X=1|Y=1) = 0,2\)</span></li>
+</ul></li>
+<li><p>Para <span class="math inline">\(Y=2\)</span> (alto risco):</p>
+<ul>
+<li><span class="math inline">\(P(X=0|Y=2) = 0,5\)</span> e <span class="math inline">\(P(X=1|Y=2) = 0,3\)</span> e <span class="math inline">\(P(X=2|Y=2) = 0,2\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="exemplo-4.3-1" class="slide level2">
+<h2>Exemplo 4.3</h2>
 <ol type="a">
-<li><p>Determine <span class="math inline">\(P(X \in B | Y=1)\)</span> e <span class="math inline">\(P(X \in B | Y=2)\)</span>.</p></li>
+<li><p>Determine <span class="math inline">\(P(X \geq 1 | Y=1)\)</span> e <span class="math inline">\(P(X \geq 1 | Y=2)\)</span>.</p></li>
 <li><p>Utilize a Lei da Probabilidade Total para calcular <span class="math inline">\(P(X \geq 1)\)</span>.</p></li>
 </ol>
 </section>
