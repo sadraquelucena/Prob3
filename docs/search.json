@@ -227,21 +227,7 @@
     "href": "slides/07-Variancia_condicional/07-Variancia_condicional.html#exemplo-7.1",
     "title": "Variância Condicional",
     "section": "Exemplo 7.1",
-    "text": "Exemplo 7.1\nSeja \\((X, Y)\\) um vetor aleatório contínuo com função de densidade de probabilidade (f.d.p.) conjunta dada por: \\[f_{X,Y}(x,y) = e^{-y}, \\quad x&gt;0, \\quad y&gt;0\\]\nObtenha \\(E(Y|X=x)\\) e a variância condicional \\(Var(Y|X=x)\\)."
-  },
-  {
-    "objectID": "slides/07-Variancia_condicional/07-Variancia_condicional.html#teorema-7.1-lei-da-variância-total",
-    "href": "slides/07-Variancia_condicional/07-Variancia_condicional.html#teorema-7.1-lei-da-variância-total",
-    "title": "Variância Condicional",
-    "section": "Teorema 7.1: Lei da Variância Total",
-    "text": "Teorema 7.1: Lei da Variância Total\n\nAssim como na esperança, podemos usar \\(Y\\) para decompor a variabilidade de \\(X\\). Separamos em duas partes:\n\nA variabilidade de \\(X\\) dentro de cada cenário de \\(Y\\)\nA variabilidade entre os cenários (mudança das médias)\n\n\n\\[V(X) = E[Var(X|Y)] + Var[E(X|Y)]\\]\nInterpretação:\n\n\\(E[Var(X|Y)]\\): variância interna média (o quanto \\(X\\) ainda varia mesmo fixando \\(Y\\)).\n\\(Var[E(X|Y)]\\): variância entre cenários (o quanto as médias mudam quando \\(Y\\) muda)."
-  },
-  {
-    "objectID": "slides/07-Variancia_condicional/07-Variancia_condicional.html#definição-7.2-covariância-condicional",
-    "href": "slides/07-Variancia_condicional/07-Variancia_condicional.html#definição-7.2-covariância-condicional",
-    "title": "Variância Condicional",
-    "section": "Definição 7.2: Covariância Condicional",
-    "text": "Definição 7.2: Covariância Condicional\nFórmula: \\[Cov[(X,Y)|Z=z] = E(XY|Z=z) - E(X|Z=z)E(Y|Z=z)\\] (Supondo que as esperanças envolvidas existam).\nO que isso significa?\n\nDuas variáveis podem parecer correlacionadas no geral, mas quando fixamos uma terceira variável (fator de confusão), essa correlação pode desaparecer (ou vice-versa)."
+    "text": "Exemplo 7.1\nSeja \\((X, Y)\\) um vetor aleatório contínuo com função de densidade de probabilidade (f.d.p.) conjunta dada por: \\[f_{X,Y}(x,y) = e^{-y}, \\quad 0&lt;x&lt;y&lt;\\infty\\]\nObtenha \\(E(Y|X=x)\\) e a variância condicional \\(Var(Y|X=x)\\)."
   },
   {
     "objectID": "slides/07-Variancia_condicional/07-Variancia_condicional.html#exemplo-7.2",
@@ -251,11 +237,25 @@
     "text": "Exemplo 7.2\nSeja o vetor aleatório \\((X,Y)\\) com densidade conjunta \\(f(x,y) = 2\\) restrita à região triangular \\(0 &lt; x &lt; y &lt; 1\\). Calcule a variância condicional \\(Var(X|Y=y)\\)."
   },
   {
+    "objectID": "slides/07-Variancia_condicional/07-Variancia_condicional.html#teorema-7.1-lei-da-variância-total",
+    "href": "slides/07-Variancia_condicional/07-Variancia_condicional.html#teorema-7.1-lei-da-variância-total",
+    "title": "Variância Condicional",
+    "section": "Teorema 7.1: Lei da Variância Total",
+    "text": "Teorema 7.1: Lei da Variância Total\n\nAssim como na esperança, podemos usar \\(Y\\) para decompor a variabilidade de \\(X\\). Separamos em duas partes:\n\nA variabilidade de \\(X\\) dentro de cada cenário de \\(Y\\)\nA variabilidade entre os cenários (mudança das médias)\n\n\n\\[V(Y) = E[Var(Y|X)] + Var[E(Y|X)]\\]\nInterpretação:\n\n\\(E[Var(X|Y)]\\): variância interna média (o quanto \\(X\\) ainda varia mesmo fixando \\(Y\\)).\n\\(Var[E(X|Y)]\\): variância entre cenários (o quanto as médias mudam quando \\(Y\\) muda)."
+  },
+  {
     "objectID": "slides/07-Variancia_condicional/07-Variancia_condicional.html#exemplo-7.3",
     "href": "slides/07-Variancia_condicional/07-Variancia_condicional.html#exemplo-7.3",
     "title": "Variância Condicional",
     "section": "Exemplo 7.3",
     "text": "Exemplo 7.3\nUma fábrica produz \\(n\\) peças por dia. A probabilidade \\(Y\\) de uma peça ser defeituosa varia diariamente segundo uma distribuição Uniforme em \\((0,1)\\). O número de peças defeituosas num dia é \\(X\\). Sabendo que \\(X|Y=y \\sim \\text{Binomial}(n, y)\\), use a Lei da Variância Total para calcular \\(V(X)\\)."
+  },
+  {
+    "objectID": "slides/07-Variancia_condicional/07-Variancia_condicional.html#definição-7.2-covariância-condicional",
+    "href": "slides/07-Variancia_condicional/07-Variancia_condicional.html#definição-7.2-covariância-condicional",
+    "title": "Variância Condicional",
+    "section": "Definição 7.2: Covariância Condicional",
+    "text": "Definição 7.2: Covariância Condicional\nFórmula: \\[Cov[(X,Y)|Z=z] = E(XY|Z=z) - E(X|Z=z)E(Y|Z=z)\\] (Supondo que as esperanças envolvidas existam)."
   },
   {
     "objectID": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#introdução",

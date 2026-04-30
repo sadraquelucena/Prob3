@@ -52,9 +52,15 @@ $$Var(X|Y=y) = E(X^2|Y=y) - E^2(X|Y=y)$$
 ## Exemplo 7.1
 
 Seja $(X, Y)$ um vetor aleatório contínuo com função de densidade de probabilidade (f.d.p.) conjunta dada por:
-$$f_{X,Y}(x,y) = e^{-y}, \quad x>0, \quad y>0$$
+$$f_{X,Y}(x,y) = e^{-y}, \quad 0<x<y<\infty$$
 
 Obtenha $E(Y|X=x)$ e a variância condicional $Var(Y|X=x)$.
+
+---
+
+## Exemplo 7.2
+
+Seja o vetor aleatório $(X,Y)$ com densidade conjunta $f(x,y) = 2$ restrita à região triangular $0 < x < y < 1$. Calcule a variância condicional $Var(X|Y=y)$.
 
 ---
 
@@ -65,7 +71,7 @@ Obtenha $E(Y|X=x)$ e a variância condicional $Var(Y|X=x)$.
     1. A variabilidade de $X$ dentro de cada cenário de $Y$
     2. A variabilidade entre os cenários (mudança das médias)
 
-$$V(X) = E[Var(X|Y)] + Var[E(X|Y)]$$
+$$V(Y) = E[Var(Y|X)] + Var[E(Y|X)]$$
 
 **Interpretação:**
 
@@ -74,26 +80,16 @@ $$V(X) = E[Var(X|Y)] + Var[E(X|Y)]$$
 
 ---
 
+## Exemplo 7.3
+
+Uma fábrica produz $n$ peças por dia. A probabilidade $Y$ de uma peça ser defeituosa varia diariamente segundo uma distribuição Uniforme em $(0,1)$. O número de peças defeituosas num dia é $X$. Sabendo que $X|Y=y \sim \text{Binomial}(n, y)$, use a Lei da Variância Total para calcular $V(X)$.
+
+
 ## Definição 7.2: Covariância Condicional
 
 **Fórmula:**
 $$Cov[(X,Y)|Z=z] = E(XY|Z=z) - E(X|Z=z)E(Y|Z=z)$$
 *(Supondo que as esperanças envolvidas existam).*
 
-**O que isso significa?**
-
-- Duas variáveis podem parecer correlacionadas no geral, mas quando fixamos uma terceira variável (fator de confusão), essa correlação pode desaparecer (ou vice-versa).
-
----
-
-## Exemplo 7.2
-
-Seja o vetor aleatório $(X,Y)$ com densidade conjunta $f(x,y) = 2$ restrita à região triangular $0 < x < y < 1$. Calcule a variância condicional $Var(X|Y=y)$.
-
----
-
-## Exemplo 7.3
-
-Uma fábrica produz $n$ peças por dia. A probabilidade $Y$ de uma peça ser defeituosa varia diariamente segundo uma distribuição Uniforme em $(0,1)$. O número de peças defeituosas num dia é $X$. Sabendo que $X|Y=y \sim \text{Binomial}(n, y)$, use a Lei da Variância Total para calcular $V(X)$.
 
 # Fim
