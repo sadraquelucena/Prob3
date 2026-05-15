@@ -388,7 +388,7 @@
     "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#exemplo-9.3",
     "title": "Funções de Variáveis Aleatórias",
     "section": "Exemplo 9.3",
-    "text": "Exemplo 9.3\nSeja \\(X\\) uma variável aleatória contínua com densidade \\(f(x) = \\frac{1}{3} I_{[0,3]}(x)\\). A partir dessa variável, uma nova variável é definida por: \\[\n  Y = \\begin{cases}\n        3, & \\text{se } 2 &lt; X \\le 3; \\\\\n        X, & \\text{se } 0 \\le X \\le 2.\n  \\end{cases}\n\\] Determine a distribuição de \\(Y\\).\n\nNote que a distribuição tem uma parte discreta e outra contínua."
+    "text": "Exemplo 9.3\nSeja \\(X\\) uma variável aleatória contínua com densidade \\(f(x) = \\frac{1}{3} I_{[0,3]}(x)\\). A partir dessa variável, uma nova variável é definida por: \\[\n  Y = \\begin{cases}\n        X, & \\text{se } 0 \\le X \\le 2; \\\\\n        3, & \\text{se } 2 &lt; X \\le 3.\n  \\end{cases}\n\\] Determine a distribuição de \\(Y\\).\n\nNote que a distribuição tem uma parte discreta e outra contínua."
   },
   {
     "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#exemplo-9.4",
