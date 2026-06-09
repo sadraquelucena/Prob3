@@ -1,0 +1,161 @@
+---
+title: "Propriedades da Função Geradora de Momentos"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Teorema 15.1
+
+Suponah que a variável aleatória $X$ tem f.g.m. dada por $M_X(t)$. Então a f.g.m. de $Y=aX+b$ é dada por
+$$
+  M_Y(t) = e^{tb} M_X(at).
+$$
+
+
+
+## Exemplo 15.2
+
+Sejam $X\sim N(\mu,\sigma^2)$ e $Y=aX+b$. Determine a f.g.m. de $Y$.
+
+
+
+## Teorema 15.2
+
+Se duas variáveis aleatórias $X$ e $Y$ têm funções geradoras de momentos que existem e são iguais, isto é, $M_X(t)=M_Y(t)$, então elas têm a mesma função de distribuição.
+
+- A prova será omitida. A demonstração de um resultado similar
+para funções caracterı́sticas será feita em outra aula
+<br>
+
+- A partir desse teoram, quando mostramos que uma variável possui uma f.g.m. conhecida, identificamos imediatamente sua distribuição.
+
+
+
+##
+
+| Distribuição | f.g.m. |
+|:--------|:--------|
+| Binomial($n,p$) | $(pe^t + 1 - p)^n$ |
+| Uniforme($a,b$) | $\frac{e^{tb-e^ta}}{t(b-a)}$ |
+| Poisson($\lambda$) | $e^{\lambda(e^t -1)}$ |
+| Exponencial($\lambda$) | $\frac{\lambda}{\lambda-t}$ |
+| Geométrica($p$) | $\frac{pe^t}{1-(1-p)e^t}$ |
+| Gama($s,t$) | $\left(\frac{\lambda}{\lambda-t}\right)^s$ |
+| Bin. Negtiva($r,p$) | $\left[\frac{pe^t}{1-(1-p)e^t}\right]^r$ |
+| Normal($\mu,\sigma^2$) | $\exp\left\{\mu t + \frac{\sigma^2t^2}{2}\right\}$ |
+|  |  |
+
+
+
+## Exemplo 15.2
+
+A partir da f.g.m. obtida no Exemplo 15.1, qual a distribuição de $Y$?
+
+
+
+## Exemplo 15.3
+
+(a) Qual a distribuição associada a $M_X(t) = e^{3(e^t-1)}$?
+(b) Sabendo a distribuição de $X$, determine $P(X=0)$.
+
+
+
+### Teorema 15.3
+
+Sejam $X_1, \ldots, X_n$ variáveis aleatórias independentes com funções geradoras de momentos, respectivamente, iguais a $M_{X_j}(t)$, $j = 1, \ldots, n$. Se $Y = X_1 + \cdots + X_n$, então a função geradora de momentos de $Y$ existe e é dada por
+$$
+  M_Y(t) = M_{X_1+\cdots+X_n}(t) = \prod\limits_{j=1}^n M_{X_j}(t).
+$$
+
+
+
+## Exemplo 15.4
+
+Se $X$ e $Y$ são variáveis aleatórias independentes com distribuição de Poisson de média $\lambda_1$ e $\lambda_2$, respectivamente, qual a distribuição de $X + Y$?
+
+
+
+## Exemplo 15.5
+
+Sejam $X\sim N(\mu_1, \sigma^2_1)$ e $Y\sim N(\mu_2, \sigma^2_2)$ variáveis aleatórias independentes. Considere $Z = X + Y$.
+
+(a) Determine a f.g.m.de $Z$.
+(b) Baseado na f.g.m., qual a distribuição de $Z$?
+
+
+
+## Função Geradora de Momentos Conjunta
+
+Sejam $X$ e $Y$ variáveis aleatórias. A função geradora de momentos conjunta de ($X,Y$) é
+$$
+  M_{X,Y}(s,t) = E(e^{sX+tY}),
+$$
+desde que a esperança exista para valores de $s$ e $t$ em uma vizinhança de (0,0).
+
+<br><br>
+
+- A definição pode ser estendida para n variáveis aleatórias:
+$$
+  M_{X_1, \ldots, X_n}(t_1, \ldots, t_n) = E\left(e^{t_1 X_1 +\cdots+t_n X_n}\right),
+$$
+
+
+
+
+## Função Geradora de Momentos Marginal
+
+A partir da função geradora conjunta, recuperamos as funções geradoras marginais fazendo um dos parâmetros igual a zero:
+$$
+  M_X(s) = M_{X,Y}(s,0)
+$$
+e
+$$
+  M_Y(t) = M_{X,Y}(0,t)
+$$
+
+- Para $n$ variáveis aleatórias:
+
+$$
+  M_{X_i}(t) = M_{X_1, \ldots, X_n}(0, \ldots, 0, t_i, 0, \ldots,0).
+$$
+
+
+
+## Função Geradora Conjunta de Variáveis Independentes
+
+Sejam $X_1, \ldots, X_n$ variáveis aleatórias com função geradora de momentos conjunta $M_{X_1,\ldots,X_n}(t1, \ldots, t_n)$. Então as variáveis $X_1, \ldots, X_n$ são independentes se, e somente se, a função geradora de momentos conjunta pode ser fatorada como o produto das funções geradoras das variáveis. Isto é,
+$$
+  M_{X_1, \ldots, X_n}(t_1, \ldots, t_n) = E\left(e^{t_1 X_1 +\cdots+t_n X_n}\right) = \prod\limits_{j=1}^n M_{X_j}(t).
+$$
+
+
+
+## Exemplo 15.6
+
+Verifique, usando funções geradoras de momentos, que a soma de $n$ variáveis aleatórias de Bernoulli($p$) independentes é Binomial($n, p$).
+
+
+# Fim

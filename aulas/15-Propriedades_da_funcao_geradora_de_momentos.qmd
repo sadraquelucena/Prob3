@@ -1,0 +1,43 @@
+---
+title: "Conteúdo 15"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Propriedades da Função Geradora de Momentos
+
+Esta aula aborda as propriedades fundamentais da Função Geradora de Momentos (f.g.m.), como o efeito de transformações lineares, o Teorema da Unicidade — que viabiliza a identificação direta de distribuições conhecidas —, e a propriedade reprodutiva da soma de variáveis aleatórias independentes. Também é abordado na aula o contexto multivariado através da f.g.m. conjunta e das f.g.m.s marginais.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/15-Propriedades_da_funcao_geradora_de_momentos/15-Propriedades_da_funcao_geradora_de_momentos.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide15_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/15-Propriedades_da_funcao_geradora_de_momentos.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide15_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/Prob3_Lista15.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista15.png){width=80%}<br>Lista 15
+</a>
+:::
+
+::::
+
+

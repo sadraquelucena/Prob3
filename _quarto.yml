@@ -53,6 +53,12 @@ website:
             text: "11- Distribuição do Máximo e do Mínimo"
           - href: aulas/12-Metodo_jacobiano.qmd
             text: "12- Método do Jacobiano"
+          - href: aulas/13-Momentos.qmd
+            text: "13- Momentos"
+          - href: aulas/14-Funcao-geradora-de-momentos.qmd
+            text: "14- Função Geradora de Momentos"
+          - href: aulas/15-Propriedades_da_funcao_geradora_de_momentos.qmd
+            text: "15- Propriedades da Função Geradora de Momentos"
       
       
 

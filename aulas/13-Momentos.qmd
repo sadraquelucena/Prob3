@@ -1,0 +1,43 @@
+---
+title: "Conteúdo 13"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Momentos
+
+Esta aula introduz o conceito de momentos de variáveis aleatórias, uma ferramenta usada para descrever e analisar distribuições de probabilidade. São apresentados os momentos de ordem $k$, os momentos centrais e os momentos absolutos, destacando suas relações com a esperança e a variância.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/13-Momentos/13-Momentos.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide13_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/13-Momentos.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide13_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/Prob3_Lista13.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista13.png){width=80%}<br>Lista 13
+</a>
+:::
+
+::::
+
+

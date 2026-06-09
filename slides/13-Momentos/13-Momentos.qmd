@@ -1,0 +1,88 @@
+---
+title: "Momentos"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Introdução
+
+- Algumas caracterı́sticas importantes das variáveis aleatórias
+são obtidas por meio da esperança, da variância e da
+correlação, por exemplo.
+
+- Duas ferramentas bastante úteis em Probabilidade e
+Estatı́stica são a função geradora de momentos e a função
+caracterı́stica. A ideia básica do uso dessas funções é, através
+de transformação, facilitar alguns cálculos. Dessa forma,
+muitos teoremas importantes em Estatı́stica são provados com
+o auxı́lio dessas funções.
+
+- Vamos iniciar estudando os momentos de variáveis aleatórias.
+
+---
+
+## Momentos de Variáveis Aleatórias
+
+- Para $k = 1, 2, \ldots$, o momento de ordem $k$ da variável $X$ é definido como $E(X^k)$, se a esperança existir.
+
+- Para o caso discreto, temos que $$E(X^k) = \sum\limits_{i=1}^\infty x_i^k P(X=x_i).$$
+
+- Para o caso contínuo, temos que $$E(X^k) = \int\limits_{-\infty}^\infty x^k f(x) dx.$$
+
+---
+
+## Momentos de Variáveis Aleatórias
+
+- Se $E(X) = \mu < \infty$, definimos o **momento central de ordem $k$** por $\mu_k = E[(X-\mu)^k]$, sempre que essa quantidade existir.
+
+- De modo similar, o **momento absoluto de ordem $k$** da variável aleatória $X$ é definido por $E(|X_k|)$.
+
+---
+
+## Momentos de Variáveis Aleatórias
+
+- **Obs.1:** Note que o momento de ordem 1 (isto é, $k = 1$) é a
+esperança;
+
+- **Obs.2:** A variância é o momento central de ordem 2;
+
+- **Obs.3:** A variância também pode ser obtida como a diferença entre o momento de ordem 2 e o quadrado do momento de ordem 1;
+
+- **Obs.4:** A existência dos momentos está relacionada a existência da integral. Isto é, o valor infinito pode ocorrer, mas operações tipo $\infty - \infty$ são indeterminadas e levam à inexistência do momento.
+
+---
+
+## Exemplo 13.1
+
+Seja $X\sim U[a, b]$.
+
+(a) Determine o momento de ordem $k$.
+(b) Obtenha o momento centrado em $E(X)$ de ordem $k$.
+(c) A partir dos momentos calculados, obtenha a esperança e a
+variância de $X$.
+
+
+# Fim

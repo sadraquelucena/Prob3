@@ -1,0 +1,92 @@
+---
+title: "Função Geradora de Momentos"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Função Geradora de Momentos
+
+- A função geradora de momentos (f.g.m.) da variável aleatória
+$X$ é definida por $$M_X(t) = E(e^{tX}),$$ desde que a esperança seja finita para $t \in \mathbb{R}$.
+
+- Para o caso discreto, temos $$ M_X(t) = \sum\limits_{i=1}^\infty e^{tx_i} P(X=x_i). $$
+
+- Para o caso contínuo, $$M_X(t) = \int\limits_{-\infty}^{\infty}e^{tx_i} f(x) dx.$$
+
+
+## Exemplo 14.1
+
+Obtenha a função geradora de momentos para:
+
+(a) $X\sim$ Binomial($n,p$). *Lembrete: $P(X=x)=\binom{n}{x}p^x(1-p)^{n-x}, x=0,1,\ldots,n$*
+
+(b) $X\sim$ Poisson($\lambda$). *Lembrete: $P(X=x)=\frac{e^{-\lambda}\lambda^x}{x!}, x=0,1,2\ldots$*
+
+(c) $Z\sim$ N($0,1$). *Lembrete: $f(z) = \frac{1}{\sqrt{2\pi}}e^{-\frac{z^2}{2}}, -\infty<z<\infty$*
+
+(d) $Y\sim$ Exponencial($\lambda$). *Lembrete: $f(y) = \lambda e^{-\lambda y}, y>0$*
+
+
+##
+
+| Distribuição | f.g.m. |
+|:--------|:--------|
+| Binomial($n,p$) | $(pe^t + 1 - p)^n$ |
+| Uniforme($a,b$) | $\frac{e^{tb-e^ta}}{t(b-a)}$ |
+| Poisson($\lambda$) | $e^{\lambda(e^t -1)}$ |
+| Exponencial($\lambda$) | $\frac{\lambda}{\lambda-t}$ |
+| Geométrica($p$) | $\frac{pe^t}{1-(1-p)e^t}$ |
+| Gama($s,t$) | $\left(\frac{\lambda}{\lambda-t}\right)^s$ |
+| Bin. Negtiva($r,p$) | $\left[\frac{pe^t}{1-(1-p)e^t}\right]^r$ |
+| Normal($\mu,\sigma^2$) | $\exp\left\{\mu t + \frac{\sigma^2t^2}{2}\right\}$ |
+|  |  |
+
+
+##
+
+- Chamamos $M_X(t)$ de função geradora de momentos porque todos os momentos de $X$ podem ser obtidos com o cálculo sucessivo da derivada de $M_X(t)$ e então com sua avaliação em $t = 0$.
+
+### Teorema 14.1
+
+Suponha que a f.g.m. de $X$ exista, então $E(X^n)$ existe para $n = 1, 2, \ldots$ e temos
+$$
+  E(X^n) = \left.M_X(t)^{('n)}\right|_{t=0} = \left.\frac{\partial^n}{\partial t^n} M_X(t)\right|_{t=0}.
+$$
+
+
+## Exemplo 14.2
+
+A partir da função geradora de momentos, obtenha os dois
+primeiros momentos de
+
+(a) $X \sim$ Binomial($n, p$)
+(b) $X \sim$ Poisson($\lambda$)
+(c) $Z \sim$ N(0, 1)
+(d) $Y \sim$ Exponencial($\lambda$)
+
+
+
+# Fim
