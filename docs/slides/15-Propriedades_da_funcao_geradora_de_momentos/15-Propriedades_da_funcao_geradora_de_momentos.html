@@ -142,24 +142,6 @@
 </div>
 
 </section>
-<section id="teorema-15.1" class="slide level2">
-<h2>Teorema 15.1</h2>
-<p>Suponah que a variável aleatória <span class="math inline">\(X\)</span> tem f.g.m. dada por <span class="math inline">\(M_X(t)\)</span>. Então a f.g.m. de <span class="math inline">\(Y=aX+b\)</span> é dada por <span class="math display">\[
-  M_Y(t) = e^{tb} M_X(at).
-\]</span></p>
-</section>
-<section id="exemplo-15.2" class="slide level2">
-<h2>Exemplo 15.2</h2>
-<p>Sejam <span class="math inline">\(X\sim N(\mu,\sigma^2)\)</span> e <span class="math inline">\(Y=aX+b\)</span>. Determine a f.g.m. de <span class="math inline">\(Y\)</span>.</p>
-</section>
-<section id="teorema-15.2" class="slide level2">
-<h2>Teorema 15.2</h2>
-<p>Se duas variáveis aleatórias <span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span> têm funções geradoras de momentos que existem e são iguais, isto é, <span class="math inline">\(M_X(t)=M_Y(t)\)</span>, então elas têm a mesma função de distribuição.</p>
-<ul>
-<li><p>A prova será omitida. A demonstração de um resultado similar para funções caracterı́sticas será feita em outra aula <br></p></li>
-<li><p>A partir desse teoram, quando mostramos que uma variável possui uma f.g.m. conhecida, identificamos imediatamente sua distribuição.</p></li>
-</ul>
-</section>
 <section id="section" class="slide level2">
 <h2></h2>
 <table class="caption-top">
@@ -213,7 +195,25 @@
 </tbody>
 </table>
 </section>
-<section id="exemplo-15.2-1" class="slide level2">
+<section id="teorema-15.1" class="slide level2">
+<h2>Teorema 15.1</h2>
+<p>Suponah que a variável aleatória <span class="math inline">\(X\)</span> tem f.g.m. dada por <span class="math inline">\(M_X(t)\)</span>. Então a f.g.m. de <span class="math inline">\(Y=aX+b\)</span> é dada por <span class="math display">\[
+  M_Y(t) = e^{tb} M_X(at).
+\]</span></p>
+</section>
+<section id="exemplo-15.1" class="slide level2">
+<h2>Exemplo 15.1</h2>
+<p>Sejam <span class="math inline">\(X\sim N(\mu,\sigma^2)\)</span> e <span class="math inline">\(Y=aX+b\)</span>. Determine a f.g.m. de <span class="math inline">\(Y\)</span>.</p>
+</section>
+<section id="teorema-15.2" class="slide level2">
+<h2>Teorema 15.2</h2>
+<p>Se duas variáveis aleatórias <span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span> têm funções geradoras de momentos que existem e são iguais, isto é, <span class="math inline">\(M_X(t)=M_Y(t)\)</span>, então elas têm a mesma função de distribuição.</p>
+<ul>
+<li><p>A prova será omitida. A demonstração de um resultado similar para funções caracterı́sticas será feita em outra aula <br></p></li>
+<li><p>A partir desse teoram, quando mostramos que uma variável possui uma f.g.m. conhecida, identificamos imediatamente sua distribuição.</p></li>
+</ul>
+</section>
+<section id="exemplo-15.2" class="slide level2">
 <h2>Exemplo 15.2</h2>
 <p>A partir da f.g.m. obtida no Exemplo 15.1, qual a distribuição de <span class="math inline">\(Y\)</span>?</p>
 </section>
@@ -223,7 +223,9 @@
 <li>Qual a distribuição associada a <span class="math inline">\(M_X(t) = e^{3(e^t-1)}\)</span>?</li>
 <li>Sabendo a distribuição de <span class="math inline">\(X\)</span>, determine <span class="math inline">\(P(X=0)\)</span>.</li>
 </ol>
-<h3 id="teorema-15.3">Teorema 15.3</h3>
+</section>
+<section id="teorema-15.3" class="slide level2">
+<h2>Teorema 15.3</h2>
 <p>Sejam <span class="math inline">\(X_1, \ldots, X_n\)</span> variáveis aleatórias independentes com funções geradoras de momentos, respectivamente, iguais a <span class="math inline">\(M_{X_j}(t)\)</span>, <span class="math inline">\(j = 1, \ldots, n\)</span>. Se <span class="math inline">\(Y = X_1 + \cdots + X_n\)</span>, então a função geradora de momentos de <span class="math inline">\(Y\)</span> existe e é dada por <span class="math display">\[
   M_Y(t) = M_{X_1+\cdots+X_n}(t) = \prod\limits_{j=1}^n M_{X_j}(t).
 \]</span></p>

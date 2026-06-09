@@ -27,6 +27,22 @@ format:
 lang: pt-BR
 ---
 
+##
+
+| Distribuição | f.g.m. |
+|:--------|:--------|
+| Binomial($n,p$) | $(pe^t + 1 - p)^n$ |
+| Uniforme($a,b$) | $\frac{e^{tb-e^ta}}{t(b-a)}$ |
+| Poisson($\lambda$) | $e^{\lambda(e^t -1)}$ |
+| Exponencial($\lambda$) | $\frac{\lambda}{\lambda-t}$ |
+| Geométrica($p$) | $\frac{pe^t}{1-(1-p)e^t}$ |
+| Gama($s,t$) | $\left(\frac{\lambda}{\lambda-t}\right)^s$ |
+| Bin. Negtiva($r,p$) | $\left[\frac{pe^t}{1-(1-p)e^t}\right]^r$ |
+| Normal($\mu,\sigma^2$) | $\exp\left\{\mu t + \frac{\sigma^2t^2}{2}\right\}$ |
+|  |  |
+
+
+
 ## Teorema 15.1
 
 Suponah que a variável aleatória $X$ tem f.g.m. dada por $M_X(t)$. Então a f.g.m. de $Y=aX+b$ é dada por
@@ -36,7 +52,7 @@ $$
 
 
 
-## Exemplo 15.2
+## Exemplo 15.1
 
 Sejam $X\sim N(\mu,\sigma^2)$ e $Y=aX+b$. Determine a f.g.m. de $Y$.
 
@@ -54,22 +70,6 @@ para funções caracterı́sticas será feita em outra aula
 
 
 
-##
-
-| Distribuição | f.g.m. |
-|:--------|:--------|
-| Binomial($n,p$) | $(pe^t + 1 - p)^n$ |
-| Uniforme($a,b$) | $\frac{e^{tb-e^ta}}{t(b-a)}$ |
-| Poisson($\lambda$) | $e^{\lambda(e^t -1)}$ |
-| Exponencial($\lambda$) | $\frac{\lambda}{\lambda-t}$ |
-| Geométrica($p$) | $\frac{pe^t}{1-(1-p)e^t}$ |
-| Gama($s,t$) | $\left(\frac{\lambda}{\lambda-t}\right)^s$ |
-| Bin. Negtiva($r,p$) | $\left[\frac{pe^t}{1-(1-p)e^t}\right]^r$ |
-| Normal($\mu,\sigma^2$) | $\exp\left\{\mu t + \frac{\sigma^2t^2}{2}\right\}$ |
-|  |  |
-
-
-
 ## Exemplo 15.2
 
 A partir da f.g.m. obtida no Exemplo 15.1, qual a distribuição de $Y$?
@@ -83,7 +83,7 @@ A partir da f.g.m. obtida no Exemplo 15.1, qual a distribuição de $Y$?
 
 
 
-### Teorema 15.3
+## Teorema 15.3
 
 Sejam $X_1, \ldots, X_n$ variáveis aleatórias independentes com funções geradoras de momentos, respectivamente, iguais a $M_{X_j}(t)$, $j = 1, \ldots, n$. Se $Y = X_1 + \cdots + X_n$, então a função geradora de momentos de $Y$ existe e é dada por
 $$
