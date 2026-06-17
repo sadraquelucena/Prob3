@@ -1,0 +1,54 @@
+---
+title: "Propriedades da Função Característica"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+##
+
+Seja $X$ uma variável aleatória qualquer e $\varphi_X$ sua função característica, então
+
+(i) $\varphi_X(0)=1$
+(ii) $|\varphi_X(t)|\leq 1$
+(iii) Para $a$ e $b$ constantes, $\varphi_{aX+b}(t) = e^{itb}\varphi_X(at)$
+(iv) Se as variáveis aleatórias $X$ e $Y$ são independentes, então $\varphi_{X+Y}(t) = \varphi_X(t)\varphi_Y(t)$ (vale para $n$ variáveis)
+(v) $\varphi_X$ também gera momentos:
+$$
+  \left. \frac{\partial^n}{\partial t^n}\varphi_X(t)\right|_{t=0} = i^n E(X^n), \quad n=1,2,\ldots, \text{ se } E(|X^n|) \leq \infty.
+$$
+
+
+
+## Exemplo 17.1
+
+Use a função característica e verifique que
+
+(a) Se $X\sim Bin(n,p)$, então $$E(X)=np \quad \text{e} \quad E(X^2) = np(np-p+1).$$
+
+(b) Se $X\sim N(\mu,\sigma^2)$, então $$E(X)=\mu \quad \text{e} \quad E(X^2) = \sigma^2 + \mu^2.$$
+
+
+# Fim

@@ -1,0 +1,43 @@
+---
+title: "Conteúdo 16"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Função Característica
+
+Nesta aula, introduzimos o conceito de função característica, uma das ferramentas mais importantes da teoria da probabilidade. São apresentados os fundamentos matemáticos envolvendo números complexos, a definição formal da função característica e sua relação com outras funções associadas a distribuições de probabilidade.
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide16_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/16-Funcao_caracteristica.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide16_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/Prob3_Lista16.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista15.png){width=80%}<br>Lista 16
+</a>
+:::
+
+::::
+
+

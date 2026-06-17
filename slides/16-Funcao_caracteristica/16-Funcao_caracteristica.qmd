@@ -1,0 +1,98 @@
+---
+title: "Função Característica"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+##
+
+- A função geradora de momentos é uma ferramenta muito útil,
+no entanto a integral que a define pode nem sempre ser finita.
+- A função caracterı́stica tem a vantagem de ser finita para
+todas as variáveis aleatórias $X$ e todos os números reais $t$, ou seja, elaa tem a vantagem de sempre existir.
+- A função de distribuição de $X$ e, em geral, a função de
+densidade, quando existe, podem ser obtidas da função
+caracterı́stica.
+- Usando as propriedades das funções caracterı́sticas é possı́vel demonstrar teoremas e resultados importantes da estatística.
+
+
+
+## 
+
+Para usarmos a função característica, precisamos lembrar de variáveis complexas:
+
+- Se $X$ e $Y$ são variáveis aleatórias, então $Z = X + iY$ é
+chamada uma variável aleatória complexa.
+- $\sqrt{i} = -1$.
+- O valor absoluto de um número complexo é dado por $|z| = \sqrt{x^2 + y^2}$.
+- $\overline{z}$ é o conjugado de $z$, isto é, se $z = a + ib$, então $z = a - ib$.
+- A distância entre dois números complexos $z_1$ e $z_2$ é dada por $|z_1 - z_2|$.
+
+
+##
+
+Algumas identidades interessantes:
+
+- $e^{ix} = cos(x) + i sen(x)$
+- $cos(x) = \frac{e^{ix}+e^{-ix}}{2}$
+- $sen(x) = \frac{e^{ix}-e^{-ix}}{2i}$
+
+
+
+## Função Característica
+
+Seja $X$ uma variável aleatória. A função característica de$ $X é a função $\varphi = \mathbb{R} \rightarrow \mathbb{C}$ definida por
+$$
+  \varphi_X(t) = E(e^{itX}) = E[cos(tX)] + i E[sen(tX)],
+$$
+para $-\infty<t<+\infty$ e $i=\sqrt{-1}$.
+
+
+## Exemplo 16.1
+
+A variável aleatória $X$ assume os valores 1 e −1 com a mesma probabilidade. Determine a função característica de $X$.
+
+
+
+## Exemplo 16.2
+
+Considere a variável aleatória $X$ com distribuição Uniforme
+Contínua no intervalo $[a, b]$. Determine sua função característica.
+
+
+
+## Exemplo 16.3
+
+Sabendo que a f.g.m. de $X\sim \text{Bin}(n,p)$ é $M_X(t)=(pe^t+1-p)^n$, determine a função característica de $X$.
+
+
+
+## Exemplo 16.4
+
+Sabendo que a f.g.m. de $Y\sim N(\mu, \sigma^2)$ é $M_Y(t) = e^{t\mu}+\frac{\sigma^2t^2}{2}$, determine a função característica de $Y$.
+
+
+# Fim

@@ -59,6 +59,10 @@ website:
             text: "14- Função Geradora de Momentos"
           - href: aulas/15-Propriedades_da_funcao_geradora_de_momentos.qmd
             text: "15- Propriedades da Função Geradora de Momentos"
+          - href: aulas/16-Funcao_caracteristica.qmd
+            text: "16- Função Característica"
+          - href: aulas/17-Propriedades_da_funcao_caracteristica.qmd
+            text: "17- Propriedades da Função Característica"
       
       
 
