@@ -664,256 +664,343 @@
     "text": "Exemplo 8.4\nSejam \\(X\\) e \\(Y\\) variáveis independentes com distribuição Exponencial de parâmetro \\(\\lambda\\), ou seja, \\(f(x) = \\lambda e^{-\\lambda x}\\) para \\(x &gt; 0\\). Determine a densidade de \\(Z = X+Y\\)."
   },
   {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#definição-4.1-distribuição-condicional",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#definição-4.1-distribuição-condicional",
-    "title": "Distribuição Condicional",
-    "section": "Definição 4.1: Distribuição Condicional",
-    "text": "Definição 4.1: Distribuição Condicional\nSejam \\(X\\) e \\(Y\\) duas variáveis aleatórias e \\(B_1\\) e \\(B_2\\) intervalos com \\(P(Y \\in B_2) &gt; 0\\). A distribuição condicional de \\(X\\) dado \\(Y \\in B_2\\) é dada por: \\[ P(X \\in B_1 | Y \\in B_2) = \\frac{P([X \\in B_1] \\cap [Y \\in B_2])}{P(Y \\in B_2)}. \\]\n\nSe \\(P(Y \\in B_2) = 0\\), definimos \\(P(X \\in B_1 | Y \\in B_2) = P(X \\in B_1)\\)."
+    "objectID": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#introdução",
+    "href": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#introdução",
+    "title": "Distribuição do Máximo e do Mínimo",
+    "section": "Introdução",
+    "text": "Introdução\n\nHoje avançamos para as Estatísticas de Ordem, focando nos extremos: o Máximo e o Mínimo de um conjunto de variáveis aleatórias.\nNa prática, onde isso é usado?\n\nO Mínimo (\\(Y_{(1)}\\)): Tempo de falha de um sistema em série (o sistema para quando o primeiro componente quebra).\nO Máximo (\\(Y_{(n)}\\)): Tempo de falha de um sistema em paralelo (o sistema só para quando o último componente quebra).\n\nVamos construir essas distribuições usando pura lógica e a Função de Distribuição Acumulada (FDA)."
   },
   {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-discreto",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-discreto",
-    "title": "Distribuição Condicional",
-    "section": "Distribuição Condicional: Caso Discreto",
-    "text": "Distribuição Condicional: Caso Discreto\n\nSe \\(X\\) e \\(Y\\) forem discretas, a probabilidade condicional pode ser escrita na notação de função de probabilidade da seguinte forma: \\[P(X=x | Y=y) = \\frac{P(X=x, Y=y)}{P(Y=y)}\\]\nAs demais relações seguem de forma análoga."
+    "objectID": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#distribuição-do-máximo",
+    "href": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#distribuição-do-máximo",
+    "title": "Distribuição do Máximo e do Mínimo",
+    "section": "Distribuição do Máximo",
+    "text": "Distribuição do Máximo\n\nConsidere \\(X_1, \\dots, X_n\\) v.a. independentes e \\[Y_{(n)} = \\max\\{X_1, \\dots, X_n\\}.\\]\nSuponha que queremos encontrar a probabilidade do máximo ser menor ou igual a \\(w\\): \\(P(Y_{(n)} \\le w)\\).\nPara que o maior valor de todos seja menor ou igual a \\(w\\), todos os valores têm que ser menores ou iguais a \\(w\\).\nOu seja, precisamos que: \\(X_1 \\le w\\) E \\(X_2 \\le w\\) E \\(\\dots\\) E \\(X_n \\le w\\).\nComo são eventos independentes, multiplicamos as probabilidades: \\[F_{Y_{(n)}}(w) = P(X_1 \\le w) \\cdot P(X_2 \\le w) \\cdots P(X_n \\le w)\\]"
   },
   {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.1",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.1",
-    "title": "Distribuição Condicional",
-    "section": "Exemplo 4.1",
-    "text": "Exemplo 4.1\nSuponha que \\(p(x,y)\\), a função discreta de probabilidade conjunta de \\(X\\) e \\(Y\\), seja dada por:\n\n\\(p(0,0)=0,\\!4\\)\n\\(p(0,1)=0,\\!2\\)\n\\(p(1,0)=0,\\!1\\)\n\\(p(1,1)=0,\\!3\\)\n\nDetermine a função de probabilidade condicional de \\(X\\) dado que \\(Y=1\\)."
+    "objectID": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#distribuição-do-mínimo",
+    "href": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#distribuição-do-mínimo",
+    "title": "Distribuição do Máximo e do Mínimo",
+    "section": "Distribuição do Mínimo",
+    "text": "Distribuição do Mínimo\n\nAgora queremos a distribuição do mínimo: \\[Y_{(1)} = \\min\\{X_1, \\dots, X_n\\}\\]\nQueremos \\(P(Y_{(1)} \\le z)\\), que é difícil de tratar diretamente.\nAnalisando o complementar [\\(P(Y_{(1)}&gt; z)\\)] é mais simples, pois \\[ Y_{(1)}&gt; z \\Leftrightarrow X_1&gt;z, \\ldots, X_n&gt;z\\]\nComo as variáveis são independentes: \\[ P(Y_{(1)}&gt;z) = \\prod\\limits_{i=1}^n P(X_i&gt;z) \\]"
   },
   {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.2",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.2",
-    "title": "Distribuição Condicional",
-    "section": "Exemplo 4.2",
-    "text": "Exemplo 4.2\nSuponha que a função de probabilidade conjunta de X e Y seja dada por:\n\\[p(x,y) = c(x+y), \\text{ para } x \\in \\{1, 2, 3\\} \\text{ e } y \\in \\{1, 2\\}.\\]\n\nDetermine o valor da constante \\(c\\).\nEncontre a função de probabilidade marginal de Y, \\(p_Y(y)\\).\nDetermine a função de probabilidade condicional de X dado \\(Y=1\\), ou seja, \\(P(X=x | Y=1)\\)."
+    "objectID": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#distribuição-do-mínimo-1",
+    "href": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#distribuição-do-mínimo-1",
+    "title": "Distribuição do Máximo e do Mínimo",
+    "section": "Distribuição do Mínimo",
+    "text": "Distribuição do Mínimo\n\nVoltando para a Acumulada: \\[ F_{Y_{(1)}}(z) = P(Y_{(1)}&gt;z) = 1 - \\prod\\limits_{i=1}^n P(X_i&gt;z) \\]"
   },
   {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#lei-da-probabilidade-total",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#lei-da-probabilidade-total",
-    "title": "Distribuição Condicional",
-    "section": "Lei da Probabilidade Total",
-    "text": "Lei da Probabilidade Total\n\\[P(X \\in B) = \\sum_y P(Y=y)P(X \\in B | Y=y).\\]\n\nInterpretação: probabilidade total = média ponderada das condicionais"
+    "objectID": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#proposição-11.1-formalização",
+    "href": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#proposição-11.1-formalização",
+    "title": "Distribuição do Máximo e do Mínimo",
+    "section": "Proposição 11.1: Formalização",
+    "text": "Proposição 11.1: Formalização\nSeja \\(X_1, \\dots, X_n\\) v.a.i. com distribuições acumuladas \\(F_{X_i}\\).\n\nDistribuição do Máximo – a acumulada é o produto das acumuladas individuais: \\[F_{Y_{(n)}}(w) = \\prod_{i=1}^n F_{X_i}(w)\\]\nDistribuição do Mínimo – a acumulada depende do produto das probabilidades complementares: \\[F_{Y_{(1)}}(z) = 1 - \\prod_{i=1}^n [1 - F_{X_i}(z)]\\]"
   },
   {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#aplicação-à-função-de-distribuição",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#aplicação-à-função-de-distribuição",
-    "title": "Distribuição Condicional",
-    "section": "Aplicação à função de distribuição",
-    "text": "Aplicação à função de distribuição\nDefinição condicional\n\\[ F_{X|Y}(x|y) = P(X\\leq x | Y=y) \\]\nLei da Probabilidade Total\n\\[ F_X(x) = \\sum_y P(Y=y)F_{X|Y}(x|y) \\]"
+    "objectID": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#aplicação-confiabilidade-de-sistemas",
+    "href": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#aplicação-confiabilidade-de-sistemas",
+    "title": "Distribuição do Máximo e do Mínimo",
+    "section": "Aplicação: Confiabilidade de Sistemas",
+    "text": "Aplicação: Confiabilidade de Sistemas\nSuponha \\(X_1,\\dots,X_n\\) = tempos de vida de componentes.\n\nSistema em Série: Falha quando o primeiro quebra\n\nTempo de vida do sistema: \\(\\min(X_1,\\ldots,X_n)\\)\nExemplos: pisca-pisca antigo, linha de produção\n\nSistema em Paralelo: Falha quando o último quebra\n\nTempo de vida do sistema: \\(\\max(X_1,\\ldots,X_n)\\)\nExemplos: motores de avião, servidores com backup"
   },
   {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.3",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.3",
-    "title": "Distribuição Condicional",
-    "section": "Exemplo 4.3",
-    "text": "Exemplo 4.3\nUma seguradora classifica seus clientes em dois perfis de risco:\n\n\\(Y=1\\): Baixo risco, com \\(P(Y=1) = 0,\\!6\\)\n\\(Y=2\\): Alto risco, com \\(P(Y=2) = 0,\\!4\\)\n\nSeja \\(X\\) o número de sinistros acionados por um cliente em um ano. As probabilidades condicionais de \\(X\\) dado o perfil \\(Y\\) são:\n\nPara \\(Y=1\\) (baixo risco):\n\n\\(P(X=0|Y=1) = 0,8\\) e \\(P(X=1|Y=1) = 0,2\\)\n\nPara \\(Y=2\\) (alto risco):\n\n\\(P(X=0|Y=2) = 0,5\\) e \\(P(X=1|Y=2) = 0,3\\) e \\(P(X=2|Y=2) = 0,2\\)"
+    "objectID": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#exemplo-11.1",
+    "href": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#exemplo-11.1",
+    "title": "Distribuição do Máximo e do Mínimo",
+    "section": "Exemplo 11.1",
+    "text": "Exemplo 11.1\nSejam \\(X_1, \\dots, X_n\\) independentes com distribuição Uniforme(0, 1).\n\nDetermine a distribuição do máximo.\nDetermine a distribuição do mínimo.\nDetermine a função de densidade do máximo"
   },
   {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.3-1",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.3-1",
-    "title": "Distribuição Condicional",
-    "section": "Exemplo 4.3",
-    "text": "Exemplo 4.3\n\nDetermine \\(P(X \\geq 1 | Y=1)\\) e \\(P(X \\geq 1 | Y=2)\\).\nUtilize a Lei da Probabilidade Total para calcular \\(P(X \\geq 1)\\)."
+    "objectID": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#exemplo-11.2",
+    "href": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#exemplo-11.2",
+    "title": "Distribuição do Máximo e do Mínimo",
+    "section": "Exemplo 11.2",
+    "text": "Exemplo 11.2\nSejam \\(X_1, \\dots, X_n\\) variáveis independentes com distribuição Exponencial de média \\(\\mathbb{E}(X_i) = \\lambda_i\\).\n\nDetermine a distribuição do mínimo.\nDetermine a distribuição do máximo.\nDetermine a função de densidade do mínimo"
   },
   {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-contínuo",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-contínuo",
-    "title": "Distribuição Condicional",
-    "section": "Distribuição Condicional: Caso Contínuo",
-    "text": "Distribuição Condicional: Caso Contínuo\n\nSe \\(X\\) e \\(Y\\) são variáveis aleatórias contínuas, a densidade condicional de \\(X\\) dado \\(Y\\) é: \\[f_{X|Y}(x|y) = \\frac{f_{X,Y}(x,y)}{f_Y(y)}\\] (ou seja, a conjunta dividida pela marginal).\nA função de distribuição condicional de \\(X\\) dado \\(Y\\) é: \\[F_{X|Y}(x|y) = \\int_{-\\infty}^{x} f_{X|Y}(t|y)dt\\]"
-  },
-  {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-contínuo-consequências",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-contínuo-consequências",
-    "title": "Distribuição Condicional",
-    "section": "Distribuição Condicional: Caso Contínuo (Consequências)",
-    "text": "Distribuição Condicional: Caso Contínuo (Consequências)\nFórmulas válidas:\n\n\\(F_{X,Y}(x,y) = \\int_{-\\infty}^{y} f_Y(t)F_{X|Y}(x|t)dt\\)\n\\(F_X(x) = \\int_{-\\infty}^{+\\infty} f_Y(y)F_{X|Y}(x|y)dy\\)"
-  },
-  {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.4",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.4",
-    "title": "Distribuição Condicional",
-    "section": "Exemplo 4.4",
-    "text": "Exemplo 4.4\nA função de densidade conjunta de \\(X\\) e \\(Y\\) é dada por: \\[f_{X,Y}(x,y) = \\frac{12}{5}x(2-x-y)\\] para \\(0&lt;x&lt;1, 0&lt;y&lt;1\\).\nObtenha a densidade condicional de \\(X\\) dado que \\(Y=y\\), onde \\(0&lt;y&lt;1\\)."
-  },
-  {
-    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.5",
-    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.5",
-    "title": "Distribuição Condicional",
-    "section": "Exemplo 4.5",
-    "text": "Exemplo 4.5\nSuponha que a densidade conjunta de X e Y seja dada por: \\[f_{X,Y}(x, y) = \\frac{e^{-x/y}e^{-y}}{y}\\] para \\(0 &lt; x &lt; \\infty, 0 &lt; y &lt; \\infty\\). Determine \\(P(X &gt; 1 | Y = y)\\)."
-  },
-  {
-    "objectID": "slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html#função-geradora-de-momentos",
-    "href": "slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html#função-geradora-de-momentos",
-    "title": "Função Geradora de Momentos",
-    "section": "Função Geradora de Momentos",
-    "text": "Função Geradora de Momentos\n\nA função geradora de momentos (f.g.m.) da variável aleatória \\(X\\) é definida por \\[M_X(t) = E(e^{tX}),\\] desde que a esperança seja finita para \\(t \\in \\mathbb{R}\\).\nPara o caso discreto, temos \\[ M_X(t) = \\sum\\limits_{i=1}^\\infty e^{tx_i} P(X=x_i). \\]\nPara o caso contínuo, \\[M_X(t) = \\int\\limits_{-\\infty}^{\\infty}e^{tx_i} f(x) dx.\\]"
-  },
-  {
-    "objectID": "slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html#exemplo-14.1",
-    "href": "slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html#exemplo-14.1",
-    "title": "Função Geradora de Momentos",
-    "section": "Exemplo 14.1",
-    "text": "Exemplo 14.1\nObtenha a função geradora de momentos para:\n\n\\(X\\sim\\) Binomial(\\(n,p\\)). Lembrete: \\(P(X=x)=\\binom{n}{x}p^x(1-p)^{n-x}, x=0,1,\\ldots,n\\)\n\\(X\\sim\\) Poisson(\\(\\lambda\\)). Lembrete: \\(P(X=x)=\\frac{e^{-\\lambda}\\lambda^x}{x!}, x=0,1,2\\ldots\\)\n\\(Z\\sim\\) N(\\(0,1\\)). Lembrete: \\(f(z) = \\frac{1}{\\sqrt{2\\pi}}e^{-\\frac{z^2}{2}}, -\\infty&lt;z&lt;\\infty\\)\n\\(Y\\sim\\) Exponencial(\\(\\lambda\\)). Lembrete: \\(f(y) = \\lambda e^{-\\lambda y}, y&gt;0\\)"
-  },
-  {
-    "objectID": "slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html#section",
-    "href": "slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html#section",
-    "title": "Função Geradora de Momentos",
+    "objectID": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#section",
+    "href": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#section",
+    "title": "Função Característica",
     "section": "",
-    "text": "Distribuição\nf.g.m.\n\n\n\n\nBinomial(\\(n,p\\))\n\\((pe^t + 1 - p)^n\\)\n\n\nUniforme(\\(a,b\\))\n\\(\\frac{e^{tb-e^ta}}{t(b-a)}\\)\n\n\nPoisson(\\(\\lambda\\))\n\\(e^{\\lambda(e^t -1)}\\)\n\n\nExponencial(\\(\\lambda\\))\n\\(\\frac{\\lambda}{\\lambda-t}\\)\n\n\nGeométrica(\\(p\\))\n\\(\\frac{pe^t}{1-(1-p)e^t}\\)\n\n\nGama(\\(s,t\\))\n\\(\\left(\\frac{\\lambda}{\\lambda-t}\\right)^s\\)\n\n\nBin. Negtiva(\\(r,p\\))\n\\(\\left[\\frac{pe^t}{1-(1-p)e^t}\\right]^r\\)\n\n\nNormal(\\(\\mu,\\sigma^2\\))\n\\(\\exp\\left\\{\\mu t + \\frac{\\sigma^2t^2}{2}\\right\\}\\)"
+    "text": "A função geradora de momentos é uma ferramenta muito útil, no entanto a integral que a define pode nem sempre ser finita.\nA função caracterı́stica tem a vantagem de ser finita para todas as variáveis aleatórias \\(X\\) e todos os números reais \\(t\\), ou seja, elaa tem a vantagem de sempre existir.\nA função de distribuição de \\(X\\) e, em geral, a função de densidade, quando existe, podem ser obtidas da função caracterı́stica.\nUsando as propriedades das funções caracterı́sticas é possı́vel demonstrar teoremas e resultados importantes da estatística."
   },
   {
-    "objectID": "slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html#section-1",
-    "href": "slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html#section-1",
-    "title": "Função Geradora de Momentos",
+    "objectID": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#section-1",
+    "href": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#section-1",
+    "title": "Função Característica",
     "section": "",
-    "text": "Chamamos \\(M_X(t)\\) de função geradora de momentos porque todos os momentos de \\(X\\) podem ser obtidos com o cálculo sucessivo da derivada de \\(M_X(t)\\) e então com sua avaliação em \\(t = 0\\).\n\nTeorema 14.1\nSuponha que a f.g.m. de \\(X\\) exista, então \\(E(X^n)\\) existe para \\(n = 1, 2, \\ldots\\) e temos \\[\n  E(X^n) = \\left.M_X(t)^{('n)}\\right|_{t=0} = \\left.\\frac{\\partial^n}{\\partial t^n} M_X(t)\\right|_{t=0}.\n\\]"
+    "text": "Para usarmos a função característica, precisamos lembrar de variáveis complexas:\n\nSe \\(X\\) e \\(Y\\) são variáveis aleatórias, então \\(Z = X + iY\\) é chamada uma variável aleatória complexa.\n\\(\\sqrt{i} = -1\\).\nO valor absoluto de um número complexo é dado por \\(|z| = \\sqrt{x^2 + y^2}\\).\n\\(\\overline{z}\\) é o conjugado de \\(z\\), isto é, se \\(z = a + ib\\), então \\(z = a - ib\\).\nA distância entre dois números complexos \\(z_1\\) e \\(z_2\\) é dada por \\(|z_1 - z_2|\\)."
   },
   {
-    "objectID": "slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html#exemplo-14.2",
-    "href": "slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html#exemplo-14.2",
-    "title": "Função Geradora de Momentos",
-    "section": "Exemplo 14.2",
-    "text": "Exemplo 14.2\nA partir da função geradora de momentos, obtenha os dois primeiros momentos de\n\n\\(X \\sim\\) Binomial(\\(n, p\\))\n\\(X \\sim\\) Poisson(\\(\\lambda\\))\n\\(Z \\sim\\) N(0, 1)\n\\(Y \\sim\\) Exponencial(\\(\\lambda\\))"
-  },
-  {
-    "objectID": "slides/17-Propriedades_da_funcao_caracteristica/17-Propriedades_da_funcao_caracteristica.html#section",
-    "href": "slides/17-Propriedades_da_funcao_caracteristica/17-Propriedades_da_funcao_caracteristica.html#section",
-    "title": "Propriedades da Função Característica",
+    "objectID": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#section-2",
+    "href": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#section-2",
+    "title": "Função Característica",
     "section": "",
-    "text": "Seja \\(X\\) uma variável aleatória qualquer e \\(\\varphi_X\\) sua função característica, então\n\n\\(\\varphi_X(0)=1\\)\n\\(|\\varphi_X(t)|\\leq 1\\)\nPara \\(a\\) e \\(b\\) constantes, \\(\\varphi_{aX+b}(t) = e^{itb}\\varphi_X(at)\\)\nSe as variáveis aleatórias \\(X\\) e \\(Y\\) são independentes, então \\(\\varphi_{X+Y}(t) = \\varphi_X(t)\\varphi_Y(t)\\) (vale para \\(n\\) variáveis)\n\\(\\varphi_X\\) também gera momentos: \\[\n  \\left. \\frac{\\partial^n}{\\partial t^n}\\varphi_X(t)\\right|_{t=0} = i^n E(X^n), \\quad n=1,2,\\ldots, \\text{ se } E(|X^n|) \\leq \\infty.\n\\]"
+    "text": "Algumas identidades interessantes:\n\n\\(e^{ix} = cos(x) + i sen(x)\\)\n\\(cos(x) = \\frac{e^{ix}+e^{-ix}}{2}\\)\n\\(sen(x) = \\frac{e^{ix}-e^{-ix}}{2i}\\)"
   },
   {
-    "objectID": "slides/17-Propriedades_da_funcao_caracteristica/17-Propriedades_da_funcao_caracteristica.html#exemplo-17.1",
-    "href": "slides/17-Propriedades_da_funcao_caracteristica/17-Propriedades_da_funcao_caracteristica.html#exemplo-17.1",
-    "title": "Propriedades da Função Característica",
-    "section": "Exemplo 17.1",
-    "text": "Exemplo 17.1\nUse a função característica e verifique que\n\nSe \\(X\\sim Bin(n,p)\\), então \\[E(X)=np \\quad \\text{e} \\quad E(X^2) = np(np-p+1).\\]\nSe \\(X\\sim N(\\mu,\\sigma^2)\\), então \\[E(X)=\\mu \\quad \\text{e} \\quad E(X^2) = \\sigma^2 + \\mu^2.\\]"
+    "objectID": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#função-característica",
+    "href": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#função-característica",
+    "title": "Função Característica",
+    "section": "Função Característica",
+    "text": "Função Característica\nSeja \\(X\\) uma variável aleatória. A função característica de$ $X é a função \\(\\varphi = \\mathbb{R} \\rightarrow \\mathbb{C}\\) definida por \\[\n  \\varphi_X(t) = E(e^{itX}) = E[cos(tX)] + i E[sen(tX)],\n\\] para \\(-\\infty&lt;t&lt;+\\infty\\) e \\(i=\\sqrt{-1}\\)."
   },
   {
-    "objectID": "aulas/02-Vetores_aleatorios_discretos.html",
-    "href": "aulas/02-Vetores_aleatorios_discretos.html",
-    "title": "Conteúdo 2",
+    "objectID": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#exemplo-16.1",
+    "href": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#exemplo-16.1",
+    "title": "Função Característica",
+    "section": "Exemplo 16.1",
+    "text": "Exemplo 16.1\nA variável aleatória \\(X\\) assume os valores 1 e −1 com a mesma probabilidade. Determine a função característica de \\(X\\)."
+  },
+  {
+    "objectID": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#exemplo-16.2",
+    "href": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#exemplo-16.2",
+    "title": "Função Característica",
+    "section": "Exemplo 16.2",
+    "text": "Exemplo 16.2\nConsidere a variável aleatória \\(X\\) com distribuição Uniforme Contínua no intervalo \\([a, b]\\). Determine sua função característica."
+  },
+  {
+    "objectID": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#exemplo-16.3",
+    "href": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#exemplo-16.3",
+    "title": "Função Característica",
+    "section": "Exemplo 16.3",
+    "text": "Exemplo 16.3\nSabendo que a f.g.m. de \\(X\\sim \\text{Bin}(n,p)\\) é \\(M_X(t)=(pe^t+1-p)^n\\), determine a função característica de \\(X\\)."
+  },
+  {
+    "objectID": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#exemplo-16.4",
+    "href": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#exemplo-16.4",
+    "title": "Função Característica",
+    "section": "Exemplo 16.4",
+    "text": "Exemplo 16.4\nSabendo que a f.g.m. de \\(Y\\sim N(\\mu, \\sigma^2)\\) é \\(M_Y(t) = e^{t\\mu}+\\frac{\\sigma^2t^2}{2}\\), determine a função característica de \\(Y\\)."
+  },
+  {
+    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#por-que-transformar-variáveis-aleatórias",
+    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#por-que-transformar-variáveis-aleatórias",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "Por que transformar Variáveis Aleatórias?",
+    "text": "Por que transformar Variáveis Aleatórias?\n1. Inferência Estatística\n\nNa prática, coletamos uma amostra: \\(X_1, X_2, \\dots, X_n\\).\nA partir dela, calculamos a média amostral: \\(\\overline{X} = \\frac{\\sum X_i}{n}\\).\nO estimador \\(\\overline{X}\\) é uma função de variáveis aleatórias. Se não soubermos encontrar a distribuição de probabilidade dessa função, testes de hipótese e intervalos de confiança simplesmente não existem."
+  },
+  {
+    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#por-que-transformar-variáveis-aleatórias-1",
+    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#por-que-transformar-variáveis-aleatórias-1",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "Por que transformar Variáveis Aleatórias?",
+    "text": "Por que transformar Variáveis Aleatórias?\n2. Distribuições Clássicas\n\nAs distribuições Qui-Quadrado, t de Student e F de Snedecor (base da regressão e da ANOVA) são construídas a partir de transformações da distribuição Normal.\n\n3. Simulação Computacional\n\nOs processadores só sabem gerar números de uma única distribuição: a Uniforme(0,1).\nR ou Python geram dados de outras distribuições usando transformações sobre essa Uniforme para gerar a distribuição que desejarmos."
+  },
+  {
+    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#transformações-de-variáveis-aleatórias",
+    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#transformações-de-variáveis-aleatórias",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "Transformações de Variáveis Aleatórias",
+    "text": "Transformações de Variáveis Aleatórias\n\nSe \\(X\\) é uma variável aleatória, qualquer função ou transformação \\(h: X \\rightarrow \\mathbb{R}\\) também será uma variável aleatória.\nProblema: A partir do conhecimento de \\(X\\) (sua densidade ou probabilidade), como obter o comportamento probabilístico de \\(Y = h(X)\\)?\n\nGeneralização para Vetores:\n\nPodemos ter uma família de funções atuando sobre um vetor aleatório \\(\\underset{\\widetilde{\\phantom{X}}}{X} = (X_1, ..., X_m)\\) para produzir um novo vetor \\(\\underset{\\widetilde{\\phantom{Y}}}{Y} = (Y_1, ..., Y_r)\\)."
+  },
+  {
+    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#o-método-direto-ou-método-da-fda",
+    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#o-método-direto-ou-método-da-fda",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "O Método Direto (ou Método da FDA)",
+    "text": "O Método Direto (ou Método da FDA)\n\nPara obter a distribuição de uma transformação, uma técnica muito intuitiva e geral é o chamado Método Direto (ou Método da Função de Distribuição Acumulada - FDA).\nEle consiste em operações algébricas simples baseadas na própria definição de probabilidade: \\[F_Y(y) = P(Y \\le y) = P(h(X) \\le y)\\]\nA partir daí, manipulamos a desigualdade \\(h(X) \\le y\\) para isolar \\(X\\) e calcularmos a probabilidade usando a distribuição que já conhecemos de \\(X\\)."
+  },
+  {
+    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#o-método-direto-caso-discreto",
+    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#o-método-direto-caso-discreto",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "O Método Direto: Caso Discreto",
+    "text": "O Método Direto: Caso Discreto\n\nSejam \\(X_1\\) e \\(X_2\\) duas variáveis discretas com função de probabilidade conjunta \\(p(x_1, x_2)\\) e defina \\(Y = h(X_1, X_2)\\).\nA variável \\(Y\\) também será discreta. Sua função de probabilidade é dada por: \\[p(Y=y) = P(h(X_1, X_2) = y) = \\sum_{(x_1,x_2) \\in A_y} p(x_1, x_2)\\]\n\nOnde \\(A_y = \\{(x_1, x_2) : h(x_1, x_2) = y\\}\\).\n\nOu seja, para cada \\(y\\) fixado, somamos as probabilidades de todos os pares \\((x_1, x_2)\\) que, aplicados na função \\(h\\), resultam no exato valor \\(y\\)."
+  },
+  {
+    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#procedimento-do-método-direto-caso-discreto",
+    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#procedimento-do-método-direto-caso-discreto",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "Procedimento do Método Direto (Caso Discreto)",
+    "text": "Procedimento do Método Direto (Caso Discreto)\n\nDetermine os valores possíveis que \\(Y\\) pode assumir a partir dos pares \\((x_1, x_2)\\).\nPara cada valor de \\(y\\), identifique todos os pares \\((x_1,x_2)\\) tais que \\(h(x_1, x_2)=y\\).\nA probabilidade de \\(Y=y\\) é a soma das probabilidades desses pares: \\[P(Y=y) = \\sum_{(x_1,x_2) \\in A_y} p(x_1, x_2)\\]"
+  },
+  {
+    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#exemplo-9.1",
+    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#exemplo-9.1",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "Exemplo 9.1",
+    "text": "Exemplo 9.1\nA função de probabilidade conjunta de \\(X\\) e \\(Y\\) é dada na tabela abaixo:\n\n\n\n\\(X \\setminus Y\\)\n0\n1\n2\n\n\n\n\n0\n1/4\n1/8\n1/8\n\n\n1\n1/4\n0\n1/4\n\n\n\nObtenha a função de probabilidade de \\(U = X+Y\\) e de \\(V = X-Y\\), bem como a conjunta de \\(U\\) e \\(V\\)."
+  },
+  {
+    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#o-método-direto-caso-contínuo",
+    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#o-método-direto-caso-contínuo",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "O Método Direto: Caso Contínuo",
+    "text": "O Método Direto: Caso Contínuo\n\nNo caso contínuo, obtemos a distribuição de \\(Y\\) via função de distribuição acumulada (FDA). Seguimos então seguintes passos:\n\n\nObtemos a FDA reescrevendo o evento em termos de \\(X_1\\) e \\(X_2\\): \\[F_Y(y) = P(Y\\le y) = P(h(X_1, X_2) \\le y)\\]\nDeterminamos a região de integração \\(B_y = \\{(x_1, x_2) : h(x_1, x_2) \\le y\\}\\) e calculamos \\[F_Y(y) = \\iint_{B_y} f_{X_1, X_2}(x_1, x_2) dx_1 dx_2\\]"
+  },
+  {
+    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#o-método-direto-caso-contínuo-1",
+    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#o-método-direto-caso-contínuo-1",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "O Método Direto: Caso Contínuo",
+    "text": "O Método Direto: Caso Contínuo\n\nDerivamos a FDA para achar a densidade: \\[f_Y(y) = \\frac{d}{dy} F_Y(y)\\]\n\nObservação importante:\n\nEm alguns casos, a integral pode ser escrita como: \\[F_Y(y) = \\int_{-\\infty}^{y} g(w) dw\\] Nesse caso, a função \\(g(y)\\) obtida diretamente já é a densidade de \\(Y\\)."
+  },
+  {
+    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#exemplo-9.2",
+    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#exemplo-9.2",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "Exemplo 9.2",
+    "text": "Exemplo 9.2\nSeja \\(X\\) uma variável aleatória contínua com densidade \\(f(x) = \\frac{1}{2}\\), para \\(1 \\le x \\le 3\\). Obtenha a função de distribuição acumulada (FDA) e a densidade da nova variável \\(Y = e^X\\)."
+  },
+  {
+    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#exemplo-9.3",
+    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#exemplo-9.3",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "Exemplo 9.3",
+    "text": "Exemplo 9.3\nSeja \\(X\\) uma variável aleatória contínua com densidade \\(f(x) = \\frac{1}{3} I_{[0,3]}(x)\\). A partir dessa variável, uma nova variável é definida por: \\[\n  Y = \\begin{cases}\n        X, & \\text{se } 0 \\le X \\le 2; \\\\\n        3, & \\text{se } 2 &lt; X \\le 3.\n  \\end{cases}\n\\] Determine a distribuição de \\(Y\\).\n\nNote que a distribuição tem uma parte discreta e outra contínua."
+  },
+  {
+    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#exemplo-9.4",
+    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#exemplo-9.4",
+    "title": "Funções de Variáveis Aleatórias",
+    "section": "Exemplo 9.4",
+    "text": "Exemplo 9.4\nA função de densidade conjunta de \\(X\\) e \\(Y\\) é dada por: \\[f_{X,Y}(x, y) = e^{-(x+y)}, \\quad x &gt; 0, y &gt; 0\\] Determine a função de distribuição acumulada (FDA) da variável \\(Z = 2X + Y\\)."
+  },
+  {
+    "objectID": "aulas/17-Propriedades_da_funcao_caracteristica.html",
+    "href": "aulas/17-Propriedades_da_funcao_caracteristica.html",
+    "title": "Conteúdo 17",
     "section": "",
-    "text": "Este material apresenta a introdução aos vetores aleatórios discretos, com foco na definição da função de probabilidade conjunta e em suas propriedades fundamentais. São discutidos os conceitos de distribuição marginal e formas de representação, como tabelas de dupla entrada, além de exemplos que exploram a modelagem de fenômenos envolvendo múltiplas variáveis aleatórias.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 2",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: V.A. $n$-dimensionais",
-      "2- Vetores Aleatórios Discretos"
-    ]
-  },
-  {
-    "objectID": "aulas/02-Vetores_aleatorios_discretos.html#vetores-aleatórios-discretos",
-    "href": "aulas/02-Vetores_aleatorios_discretos.html#vetores-aleatórios-discretos",
-    "title": "Conteúdo 2",
-    "section": "",
-    "text": "Este material apresenta a introdução aos vetores aleatórios discretos, com foco na definição da função de probabilidade conjunta e em suas propriedades fundamentais. São discutidos os conceitos de distribuição marginal e formas de representação, como tabelas de dupla entrada, além de exemplos que exploram a modelagem de fenômenos envolvendo múltiplas variáveis aleatórias.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 2",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: V.A. $n$-dimensionais",
-      "2- Vetores Aleatórios Discretos"
-    ]
-  },
-  {
-    "objectID": "aulas/14-Funcao-geradora-de-momentos.html",
-    "href": "aulas/14-Funcao-geradora-de-momentos.html",
-    "title": "Conteúdo 14",
-    "section": "",
-    "text": "Nesta aula, introduzimos o Método do Jacobiano como ferramenta para obter a distribuição de variáveis aleatórias resultantes de transformações multivariadas. Mostramos que, quando múltiplas variáveis são transformadas simultaneamente, o cálculo direto da densidade torna-se inviável, exigindo uma abordagem estruturada baseada na transformação inversa e no determinante Jacobiano. Apresentamos um procedimento sistemático em etapas, destacando o papel do Jacobiano como fator de ajuste de escala da densidade. Também discutimos as condições necessárias para aplicação do método, bem como estratégias para lidar com casos não bijetores ou com mudança de dimensão.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 14",
-    "crumbs": [
-      "Aulas",
-      "Parte 2: Função de Variáveis Aleatórias",
-      "14- Função Geradora de Momentos"
-    ]
-  },
-  {
-    "objectID": "aulas/14-Funcao-geradora-de-momentos.html#função-geradora-de-momentos",
-    "href": "aulas/14-Funcao-geradora-de-momentos.html#função-geradora-de-momentos",
-    "title": "Conteúdo 14",
-    "section": "",
-    "text": "Nesta aula, introduzimos o Método do Jacobiano como ferramenta para obter a distribuição de variáveis aleatórias resultantes de transformações multivariadas. Mostramos que, quando múltiplas variáveis são transformadas simultaneamente, o cálculo direto da densidade torna-se inviável, exigindo uma abordagem estruturada baseada na transformação inversa e no determinante Jacobiano. Apresentamos um procedimento sistemático em etapas, destacando o papel do Jacobiano como fator de ajuste de escala da densidade. Também discutimos as condições necessárias para aplicação do método, bem como estratégias para lidar com casos não bijetores ou com mudança de dimensão.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 14",
-    "crumbs": [
-      "Aulas",
-      "Parte 2: Função de Variáveis Aleatórias",
-      "14- Função Geradora de Momentos"
-    ]
-  },
-  {
-    "objectID": "aulas/04-Distribuicao_condicional.html",
-    "href": "aulas/04-Distribuicao_condicional.html",
-    "title": "Conteúdo 4",
-    "section": "",
-    "text": "Este material apresenta o conceito de distribuição condicional no contexto de variáveis aleatórias discretas e contínuas, com ênfase na relação entre distribuições conjuntas, marginais e condicionais. São desenvolvidas as principais fórmulas, incluindo a lei da probabilidade total, e explorados exemplos que envolvem cálculo de probabilidades condicionais e construção de distribuições a partir de informações parciais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: V.A. $n$-dimensionais",
-      "4- Distribuição Condicional"
-    ]
-  },
-  {
-    "objectID": "aulas/04-Distribuicao_condicional.html#distribuição-condicional",
-    "href": "aulas/04-Distribuicao_condicional.html#distribuição-condicional",
-    "title": "Conteúdo 4",
-    "section": "",
-    "text": "Este material apresenta o conceito de distribuição condicional no contexto de variáveis aleatórias discretas e contínuas, com ênfase na relação entre distribuições conjuntas, marginais e condicionais. São desenvolvidas as principais fórmulas, incluindo a lei da probabilidade total, e explorados exemplos que envolvem cálculo de probabilidades condicionais e construção de distribuições a partir de informações parciais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
-    "crumbs": [
-      "Aulas",
-      "Parte 1: V.A. $n$-dimensionais",
-      "4- Distribuição Condicional"
-    ]
-  },
-  {
-    "objectID": "aulas/13-Momentos.html",
-    "href": "aulas/13-Momentos.html",
-    "title": "Conteúdo 13",
-    "section": "",
-    "text": "Esta aula introduz o conceito de momentos de variáveis aleatórias, uma ferramenta usada para descrever e analisar distribuições de probabilidade. São apresentados os momentos de ordem \\(k\\), os momentos centrais e os momentos absolutos, destacando suas relações com a esperança e a variância.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 13",
+    "text": "Nesta aula, estudamos as principais propriedades da função característica e como elas podem ser utilizadas para simplificar demonstrações e cálculos probabilísticos. São abordados resultados fundamentais relacionados a transformações lineares, soma de variáveis aleatórias independentes e obtenção de momentos por derivação da função característica.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 17",
     "crumbs": [
       "Aulas",
       "Parte 2: Função de Variáveis Aleatórias",
-      "13- Momentos"
+      "17- Propriedades da Função Característica"
     ]
   },
   {
-    "objectID": "aulas/13-Momentos.html#momentos",
-    "href": "aulas/13-Momentos.html#momentos",
-    "title": "Conteúdo 13",
+    "objectID": "aulas/17-Propriedades_da_funcao_caracteristica.html#propriedades-da-função-característica",
+    "href": "aulas/17-Propriedades_da_funcao_caracteristica.html#propriedades-da-função-característica",
+    "title": "Conteúdo 17",
     "section": "",
-    "text": "Esta aula introduz o conceito de momentos de variáveis aleatórias, uma ferramenta usada para descrever e analisar distribuições de probabilidade. São apresentados os momentos de ordem \\(k\\), os momentos centrais e os momentos absolutos, destacando suas relações com a esperança e a variância.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 13",
+    "text": "Nesta aula, estudamos as principais propriedades da função característica e como elas podem ser utilizadas para simplificar demonstrações e cálculos probabilísticos. São abordados resultados fundamentais relacionados a transformações lineares, soma de variáveis aleatórias independentes e obtenção de momentos por derivação da função característica.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 17",
     "crumbs": [
       "Aulas",
       "Parte 2: Função de Variáveis Aleatórias",
-      "13- Momentos"
+      "17- Propriedades da Função Característica"
     ]
   },
   {
-    "objectID": "aulas/05-Independencia_de_VA.html",
-    "href": "aulas/05-Independencia_de_VA.html",
-    "title": "Conteúdo 5",
+    "objectID": "aulas/10-Densidade_soma_diferenca.html",
+    "href": "aulas/10-Densidade_soma_diferenca.html",
+    "title": "Conteúdo 10",
     "section": "",
-    "text": "Este material apresenta o conceito de independência entre variáveis aleatórias, destacando suas diferentes caracterizações em termos de probabilidades, funções de distribuição e densidades. São discutidas as condições equivalentes de independência, sua generalização para múltiplas variáveis e critérios práticos para identificação de dependência, especialmente no caso contínuo.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 5",
+    "text": "Este material aborda a obtenção das densidades da soma e da diferença de variáveis aleatórias contínuas. São explorados o procedimento direto de reescrita das variáveis e integração ao longo das combinações que geram o valor desejado, tanto no caso geral quanto no caso de variáveis independentes.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 10",
     "crumbs": [
       "Aulas",
-      "Parte 1: V.A. $n$-dimensionais",
-      "5- Indepedência de VAs"
+      "Parte 2: Função de Variáveis Aleatórias",
+      "10- Densidade da Soma e da Diferença de VAs"
     ]
   },
   {
-    "objectID": "aulas/05-Independencia_de_VA.html#independência-entre-variáveis-aleatórias",
-    "href": "aulas/05-Independencia_de_VA.html#independência-entre-variáveis-aleatórias",
-    "title": "Conteúdo 5",
+    "objectID": "aulas/10-Densidade_soma_diferenca.html#densidade-da-soma-e-da-diferença-de-variáveis-aleatórias",
+    "href": "aulas/10-Densidade_soma_diferenca.html#densidade-da-soma-e-da-diferença-de-variáveis-aleatórias",
+    "title": "Conteúdo 10",
     "section": "",
-    "text": "Este material apresenta o conceito de independência entre variáveis aleatórias, destacando suas diferentes caracterizações em termos de probabilidades, funções de distribuição e densidades. São discutidas as condições equivalentes de independência, sua generalização para múltiplas variáveis e critérios práticos para identificação de dependência, especialmente no caso contínuo.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 5",
+    "text": "Este material aborda a obtenção das densidades da soma e da diferença de variáveis aleatórias contínuas. São explorados o procedimento direto de reescrita das variáveis e integração ao longo das combinações que geram o valor desejado, tanto no caso geral quanto no caso de variáveis independentes.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 10",
     "crumbs": [
       "Aulas",
-      "Parte 1: V.A. $n$-dimensionais",
-      "5- Indepedência de VAs"
+      "Parte 2: Função de Variáveis Aleatórias",
+      "10- Densidade da Soma e da Diferença de VAs"
+    ]
+  },
+  {
+    "objectID": "aulas/16-Funcao_caracteristica.html",
+    "href": "aulas/16-Funcao_caracteristica.html",
+    "title": "Conteúdo 16",
+    "section": "",
+    "text": "Nesta aula, introduzimos o conceito de função característica, uma das ferramentas mais importantes da teoria da probabilidade. São apresentados os fundamentos matemáticos envolvendo números complexos, a definição formal da função característica e sua relação com outras funções associadas a distribuições de probabilidade.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 16",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Função de Variáveis Aleatórias",
+      "16- Função Característica"
+    ]
+  },
+  {
+    "objectID": "aulas/16-Funcao_caracteristica.html#função-característica",
+    "href": "aulas/16-Funcao_caracteristica.html#função-característica",
+    "title": "Conteúdo 16",
+    "section": "",
+    "text": "Nesta aula, introduzimos o conceito de função característica, uma das ferramentas mais importantes da teoria da probabilidade. São apresentados os fundamentos matemáticos envolvendo números complexos, a definição formal da função característica e sua relação com outras funções associadas a distribuições de probabilidade.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 16",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Função de Variáveis Aleatórias",
+      "16- Função Característica"
+    ]
+  },
+  {
+    "objectID": "aulas/19-Desigualdades_em_probabilidade.html",
+    "href": "aulas/19-Desigualdades_em_probabilidade.html",
+    "title": "Conteúdo 19",
+    "section": "",
+    "text": "Nesta aula são apresentadas algumas das desigualdades mais importantes da Teoria das Probabilidades, utilizadas para obter limites para probabilidades e esperanças mesmo quando a distribuição da variável aleatória é desconhecida. São estudadas as desigualdades básica e clássica de Chebyshev, a desigualdade de Markov, a desigualdade de Jensen e a desigualdade de Cauchy-Schwarz, destacando suas interpretações, aplicações e consequências.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 19",
+    "crumbs": [
+      "Aulas",
+      "Parte 3: Cnvergência de Variáveis Aleatórias",
+      "19- Desigualdades em Probabilidade"
+    ]
+  },
+  {
+    "objectID": "aulas/19-Desigualdades_em_probabilidade.html#desigualdades-em-probabilidade",
+    "href": "aulas/19-Desigualdades_em_probabilidade.html#desigualdades-em-probabilidade",
+    "title": "Conteúdo 19",
+    "section": "",
+    "text": "Nesta aula são apresentadas algumas das desigualdades mais importantes da Teoria das Probabilidades, utilizadas para obter limites para probabilidades e esperanças mesmo quando a distribuição da variável aleatória é desconhecida. São estudadas as desigualdades básica e clássica de Chebyshev, a desigualdade de Markov, a desigualdade de Jensen e a desigualdade de Cauchy-Schwarz, destacando suas interpretações, aplicações e consequências.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 19",
+    "crumbs": [
+      "Aulas",
+      "Parte 3: Cnvergência de Variáveis Aleatórias",
+      "19- Desigualdades em Probabilidade"
+    ]
+  },
+  {
+    "objectID": "aulas/09-Funcoes_de_VAs.html",
+    "href": "aulas/09-Funcoes_de_VAs.html",
+    "title": "Conteúdo 9",
+    "section": "",
+    "text": "Este material aborda o estudo de funções de variáveis aleatórias, com foco em como obter a distribuição de variáveis transformadas a partir de distribuições conhecidas. São explorados o método direto para casos discretos e contínuos, incluindo a utilização da função de distribuição acumulada e a análise de regiões de integração.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 9",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Função de Variáveis Aleatórias",
+      "9- Método Direto"
+    ]
+  },
+  {
+    "objectID": "aulas/09-Funcoes_de_VAs.html#funções-de-variáveis-aleatórias-método-direto",
+    "href": "aulas/09-Funcoes_de_VAs.html#funções-de-variáveis-aleatórias-método-direto",
+    "title": "Conteúdo 9",
+    "section": "",
+    "text": "Este material aborda o estudo de funções de variáveis aleatórias, com foco em como obter a distribuição de variáveis transformadas a partir de distribuições conhecidas. São explorados o método direto para casos discretos e contínuos, incluindo a utilização da função de distribuição acumulada e a análise de regiões de integração.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 9",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Função de Variáveis Aleatórias",
+      "9- Método Direto"
+    ]
+  },
+  {
+    "objectID": "aulas/12-Metodo_jacobiano.html",
+    "href": "aulas/12-Metodo_jacobiano.html",
+    "title": "Conteúdo 12",
+    "section": "",
+    "text": "Nesta aula, introduzimos o Método do Jacobiano como ferramenta para obter a distribuição de variáveis aleatórias resultantes de transformações multivariadas. Mostramos que, quando múltiplas variáveis são transformadas simultaneamente, o cálculo direto da densidade torna-se inviável, exigindo uma abordagem estruturada baseada na transformação inversa e no determinante Jacobiano. Apresentamos um procedimento sistemático em etapas, destacando o papel do Jacobiano como fator de ajuste de escala da densidade. Também discutimos as condições necessárias para aplicação do método, bem como estratégias para lidar com casos não bijetores ou com mudança de dimensão.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 12",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Função de Variáveis Aleatórias",
+      "12- Método do Jacobiano"
+    ]
+  },
+  {
+    "objectID": "aulas/12-Metodo_jacobiano.html#método-do-jacobiano",
+    "href": "aulas/12-Metodo_jacobiano.html#método-do-jacobiano",
+    "title": "Conteúdo 12",
+    "section": "",
+    "text": "Nesta aula, introduzimos o Método do Jacobiano como ferramenta para obter a distribuição de variáveis aleatórias resultantes de transformações multivariadas. Mostramos que, quando múltiplas variáveis são transformadas simultaneamente, o cálculo direto da densidade torna-se inviável, exigindo uma abordagem estruturada baseada na transformação inversa e no determinante Jacobiano. Apresentamos um procedimento sistemático em etapas, destacando o papel do Jacobiano como fator de ajuste de escala da densidade. Também discutimos as condições necessárias para aplicação do método, bem como estratégias para lidar com casos não bijetores ou com mudança de dimensão.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 12",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Função de Variáveis Aleatórias",
+      "12- Método do Jacobiano"
     ]
   },
   {
@@ -1085,344 +1172,365 @@
     ]
   },
   {
-    "objectID": "aulas/12-Metodo_jacobiano.html",
-    "href": "aulas/12-Metodo_jacobiano.html",
-    "title": "Conteúdo 12",
+    "objectID": "aulas/18-Propriedades_da_funcao_caracteristica_parte2.html",
+    "href": "aulas/18-Propriedades_da_funcao_caracteristica_parte2.html",
+    "title": "Conteúdo 18",
     "section": "",
-    "text": "Nesta aula, introduzimos o Método do Jacobiano como ferramenta para obter a distribuição de variáveis aleatórias resultantes de transformações multivariadas. Mostramos que, quando múltiplas variáveis são transformadas simultaneamente, o cálculo direto da densidade torna-se inviável, exigindo uma abordagem estruturada baseada na transformação inversa e no determinante Jacobiano. Apresentamos um procedimento sistemático em etapas, destacando o papel do Jacobiano como fator de ajuste de escala da densidade. Também discutimos as condições necessárias para aplicação do método, bem como estratégias para lidar com casos não bijetores ou com mudança de dimensão.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 12",
+    "text": "Nesta aula aprofundamos o estudo das funções características, explorando resultados fundamentais que mostram seu poder na identificação e recuperação de distribuições de probabilidade. São apresentados o Teorema da Unicidade, que estabelece que uma função característica determina completamente uma distribuição, e as Fórmulas de Inversão de Lévy para os casos contínuo e discreto. Além disso, são discutidas estratégias práticas para obter distribuições a partir de funções características sem recorrer diretamente às integrais de inversão. Também é apresentada uma introdução da função característica multidimensional e do critério de independência.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nDemonstração dos teoremas e resolução dos exemplos:\n\n\n Demonstração dos teoremas \n\n\n Resolução dos exemplos",
     "crumbs": [
       "Aulas",
       "Parte 2: Função de Variáveis Aleatórias",
-      "12- Método do Jacobiano"
+      "18- Propriedades da Função Característica (parte 2)"
     ]
   },
   {
-    "objectID": "aulas/12-Metodo_jacobiano.html#método-do-jacobiano",
-    "href": "aulas/12-Metodo_jacobiano.html#método-do-jacobiano",
-    "title": "Conteúdo 12",
+    "objectID": "aulas/18-Propriedades_da_funcao_caracteristica_parte2.html#propriedades-da-função-característica-parte-2",
+    "href": "aulas/18-Propriedades_da_funcao_caracteristica_parte2.html#propriedades-da-função-característica-parte-2",
+    "title": "Conteúdo 18",
     "section": "",
-    "text": "Nesta aula, introduzimos o Método do Jacobiano como ferramenta para obter a distribuição de variáveis aleatórias resultantes de transformações multivariadas. Mostramos que, quando múltiplas variáveis são transformadas simultaneamente, o cálculo direto da densidade torna-se inviável, exigindo uma abordagem estruturada baseada na transformação inversa e no determinante Jacobiano. Apresentamos um procedimento sistemático em etapas, destacando o papel do Jacobiano como fator de ajuste de escala da densidade. Também discutimos as condições necessárias para aplicação do método, bem como estratégias para lidar com casos não bijetores ou com mudança de dimensão.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 12",
+    "text": "Nesta aula aprofundamos o estudo das funções características, explorando resultados fundamentais que mostram seu poder na identificação e recuperação de distribuições de probabilidade. São apresentados o Teorema da Unicidade, que estabelece que uma função característica determina completamente uma distribuição, e as Fórmulas de Inversão de Lévy para os casos contínuo e discreto. Além disso, são discutidas estratégias práticas para obter distribuições a partir de funções características sem recorrer diretamente às integrais de inversão. Também é apresentada uma introdução da função característica multidimensional e do critério de independência.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nDemonstração dos teoremas e resolução dos exemplos:\n\n\n Demonstração dos teoremas \n\n\n Resolução dos exemplos",
     "crumbs": [
       "Aulas",
       "Parte 2: Função de Variáveis Aleatórias",
-      "12- Método do Jacobiano"
+      "18- Propriedades da Função Característica (parte 2)"
     ]
   },
   {
-    "objectID": "aulas/09-Funcoes_de_VAs.html",
-    "href": "aulas/09-Funcoes_de_VAs.html",
-    "title": "Conteúdo 9",
+    "objectID": "aulas/05-Independencia_de_VA.html",
+    "href": "aulas/05-Independencia_de_VA.html",
+    "title": "Conteúdo 5",
     "section": "",
-    "text": "Este material aborda o estudo de funções de variáveis aleatórias, com foco em como obter a distribuição de variáveis transformadas a partir de distribuições conhecidas. São explorados o método direto para casos discretos e contínuos, incluindo a utilização da função de distribuição acumulada e a análise de regiões de integração.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 9",
+    "text": "Este material apresenta o conceito de independência entre variáveis aleatórias, destacando suas diferentes caracterizações em termos de probabilidades, funções de distribuição e densidades. São discutidas as condições equivalentes de independência, sua generalização para múltiplas variáveis e critérios práticos para identificação de dependência, especialmente no caso contínuo.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 5",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "5- Indepedência de VAs"
+    ]
+  },
+  {
+    "objectID": "aulas/05-Independencia_de_VA.html#independência-entre-variáveis-aleatórias",
+    "href": "aulas/05-Independencia_de_VA.html#independência-entre-variáveis-aleatórias",
+    "title": "Conteúdo 5",
+    "section": "",
+    "text": "Este material apresenta o conceito de independência entre variáveis aleatórias, destacando suas diferentes caracterizações em termos de probabilidades, funções de distribuição e densidades. São discutidas as condições equivalentes de independência, sua generalização para múltiplas variáveis e critérios práticos para identificação de dependência, especialmente no caso contínuo.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 5",
+    "crumbs": [
+      "Aulas",
+      "Parte 1: V.A. $n$-dimensionais",
+      "5- Indepedência de VAs"
+    ]
+  },
+  {
+    "objectID": "aulas/13-Momentos.html",
+    "href": "aulas/13-Momentos.html",
+    "title": "Conteúdo 13",
+    "section": "",
+    "text": "Esta aula introduz o conceito de momentos de variáveis aleatórias, uma ferramenta usada para descrever e analisar distribuições de probabilidade. São apresentados os momentos de ordem \\(k\\), os momentos centrais e os momentos absolutos, destacando suas relações com a esperança e a variância.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 13",
     "crumbs": [
       "Aulas",
       "Parte 2: Função de Variáveis Aleatórias",
-      "9- Método Direto"
+      "13- Momentos"
     ]
   },
   {
-    "objectID": "aulas/09-Funcoes_de_VAs.html#funções-de-variáveis-aleatórias-método-direto",
-    "href": "aulas/09-Funcoes_de_VAs.html#funções-de-variáveis-aleatórias-método-direto",
-    "title": "Conteúdo 9",
+    "objectID": "aulas/13-Momentos.html#momentos",
+    "href": "aulas/13-Momentos.html#momentos",
+    "title": "Conteúdo 13",
     "section": "",
-    "text": "Este material aborda o estudo de funções de variáveis aleatórias, com foco em como obter a distribuição de variáveis transformadas a partir de distribuições conhecidas. São explorados o método direto para casos discretos e contínuos, incluindo a utilização da função de distribuição acumulada e a análise de regiões de integração.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 9",
+    "text": "Esta aula introduz o conceito de momentos de variáveis aleatórias, uma ferramenta usada para descrever e analisar distribuições de probabilidade. São apresentados os momentos de ordem \\(k\\), os momentos centrais e os momentos absolutos, destacando suas relações com a esperança e a variância.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 13",
     "crumbs": [
       "Aulas",
       "Parte 2: Função de Variáveis Aleatórias",
-      "9- Método Direto"
+      "13- Momentos"
     ]
   },
   {
-    "objectID": "aulas/19-Desigualdades_em_probabilidade.html",
-    "href": "aulas/19-Desigualdades_em_probabilidade.html",
-    "title": "Conteúdo 19",
+    "objectID": "aulas/04-Distribuicao_condicional.html",
+    "href": "aulas/04-Distribuicao_condicional.html",
+    "title": "Conteúdo 4",
     "section": "",
-    "text": "Nesta aula são apresentadas algumas das desigualdades mais importantes da Teoria das Probabilidades, utilizadas para obter limites para probabilidades e esperanças mesmo quando a distribuição da variável aleatória é desconhecida. São estudadas as desigualdades básica e clássica de Chebyshev, a desigualdade de Markov, a desigualdade de Jensen e a desigualdade de Cauchy-Schwarz, destacando suas interpretações, aplicações e consequências.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 19",
+    "text": "Este material apresenta o conceito de distribuição condicional no contexto de variáveis aleatórias discretas e contínuas, com ênfase na relação entre distribuições conjuntas, marginais e condicionais. São desenvolvidas as principais fórmulas, incluindo a lei da probabilidade total, e explorados exemplos que envolvem cálculo de probabilidades condicionais e construção de distribuições a partir de informações parciais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
     "crumbs": [
       "Aulas",
-      "Parte 3: Cnvergência de Variáveis Aleatórias",
-      "19- Desigualdades em Probabilidade"
+      "Parte 1: V.A. $n$-dimensionais",
+      "4- Distribuição Condicional"
     ]
   },
   {
-    "objectID": "aulas/19-Desigualdades_em_probabilidade.html#desigualdades-em-probabilidade",
-    "href": "aulas/19-Desigualdades_em_probabilidade.html#desigualdades-em-probabilidade",
-    "title": "Conteúdo 19",
+    "objectID": "aulas/04-Distribuicao_condicional.html#distribuição-condicional",
+    "href": "aulas/04-Distribuicao_condicional.html#distribuição-condicional",
+    "title": "Conteúdo 4",
     "section": "",
-    "text": "Nesta aula são apresentadas algumas das desigualdades mais importantes da Teoria das Probabilidades, utilizadas para obter limites para probabilidades e esperanças mesmo quando a distribuição da variável aleatória é desconhecida. São estudadas as desigualdades básica e clássica de Chebyshev, a desigualdade de Markov, a desigualdade de Jensen e a desigualdade de Cauchy-Schwarz, destacando suas interpretações, aplicações e consequências.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 19",
+    "text": "Este material apresenta o conceito de distribuição condicional no contexto de variáveis aleatórias discretas e contínuas, com ênfase na relação entre distribuições conjuntas, marginais e condicionais. São desenvolvidas as principais fórmulas, incluindo a lei da probabilidade total, e explorados exemplos que envolvem cálculo de probabilidades condicionais e construção de distribuições a partir de informações parciais.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 4",
     "crumbs": [
       "Aulas",
-      "Parte 3: Cnvergência de Variáveis Aleatórias",
-      "19- Desigualdades em Probabilidade"
+      "Parte 1: V.A. $n$-dimensionais",
+      "4- Distribuição Condicional"
     ]
   },
   {
-    "objectID": "aulas/16-Funcao_caracteristica.html",
-    "href": "aulas/16-Funcao_caracteristica.html",
-    "title": "Conteúdo 16",
+    "objectID": "aulas/14-Funcao-geradora-de-momentos.html",
+    "href": "aulas/14-Funcao-geradora-de-momentos.html",
+    "title": "Conteúdo 14",
     "section": "",
-    "text": "Nesta aula, introduzimos o conceito de função característica, uma das ferramentas mais importantes da teoria da probabilidade. São apresentados os fundamentos matemáticos envolvendo números complexos, a definição formal da função característica e sua relação com outras funções associadas a distribuições de probabilidade.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 16",
-    "crumbs": [
-      "Aulas",
-      "Parte 2: Função de Variáveis Aleatórias",
-      "16- Função Característica"
-    ]
-  },
-  {
-    "objectID": "aulas/16-Funcao_caracteristica.html#função-característica",
-    "href": "aulas/16-Funcao_caracteristica.html#função-característica",
-    "title": "Conteúdo 16",
-    "section": "",
-    "text": "Nesta aula, introduzimos o conceito de função característica, uma das ferramentas mais importantes da teoria da probabilidade. São apresentados os fundamentos matemáticos envolvendo números complexos, a definição formal da função característica e sua relação com outras funções associadas a distribuições de probabilidade.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 16",
+    "text": "Nesta aula, introduzimos o Método do Jacobiano como ferramenta para obter a distribuição de variáveis aleatórias resultantes de transformações multivariadas. Mostramos que, quando múltiplas variáveis são transformadas simultaneamente, o cálculo direto da densidade torna-se inviável, exigindo uma abordagem estruturada baseada na transformação inversa e no determinante Jacobiano. Apresentamos um procedimento sistemático em etapas, destacando o papel do Jacobiano como fator de ajuste de escala da densidade. Também discutimos as condições necessárias para aplicação do método, bem como estratégias para lidar com casos não bijetores ou com mudança de dimensão.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 14",
     "crumbs": [
       "Aulas",
       "Parte 2: Função de Variáveis Aleatórias",
-      "16- Função Característica"
+      "14- Função Geradora de Momentos"
     ]
   },
   {
-    "objectID": "aulas/10-Densidade_soma_diferenca.html",
-    "href": "aulas/10-Densidade_soma_diferenca.html",
-    "title": "Conteúdo 10",
+    "objectID": "aulas/14-Funcao-geradora-de-momentos.html#função-geradora-de-momentos",
+    "href": "aulas/14-Funcao-geradora-de-momentos.html#função-geradora-de-momentos",
+    "title": "Conteúdo 14",
     "section": "",
-    "text": "Este material aborda a obtenção das densidades da soma e da diferença de variáveis aleatórias contínuas. São explorados o procedimento direto de reescrita das variáveis e integração ao longo das combinações que geram o valor desejado, tanto no caso geral quanto no caso de variáveis independentes.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 10",
+    "text": "Nesta aula, introduzimos o Método do Jacobiano como ferramenta para obter a distribuição de variáveis aleatórias resultantes de transformações multivariadas. Mostramos que, quando múltiplas variáveis são transformadas simultaneamente, o cálculo direto da densidade torna-se inviável, exigindo uma abordagem estruturada baseada na transformação inversa e no determinante Jacobiano. Apresentamos um procedimento sistemático em etapas, destacando o papel do Jacobiano como fator de ajuste de escala da densidade. Também discutimos as condições necessárias para aplicação do método, bem como estratégias para lidar com casos não bijetores ou com mudança de dimensão.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 14",
     "crumbs": [
       "Aulas",
       "Parte 2: Função de Variáveis Aleatórias",
-      "10- Densidade da Soma e da Diferença de VAs"
+      "14- Função Geradora de Momentos"
     ]
   },
   {
-    "objectID": "aulas/10-Densidade_soma_diferenca.html#densidade-da-soma-e-da-diferença-de-variáveis-aleatórias",
-    "href": "aulas/10-Densidade_soma_diferenca.html#densidade-da-soma-e-da-diferença-de-variáveis-aleatórias",
-    "title": "Conteúdo 10",
+    "objectID": "aulas/02-Vetores_aleatorios_discretos.html",
+    "href": "aulas/02-Vetores_aleatorios_discretos.html",
+    "title": "Conteúdo 2",
     "section": "",
-    "text": "Este material aborda a obtenção das densidades da soma e da diferença de variáveis aleatórias contínuas. São explorados o procedimento direto de reescrita das variáveis e integração ao longo das combinações que geram o valor desejado, tanto no caso geral quanto no caso de variáveis independentes.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 10",
+    "text": "Este material apresenta a introdução aos vetores aleatórios discretos, com foco na definição da função de probabilidade conjunta e em suas propriedades fundamentais. São discutidos os conceitos de distribuição marginal e formas de representação, como tabelas de dupla entrada, além de exemplos que exploram a modelagem de fenômenos envolvendo múltiplas variáveis aleatórias.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 2",
     "crumbs": [
       "Aulas",
-      "Parte 2: Função de Variáveis Aleatórias",
-      "10- Densidade da Soma e da Diferença de VAs"
+      "Parte 1: V.A. $n$-dimensionais",
+      "2- Vetores Aleatórios Discretos"
     ]
   },
   {
-    "objectID": "aulas/17-Propriedades_da_funcao_caracteristica.html",
-    "href": "aulas/17-Propriedades_da_funcao_caracteristica.html",
-    "title": "Conteúdo 17",
+    "objectID": "aulas/02-Vetores_aleatorios_discretos.html#vetores-aleatórios-discretos",
+    "href": "aulas/02-Vetores_aleatorios_discretos.html#vetores-aleatórios-discretos",
+    "title": "Conteúdo 2",
     "section": "",
-    "text": "Nesta aula, estudamos as principais propriedades da função característica e como elas podem ser utilizadas para simplificar demonstrações e cálculos probabilísticos. São abordados resultados fundamentais relacionados a transformações lineares, soma de variáveis aleatórias independentes e obtenção de momentos por derivação da função característica.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 17",
+    "text": "Este material apresenta a introdução aos vetores aleatórios discretos, com foco na definição da função de probabilidade conjunta e em suas propriedades fundamentais. São discutidos os conceitos de distribuição marginal e formas de representação, como tabelas de dupla entrada, além de exemplos que exploram a modelagem de fenômenos envolvendo múltiplas variáveis aleatórias.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 2",
     "crumbs": [
       "Aulas",
-      "Parte 2: Função de Variáveis Aleatórias",
-      "17- Propriedades da Função Característica"
+      "Parte 1: V.A. $n$-dimensionais",
+      "2- Vetores Aleatórios Discretos"
     ]
   },
   {
-    "objectID": "aulas/17-Propriedades_da_funcao_caracteristica.html#propriedades-da-função-característica",
-    "href": "aulas/17-Propriedades_da_funcao_caracteristica.html#propriedades-da-função-característica",
-    "title": "Conteúdo 17",
+    "objectID": "slides/17-Propriedades_da_funcao_caracteristica/17-Propriedades_da_funcao_caracteristica.html#section",
+    "href": "slides/17-Propriedades_da_funcao_caracteristica/17-Propriedades_da_funcao_caracteristica.html#section",
+    "title": "Propriedades da Função Característica",
     "section": "",
-    "text": "Nesta aula, estudamos as principais propriedades da função característica e como elas podem ser utilizadas para simplificar demonstrações e cálculos probabilísticos. São abordados resultados fundamentais relacionados a transformações lineares, soma de variáveis aleatórias independentes e obtenção de momentos por derivação da função característica.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 17",
-    "crumbs": [
-      "Aulas",
-      "Parte 2: Função de Variáveis Aleatórias",
-      "17- Propriedades da Função Característica"
-    ]
+    "text": "Seja \\(X\\) uma variável aleatória qualquer e \\(\\varphi_X\\) sua função característica, então\n\n\\(\\varphi_X(0)=1\\)\n\\(|\\varphi_X(t)|\\leq 1\\)\nPara \\(a\\) e \\(b\\) constantes, \\(\\varphi_{aX+b}(t) = e^{itb}\\varphi_X(at)\\)\nSe as variáveis aleatórias \\(X\\) e \\(Y\\) são independentes, então \\(\\varphi_{X+Y}(t) = \\varphi_X(t)\\varphi_Y(t)\\) (vale para \\(n\\) variáveis)\n\\(\\varphi_X\\) também gera momentos: \\[\n  \\left. \\frac{\\partial^n}{\\partial t^n}\\varphi_X(t)\\right|_{t=0} = i^n E(X^n), \\quad n=1,2,\\ldots, \\text{ se } E(|X^n|) \\leq \\infty.\n\\]"
   },
   {
-    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#por-que-transformar-variáveis-aleatórias",
-    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#por-que-transformar-variáveis-aleatórias",
-    "title": "Funções de Variáveis Aleatórias",
-    "section": "Por que transformar Variáveis Aleatórias?",
-    "text": "Por que transformar Variáveis Aleatórias?\n1. Inferência Estatística\n\nNa prática, coletamos uma amostra: \\(X_1, X_2, \\dots, X_n\\).\nA partir dela, calculamos a média amostral: \\(\\overline{X} = \\frac{\\sum X_i}{n}\\).\nO estimador \\(\\overline{X}\\) é uma função de variáveis aleatórias. Se não soubermos encontrar a distribuição de probabilidade dessa função, testes de hipótese e intervalos de confiança simplesmente não existem."
+    "objectID": "slides/17-Propriedades_da_funcao_caracteristica/17-Propriedades_da_funcao_caracteristica.html#exemplo-17.1",
+    "href": "slides/17-Propriedades_da_funcao_caracteristica/17-Propriedades_da_funcao_caracteristica.html#exemplo-17.1",
+    "title": "Propriedades da Função Característica",
+    "section": "Exemplo 17.1",
+    "text": "Exemplo 17.1\nUse a função característica e verifique que\n\nSe \\(X\\sim Bin(n,p)\\), então \\[E(X)=np \\quad \\text{e} \\quad E(X^2) = np(np-p+1).\\]\nSe \\(X\\sim N(\\mu,\\sigma^2)\\), então \\[E(X)=\\mu \\quad \\text{e} \\quad E(X^2) = \\sigma^2 + \\mu^2.\\]"
   },
   {
-    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#por-que-transformar-variáveis-aleatórias-1",
-    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#por-que-transformar-variáveis-aleatórias-1",
-    "title": "Funções de Variáveis Aleatórias",
-    "section": "Por que transformar Variáveis Aleatórias?",
-    "text": "Por que transformar Variáveis Aleatórias?\n2. Distribuições Clássicas\n\nAs distribuições Qui-Quadrado, t de Student e F de Snedecor (base da regressão e da ANOVA) são construídas a partir de transformações da distribuição Normal.\n\n3. Simulação Computacional\n\nOs processadores só sabem gerar números de uma única distribuição: a Uniforme(0,1).\nR ou Python geram dados de outras distribuições usando transformações sobre essa Uniforme para gerar a distribuição que desejarmos."
+    "objectID": "slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html#função-geradora-de-momentos",
+    "href": "slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html#função-geradora-de-momentos",
+    "title": "Função Geradora de Momentos",
+    "section": "Função Geradora de Momentos",
+    "text": "Função Geradora de Momentos\n\nA função geradora de momentos (f.g.m.) da variável aleatória \\(X\\) é definida por \\[M_X(t) = E(e^{tX}),\\] desde que a esperança seja finita para \\(t \\in \\mathbb{R}\\).\nPara o caso discreto, temos \\[ M_X(t) = \\sum\\limits_{i=1}^\\infty e^{tx_i} P(X=x_i). \\]\nPara o caso contínuo, \\[M_X(t) = \\int\\limits_{-\\infty}^{\\infty}e^{tx_i} f(x) dx.\\]"
   },
   {
-    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#transformações-de-variáveis-aleatórias",
-    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#transformações-de-variáveis-aleatórias",
-    "title": "Funções de Variáveis Aleatórias",
-    "section": "Transformações de Variáveis Aleatórias",
-    "text": "Transformações de Variáveis Aleatórias\n\nSe \\(X\\) é uma variável aleatória, qualquer função ou transformação \\(h: X \\rightarrow \\mathbb{R}\\) também será uma variável aleatória.\nProblema: A partir do conhecimento de \\(X\\) (sua densidade ou probabilidade), como obter o comportamento probabilístico de \\(Y = h(X)\\)?\n\nGeneralização para Vetores:\n\nPodemos ter uma família de funções atuando sobre um vetor aleatório \\(\\underset{\\widetilde{\\phantom{X}}}{X} = (X_1, ..., X_m)\\) para produzir um novo vetor \\(\\underset{\\widetilde{\\phantom{Y}}}{Y} = (Y_1, ..., Y_r)\\)."
+    "objectID": "slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html#exemplo-14.1",
+    "href": "slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html#exemplo-14.1",
+    "title": "Função Geradora de Momentos",
+    "section": "Exemplo 14.1",
+    "text": "Exemplo 14.1\nObtenha a função geradora de momentos para:\n\n\\(X\\sim\\) Binomial(\\(n,p\\)). Lembrete: \\(P(X=x)=\\binom{n}{x}p^x(1-p)^{n-x}, x=0,1,\\ldots,n\\)\n\\(X\\sim\\) Poisson(\\(\\lambda\\)). Lembrete: \\(P(X=x)=\\frac{e^{-\\lambda}\\lambda^x}{x!}, x=0,1,2\\ldots\\)\n\\(Z\\sim\\) N(\\(0,1\\)). Lembrete: \\(f(z) = \\frac{1}{\\sqrt{2\\pi}}e^{-\\frac{z^2}{2}}, -\\infty&lt;z&lt;\\infty\\)\n\\(Y\\sim\\) Exponencial(\\(\\lambda\\)). Lembrete: \\(f(y) = \\lambda e^{-\\lambda y}, y&gt;0\\)"
   },
   {
-    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#o-método-direto-ou-método-da-fda",
-    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#o-método-direto-ou-método-da-fda",
-    "title": "Funções de Variáveis Aleatórias",
-    "section": "O Método Direto (ou Método da FDA)",
-    "text": "O Método Direto (ou Método da FDA)\n\nPara obter a distribuição de uma transformação, uma técnica muito intuitiva e geral é o chamado Método Direto (ou Método da Função de Distribuição Acumulada - FDA).\nEle consiste em operações algébricas simples baseadas na própria definição de probabilidade: \\[F_Y(y) = P(Y \\le y) = P(h(X) \\le y)\\]\nA partir daí, manipulamos a desigualdade \\(h(X) \\le y\\) para isolar \\(X\\) e calcularmos a probabilidade usando a distribuição que já conhecemos de \\(X\\)."
-  },
-  {
-    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#o-método-direto-caso-discreto",
-    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#o-método-direto-caso-discreto",
-    "title": "Funções de Variáveis Aleatórias",
-    "section": "O Método Direto: Caso Discreto",
-    "text": "O Método Direto: Caso Discreto\n\nSejam \\(X_1\\) e \\(X_2\\) duas variáveis discretas com função de probabilidade conjunta \\(p(x_1, x_2)\\) e defina \\(Y = h(X_1, X_2)\\).\nA variável \\(Y\\) também será discreta. Sua função de probabilidade é dada por: \\[p(Y=y) = P(h(X_1, X_2) = y) = \\sum_{(x_1,x_2) \\in A_y} p(x_1, x_2)\\]\n\nOnde \\(A_y = \\{(x_1, x_2) : h(x_1, x_2) = y\\}\\).\n\nOu seja, para cada \\(y\\) fixado, somamos as probabilidades de todos os pares \\((x_1, x_2)\\) que, aplicados na função \\(h\\), resultam no exato valor \\(y\\)."
-  },
-  {
-    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#procedimento-do-método-direto-caso-discreto",
-    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#procedimento-do-método-direto-caso-discreto",
-    "title": "Funções de Variáveis Aleatórias",
-    "section": "Procedimento do Método Direto (Caso Discreto)",
-    "text": "Procedimento do Método Direto (Caso Discreto)\n\nDetermine os valores possíveis que \\(Y\\) pode assumir a partir dos pares \\((x_1, x_2)\\).\nPara cada valor de \\(y\\), identifique todos os pares \\((x_1,x_2)\\) tais que \\(h(x_1, x_2)=y\\).\nA probabilidade de \\(Y=y\\) é a soma das probabilidades desses pares: \\[P(Y=y) = \\sum_{(x_1,x_2) \\in A_y} p(x_1, x_2)\\]"
-  },
-  {
-    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#exemplo-9.1",
-    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#exemplo-9.1",
-    "title": "Funções de Variáveis Aleatórias",
-    "section": "Exemplo 9.1",
-    "text": "Exemplo 9.1\nA função de probabilidade conjunta de \\(X\\) e \\(Y\\) é dada na tabela abaixo:\n\n\n\n\\(X \\setminus Y\\)\n0\n1\n2\n\n\n\n\n0\n1/4\n1/8\n1/8\n\n\n1\n1/4\n0\n1/4\n\n\n\nObtenha a função de probabilidade de \\(U = X+Y\\) e de \\(V = X-Y\\), bem como a conjunta de \\(U\\) e \\(V\\)."
-  },
-  {
-    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#o-método-direto-caso-contínuo",
-    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#o-método-direto-caso-contínuo",
-    "title": "Funções de Variáveis Aleatórias",
-    "section": "O Método Direto: Caso Contínuo",
-    "text": "O Método Direto: Caso Contínuo\n\nNo caso contínuo, obtemos a distribuição de \\(Y\\) via função de distribuição acumulada (FDA). Seguimos então seguintes passos:\n\n\nObtemos a FDA reescrevendo o evento em termos de \\(X_1\\) e \\(X_2\\): \\[F_Y(y) = P(Y\\le y) = P(h(X_1, X_2) \\le y)\\]\nDeterminamos a região de integração \\(B_y = \\{(x_1, x_2) : h(x_1, x_2) \\le y\\}\\) e calculamos \\[F_Y(y) = \\iint_{B_y} f_{X_1, X_2}(x_1, x_2) dx_1 dx_2\\]"
-  },
-  {
-    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#o-método-direto-caso-contínuo-1",
-    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#o-método-direto-caso-contínuo-1",
-    "title": "Funções de Variáveis Aleatórias",
-    "section": "O Método Direto: Caso Contínuo",
-    "text": "O Método Direto: Caso Contínuo\n\nDerivamos a FDA para achar a densidade: \\[f_Y(y) = \\frac{d}{dy} F_Y(y)\\]\n\nObservação importante:\n\nEm alguns casos, a integral pode ser escrita como: \\[F_Y(y) = \\int_{-\\infty}^{y} g(w) dw\\] Nesse caso, a função \\(g(y)\\) obtida diretamente já é a densidade de \\(Y\\)."
-  },
-  {
-    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#exemplo-9.2",
-    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#exemplo-9.2",
-    "title": "Funções de Variáveis Aleatórias",
-    "section": "Exemplo 9.2",
-    "text": "Exemplo 9.2\nSeja \\(X\\) uma variável aleatória contínua com densidade \\(f(x) = \\frac{1}{2}\\), para \\(1 \\le x \\le 3\\). Obtenha a função de distribuição acumulada (FDA) e a densidade da nova variável \\(Y = e^X\\)."
-  },
-  {
-    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#exemplo-9.3",
-    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#exemplo-9.3",
-    "title": "Funções de Variáveis Aleatórias",
-    "section": "Exemplo 9.3",
-    "text": "Exemplo 9.3\nSeja \\(X\\) uma variável aleatória contínua com densidade \\(f(x) = \\frac{1}{3} I_{[0,3]}(x)\\). A partir dessa variável, uma nova variável é definida por: \\[\n  Y = \\begin{cases}\n        X, & \\text{se } 0 \\le X \\le 2; \\\\\n        3, & \\text{se } 2 &lt; X \\le 3.\n  \\end{cases}\n\\] Determine a distribuição de \\(Y\\).\n\nNote que a distribuição tem uma parte discreta e outra contínua."
-  },
-  {
-    "objectID": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#exemplo-9.4",
-    "href": "slides/09-Funcoes_de_VAs/09-Funcoes_de_VAs.html#exemplo-9.4",
-    "title": "Funções de Variáveis Aleatórias",
-    "section": "Exemplo 9.4",
-    "text": "Exemplo 9.4\nA função de densidade conjunta de \\(X\\) e \\(Y\\) é dada por: \\[f_{X,Y}(x, y) = e^{-(x+y)}, \\quad x &gt; 0, y &gt; 0\\] Determine a função de distribuição acumulada (FDA) da variável \\(Z = 2X + Y\\)."
-  },
-  {
-    "objectID": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#section",
-    "href": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#section",
-    "title": "Função Característica",
+    "objectID": "slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html#section",
+    "href": "slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html#section",
+    "title": "Função Geradora de Momentos",
     "section": "",
-    "text": "A função geradora de momentos é uma ferramenta muito útil, no entanto a integral que a define pode nem sempre ser finita.\nA função caracterı́stica tem a vantagem de ser finita para todas as variáveis aleatórias \\(X\\) e todos os números reais \\(t\\), ou seja, elaa tem a vantagem de sempre existir.\nA função de distribuição de \\(X\\) e, em geral, a função de densidade, quando existe, podem ser obtidas da função caracterı́stica.\nUsando as propriedades das funções caracterı́sticas é possı́vel demonstrar teoremas e resultados importantes da estatística."
+    "text": "Distribuição\nf.g.m.\n\n\n\n\nBinomial(\\(n,p\\))\n\\((pe^t + 1 - p)^n\\)\n\n\nUniforme(\\(a,b\\))\n\\(\\frac{e^{tb-e^ta}}{t(b-a)}\\)\n\n\nPoisson(\\(\\lambda\\))\n\\(e^{\\lambda(e^t -1)}\\)\n\n\nExponencial(\\(\\lambda\\))\n\\(\\frac{\\lambda}{\\lambda-t}\\)\n\n\nGeométrica(\\(p\\))\n\\(\\frac{pe^t}{1-(1-p)e^t}\\)\n\n\nGama(\\(s,t\\))\n\\(\\left(\\frac{\\lambda}{\\lambda-t}\\right)^s\\)\n\n\nBin. Negtiva(\\(r,p\\))\n\\(\\left[\\frac{pe^t}{1-(1-p)e^t}\\right]^r\\)\n\n\nNormal(\\(\\mu,\\sigma^2\\))\n\\(\\exp\\left\\{\\mu t + \\frac{\\sigma^2t^2}{2}\\right\\}\\)"
   },
   {
-    "objectID": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#section-1",
-    "href": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#section-1",
-    "title": "Função Característica",
+    "objectID": "slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html#section-1",
+    "href": "slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html#section-1",
+    "title": "Função Geradora de Momentos",
     "section": "",
-    "text": "Para usarmos a função característica, precisamos lembrar de variáveis complexas:\n\nSe \\(X\\) e \\(Y\\) são variáveis aleatórias, então \\(Z = X + iY\\) é chamada uma variável aleatória complexa.\n\\(\\sqrt{i} = -1\\).\nO valor absoluto de um número complexo é dado por \\(|z| = \\sqrt{x^2 + y^2}\\).\n\\(\\overline{z}\\) é o conjugado de \\(z\\), isto é, se \\(z = a + ib\\), então \\(z = a - ib\\).\nA distância entre dois números complexos \\(z_1\\) e \\(z_2\\) é dada por \\(|z_1 - z_2|\\)."
+    "text": "Chamamos \\(M_X(t)\\) de função geradora de momentos porque todos os momentos de \\(X\\) podem ser obtidos com o cálculo sucessivo da derivada de \\(M_X(t)\\) e então com sua avaliação em \\(t = 0\\).\n\nTeorema 14.1\nSuponha que a f.g.m. de \\(X\\) exista, então \\(E(X^n)\\) existe para \\(n = 1, 2, \\ldots\\) e temos \\[\n  E(X^n) = \\left.M_X(t)^{('n)}\\right|_{t=0} = \\left.\\frac{\\partial^n}{\\partial t^n} M_X(t)\\right|_{t=0}.\n\\]"
   },
   {
-    "objectID": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#section-2",
-    "href": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#section-2",
-    "title": "Função Característica",
-    "section": "",
-    "text": "Algumas identidades interessantes:\n\n\\(e^{ix} = cos(x) + i sen(x)\\)\n\\(cos(x) = \\frac{e^{ix}+e^{-ix}}{2}\\)\n\\(sen(x) = \\frac{e^{ix}-e^{-ix}}{2i}\\)"
+    "objectID": "slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html#exemplo-14.2",
+    "href": "slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html#exemplo-14.2",
+    "title": "Função Geradora de Momentos",
+    "section": "Exemplo 14.2",
+    "text": "Exemplo 14.2\nA partir da função geradora de momentos, obtenha os dois primeiros momentos de\n\n\\(X \\sim\\) Binomial(\\(n, p\\))\n\\(X \\sim\\) Poisson(\\(\\lambda\\))\n\\(Z \\sim\\) N(0, 1)\n\\(Y \\sim\\) Exponencial(\\(\\lambda\\))"
   },
   {
-    "objectID": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#função-característica",
-    "href": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#função-característica",
-    "title": "Função Característica",
-    "section": "Função Característica",
-    "text": "Função Característica\nSeja \\(X\\) uma variável aleatória. A função característica de$ $X é a função \\(\\varphi = \\mathbb{R} \\rightarrow \\mathbb{C}\\) definida por \\[\n  \\varphi_X(t) = E(e^{itX}) = E[cos(tX)] + i E[sen(tX)],\n\\] para \\(-\\infty&lt;t&lt;+\\infty\\) e \\(i=\\sqrt{-1}\\)."
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#definição-4.1-distribuição-condicional",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#definição-4.1-distribuição-condicional",
+    "title": "Distribuição Condicional",
+    "section": "Definição 4.1: Distribuição Condicional",
+    "text": "Definição 4.1: Distribuição Condicional\nSejam \\(X\\) e \\(Y\\) duas variáveis aleatórias e \\(B_1\\) e \\(B_2\\) intervalos com \\(P(Y \\in B_2) &gt; 0\\). A distribuição condicional de \\(X\\) dado \\(Y \\in B_2\\) é dada por: \\[ P(X \\in B_1 | Y \\in B_2) = \\frac{P([X \\in B_1] \\cap [Y \\in B_2])}{P(Y \\in B_2)}. \\]\n\nSe \\(P(Y \\in B_2) = 0\\), definimos \\(P(X \\in B_1 | Y \\in B_2) = P(X \\in B_1)\\)."
   },
   {
-    "objectID": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#exemplo-16.1",
-    "href": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#exemplo-16.1",
-    "title": "Função Característica",
-    "section": "Exemplo 16.1",
-    "text": "Exemplo 16.1\nA variável aleatória \\(X\\) assume os valores 1 e −1 com a mesma probabilidade. Determine a função característica de \\(X\\)."
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-discreto",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-discreto",
+    "title": "Distribuição Condicional",
+    "section": "Distribuição Condicional: Caso Discreto",
+    "text": "Distribuição Condicional: Caso Discreto\n\nSe \\(X\\) e \\(Y\\) forem discretas, a probabilidade condicional pode ser escrita na notação de função de probabilidade da seguinte forma: \\[P(X=x | Y=y) = \\frac{P(X=x, Y=y)}{P(Y=y)}\\]\nAs demais relações seguem de forma análoga."
   },
   {
-    "objectID": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#exemplo-16.2",
-    "href": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#exemplo-16.2",
-    "title": "Função Característica",
-    "section": "Exemplo 16.2",
-    "text": "Exemplo 16.2\nConsidere a variável aleatória \\(X\\) com distribuição Uniforme Contínua no intervalo \\([a, b]\\). Determine sua função característica."
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.1",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.1",
+    "title": "Distribuição Condicional",
+    "section": "Exemplo 4.1",
+    "text": "Exemplo 4.1\nSuponha que \\(p(x,y)\\), a função discreta de probabilidade conjunta de \\(X\\) e \\(Y\\), seja dada por:\n\n\\(p(0,0)=0,\\!4\\)\n\\(p(0,1)=0,\\!2\\)\n\\(p(1,0)=0,\\!1\\)\n\\(p(1,1)=0,\\!3\\)\n\nDetermine a função de probabilidade condicional de \\(X\\) dado que \\(Y=1\\)."
   },
   {
-    "objectID": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#exemplo-16.3",
-    "href": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#exemplo-16.3",
-    "title": "Função Característica",
-    "section": "Exemplo 16.3",
-    "text": "Exemplo 16.3\nSabendo que a f.g.m. de \\(X\\sim \\text{Bin}(n,p)\\) é \\(M_X(t)=(pe^t+1-p)^n\\), determine a função característica de \\(X\\)."
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.2",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.2",
+    "title": "Distribuição Condicional",
+    "section": "Exemplo 4.2",
+    "text": "Exemplo 4.2\nSuponha que a função de probabilidade conjunta de X e Y seja dada por:\n\\[p(x,y) = c(x+y), \\text{ para } x \\in \\{1, 2, 3\\} \\text{ e } y \\in \\{1, 2\\}.\\]\n\nDetermine o valor da constante \\(c\\).\nEncontre a função de probabilidade marginal de Y, \\(p_Y(y)\\).\nDetermine a função de probabilidade condicional de X dado \\(Y=1\\), ou seja, \\(P(X=x | Y=1)\\)."
   },
   {
-    "objectID": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#exemplo-16.4",
-    "href": "slides/16-Funcao_caracteristica/16-Funcao_caracteristica.html#exemplo-16.4",
-    "title": "Função Característica",
-    "section": "Exemplo 16.4",
-    "text": "Exemplo 16.4\nSabendo que a f.g.m. de \\(Y\\sim N(\\mu, \\sigma^2)\\) é \\(M_Y(t) = e^{t\\mu}+\\frac{\\sigma^2t^2}{2}\\), determine a função característica de \\(Y\\)."
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#lei-da-probabilidade-total",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#lei-da-probabilidade-total",
+    "title": "Distribuição Condicional",
+    "section": "Lei da Probabilidade Total",
+    "text": "Lei da Probabilidade Total\n\\[P(X \\in B) = \\sum_y P(Y=y)P(X \\in B | Y=y).\\]\n\nInterpretação: probabilidade total = média ponderada das condicionais"
   },
   {
-    "objectID": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#introdução",
-    "href": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#introdução",
-    "title": "Distribuição do Máximo e do Mínimo",
-    "section": "Introdução",
-    "text": "Introdução\n\nHoje avançamos para as Estatísticas de Ordem, focando nos extremos: o Máximo e o Mínimo de um conjunto de variáveis aleatórias.\nNa prática, onde isso é usado?\n\nO Mínimo (\\(Y_{(1)}\\)): Tempo de falha de um sistema em série (o sistema para quando o primeiro componente quebra).\nO Máximo (\\(Y_{(n)}\\)): Tempo de falha de um sistema em paralelo (o sistema só para quando o último componente quebra).\n\nVamos construir essas distribuições usando pura lógica e a Função de Distribuição Acumulada (FDA)."
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#aplicação-à-função-de-distribuição",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#aplicação-à-função-de-distribuição",
+    "title": "Distribuição Condicional",
+    "section": "Aplicação à função de distribuição",
+    "text": "Aplicação à função de distribuição\nDefinição condicional\n\\[ F_{X|Y}(x|y) = P(X\\leq x | Y=y) \\]\nLei da Probabilidade Total\n\\[ F_X(x) = \\sum_y P(Y=y)F_{X|Y}(x|y) \\]"
   },
   {
-    "objectID": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#distribuição-do-máximo",
-    "href": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#distribuição-do-máximo",
-    "title": "Distribuição do Máximo e do Mínimo",
-    "section": "Distribuição do Máximo",
-    "text": "Distribuição do Máximo\n\nConsidere \\(X_1, \\dots, X_n\\) v.a. independentes e \\[Y_{(n)} = \\max\\{X_1, \\dots, X_n\\}.\\]\nSuponha que queremos encontrar a probabilidade do máximo ser menor ou igual a \\(w\\): \\(P(Y_{(n)} \\le w)\\).\nPara que o maior valor de todos seja menor ou igual a \\(w\\), todos os valores têm que ser menores ou iguais a \\(w\\).\nOu seja, precisamos que: \\(X_1 \\le w\\) E \\(X_2 \\le w\\) E \\(\\dots\\) E \\(X_n \\le w\\).\nComo são eventos independentes, multiplicamos as probabilidades: \\[F_{Y_{(n)}}(w) = P(X_1 \\le w) \\cdot P(X_2 \\le w) \\cdots P(X_n \\le w)\\]"
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.3",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.3",
+    "title": "Distribuição Condicional",
+    "section": "Exemplo 4.3",
+    "text": "Exemplo 4.3\nUma seguradora classifica seus clientes em dois perfis de risco:\n\n\\(Y=1\\): Baixo risco, com \\(P(Y=1) = 0,\\!6\\)\n\\(Y=2\\): Alto risco, com \\(P(Y=2) = 0,\\!4\\)\n\nSeja \\(X\\) o número de sinistros acionados por um cliente em um ano. As probabilidades condicionais de \\(X\\) dado o perfil \\(Y\\) são:\n\nPara \\(Y=1\\) (baixo risco):\n\n\\(P(X=0|Y=1) = 0,8\\) e \\(P(X=1|Y=1) = 0,2\\)\n\nPara \\(Y=2\\) (alto risco):\n\n\\(P(X=0|Y=2) = 0,5\\) e \\(P(X=1|Y=2) = 0,3\\) e \\(P(X=2|Y=2) = 0,2\\)"
   },
   {
-    "objectID": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#distribuição-do-mínimo",
-    "href": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#distribuição-do-mínimo",
-    "title": "Distribuição do Máximo e do Mínimo",
-    "section": "Distribuição do Mínimo",
-    "text": "Distribuição do Mínimo\n\nAgora queremos a distribuição do mínimo: \\[Y_{(1)} = \\min\\{X_1, \\dots, X_n\\}\\]\nQueremos \\(P(Y_{(1)} \\le z)\\), que é difícil de tratar diretamente.\nAnalisando o complementar [\\(P(Y_{(1)}&gt; z)\\)] é mais simples, pois \\[ Y_{(1)}&gt; z \\Leftrightarrow X_1&gt;z, \\ldots, X_n&gt;z\\]\nComo as variáveis são independentes: \\[ P(Y_{(1)}&gt;z) = \\prod\\limits_{i=1}^n P(X_i&gt;z) \\]"
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.3-1",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.3-1",
+    "title": "Distribuição Condicional",
+    "section": "Exemplo 4.3",
+    "text": "Exemplo 4.3\n\nDetermine \\(P(X \\geq 1 | Y=1)\\) e \\(P(X \\geq 1 | Y=2)\\).\nUtilize a Lei da Probabilidade Total para calcular \\(P(X \\geq 1)\\)."
   },
   {
-    "objectID": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#distribuição-do-mínimo-1",
-    "href": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#distribuição-do-mínimo-1",
-    "title": "Distribuição do Máximo e do Mínimo",
-    "section": "Distribuição do Mínimo",
-    "text": "Distribuição do Mínimo\n\nVoltando para a Acumulada: \\[ F_{Y_{(1)}}(z) = P(Y_{(1)}&gt;z) = 1 - \\prod\\limits_{i=1}^n P(X_i&gt;z) \\]"
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-contínuo",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-contínuo",
+    "title": "Distribuição Condicional",
+    "section": "Distribuição Condicional: Caso Contínuo",
+    "text": "Distribuição Condicional: Caso Contínuo\n\nSe \\(X\\) e \\(Y\\) são variáveis aleatórias contínuas, a densidade condicional de \\(X\\) dado \\(Y\\) é: \\[f_{X|Y}(x|y) = \\frac{f_{X,Y}(x,y)}{f_Y(y)}\\] (ou seja, a conjunta dividida pela marginal).\nA função de distribuição condicional de \\(X\\) dado \\(Y\\) é: \\[F_{X|Y}(x|y) = \\int_{-\\infty}^{x} f_{X|Y}(t|y)dt\\]"
   },
   {
-    "objectID": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#proposição-11.1-formalização",
-    "href": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#proposição-11.1-formalização",
-    "title": "Distribuição do Máximo e do Mínimo",
-    "section": "Proposição 11.1: Formalização",
-    "text": "Proposição 11.1: Formalização\nSeja \\(X_1, \\dots, X_n\\) v.a.i. com distribuições acumuladas \\(F_{X_i}\\).\n\nDistribuição do Máximo – a acumulada é o produto das acumuladas individuais: \\[F_{Y_{(n)}}(w) = \\prod_{i=1}^n F_{X_i}(w)\\]\nDistribuição do Mínimo – a acumulada depende do produto das probabilidades complementares: \\[F_{Y_{(1)}}(z) = 1 - \\prod_{i=1}^n [1 - F_{X_i}(z)]\\]"
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-contínuo-consequências",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#distribuição-condicional-caso-contínuo-consequências",
+    "title": "Distribuição Condicional",
+    "section": "Distribuição Condicional: Caso Contínuo (Consequências)",
+    "text": "Distribuição Condicional: Caso Contínuo (Consequências)\nFórmulas válidas:\n\n\\(F_{X,Y}(x,y) = \\int_{-\\infty}^{y} f_Y(t)F_{X|Y}(x|t)dt\\)\n\\(F_X(x) = \\int_{-\\infty}^{+\\infty} f_Y(y)F_{X|Y}(x|y)dy\\)"
   },
   {
-    "objectID": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#aplicação-confiabilidade-de-sistemas",
-    "href": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#aplicação-confiabilidade-de-sistemas",
-    "title": "Distribuição do Máximo e do Mínimo",
-    "section": "Aplicação: Confiabilidade de Sistemas",
-    "text": "Aplicação: Confiabilidade de Sistemas\nSuponha \\(X_1,\\dots,X_n\\) = tempos de vida de componentes.\n\nSistema em Série: Falha quando o primeiro quebra\n\nTempo de vida do sistema: \\(\\min(X_1,\\ldots,X_n)\\)\nExemplos: pisca-pisca antigo, linha de produção\n\nSistema em Paralelo: Falha quando o último quebra\n\nTempo de vida do sistema: \\(\\max(X_1,\\ldots,X_n)\\)\nExemplos: motores de avião, servidores com backup"
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.4",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.4",
+    "title": "Distribuição Condicional",
+    "section": "Exemplo 4.4",
+    "text": "Exemplo 4.4\nA função de densidade conjunta de \\(X\\) e \\(Y\\) é dada por: \\[f_{X,Y}(x,y) = \\frac{12}{5}x(2-x-y)\\] para \\(0&lt;x&lt;1, 0&lt;y&lt;1\\).\nObtenha a densidade condicional de \\(X\\) dado que \\(Y=y\\), onde \\(0&lt;y&lt;1\\)."
   },
   {
-    "objectID": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#exemplo-11.1",
-    "href": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#exemplo-11.1",
-    "title": "Distribuição do Máximo e do Mínimo",
-    "section": "Exemplo 11.1",
-    "text": "Exemplo 11.1\nSejam \\(X_1, \\dots, X_n\\) independentes com distribuição Uniforme(0, 1).\n\nDetermine a distribuição do máximo.\nDetermine a distribuição do mínimo.\nDetermine a função de densidade do máximo"
+    "objectID": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.5",
+    "href": "slides/04-Distribuicao_condicional/04-Distribuicao_condicional.html#exemplo-4.5",
+    "title": "Distribuição Condicional",
+    "section": "Exemplo 4.5",
+    "text": "Exemplo 4.5\nSuponha que a densidade conjunta de X e Y seja dada por: \\[f_{X,Y}(x, y) = \\frac{e^{-x/y}e^{-y}}{y}\\] para \\(0 &lt; x &lt; \\infty, 0 &lt; y &lt; \\infty\\). Determine \\(P(X &gt; 1 | Y = y)\\)."
   },
   {
-    "objectID": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#exemplo-11.2",
-    "href": "slides/11-Distribuicao_maximo_minimo/11-Distribuicao_maximo_minimo.html#exemplo-11.2",
-    "title": "Distribuição do Máximo e do Mínimo",
-    "section": "Exemplo 11.2",
-    "text": "Exemplo 11.2\nSejam \\(X_1, \\dots, X_n\\) variáveis independentes com distribuição Exponencial de média \\(\\mathbb{E}(X_i) = \\lambda_i\\).\n\nDetermine a distribuição do mínimo.\nDetermine a distribuição do máximo.\nDetermine a função de densidade do mínimo"
+    "objectID": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#teorema-18.1-teorema-da-unicidade",
+    "href": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#teorema-18.1-teorema-da-unicidade",
+    "title": "Propriedades da Função Característica (parte 2)",
+    "section": "Teorema 18.1: Teorema da Unicidade",
+    "text": "Teorema 18.1: Teorema da Unicidade\nSe duas variáveis aleatórias \\(X\\) e \\(Y\\) possuem a mesma função característica para todo \\(t \\in \\mathbb{R}\\), então elas possuem a mesma função de distribuição acumulada. \\[\\varphi_X(t) = \\varphi_Y(t) \\iff F_X(x) = F_Y(x)\\]"
+  },
+  {
+    "objectID": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#teorema-18.2-teorema-de-inversão-de-lévy",
+    "href": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#teorema-18.2-teorema-de-inversão-de-lévy",
+    "title": "Propriedades da Função Característica (parte 2)",
+    "section": "Teorema 18.2: Teorema de Inversão de Lévy",
+    "text": "Teorema 18.2: Teorema de Inversão de Lévy\nA partir da função característica é possível obter a função de distribuição da variável aleatória. Para isso usamos o resultado geral de Lévy:\n\nSe \\(a\\) e \\(b\\) são pontos de continuidade de \\(F_X(x)\\), então: \\[F_X(b) - F_X(a) = \\lim_{T \\to \\infty} \\frac{1}{2\\pi} \\int_{-T}^{T} \\frac{e^{-ita} - e^{-itb}}{it} \\varphi_X(t) \\, dt\\]\nA partir deste resultado geral, derivamos os casos práticos de aplicação no suporte Discreto e Contínuo."
+  },
+  {
+    "objectID": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#teorema-18.3-fórmula-da-inversão-caso-contínuo",
+    "href": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#teorema-18.3-fórmula-da-inversão-caso-contínuo",
+    "title": "Propriedades da Função Característica (parte 2)",
+    "section": "Teorema 18.3: Fórmula da Inversão (Caso Contínuo)",
+    "text": "Teorema 18.3: Fórmula da Inversão (Caso Contínuo)\nSe \\(X\\) é uma v.a. contínua e \\[\\int_{-\\infty}^{+\\infty} |\\varphi_X(t)| \\, dt &lt; \\infty\\]\nEntão, a sua função densidade de probabilidade \\(f_X(x)\\) existe, é contínua e calculada por: \\[f_X(x) = \\frac{1}{2\\pi} \\int_{-\\infty}^{+\\infty} e^{-itx} \\varphi_X(t) \\, dt\\]"
+  },
+  {
+    "objectID": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#teorema-18.4-fórmula-da-inversão-caso-discreto-inteiro",
+    "href": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#teorema-18.4-fórmula-da-inversão-caso-discreto-inteiro",
+    "title": "Propriedades da Função Característica (parte 2)",
+    "section": "Teorema 18.4: Fórmula da Inversão (Caso Discreto Inteiro)",
+    "text": "Teorema 18.4: Fórmula da Inversão (Caso Discreto Inteiro)\nSe \\(X\\) é uma v.a. discreta cujo suporte pertence ao conjunto dos números inteiros (\\(x \\in \\mathbb{Z}\\)), sua f.c. é dada por \\[\\varphi_X(t) = \\sum_{j} e^{itj} P(X=j).\\]\nPodemos recuperar a função de probabilidade num ponto \\(x\\) fazendo: \\[P(X=x) = \\frac{1}{2\\pi} \\int_{\\mathbf{-\\pi}}^{\\mathbf{\\pi}} e^{-itx} \\varphi_X(t) \\, dt \\quad \\text{para } x \\in \\mathbb{Z}\\]"
+  },
+  {
+    "objectID": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#atalho-método-das-séries",
+    "href": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#atalho-método-das-séries",
+    "title": "Propriedades da Função Característica (parte 2)",
+    "section": "Atalho: Método das Séries",
+    "text": "Atalho: Método das Séries\n\nDica: Se a função característica puder ser expandida facilmente em uma série conhecida, não precisamos calcular a integral da inversão. Basta expandir e isolar os coeficientes!\nPara v.a. Discretas: Expandimos em série de potências e procuramos o termo que acompanha \\(e^{itx}\\).\nPara v.a. Contínuas: Buscamos identificar o formato analítico por inspeção direta na tabela de distribuições conhecidas (Teorema da Unicidade)."
+  },
+  {
+    "objectID": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#exemplo-18.1",
+    "href": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#exemplo-18.1",
+    "title": "Propriedades da Função Característica (parte 2)",
+    "section": "Exemplo 18.1",
+    "text": "Exemplo 18.1\nConsidere a v.a. \\(X\\) com valores inteiros e f.c. dada por: \\[\\varphi_X(t) = (pe^{it} + 1 - p)^n\\] Qual é a sua função de probabilidade?"
+  },
+  {
+    "objectID": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#exemplo-18.2",
+    "href": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#exemplo-18.2",
+    "title": "Propriedades da Função Característica (parte 2)",
+    "section": "Exemplo 18.2",
+    "text": "Exemplo 18.2\nDada a função característica \\(\\varphi_X(t) = e^{\\lambda(e^{it} - 1)}\\), obtenha sua função de probabilidade."
+  },
+  {
+    "objectID": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#exemplo-18.3",
+    "href": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#exemplo-18.3",
+    "title": "Propriedades da Função Característica (parte 2)",
+    "section": "Exemplo 18.3",
+    "text": "Exemplo 18.3\nSejam \\(X_1, \\dots, X_n\\) v.a. i.i.d. com distribuição \\(\\text{Poisson}(\\lambda)\\). Obtenha a distribuição de \\(Y = X_1 + \\dots + X_n\\)."
+  },
+  {
+    "objectID": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#exemplo-18.4",
+    "href": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#exemplo-18.4",
+    "title": "Propriedades da Função Característica (parte 2)",
+    "section": "Exemplo 18.4",
+    "text": "Exemplo 18.4\nColetamos uma amostra aleatória de uma população com distribuição normal, isto é, \\(X_i \\sim N(\\mu, \\sigma^2)\\) i.i.d. Que distribuição terá a média amostral \\(\\overline{X}\\)?"
+  },
+  {
+    "objectID": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#definição-18.1-função-característica-multidimensional",
+    "href": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#definição-18.1-função-característica-multidimensional",
+    "title": "Propriedades da Função Característica (parte 2)",
+    "section": "Definição 18.1: Função Característica Multidimensional",
+    "text": "Definição 18.1: Função Característica Multidimensional\nSejam \\(X_1, \\dots, X_n\\) variáveis aleatórias definidas num mesmo espaço de probabilidade. A função característica conjunta (multidimensional) deste vetor é definida por:\n\\[\\varphi_{X_1, \\dots, X_n}(t_1, \\dots, t_n) = E\\left(e^{i(t_1X_1 + \\dots + t_nX_n)}\\right)\\]\nem que \\(t_1, \\dots, t_n\\) são números reais quaisquer.\n\nEla armazena não apenas o comportamento marginal de cada variável, mas também a estrutura de dependência entre elas."
+  },
+  {
+    "objectID": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#teorema-18.5-critério-da-independência",
+    "href": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#teorema-18.5-critério-da-independência",
+    "title": "Propriedades da Função Característica (parte 2)",
+    "section": "Teorema 18.5: Critério da Independência",
+    "text": "Teorema 18.5: Critério da Independência\nAs variáveis aleatórias \\(X_1, \\dots, X_n\\) são mutuamente independentes se, e somente se, a função característica conjunta for igual ao produto das funções características marginais de cada variável:\n\\[\\varphi_{X_1, \\dots, X_n}(t_1, \\dots, t_n) = \\prod_{j=1}^n \\varphi_{X_j}(t_j)\\] para todos os reais \\(t_1, \\dots, t_n\\)."
+  },
+  {
+    "objectID": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#resumo",
+    "href": "slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html#resumo",
+    "title": "Propriedades da Função Característica (parte 2)",
+    "section": "Resumo",
+    "text": "Resumo\n\nUnicidade: Uma função característica determina unicamente uma única distribuição e vice-versa.\nInversão Contínua: Integra na reta real de \\(-\\infty\\) a \\(+\\infty\\).\nInversão Discreta: Integra no intervalo espectral periódico de \\(-\\pi\\) a \\(\\pi\\).\nPrática na Estatística: Em vez de calcular integrais de inversão complexas, na grande maioria das aplicações decompomos funções por expansões em séries ou identificamos distribuições comparando formatos algébricos padrão."
   },
   {
     "objectID": "slides/07-Variancia_condicional/07-Variancia_condicional.html#introdução",

@@ -1,0 +1,135 @@
+---
+title: "Propriedades da Função Característica (parte 2)"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Teorema 18.1: Teorema da Unicidade
+
+Se duas variáveis aleatórias $X$ e $Y$ possuem a mesma função característica para todo $t \in \mathbb{R}$, então elas possuem a mesma função de distribuição acumulada.
+$$\varphi_X(t) = \varphi_Y(t) \iff F_X(x) = F_Y(x)$$
+
+
+
+## Teorema 18.2: Teorema de Inversão de Lévy
+
+A partir da função característica é possível obter a função de distribuição da variável aleatória. Para isso usamos o resultado geral de Lévy:
+
+- Se $a$ e $b$ são pontos de continuidade de $F_X(x)$, então:
+$$F_X(b) - F_X(a) = \lim_{T \to \infty} \frac{1}{2\pi} \int_{-T}^{T} \frac{e^{-ita} - e^{-itb}}{it} \varphi_X(t) \, dt$$
+
+- *A partir deste resultado geral, derivamos os casos práticos de aplicação no suporte Discreto e Contínuo.*
+
+
+
+## Teorema 18.3: Fórmula da Inversão (Caso Contínuo)
+
+Se $X$ é uma v.a. contínua e
+$$\int_{-\infty}^{+\infty} |\varphi_X(t)| \, dt < \infty$$
+
+Então, a sua função densidade de probabilidade $f_X(x)$ existe, é contínua e calculada por:
+$$f_X(x) = \frac{1}{2\pi} \int_{-\infty}^{+\infty} e^{-itx} \varphi_X(t) \, dt$$
+
+
+
+
+
+## Teorema 18.4: Fórmula da Inversão (Caso Discreto Inteiro)
+
+Se $X$ é uma v.a. discreta cujo suporte pertence ao conjunto dos números inteiros ($x \in \mathbb{Z}$), sua f.c. é dada por $$\varphi_X(t) = \sum_{j} e^{itj} P(X=j).$$
+
+Podemos recuperar a função de probabilidade num ponto $x$ fazendo:
+$$P(X=x) = \frac{1}{2\pi} \int_{\mathbf{-\pi}}^{\mathbf{\pi}} e^{-itx} \varphi_X(t) \, dt \quad \text{para } x \in \mathbb{Z}$$
+
+
+
+## Atalho: Método das Séries
+
+* **Dica:** Se a função característica puder ser expandida facilmente em uma série conhecida, não precisamos calcular a integral da inversão. Basta expandir e isolar os coeficientes!
+
+* **Para v.a. Discretas:** Expandimos em série de potências e procuramos o termo que acompanha $e^{itx}$.
+* **Para v.a. Contínuas:** Buscamos identificar o formato analítico por inspeção direta na tabela de distribuições conhecidas (Teorema da Unicidade).
+
+
+
+## Exemplo 18.1
+
+Considere a v.a. $X$ com valores inteiros e f.c. dada por:
+$$\varphi_X(t) = (pe^{it} + 1 - p)^n$$
+Qual é a sua função de probabilidade?
+
+
+
+## Exemplo 18.2
+
+Dada a função característica $\varphi_X(t) = e^{\lambda(e^{it} - 1)}$, obtenha sua função de probabilidade.
+
+
+
+
+## Exemplo 18.3
+
+Sejam $X_1, \dots, X_n$ v.a. i.i.d. com distribuição $\text{Poisson}(\lambda)$. Obtenha a distribuição de $Y = X_1 + \dots + X_n$.
+
+
+
+
+## Exemplo 18.4
+
+Coletamos uma amostra aleatória de uma população com distribuição normal, isto é, $X_i \sim N(\mu, \sigma^2)$ i.i.d. Que distribuição terá a média amostral $\overline{X}$?
+
+
+
+## Definição 18.1: Função Característica Multidimensional
+
+Sejam $X_1, \dots, X_n$ variáveis aleatórias definidas num mesmo espaço de probabilidade. A função característica conjunta (multidimensional) deste vetor é definida por:
+
+$$\varphi_{X_1, \dots, X_n}(t_1, \dots, t_n) = E\left(e^{i(t_1X_1 + \dots + t_nX_n)}\right)$$
+
+em que $t_1, \dots, t_n$ são números reais quaisquer.
+
+* Ela armazena não apenas o comportamento marginal de cada variável, mas também a estrutura de dependência entre elas.
+
+---
+
+## Teorema 18.5: Critério da Independência
+
+As variáveis aleatórias $X_1, \dots, X_n$ são mutuamente independentes se, e somente se, a função característica conjunta for igual ao produto das funções características marginais de cada variável:
+
+$$\varphi_{X_1, \dots, X_n}(t_1, \dots, t_n) = \prod_{j=1}^n \varphi_{X_j}(t_j)$$
+para todos os reais $t_1, \dots, t_n$.
+
+
+
+## Resumo
+
+1. **Unicidade:** Uma função característica determina unicamente uma única distribuição e vice-versa.
+2. **Inversão Contínua:** Integra na reta real de $-\infty$ a $+\infty$.
+3. **Inversão Discreta:** Integra no intervalo espectral periódico de $-\pi$ a $\pi$.
+4. **Prática na Estatística:** Em vez de calcular integrais de inversão complexas, na grande maioria das aplicações decompomos funções por expansões em séries ou identificamos distribuições comparando formatos algébricos padrão.
+
+
+# Fim

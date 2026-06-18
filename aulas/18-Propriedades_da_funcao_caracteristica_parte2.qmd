@@ -1,0 +1,50 @@
+---
+title: "Conteúdo 18"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Propriedades da Função Característica (parte 2)
+
+Nesta aula aprofundamos o estudo das funções características, explorando resultados fundamentais que mostram seu poder na identificação e recuperação de distribuições de probabilidade. São apresentados o Teorema da Unicidade, que estabelece que uma função característica determina completamente uma distribuição, e as Fórmulas de Inversão de Lévy para os casos contínuo e discreto. Além disso, são discutidas estratégias práticas para obter distribuições a partir de funções características sem recorrer diretamente às integrais de inversão. Também é apresentada uma introdução da função característica multidimensional e do critério de independência.
+
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/18-Propriedades_da_funcao_caracteristica_parte2/18-Propriedades_da_funcao_caracteristica_parte2.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide18_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/18-Propriedades_da_funcao_caracteristica_parte2.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide18_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Demonstração dos teoremas e resolução dos exemplos:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/demonstracao_teoremas_18.1_a_18.5.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/demonstracao_teoremas_18.1_a_18.5.png){width=80%}<br>Demonstração dos teoremas
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/solucao_exemplos_18.1_a_18.4.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/solucao_exemplos_18.1_a_18.4.png){width=80%}<br>Resolução dos exemplos
+</a>
+:::
+
+::::
+
+
