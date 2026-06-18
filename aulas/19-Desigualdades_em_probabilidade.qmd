@@ -1,0 +1,44 @@
+---
+title: "Conteúdo 19"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Desigualdades em Probabilidade
+
+Nesta aula são apresentadas algumas das desigualdades mais importantes da Teoria das Probabilidades, utilizadas para obter limites para probabilidades e esperanças mesmo quando a distribuição da variável aleatória é desconhecida. São estudadas as desigualdades básica e clássica de Chebyshev, a desigualdade de Markov, a desigualdade de Jensen e a desigualdade de Cauchy-Schwarz, destacando suas interpretações, aplicações e consequências.
+
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide19_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/19-Desigualdades_em_probabilidade.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide19_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/Prob3_Lista19.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista19.png){width=80%}<br>Lista 19
+</a>
+:::
+
+::::
+
+

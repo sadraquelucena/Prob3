@@ -63,6 +63,10 @@ website:
             text: "16- Função Característica"
           - href: aulas/17-Propriedades_da_funcao_caracteristica.qmd
             text: "17- Propriedades da Função Característica"
+      - section: "Parte 3: Cnvergência de Variáveis Aleatórias"
+        contents:
+          - href: aulas/19-Desigualdades_em_probabilidade.qmd
+            text: "19- Desigualdades em Probabilidade"
       
       
 

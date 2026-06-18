@@ -1,0 +1,215 @@
+---
+title: "Desigualdades em Probabilidade"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Motivação
+
+As desigualdades que veremos serão fundamentais para:
+
+- Convergência em probabilidade;
+- Lei dos Grandes Números;
+- Teorema Central do Limite;
+- Inferência Estatística.
+
+
+
+## Desigualdades de Chebyshev
+
+- As desigualdades de Chebyshev permitem obter limites para probabilidades sem assumir uma distribuição específica.
+- Vantagens:
+
+    - Grande generalidade.
+    - Dependem apenas de momentos.
+    - Aplicam-se a uma ampla classe de distribuições.
+    - São fundamentais na demonstração da Lei dos Grandes Números.
+
+
+
+## Teorema 19.1: Desigualdade Básica de Chebyshev
+
+Seja $X$ uma variável aleatória não negativa. Para qualquer  e $a > 0$,
+$$
+  P(X\geq a) \leq \frac{E(X)}{a}.
+$$
+
+- **Interpretação:** Se a média é pequena, então valores muito grandes não podem ocorrer com probabilidade elevada.
+
+
+
+## Exemplo
+
+Se $$E(X)=30$$, então $$P(X\geq 90)\leq \frac{30}{90}=0,333.$$
+
+- A desigualdade básica de Chebyshev não fornece o valor exato.
+- Ela fornece um **teto máximo** para a probabilidade.
+
+
+## Exemplo 19.1
+
+Uma empresa possui um sistema de acesso à internet utilizado por seus 100 funcionários. Seja $X$ o número de usuários conectados simultaneamente em um instante escolhido ao acaso durante o expediente. Com base em dados históricos, sabe-se apenas que $E(X)=30$. A direção da empresa está preocupada com possíveis picos de utilização da rede e deseja avaliar a necessidade de ampliar a infraestrutura disponível. Use a desigualdade de Chebyshev para calcular a probabilidade máxima de haver pelo menos 30, 40, 50, 60, 70, 80 e 90 usuários simultâneos.
+
+
+
+## Teorema 19.2: Desigualdade Clássica de Chebyshev
+
+- A desigualdade clássica de Chebyshev apresenta limite para a probabilidade em função da variância.
+- Seja $X$ uma v.a. com média $\mu$ e $Var(X) < \infty$. Então, para qualquer $t > 0$, temos
+$$
+  P(|X-\mu|\geq t) \leq \frac{Var(X)}{t^2}.
+$$
+
+- **Interpretação:**
+    
+    - Essa desigualdade controla o afastamento da média.
+    - Quanto menor a variância, mais concentrada a distribuição e menor a probabilidade de observações extremas.
+
+
+## Exemplo 19.2
+Sejam $E(X) = \mu$ e $Var(X) = \sigma^2$. Use a desigualdade clássica de Chebyshev e determine um limite para
+
+(a) $P(|X - \mu| ⩾ 2\sigma)$
+
+(b) $P(|X - \mu| < 2\sigma)$
+
+
+
+## Exemplo 19.3
+
+(a) Obtenha o limite da desigualdade $P(|X − \mu| \geq 32 \sigma)$.
+
+(b) Admita que $X$ é uniformemente distribuída sobre $\left( 1-\frac{1}{\sqrt{3}}, 1+\frac{1}{\sqrt{3}} \right)$ e calcule o limite em (a).
+
+
+
+## Teorema 19.3: Desigualdade de Markov
+
+- A desigualdade de Markov utiliza momentos de ordem $k$.
+- Seja $X$ uma variável aleatória. Então, para quaisquer $t>0$ e para $k>0$ temos:
+$$
+P(|X| \geq t) \leq \frac{E(|X|^k)}{t^k}.
+$$
+- **Interpretação:** Quanto mais informações sobre os momentos de $X$ estiverem disponíveis, melhor o refinamento sobre o limite para probabilidades.
+
+
+
+
+## Exemplo 19.4
+Seja $Y$ uma v.a. tal que $E(Y^4) \leq 100$. Use esta informação para encontrar um limite superior para $P(Y \geq 5)$.
+
+
+
+## Exemplo 19.5
+Seja $X$ uma v.a. Exp($1$). Use a desigualdade de Markov para
+provar que $P(X > c) \leq 1/c$, em que $c$ é um número positivo
+qualquer.
+
+
+
+## Funções Convexas
+
+- Para a próxima desigualdade, precisamos lembrar a definição de funções convexas.
+- **Funções convexas:** são funções cujo gráfico está abaixo de (ou coincide com) qualquer reta traçada entre dois de seus pontos. Isso é equivalente a dizer que o gráfico está acima de qualquer tangente a um de seus pontos.
+- Exemplos de funções convexas:
+
+    - $f(x) = x^2$
+    - $f(x) = e^x$
+    - $f(x) = |x|$
+
+
+
+## Funções Convexas
+
+### Critério da Segunda Derivada
+
+- Se $f''(x)\geq 0$ para todo $x$, então $f$ é convexa.
+- Se $f''(x) > 0$ para todo $x$, então $f$ é estritamente convexa.
+
+
+
+## Teorema 19.4: Desigualdade de Jensen
+
+- Seja $X$ uma v.a. com $E(X) < \infty$ e $g$ uma função convexa. Então:
+$$
+  E[g(X)] \geq g(E[X]).
+$$
+
+
+
+## Exemplo 19.6
+
+Se $g(X) = X^2$, então, a partir da desigualdade de Jensen, temos que
+$$
+  E(g(X)) \geq g(E(X)) \Rightarrow E(X^2) \geq E^2(X).
+$$
+
+- Consequência:
+
+$$ Var(X) = E(X^2)-E^2(X)\geq 0.$$
+
+
+
+
+## Exemplo 19.7
+
+Se $g(X) = e^X$, então, a partir da desigualdade de Jensen, temos que
+$$
+  E(g(X)) \geq g(E(X)) \Rightarrow E(e^X) \geq e^{E(X)}.
+$$
+
+
+
+## Teorema 19.5: Desigualdade de Cauchy-Schwarz
+
+- Se as variáveis aleatórias $X$ e $Y$ têm segundo momento finito, então
+$$
+|E(XY)| \leq \sqrt{E(X^2) E(Y^2)}.
+$$
+
+- **Consequência importante:** Tomando $U=X-E(X)$ e $V=Y-E(Y)$, obtemos
+
+$$
+  |Cov(X,Y)|\leq \sqrt{Var(X)Var(Y)}.
+$$
+
+
+## Resumo
+
+| Desigualdade       | Informação necessária |
+| ------------------ | --------------------- |
+| Chebyshev básica   | $E(X)$                |
+| Chebyshev clássica | $E(X), Var(X)$        |
+| Markov             | momento de ordem ($k$)|
+| Jensen             | convexidade           |
+| Cauchy-Schwarz     | segundos momentos     |
+|                    |                       |
+
+Todas permitem obter resultados importantes sem conhecer completamente a distribuição da variável aleatória.
+
+
+
+# Fim
