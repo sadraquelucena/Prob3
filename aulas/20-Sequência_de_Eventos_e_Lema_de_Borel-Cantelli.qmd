@@ -1,0 +1,50 @@
+---
+title: "Conteúdo 20"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Sequência de Eventos e Lema de Borel-Cantelli
+
+Nesta aula são apresentados os conceitos fundamentais para a análise do comportamento assintótico de sequências de eventos na Teoria das Probabilidades. São estudadas as definições de ínfimo, supremo, sequências monótonas e os limites superior e inferior de conjuntos, estabelecendo a formalização matemática para eventos que ocorrem infinitas vezes ou de forma definitiva. Por fim, o material aborda o Lema de Borel-Cantelli, detalhando suas condições de convergência e aplicações práticas no cálculo de probabilidades limites.
+
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/20-Sequência_de_Eventos_e_Lema_de_Borel-Cantelli/20-Sequência_de_Eventos_e_Lema_de_Borel-Cantelli.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide20_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/20-Sequência_de_Eventos_e_Lema_de_Borel-Cantelli.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide20_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Demonstração dos Teoremas e Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/demonstracao_teoremas_20.1_20.2_e_lema_de_borel_cantelli.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/demonstracao_teoremas_20.1_20.2_e_lema_de_borel_cantelli.png){width=80%}<br>Demonstração dos teoremas
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/Prob3_Lista20.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista20.png){width=80%}<br>Lista 20
+</a>
+:::
+
+::::
+
+

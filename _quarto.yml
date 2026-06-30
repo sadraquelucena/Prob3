@@ -69,6 +69,8 @@ website:
         contents:
           - href: aulas/19-Desigualdades_em_probabilidade.qmd
             text: "19- Desigualdades em Probabilidade"
+          - href: aulas/20-Sequência_de_Eventos_e_Lema_de_Borel-Cantelli.qmd
+            text: "20- Sequência de Eventos e Lema de Borel-Cantelli"
       
       
 

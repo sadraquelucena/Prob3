@@ -1,0 +1,228 @@
+---
+title: "Sequência de Eventos e Lema de Borel-Cantelli"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Motivação
+
+Suponha que uma moeda é lançada infinitamente muitas vezes e temos o evento
+$$
+  A_n = \{\text{ocorre cara no lançamento }n\}.
+$$
+
+Perguntas:
+
+- Qual a probabilidade de ocorrer cara infinitas vezes?
+- Como formalizar matematicamente a expressão "infinitas vezes"?
+- Como saber se um evento continuará ocorrendo para sempre?
+
+**Objetivo da aula:** desenvolver ferramentas para responder essas perguntas e entendermos o conceito de convergência de variáveis aleatórias.
+
+
+
+## Definição 20.1: Sequências de Eventos
+
+Considere a sequência de eventos $A_1, A_2, A_3, \ldots$ onde cada $A_n\subseteq \Omega$ para $n=1,2, \ldots$ Define-se
+
+$$
+  \inf\limits_{k\geq n} A_k = \bigcap\limits_{k=n}^\infty A_k \quad \text{e} \quad \sup\limits_{k\geq n} A_k = \bigcup\limits_{k=n}^\infty A_k.
+$$
+
+Interpretação:
+  
+  - $\inf\limits_{k\geq n} A_k$: de $n$ em diante, o evento sempre ocorre.
+  - $\sup\limits_{k\geq n} A_k$: de $n$ em diante, o evento ocorre pelo menos uma vez.
+
+
+
+## Exemplo 20.1
+
+Considere $$ A_n = \left( 0, 1+\frac{1}{n} \right).$$
+
+a) Determine $\inf\limits_{k\geq n} A_k$.
+b) Determine $\sup\limits_{k\geq n} A_k$.
+
+
+
+## Exemplo 20.2
+
+Considere
+$$
+  A_n = \begin{cases}
+    [0,1], & n \text{ ímpar,}\\
+    [1,2], & n \text{ par.}
+  \end{cases}
+$$
+
+a) Determine $\inf\limits_{k\geq n} A_k$.
+b) Determine $\sup\limits_{k\geq n} A_k$.
+
+
+
+## Exemplo 20.3
+
+Considere a sequência de conjuntos $A_n$ onde cada termo contém apenas dois números inteiros:
+$$
+  A_n = \{n, n+1\}.
+$$
+
+a) Determine $\inf\limits_{k\geq n} A_k$.
+b) Determine $\sup\limits_{k\geq n} A_k$.
+
+
+
+## Definição 20.2: Sequências Monótonas
+
+- Uma sequência de eventos ($A_n$) é monótona não-decrescente
+se $A_1 \subseteq A_2 \subseteq \cdots$ e denotamos por $A_n \uparrow$.
+- Uma sequência de eventos ($A_n$) é monótona não-crescente
+se $A_1 \supseteq A_2 \supseteq \cdots$ e denotamos por $A_n \downarrow$.
+
+
+
+## Teorema 20.1: Limite de Sequências Monótonas
+
+Suponha que ($A_n$) é uma sequência monótona de eventos. Então,
+
+- Se $A_n\uparrow$, então $\lim_n A_n = \bigcup\limits_{k=1}^\infty A_k$.
+- Se $A_n\downarrow$, então $\lim_n A_n = \bigcap\limits_{k=1}^\infty A_k$.
+
+
+
+## Exemplo 20.4
+
+Para cada uma das sequências de eventos abaixo, justifique se ela é monótona (crescente $\uparrow$ ou decrescente $\downarrow$) e determine o seu limite quando $n \to \infty$:
+
+a) $A_n = \left[ \frac{1}{n}, 2 \right]$ para $n = 1, 2, 3, \ldots$
+b) $B_n = \left( -1, \frac{1}{n} \right)$ para $n = 1, 2, 3, \ldots$
+
+
+
+## Exemplo 20.5
+
+Para cada uma das sequências de eventos abaixo, determine se ela é monótona (especificando se é crescente $\uparrow$ ou decrescente $\downarrow$) e calcule o seu limite quando $n \to \infty$:
+
+a) $A_n = \left[ -n, 1 - \frac{1}{n} \right]$ para $n = 1, 2, 3, \ldots$
+b) $B_n = \left( -\frac{1}{n}, 5 + \frac{1}{n} \right)$ para $n = 1, 2, 3, \ldots$
+
+
+
+## Definição 20.3: lim sup e lim inf
+
+Considere a sequência de eventos $A_1, A_2, A_3, \ldots$ onde cada $A_n\subseteq \Omega$ para $n=1,2, \ldots$ Define-se
+$$
+\lim\inf A_n = \bigcup\limits_{n=1}^\infty \bigcap\limits_{k=n}^\infty A_k \quad \text{e} \quad \lim\sup A_n = \bigcap\limits_{n=1}^\infty \bigcup\limits_{k=n}^\infty A_k.
+$$
+
+Interpretação:
+
+- $\lim\sup A_n$ é o evento que ocorre infinitas vezes *(não importa o momento, sempre voltará a ocorrer no futuro)*.
+- $\lim\inf A_n$ é o evento que ocorre para todo $n$ suficientemente grande *(a partir de um certo momento, passa a ocorrer para sempre)*.
+
+
+
+## Teorema 20.2: Caracterização dos Limites
+
+Seja $A_1, A_2, A_3, \ldots$ uma sequência de eventos e $\omega \in \Omega$ um resultado amostral. Então:
+
+- $\omega \in \lim\sup A_n$ se, e somente se, $\omega \in A_n$ para infinitos valores de $n$.$$\forall n \in \mathbb{N}, \quad \exists k \ge n \quad \text{tal que} \quad \omega \in A_k.$$
+
+- $\omega \in \lim\inf A_n$ se, e somente se, $\omega \in A_n$ para todo $n$ suficientemente grande.$$\exists n \in \mathbb{N} \quad \text{tal que} \quad \forall k \ge n, \quad \omega \in A_k.$$
+
+
+
+## Exemplo 20.6
+
+Considere a sequência de eventos $A_n$ na reta real que se repete em ciclos de três períodos:
+$$  A_n = \begin{cases}
+    [0, 2], & \text{se } n = 1, 4, 7, 10, \ldots \\
+    [1, 3], & \text{se } n = 2, 5, 8, 11, \ldots \\
+    [2, 4], & \text{se } n = 3, 6, 9, 12, \ldots
+    \end{cases}
+$$
+Determine:
+
+a) $\lim\inf A_n$
+
+b) $\lim\sup A_n$
+
+
+
+## Definição 20.4: Limite de uma Sequência de Eventos
+
+Dizemos que uma sequência de eventos ($A_n$) possui um limite se o seu limite inferior e o seu limite superior coincidem, ou seja:
+$$
+  \lim\inf A_n = \lim\sup A_n = A.
+$$
+
+- O conjunto $A$ é chamado de *limite da sequência ($A_n$)*.
+- Nesse caso, escrevemos $\lim\limits_{n \to \infty} A_n = A$ ou simplesmente $A_n \rightarrow A$.
+
+
+
+## Exemplo 20.7
+
+Imagine que lançamos uma moeda infinitas vezes. Defina o evento $A_n = \{\text{ocorre cara no lançamento } n\}$. Considere três resultados possíveis para a sequência infinita de lançamentos ($\omega_1, \omega_2, \omega_3$):
+
+- $\omega_1$: Coroas seguidas de Caras para sempre $\rightarrow$ (coroa, coroa, cara, cara, cara, cara, ...)
+- $\omega_2$: Cara e Coroa alternadas para sempre $\rightarrow$ (cara, coroa, cara, coroa, cara, coroa, ...)
+- $\omega_3$: Só Coroas para sempre $\rightarrow$ (coroa, coroa, coroa, coroa, ...)
+
+Para cada um desses três casos, determine se o resultado pertence a $\lim\inf A_n$ ou a $\lim\sup A_n$.
+
+
+
+## Propriedades de lim inf e lim sup
+
+- **P20.1** $\lim \inf A_n \subseteq \lim \sup A_n$
+- **P20.2** $(\lim \inf A_n)^c \subseteq \lim \sup A_n^c$
+
+
+
+## Lema de Borel-Cantelli
+
+Sejam $A_1, A_2, \ldots$ eventos aleatórios.
+
+1. Se $\sum\limits_{n=1}^\infty P(A_n) < \infty$, então $P(A_n \text{infinitas vezes})=0.$
+2. Se $\sum\limits_{n=1}^\infty P(A_n) = \infty$, e os eventos forem independentes, então $P(A_n \text{infinitas vezes})=1.$
+
+
+
+## Exemplo 20.8
+
+Se sabemos que para uma dada coleção de eventos $\{A_k\}$, as suas probabilidades individuais satisfazem $\sum\limits_{k=1}^\infty P(A_k) \leq \frac{1}{k^2}$. Qual a
+probabilidade de $A_k$ infinitas vezes?
+
+
+
+## Exemplo 20.9
+
+Considere uma moeda não necessariamente honesta com probabilidade de cara igual a $p$, onde $0 < p < 1$. Se esta moeda for jogada um número infinito de vezes de maneira independente, qual a probabilidade de ocorrer cara um número infinito de vezes?
+
+
+
+# Fim
