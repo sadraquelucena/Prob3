@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Conteúdo 14 – Probabliidade III</title>
+<title>Conteúdo 21 – Probabliidade III</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../aulas/15-Propriedades_da_funcao_geradora_de_momentos.html" rel="next">
-<link href="../aulas/13-Momentos.html" rel="prev">
+<link href="../aulas/20-Sequência_de_Eventos_e_Lema_de_Borel-Cantelli.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -114,7 +113,7 @@ window.Quarto = {
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Conteúdo 14</h1>
+          <h1 class="quarto-secondary-nav-title">Conteúdo 21</h1>
         </a>     
     </div>
   </nav>
@@ -275,7 +274,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../aulas/14-Funcao-geradora-de-momentos.html" class="sidebar-item-text sidebar-link active">
+  <a href="../aulas/14-Funcao-geradora-de-momentos.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">14- Função Geradora de Momentos</span></a>
   </div>
 </li>
@@ -328,7 +327,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../aulas/21-Convergencia_de_variaveis_aleatorias.html" class="sidebar-item-text sidebar-link">
+  <a href="../aulas/21-Convergencia_de_variaveis_aleatorias.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">21- Convergência de Variáveis Aleatórias</span></a>
   </div>
 </li>
@@ -347,7 +346,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Conteúdo 14</h1>
+<h1 class="title d-none d-lg-block">Conteúdo 21</h1>
 </div>
 
 
@@ -364,22 +363,25 @@ window.Quarto = {
 </header>
 
 
-<section id="função-geradora-de-momentos" class="level2">
-<h2 data-anchor-id="função-geradora-de-momentos">Função Geradora de Momentos</h2>
-<p>Nesta aula, introduzimos o Método do Jacobiano como ferramenta para obter a distribuição de variáveis aleatórias resultantes de transformações multivariadas. Mostramos que, quando múltiplas variáveis são transformadas simultaneamente, o cálculo direto da densidade torna-se inviável, exigindo uma abordagem estruturada baseada na transformação inversa e no determinante Jacobiano. Apresentamos um procedimento sistemático em etapas, destacando o papel do Jacobiano como fator de ajuste de escala da densidade. Também discutimos as condições necessárias para aplicação do método, bem como estratégias para lidar com casos não bijetores ou com mudança de dimensão.</p>
+<section id="convergência-de-variáveis-aleatórias" class="level2">
+<h2 data-anchor-id="convergência-de-variáveis-aleatórias">Convergência de Variáveis Aleatórias</h2>
+<p>Nesta aula são apresentados os conceitos fundamentais para a análise do comportamento assintótico de sequências de eventos na Teoria das Probabilidades. São estudadas as definições de ínfimo, supremo, sequências monótonas e os limites superior e inferior de conjuntos, estabelecendo a formalização matemática para eventos que ocorrem infinitas vezes ou de forma definitiva. Por fim, o material aborda o Lema de Borel-Cantelli, detalhando suas condições de convergência e aplicações práticas no cálculo de probabilidades limites.</p>
 <p>Slides:</p>
 <div class="grid">
 <div class="g-col-12 g-col-md-4">
-<p><a href="../slides/14-Funcao-geradora-de-momentos/14-Funcao-geradora-de-momentos.html" target="_blank" style="text-decoration: none; color: inherit;"> <img src="../PDFs/slides/slide14_html.png" class="img-fluid"><br>Versão html </a></p>
+<p><a href="../slides/21-Convergencia_de_variaveis_aleatorias/21-Convergencia_de_variaveis_aleatorias.html" target="_blank" style="text-decoration: none; color: inherit;"> <img src="../PDFs/slides/slide21_html.png" class="img-fluid"><br>Versão html </a></p>
 </div>
 <div class="g-col-12 g-col-md-4">
-<p><a href="../PDFs/slides/14-Funcao-geradora-de-momentos.pdf" target="_blank" style="text-decoration: none; color: inherit;"> <img src="../PDFs/slides/slide14_pdf.png" class="img-fluid"><br>Versão pdf </a></p>
+<p><a href="../PDFs/slides/21-Convergencia_de_variaveis_aleatorias.pdf" target="_blank" style="text-decoration: none; color: inherit;"> <img src="../PDFs/slides/slide21_pdf.png" class="img-fluid"><br>Versão pdf </a></p>
 </div>
 </div>
-<p>Lista de Exercícios:</p>
+<p>Demonstração dos Teoremas e Lista de Exercícios:</p>
 <div class="grid">
 <div class="g-col-12 g-col-md-4">
-<p><a href="../PDFs/listas/Prob3_Lista14.pdf" target="_blank" style="text-decoration: none; color: inherit;"> <img src="../PDFs/listas/lista14.png" class="img-fluid" style="width:80.0%"><br>Lista 14 </a></p>
+<p><a href="../PDFs/listas/demonstracao_proposicoes_e_teoremas_21.2_20.3.pdf" target="_blank" style="text-decoration: none; color: inherit;"> <img src="../PDFs/listas/demonstracao_proposicoes_e_teoremas_21.2_20.3.png" class="img-fluid" style="width:80.0%"><br>Demonstração dos teoremas </a></p>
+</div>
+<div class="g-col-12 g-col-md-4">
+<p><a href="../PDFs/listas/Prob3_Lista21.pdf" target="_blank" style="text-decoration: none; color: inherit;"> <img src="../PDFs/listas/lista21.png" class="img-fluid" style="width:80.0%"><br>Lista 21 </a></p>
 </div>
 </div>
 
@@ -782,14 +784,11 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../aulas/13-Momentos.html" class="pagination-link" aria-label="13- Momentos">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">13- Momentos</span>
+      <a href="../aulas/20-Sequência_de_Eventos_e_Lema_de_Borel-Cantelli.html" class="pagination-link" aria-label="20- Sequência de Eventos e Lema de Borel-Cantelli">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">20- Sequência de Eventos e Lema de Borel-Cantelli</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../aulas/15-Propriedades_da_funcao_geradora_de_momentos.html" class="pagination-link" aria-label="15- Propriedades da Função Geradora de Momentos">
-        <span class="nav-page-text">15- Propriedades da Função Geradora de Momentos</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

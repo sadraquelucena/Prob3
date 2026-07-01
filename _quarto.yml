@@ -71,6 +71,8 @@ website:
             text: "19- Desigualdades em Probabilidade"
           - href: aulas/20-Sequência_de_Eventos_e_Lema_de_Borel-Cantelli.qmd
             text: "20- Sequência de Eventos e Lema de Borel-Cantelli"
+          - href: aulas/21-Convergencia_de_variaveis_aleatorias.qmd
+            text: "21- Convergência de Variáveis Aleatórias"
       
       
 
