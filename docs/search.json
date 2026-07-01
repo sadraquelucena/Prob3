@@ -903,7 +903,7 @@
     "href": "aulas/21-Convergencia_de_variaveis_aleatorias.html",
     "title": "Conteúdo 21",
     "section": "",
-    "text": "Nesta aula são apresentados os conceitos fundamentais para a análise do comportamento assintótico de sequências de eventos na Teoria das Probabilidades. São estudadas as definições de ínfimo, supremo, sequências monótonas e os limites superior e inferior de conjuntos, estabelecendo a formalização matemática para eventos que ocorrem infinitas vezes ou de forma definitiva. Por fim, o material aborda o Lema de Borel-Cantelli, detalhando suas condições de convergência e aplicações práticas no cálculo de probabilidades limites.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nDemonstração dos Teoremas e Lista de Exercícios:\n\n\n Demonstração dos teoremas \n\n\n Lista 21",
+    "text": "Nesta aula são apresentadas as convergências quase certa, em probabilidade e em distribuição, destacando suas definições formais, interpretações intuitivas e relações hierárquicas. Além disso, são apresentados os Teoremas da Continuidade, de Scheffé e de Slutsky.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nDemonstração dos Teoremas e Lista de Exercícios:\n\n\n Demonstração dos teoremas \n\n\n Lista 21",
     "crumbs": [
       "Aulas",
       "Parte 3: Cnvergência de Variáveis Aleatórias",
@@ -915,7 +915,7 @@
     "href": "aulas/21-Convergencia_de_variaveis_aleatorias.html#convergência-de-variáveis-aleatórias",
     "title": "Conteúdo 21",
     "section": "",
-    "text": "Nesta aula são apresentados os conceitos fundamentais para a análise do comportamento assintótico de sequências de eventos na Teoria das Probabilidades. São estudadas as definições de ínfimo, supremo, sequências monótonas e os limites superior e inferior de conjuntos, estabelecendo a formalização matemática para eventos que ocorrem infinitas vezes ou de forma definitiva. Por fim, o material aborda o Lema de Borel-Cantelli, detalhando suas condições de convergência e aplicações práticas no cálculo de probabilidades limites.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nDemonstração dos Teoremas e Lista de Exercícios:\n\n\n Demonstração dos teoremas \n\n\n Lista 21",
+    "text": "Nesta aula são apresentadas as convergências quase certa, em probabilidade e em distribuição, destacando suas definições formais, interpretações intuitivas e relações hierárquicas. Além disso, são apresentados os Teoremas da Continuidade, de Scheffé e de Slutsky.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nDemonstração dos Teoremas e Lista de Exercícios:\n\n\n Demonstração dos teoremas \n\n\n Lista 21",
     "crumbs": [
       "Aulas",
       "Parte 3: Cnvergência de Variáveis Aleatórias",
