@@ -167,6 +167,10 @@
 <section id="exemplo-21.2" class="slide level2">
 <h2>Exemplo 21.2</h2>
 <p>Seja <span class="math inline">\(U_1, U_2, \dots\)</span> uma sequência de variáveis aleatórias independentes e identicamente distribuídas (i.i.d.) com distribuição <span class="math inline">\(\text{Uniforme}(0,1)\)</span>. Defina <span class="math inline">\(Y_n = \min\{U_1, U_2, \dots, U_n\}\)</span> como o mínimo das <span class="math inline">\(n\)</span> primeiras observações. Verifique que: <span class="math display">\[Y_n \xrightarrow{qc} 0\]</span></p>
+<p><strong>Dica:</strong></p>
+<ol type="1">
+<li>Se <span class="math inline">\(X\sim U(0,1)\)</span>: <span class="math inline">\(~F(x)=x,~ 0&lt;x&lt;1\)</span>.</li>
+</ol>
 </section>
 <section id="definição-21.2-convergência-em-probabilidade" class="slide level2">
 <h2>Definição 21.2: Convergência em Probabilidade</h2>
@@ -178,7 +182,7 @@
 </section>
 <section id="convergência-em-probabilidade" class="slide level2">
 <h2>Convergência em Probabilidade</h2>
-<p>Para provarmos que uma sequência converge em probabilidade, em geral usamos a desigualdade básica ou a desigualdade clássica de Chebyshev:</p>
+<p>Para provarmos que uma sequência converge em probabilidade, em geral <strong>calculamos o limite direto da probabilidade</strong> ou usamos a desigualdade básica ou a desigualdade clássica de Chebyshev:</p>
 <ul>
 <li><strong>Básica:</strong> <span class="math inline">\(P(X \ge a) \le \frac{E(X)}{a}\)</span></li>
 <li><strong>Clássica:</strong> <span class="math inline">\(P(|X - \mu| \ge t) \le \frac{Var(X)}{t^2}\)</span></li>
@@ -217,12 +221,21 @@
 <p>Seja <span class="math inline">\(X_1, \dots, X_n\)</span> uma sequência de variáveis aleatórias independentes com distribuição <span class="math inline">\(U(0, b)\)</span>, <span class="math inline">\(b &gt; 0\)</span>.</p>
 <p>Defina <span class="math inline">\(Y_n = \max(X_1, \dots, X_n)\)</span> e <span class="math inline">\(Y = b\)</span>.</p>
 <p>Verifique que: <span class="math display">\[Y_n \stackrel{D}{\longrightarrow} Y\]</span></p>
+<p><strong>Dica:</strong></p>
+<ol type="1">
+<li>Se <span class="math inline">\(X\sim U(a,b)\)</span>: <span class="math inline">\(~F(x)=\frac{x-a}{b-a},~ a&lt;x&lt;b\)</span>.</li>
+</ol>
 </section>
 <section id="exemplo-21.6" class="slide level2">
 <h2>Exemplo 21.6</h2>
 <p>Seja <span class="math inline">\(X_1, X_2, \dots, X_n\)</span> uma sequência de variáveis aleatórias i.i.d. com distribuição <span class="math inline">\(\text{Uniforme}(0, 1)\)</span>. Defina <span class="math inline">\(Y_n = \max(X_1, \dots, X_n)\)</span> e considere a sequência <span class="math inline">\(W_n = n(1 - Y_n)\)</span>. Verifique que:</p>
 <p><span class="math display">\[W_n \stackrel{D}{\longrightarrow} W,\]</span></p>
 <p>em que <span class="math inline">\(W \sim \text{Exponencial}(1)\)</span>.</p>
+<p><strong>Dica:</strong></p>
+<ol type="1">
+<li><p>Se <span class="math inline">\(X\sim \text{Exp}(\lambda)\)</span>: <span class="math inline">\(~F(x)=1-e^{-x},~ x&gt;0\)</span>.</p></li>
+<li><p>Se <span class="math inline">\(X\sim U(0,1)\)</span>: <span class="math inline">\(~F(x)=x,~ 0&lt;x&lt;1\)</span>.</p></li>
+</ol>
 </section>
 <section id="teorema-21.1-teorema-da-continuidade" class="slide level2">
 <h2>Teorema 21.1: Teorema da Continuidade</h2>
@@ -236,7 +249,7 @@
 <p><strong>Dicas:</strong></p>
 <ol type="1">
 <li><span class="math inline">\(\sum_{x=1}^{n} e^{ax} = \frac{e^a [ (e^a)^n - 1 ]}{e^a - 1}\)</span></li>
-<li><span class="math inline">\(\lim_{n \to \infty} n(1 - e^{-a/n}) = a\)</span></li>
+<li><span class="math inline">\(\lim_{n \to \infty} n(e^{a/n} - 1) = a\)</span></li>
 </ol>
 </section>
 <section id="exemplo-21.8" class="slide level2">
@@ -246,6 +259,7 @@
 <p>em que <span class="math inline">\(X \sim \text{Poisson}(\lambda)\)</span>.</p>
 <p><strong>Dicas:</strong></p>
 <ol type="1">
+<li>Se <span class="math inline">\(X \sim \text{Poisson}(\lambda)\)</span>, então <span class="math inline">\(M_X(t) = \exp[\lambda(e^t-1)]\)</span>.</li>
 <li>Se <span class="math inline">\(Y \sim \text{Binomial}(n, p)\)</span>, então <span class="math inline">\(M_Y(t) = (1 - p + p e^t)^n\)</span>.</li>
 <li>Lembre-se: <span class="math inline">\(\lim_{n \to \infty} \left(1 + \frac{x}{n}\right)^n = e^x\)</span>.</li>
 </ol>

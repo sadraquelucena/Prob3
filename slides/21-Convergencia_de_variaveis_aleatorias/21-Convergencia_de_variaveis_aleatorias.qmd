@@ -60,6 +60,9 @@ $$P(X_n = 1) = P(X_n = 3) = \frac{1}{n^2} \quad \text{e} \quad P(X_n = 2) = 1 - 
 
 Seja $U_1, U_2, \dots$ uma sequência de variáveis aleatórias independentes e identicamente distribuídas (i.i.d.) com distribuição $\text{Uniforme}(0,1)$. Defina $Y_n = \min\{U_1, U_2, \dots, U_n\}$ como o mínimo das $n$ primeiras observações. Verifique que: $$Y_n \xrightarrow{qc} 0$$
 
+**Dica:**
+
+1. Se $X\sim U(0,1)$: $~F(x)=x,~ 0<x<1$.
 
 ## Definição 21.2: Convergência em Probabilidade
 
@@ -73,7 +76,7 @@ $$\lim_{n \to \infty} P(|X_n - X| > \varepsilon) = 0$$
 
 ## Convergência em Probabilidade
 
-Para provarmos que uma sequência converge em probabilidade, em geral usamos a desigualdade básica ou a desigualdade clássica de Chebyshev:
+Para provarmos que uma sequência converge em probabilidade, em geral **calculamos o limite direto da probabilidade** ou usamos a desigualdade básica ou a desigualdade clássica de Chebyshev:
 
 - **Básica:** $P(X \ge a) \le \frac{E(X)}{a}$
 - **Clássica:** $P(|X - \mu| \ge t) \le \frac{Var(X)}{t^2}$
@@ -131,6 +134,9 @@ Defina $Y_n = \max(X_1, \dots, X_n)$ e $Y = b$.
 Verifique que:
 $$Y_n \stackrel{D}{\longrightarrow} Y$$
 
+**Dica:**
+
+1. Se $X\sim U(a,b)$: $~F(x)=\frac{x-a}{b-a},~ a<x<b$.
 
 
 ## Exemplo 21.6
@@ -140,6 +146,12 @@ Seja $X_1, X_2, \dots, X_n$ uma sequência de variáveis aleatórias i.i.d. com 
 $$W_n \stackrel{D}{\longrightarrow} W,$$
 
 em que $W \sim \text{Exponencial}(1)$.
+
+**Dica:**
+
+1. Se $X\sim \text{Exp}(\lambda)$: $~F(x)=1-e^{-x},~ x>0$.
+
+2. Se $X\sim U(0,1)$: $~F(x)=x,~ 0<x<1$.
 
 
 
@@ -162,7 +174,7 @@ Seja $X_1, \dots, X_n$ tais que $$P(X_n = k/n) = 1/n, \quad  \text{para } 1 \le 
 **Dicas:**
 
 1. $\sum_{x=1}^{n} e^{ax} = \frac{e^a [ (e^a)^n - 1 ]}{e^a - 1}$
-2. $\lim_{n \to \infty} n(1 - e^{-a/n}) = a$
+2. $\lim_{n \to \infty} n(e^{a/n} - 1) = a$
 
 
 
@@ -176,8 +188,9 @@ em que $X \sim \text{Poisson}(\lambda)$.
 
 **Dicas:**
 
-1. Se $Y \sim \text{Binomial}(n, p)$, então $M_Y(t) = (1 - p + p e^t)^n$.
-2. Lembre-se: $\lim_{n \to \infty} \left(1 + \frac{x}{n}\right)^n = e^x$.
+1. Se $X \sim \text{Poisson}(\lambda)$, então $M_X(t) = \exp[\lambda(e^t-1)]$.
+2. Se $Y \sim \text{Binomial}(n, p)$, então $M_Y(t) = (1 - p + p e^t)^n$.
+3. Lembre-se: $\lim_{n \to \infty} \left(1 + \frac{x}{n}\right)^n = e^x$.
 
 
 

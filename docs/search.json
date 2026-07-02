@@ -444,7 +444,7 @@
     "href": "slides/21-Convergencia_de_variaveis_aleatorias/21-Convergencia_de_variaveis_aleatorias.html#exemplo-21.2",
     "title": "Convergência de Variáveis Aleatórias",
     "section": "Exemplo 21.2",
-    "text": "Exemplo 21.2\nSeja \\(U_1, U_2, \\dots\\) uma sequência de variáveis aleatórias independentes e identicamente distribuídas (i.i.d.) com distribuição \\(\\text{Uniforme}(0,1)\\). Defina \\(Y_n = \\min\\{U_1, U_2, \\dots, U_n\\}\\) como o mínimo das \\(n\\) primeiras observações. Verifique que: \\[Y_n \\xrightarrow{qc} 0\\]"
+    "text": "Exemplo 21.2\nSeja \\(U_1, U_2, \\dots\\) uma sequência de variáveis aleatórias independentes e identicamente distribuídas (i.i.d.) com distribuição \\(\\text{Uniforme}(0,1)\\). Defina \\(Y_n = \\min\\{U_1, U_2, \\dots, U_n\\}\\) como o mínimo das \\(n\\) primeiras observações. Verifique que: \\[Y_n \\xrightarrow{qc} 0\\]\nDica:\n\nSe \\(X\\sim U(0,1)\\): \\(~F(x)=x,~ 0&lt;x&lt;1\\)."
   },
   {
     "objectID": "slides/21-Convergencia_de_variaveis_aleatorias/21-Convergencia_de_variaveis_aleatorias.html#definição-21.2-convergência-em-probabilidade",
@@ -458,7 +458,7 @@
     "href": "slides/21-Convergencia_de_variaveis_aleatorias/21-Convergencia_de_variaveis_aleatorias.html#convergência-em-probabilidade",
     "title": "Convergência de Variáveis Aleatórias",
     "section": "Convergência em Probabilidade",
-    "text": "Convergência em Probabilidade\nPara provarmos que uma sequência converge em probabilidade, em geral usamos a desigualdade básica ou a desigualdade clássica de Chebyshev:\n\nBásica: \\(P(X \\ge a) \\le \\frac{E(X)}{a}\\)\nClássica: \\(P(|X - \\mu| \\ge t) \\le \\frac{Var(X)}{t^2}\\)"
+    "text": "Convergência em Probabilidade\nPara provarmos que uma sequência converge em probabilidade, em geral calculamos o limite direto da probabilidade ou usamos a desigualdade básica ou a desigualdade clássica de Chebyshev:\n\nBásica: \\(P(X \\ge a) \\le \\frac{E(X)}{a}\\)\nClássica: \\(P(|X - \\mu| \\ge t) \\le \\frac{Var(X)}{t^2}\\)"
   },
   {
     "objectID": "slides/21-Convergencia_de_variaveis_aleatorias/21-Convergencia_de_variaveis_aleatorias.html#intuição-por-trás-das-convergências",
@@ -493,14 +493,14 @@
     "href": "slides/21-Convergencia_de_variaveis_aleatorias/21-Convergencia_de_variaveis_aleatorias.html#exemplo-21.5",
     "title": "Convergência de Variáveis Aleatórias",
     "section": "Exemplo 21.5",
-    "text": "Exemplo 21.5\nSeja \\(X_1, \\dots, X_n\\) uma sequência de variáveis aleatórias independentes com distribuição \\(U(0, b)\\), \\(b &gt; 0\\).\nDefina \\(Y_n = \\max(X_1, \\dots, X_n)\\) e \\(Y = b\\).\nVerifique que: \\[Y_n \\stackrel{D}{\\longrightarrow} Y\\]"
+    "text": "Exemplo 21.5\nSeja \\(X_1, \\dots, X_n\\) uma sequência de variáveis aleatórias independentes com distribuição \\(U(0, b)\\), \\(b &gt; 0\\).\nDefina \\(Y_n = \\max(X_1, \\dots, X_n)\\) e \\(Y = b\\).\nVerifique que: \\[Y_n \\stackrel{D}{\\longrightarrow} Y\\]\nDica:\n\nSe \\(X\\sim U(a,b)\\): \\(~F(x)=\\frac{x-a}{b-a},~ a&lt;x&lt;b\\)."
   },
   {
     "objectID": "slides/21-Convergencia_de_variaveis_aleatorias/21-Convergencia_de_variaveis_aleatorias.html#exemplo-21.6",
     "href": "slides/21-Convergencia_de_variaveis_aleatorias/21-Convergencia_de_variaveis_aleatorias.html#exemplo-21.6",
     "title": "Convergência de Variáveis Aleatórias",
     "section": "Exemplo 21.6",
-    "text": "Exemplo 21.6\nSeja \\(X_1, X_2, \\dots, X_n\\) uma sequência de variáveis aleatórias i.i.d. com distribuição \\(\\text{Uniforme}(0, 1)\\). Defina \\(Y_n = \\max(X_1, \\dots, X_n)\\) e considere a sequência \\(W_n = n(1 - Y_n)\\). Verifique que:\n\\[W_n \\stackrel{D}{\\longrightarrow} W,\\]\nem que \\(W \\sim \\text{Exponencial}(1)\\)."
+    "text": "Exemplo 21.6\nSeja \\(X_1, X_2, \\dots, X_n\\) uma sequência de variáveis aleatórias i.i.d. com distribuição \\(\\text{Uniforme}(0, 1)\\). Defina \\(Y_n = \\max(X_1, \\dots, X_n)\\) e considere a sequência \\(W_n = n(1 - Y_n)\\). Verifique que:\n\\[W_n \\stackrel{D}{\\longrightarrow} W,\\]\nem que \\(W \\sim \\text{Exponencial}(1)\\).\nDica:\n\nSe \\(X\\sim \\text{Exp}(\\lambda)\\): \\(~F(x)=1-e^{-x},~ x&gt;0\\).\nSe \\(X\\sim U(0,1)\\): \\(~F(x)=x,~ 0&lt;x&lt;1\\)."
   },
   {
     "objectID": "slides/21-Convergencia_de_variaveis_aleatorias/21-Convergencia_de_variaveis_aleatorias.html#teorema-21.1-teorema-da-continuidade",
@@ -514,14 +514,14 @@
     "href": "slides/21-Convergencia_de_variaveis_aleatorias/21-Convergencia_de_variaveis_aleatorias.html#exemplo-21.7",
     "title": "Convergência de Variáveis Aleatórias",
     "section": "Exemplo 21.7",
-    "text": "Exemplo 21.7\nSeja \\(X_1, \\dots, X_n\\) tais que \\[P(X_n = k/n) = 1/n, \\quad  \\text{para } 1 \\le k \\le n.\\] Mostre que \\(X_n \\stackrel{D}{\\longrightarrow} X\\), com \\(X \\sim U(0,1)\\).\nDicas:\n\n\\(\\sum_{x=1}^{n} e^{ax} = \\frac{e^a [ (e^a)^n - 1 ]}{e^a - 1}\\)\n\\(\\lim_{n \\to \\infty} n(1 - e^{-a/n}) = a\\)"
+    "text": "Exemplo 21.7\nSeja \\(X_1, \\dots, X_n\\) tais que \\[P(X_n = k/n) = 1/n, \\quad  \\text{para } 1 \\le k \\le n.\\] Mostre que \\(X_n \\stackrel{D}{\\longrightarrow} X\\), com \\(X \\sim U(0,1)\\).\nDicas:\n\n\\(\\sum_{x=1}^{n} e^{ax} = \\frac{e^a [ (e^a)^n - 1 ]}{e^a - 1}\\)\n\\(\\lim_{n \\to \\infty} n(e^{a/n} - 1) = a\\)"
   },
   {
     "objectID": "slides/21-Convergencia_de_variaveis_aleatorias/21-Convergencia_de_variaveis_aleatorias.html#exemplo-21.8",
     "href": "slides/21-Convergencia_de_variaveis_aleatorias/21-Convergencia_de_variaveis_aleatorias.html#exemplo-21.8",
     "title": "Convergência de Variáveis Aleatórias",
     "section": "Exemplo 21.8",
-    "text": "Exemplo 21.8\nSeja \\(X_n \\sim \\text{Binomial}(n, p_n)\\) uma sequência de variáveis aleatórias em que a probabilidade de sucesso varia com \\(n\\) de forma que \\(p_n = \\frac{\\lambda}{n}\\), para uma constante \\(\\lambda &gt; 0\\). Mostre que:\n\\[X_n \\stackrel{D}{\\longrightarrow} X,\\]\nem que \\(X \\sim \\text{Poisson}(\\lambda)\\).\nDicas:\n\nSe \\(Y \\sim \\text{Binomial}(n, p)\\), então \\(M_Y(t) = (1 - p + p e^t)^n\\).\nLembre-se: \\(\\lim_{n \\to \\infty} \\left(1 + \\frac{x}{n}\\right)^n = e^x\\)."
+    "text": "Exemplo 21.8\nSeja \\(X_n \\sim \\text{Binomial}(n, p_n)\\) uma sequência de variáveis aleatórias em que a probabilidade de sucesso varia com \\(n\\) de forma que \\(p_n = \\frac{\\lambda}{n}\\), para uma constante \\(\\lambda &gt; 0\\). Mostre que:\n\\[X_n \\stackrel{D}{\\longrightarrow} X,\\]\nem que \\(X \\sim \\text{Poisson}(\\lambda)\\).\nDicas:\n\nSe \\(X \\sim \\text{Poisson}(\\lambda)\\), então \\(M_X(t) = \\exp[\\lambda(e^t-1)]\\).\nSe \\(Y \\sim \\text{Binomial}(n, p)\\), então \\(M_Y(t) = (1 - p + p e^t)^n\\).\nLembre-se: \\(\\lim_{n \\to \\infty} \\left(1 + \\frac{x}{n}\\right)^n = e^x\\)."
   },
   {
     "objectID": "slides/21-Convergencia_de_variaveis_aleatorias/21-Convergencia_de_variaveis_aleatorias.html#proposições",
