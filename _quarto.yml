@@ -5,7 +5,7 @@ project:
 website:
   bread-crumbs: false
   page-navigation: true
-  title: "Probabliidade III"
+  title: "Probabilidade III"
   sidebar:
     style: "docked"
     collapse-level: 3
@@ -73,6 +73,10 @@ website:
             text: "20- Sequência de Eventos e Lema de Borel-Cantelli"
           - href: aulas/21-Convergencia_de_variaveis_aleatorias.qmd
             text: "21- Convergência de Variáveis Aleatórias"
+          - href: aulas/22-Lei_dos_grandes_numeros.qmd
+            text: "22- Lei dos Grandes Números"
+          - href: aulas/23-Teorema_central_do_limite.qmd
+            text: "23- Teorema Central do Limite"
       
       
 

@@ -1,0 +1,317 @@
+---
+title: "Teorema Central do Limite"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Por que precisamos do Teorema Central do Limite?
+
+- Na aula anterior vimos que, sob certas condições, $\overline{X}_n \longrightarrow \mu$.
+
+- Ou seja, à medida que o tamanho da amostra aumenta, a média amostral aproxima-se da média populacional.
+
+    - A Lei dos Grandes Números responde **para onde** a média amostral converge.
+
+- Mas ela não responde uma pergunta igualmente importante:
+
+    - **Quão distante a média amostral ainda está de $\mu$ quando $n$ é grande, mas finito?**
+
+
+
+## Motivação
+
+Uma pesquisa eleitoral entrevistou **2.000 eleitores**.
+
+A proporção observada de votos para um candidato foi $\widehat{p}=0{,}52$.
+
+Perguntas:
+
+- A verdadeira proporção da população é exatamente 52%?
+- Qual é o erro esperado dessa estimativa?
+- Quão provável seria observarmos 55% dos votos apenas por acaso?
+
+<br>
+
+- Responder perguntas desse tipo é o objetivo do **Teorema Central do Limite (TCL)**.
+
+
+
+## Lei dos Grandes Números vs. Teorema Central do Limite
+
+| Lei dos Grandes Números | Teorema Central do Limite |
+|:------------------------|:--------------------------|
+| Para onde a média converge? | Como a média oscila em torno da média populacional? |
+| Resultado assintótico | Distribuição assintótica |
+| Média amostral | Média amostral padronizada |
+|   |   |
+
+\vspace{0.3cm}
+
+- A **LGN** garante que a média converge para $\mu$.
+- O **TCL** descreve a distribuição do erro cometido ao utilizar a média amostral.
+
+
+
+## Ideia central do TCL
+
+- Quando utilizamos a média amostral para estimar a média populacional, o erro cometido é $\overline X_n-\mu$.
+- Pela Lei dos Grandes Números, $\overline X_n-\mu\longrightarrow0$.
+- Para termos dimensão desse erro, precisamos considerar com a sua variabilidade.
+- Como $Var(\overline{X}_n)=\frac{\sigma^2}{n}$, o desvio-padrão é $\frac{\sigma}{\sqrt n}$.
+
+    - Esse valor é conhecido como **erro-padrão da média**.
+
+
+
+## Ideia central do TCL
+
+- Assim,
+$$
+\frac{\overline X_n-\mu}{\sigma/\sqrt n} \quad \text{ou} \quad \frac{\sqrt n(\overline X_n-\mu)}{\sigma}
+$$
+mede quantos desvios-padrão a média observada está distante da média populacional.
+
+- Essa quantidade recebe o nome de **erro padronizado**.
+- Essa é exatamente a variável cuja distribuição é estudada pelo Teorema Central do Limite.
+
+
+
+## Teorema 23.1: Teorema Central do Limite para variáveis i.i.d
+
+Sejam $X_1,X_2,\ldots$ variáveis aleatórias independentes e identicamente distribuídas, com média finita $\mu$ e variância finita $\sigma^2>0$. Então,
+$$
+\frac{\overline X_n-\mu}
+{\sigma/\sqrt n}
+\stackrel{D}{\longrightarrow}
+N(0,1).
+$$
+
+
+
+## Forma equivalente
+
+Como $\overline X_n=\frac{S_n}{n}$, temos
+$$
+\frac{\overline X_n-\mu}{\sigma/\sqrt n}
+=
+\frac{S_n-n\mu}{\sigma\sqrt n}.
+$$
+
+Assim, o Teorema Central do Limite também pode ser escrito como
+$$
+\frac{S_n-n\mu}{\sigma\sqrt n}
+\stackrel D\longrightarrow
+N(0,1)
+$$
+
+
+
+## Interpretação
+
+O Teorema Central do Limite afirma que, para amostras suficientemente grandes, o erro padronizado
+$$
+\frac{\overline X_n-\mu}
+{\sigma/\sqrt n}
+$$
+possui aproximadamente distribuição $N(0,1)$.
+
+::: {.callout-note}
+Assim, probabilidades envolvendo a média amostral podem ser aproximadas utilizando a distribuição Normal padrão.
+
+Esse resultado explica por que a distribuição Normal desempenha um papel central na Inferência Estatística.
+
+:::
+
+
+
+## Exemplo 23.1
+
+Sejam $X_1,X_2,\ldots$ variáveis aleatórias independentes com distribuição de Bernoulli de parâmetro $p$. Determine a distribuição assintótica de
+$$
+S_n=X_1+\cdots+X_n.
+$$
+
+
+::: {.callout-tip}
+
+1. Identifique a distribuição de $S_n$.
+
+2. Calcule $E(X_i)$ e $Var(X_i)$.
+
+3. Aplique diretamente o Teorema Central do Limite.
+
+:::
+
+- Esse resultado é conhecido como **Teorema de De Moivre-Laplace**.
+
+
+
+## Aproximação Normal da Binomial
+
+- Quando $n$ é grande, $S_n\sim Binomial(n,p)$ é aproximadamente $N\!\left(np,\;np(1-p)\right)$.
+- Essa aproximação simplifica cálculos de probabilidades que seriam difíceis de obter diretamente pela distribuição Binomial.
+
+::: {.callout-important}
+
+Quanto maior o tamanho da amostra e quanto mais distante \(p\) estiver de 0 e 1, melhor tende a ser a aproximação.
+
+:::
+
+
+
+## Exemplo 23.2
+
+Sejam $X_1,\ldots,X_{100}$ variáveis independentes com distribuição $Bernoulli(0{,}4)$. Utilize o Teorema Central do Limite para obter um valor aproximado de
+$$
+P\!\left(\sum_{i=1}^{100}X_i=50\right).
+$$
+
+::: {.callout-tip}
+
+1. Identifique a distribuição de $S_{100}$.
+
+2. Determine sua média e variância.
+
+3. Utilize a aproximação Normal.
+
+4. Calcule $P(49{,}5<S_{100}<50{,}5)$ (correção de continuidade).
+
+:::
+
+
+
+## Observação
+
+Sempre que utilizarmos o TCL para aproximar uma distribuição discreta pela distribuição Normal, devemos utilizar a **correção de continuidade**. Por exemplo,
+
+| Probabilidade discreta | Aproximação Normal |
+|:----------------------|:-------------------|
+| $P(X=k)$ | $P(k-0,5<X<k+0,5)$ |
+| $P(X\le k)$ | $P(X<k+0,5)$ |
+| $P(X\ge k)$ | $P(X>k-0,5)$ |
+|  |  |
+
+Essa correção melhora significativamente a aproximação.
+
+
+
+## Exemplo 23.3
+
+Utilize o Teorema Central do Limite para verificar que
+$$
+\lim_{n\rightarrow\infty}
+e^{-n}
+\sum_{k=0}^{n}
+\frac{n^k}{k!}
+=
+\frac12.
+$$
+
+::: {.callout-tip}
+
+1. Observe que $e^{-n}\frac{n^k}{k!}$ é a função de probabilidade de uma variável Poisson$(n)$.
+
+2. Escreva a soma como $P(X\le n)$.
+
+3. Utilize o TCL para aproximar essa probabilidade.
+
+:::
+
+
+
+## 
+
+- Até agora estudamos $\overline{X}_n$.
+- Mas e se estivermos interessados em
+
+    - $\log(\overline{X}_n)$;
+    - $\sqrt{\overline{X}_n}$;
+    - $\overline{X}_n^2$.
+
+- O Teorema Central do Limite continua sendo suficiente? **Não**.
+- Nesses casos usamos o Método Delta.
+
+
+
+## Teorema 23.2: Método Delta
+
+Se
+$$
+\sqrt{n}(X_n-\mu) \stackrel D\longrightarrow N(0,\sigma^2),
+$$
+e $g$ é diferenciável em $\mu$, então
+$$
+\sqrt{n}\left[ g(X_n)-g(\mu) \right]
+\stackrel D\longrightarrow
+N\left(0, [g'(\mu)]^2\sigma^2\right).
+$$
+
+::: {.callout-note}
+
+Se $g'(\mu)=0$, interpretamos $N(0,0)$ como uma massa pontual em zero.
+
+:::
+
+
+
+## Exemplo 23.4
+
+Suponha que
+$$
+\sqrt n
+(\overline X_n-4)
+\stackrel D\longrightarrow
+N(0,9).
+$$
+
+Determine a distribuição assintótica de $\log(\overline X_n)$.
+
+::: {.callout-tip}
+
+1. Identifique $g(x)=\log(x)$.
+
+2. Calcule $g'(x)$.
+
+3. Aplique o Método Delta.
+
+:::
+
+
+
+## Exemplo 23.5
+
+Sejam
+$$
+Y_n 
+\stackrel D\longrightarrow
+N\left(\mu,\frac{\sigma^2}{n}\right).
+$$
+
+Determine a distribuição assintótica de $Y_n^2$.
+
+
+
+# Fim

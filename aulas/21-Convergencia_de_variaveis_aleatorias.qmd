@@ -34,7 +34,7 @@ Demonstração dos Teoremas e Lista de Exercícios:
 :::: {.grid}
 
 ::: {.g-col-12 .g-col-md-4}
-<a href="/PDFs/listas/demonstracao_proposicoes_e_teoremas_21.2_20.3.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+<a href="/PDFs/listas/demonstracao_proposicoes_e_teoremas_21.2_21.3.pdf" target="_blank" style="text-decoration: none; color: inherit;">
 ![](/PDFs/listas/demonstracao_proposicoes_e_teoremas_21.2_20.3.png){width=80%}<br>Demonstração dos teoremas
 </a>
 :::

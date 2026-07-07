@@ -1,0 +1,51 @@
+---
+title: "Conteúdo 22"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Lei dos Grandes Números
+
+Nesta aula estudamos a Lei dos Grandes Números (LGN). São apresentadas as versões forte e fraca da lei dos grandes números, destacando as diferentes formas de convergência envolvidas e as condições necessárias para sua aplicação. Também discutimos as leis de Kolmogorov, Borel, Khintchine e Bernoulli, estabelecendo suas relações e diferenças por meio de exemplos e aplicações.
+
+
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide22_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/22-Lei_dos_grandes_numeros.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide22_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Demonstração dos Teoremas e Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/demonstracao_teoremas_22.1_a_22.5.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/demonstracao_teoremas_22.1_a_22.5.png){width=80%}<br>Demonstração dos teoremas
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/Prob3_Lista22.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista22.png){width=80%}<br>Lista 22
+</a>
+:::
+
+::::
+
+

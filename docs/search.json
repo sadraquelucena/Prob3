@@ -2,7 +2,7 @@
   {
     "objectID": "info/dados_gerais.html",
     "href": "info/dados_gerais.html",
-    "title": "Probabliidade III",
+    "title": "Probabilidade III",
     "section": "",
     "text": "Componente curricular:\nESTAT0075 - Probabilidade III\nDisciplina obrigatória para o curso de Estatística da Universidade Federal de Sergipe",
     "crumbs": [
@@ -13,7 +13,7 @@
   {
     "objectID": "info/dados_gerais.html#dados-gerais-da-disciplina",
     "href": "info/dados_gerais.html#dados-gerais-da-disciplina",
-    "title": "Probabliidade III",
+    "title": "Probabilidade III",
     "section": "",
     "text": "Componente curricular:\nESTAT0075 - Probabilidade III\nDisciplina obrigatória para o curso de Estatística da Universidade Federal de Sergipe",
     "crumbs": [
@@ -24,7 +24,7 @@
   {
     "objectID": "info/dados_gerais.html#informações-da-disciplina",
     "href": "info/dados_gerais.html#informações-da-disciplina",
-    "title": "Probabliidade III",
+    "title": "Probabilidade III",
     "section": "Informações da Disciplina",
     "text": "Informações da Disciplina\n\nCarga Horária: 60 horas (4 créditos)\nUnidade Responsável: Departamento de Estatística e Ciências Atuariais (DECAT)\nDocente Responsável: Prof. Dr. Sadraque E. F. Lucena\nPlano de Ensino da Disciplina:\n\nPlano de Ensino 2026.1 | Calendário Acadêmico UFS 2026.1\n\n\nOs horários das aulas, datas das avaliações e cronograma de aulas encontram-se no plano de ensino da disciplina.",
     "crumbs": [
@@ -35,7 +35,7 @@
   {
     "objectID": "info/conteudo.html",
     "href": "info/conteudo.html",
-    "title": "Probabliidade III",
+    "title": "Probabilidade III",
     "section": "",
     "text": "Variáveis aleatórias \\(n\\)-dimensionais\n1.1. Variáveis aleatórias bidimensionais\n1.2. Distribuição Marginal\n1.3. Distribuição Condicional\n1.4. Esperança e Variância Condicional\n1.5. Independência de variáveis\n1.6. Distribuições multivariadas\nFunção de um vetor de variáveis aleatórias\n2.1. Método do Jacobiano\n2.2. Distribuições da soma e da diferença de variáveis\n2.3. Distribuição do quociente e do produto de variáveis\n2.4. Distribuição do Máximo e do Mínimo\nFunção Geradora de Momentos e Função Característica\n3.1. Função Geradora de Momentos\n3.2. Propriedade das FGM e aplicações\n3.3. Função Característica e aplicações\n3.4. Propriedades da Função Característica\nConvergência e Teorema do Limite Central\n4.1. Desigualdade de Chebychev\n4.2. Convergência de variáveis aleatórias\n4.3. Convergência em probabilidade e Convergência Quase certa\n4.4. Convergência em Distribuição\n4.5. Lei dos Grandes números\n4.6. Lei forte e Lei fraca\n4.7. Teorema Central do Limite",
     "crumbs": [
@@ -46,7 +46,7 @@
   {
     "objectID": "info/conteudo.html#conteúdo",
     "href": "info/conteudo.html#conteúdo",
-    "title": "Probabliidade III",
+    "title": "Probabilidade III",
     "section": "",
     "text": "Variáveis aleatórias \\(n\\)-dimensionais\n1.1. Variáveis aleatórias bidimensionais\n1.2. Distribuição Marginal\n1.3. Distribuição Condicional\n1.4. Esperança e Variância Condicional\n1.5. Independência de variáveis\n1.6. Distribuições multivariadas\nFunção de um vetor de variáveis aleatórias\n2.1. Método do Jacobiano\n2.2. Distribuições da soma e da diferença de variáveis\n2.3. Distribuição do quociente e do produto de variáveis\n2.4. Distribuição do Máximo e do Mínimo\nFunção Geradora de Momentos e Função Característica\n3.1. Função Geradora de Momentos\n3.2. Propriedade das FGM e aplicações\n3.3. Função Característica e aplicações\n3.4. Propriedades da Função Característica\nConvergência e Teorema do Limite Central\n4.1. Desigualdade de Chebychev\n4.2. Convergência de variáveis aleatórias\n4.3. Convergência em probabilidade e Convergência Quase certa\n4.4. Convergência em Distribuição\n4.5. Lei dos Grandes números\n4.6. Lei forte e Lei fraca\n4.7. Teorema Central do Limite",
     "crumbs": [
@@ -188,95 +188,333 @@
     "text": "Exemplo 20.9\nConsidere uma moeda não necessariamente honesta com probabilidade de cara igual a \\(p\\), onde \\(0 &lt; p &lt; 1\\). Se esta moeda for jogada um número infinito de vezes de maneira independente, qual a probabilidade de ocorrer cara um número infinito de vezes?"
   },
   {
-    "objectID": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#introdução",
-    "href": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#introdução",
-    "title": "Esperança Condicional",
+    "objectID": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#por-que-a-lei-dos-grandes-números-é-importante",
+    "href": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#por-que-a-lei-dos-grandes-números-é-importante",
+    "title": "Lei dos Grande Números",
+    "section": "Por que a Lei dos Grandes Números é importante?",
+    "text": "Por que a Lei dos Grandes Números é importante?\n\nComo pesquisas conseguem prever o resultado de eleições entrevistando apenas algumas milhares de pessoas?\nPor que um cassino consegue estimar seu lucro mensal antes mesmo de abrir as portas?\nComo sabemos que uma moeda equilibrada produz aproximadamente metade de caras quando lançada muitas vezes?\nTodos esses fenômenos têm algo em comum: à medida que repetimos um experimento muitas vezes, o comportamento observado torna-se previsível. A Lei dos Grandes Números formaliza essa ideia."
+  },
+  {
+    "objectID": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#exemplo",
+    "href": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#exemplo",
+    "title": "Lei dos Grande Números",
+    "section": "Exemplo",
+    "text": "Exemplo\nConsidere uma moeda equilibrada: \\(P(\\text{Cara})=P(\\text{Coroa})=\\frac12.\\)\nSuponha que realizamos sucessivos lançamentos:\n\n\n\n\n\nLançamentos\nFrequência de caras\n\n\n\n\n10\n0,70\n\n\n20\n0,55\n\n\n100\n0,51\n\n\n1000\n0,498\n\n\n\n\n\n\n\n\n\n\nÀ medida que aumentamos o número de lançamentos, a frequência relativa de caras aproxima-se da probabilidade teórica: \\[\nf_A \\longrightarrow P(A).\n\\]\n\n\nA Lei dos Grandes Números formaliza exatamente esse comportamento.."
+  },
+  {
+    "objectID": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#ideia-central",
+    "href": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#ideia-central",
+    "title": "Lei dos Grande Números",
+    "section": "Ideia Central",
+    "text": "Ideia Central\n\nToda a Lei dos Grandes Números gira em torno do comportamento da média amostral \\[\n\\overline{X}_n = \\frac{X_1+\\cdots+X_n}{n} = \\frac{S_n}{n}\n\\] quando \\(n\\) cresce.\nIdeia: Quanto maior o tamanho da amostra, mais próxima a média amostral fica da média populacional.\nHá duas versões principais:\n\nLei Forte: Utiliza convergência quase certa \\(\\left(\\overline{X}_n \\stackrel{qc}{\\longrightarrow}\\mu\\right)\\).\nLei Fraca: Utiliza converg. em probabilidade \\(\\left( \\overline{X}_n \\stackrel{P}{\\longrightarrow}\\mu \\right)\\)."
+  },
+  {
+    "objectID": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#teorema-22.1-primeira-lei-forte-dos-grandes-números-de-kolmogorov",
+    "href": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#teorema-22.1-primeira-lei-forte-dos-grandes-números-de-kolmogorov",
+    "title": "Lei dos Grande Números",
+    "section": "Teorema 22.1: Primeira Lei Forte dos Grandes Números de Kolmogorov",
+    "text": "Teorema 22.1: Primeira Lei Forte dos Grandes Números de Kolmogorov\nSeja \\(X_1,X_2,\\ldots\\) uma sequência de variáveis aleatórias independentes com esperança finita e \\(\\sum\\limits_{n=1}^{\\infty}\n\\frac{\\operatorname{Var}(X_n)}{n^2}&lt;\\infty.\\) Se \\(S_n=X_1+\\cdots+X_n\\), então\n\\[\n\\frac{S_n}{n}\n-\n\\frac{E(S_n)}{n}\n\\stackrel{qc}{\\longrightarrow}\n0.\n\\]\n\n\n\n\n\n\nNota\n\n\n\nObserve que esse resultado afirma que a média observada aproxima-se da média esperada quando o tamanho da amostra cresce.\nEssa versão da Lei Forte é bastante geral e permite que as variáveis tenham distribuições diferentes, desde que satisfaçam uma condição sobre suas variâncias."
+  },
+  {
+    "objectID": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#exemplo-22.1",
+    "href": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#exemplo-22.1",
+    "title": "Lei dos Grande Números",
+    "section": "Exemplo 22.1",
+    "text": "Exemplo 22.1\nConsidere a sequência de variáveis aleatórias independentes \\[\nX_n\\sim N\\left(0, \\frac{1}{n}\\right),\\qquad n=1,2,\\ldots\n\\]\nA Primeira Lei Forte é aplicável? Justifique.\n\n\n\n\n\n\nDica\n\n\n\nDetermine \\(E(X_n)\\).\nDetermine \\(Var(X_n)\\).\nVerifique \\(\\sum\\frac{Var(X_n)}{n^2}\\)."
+  },
+  {
+    "objectID": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#exemplo-22.2",
+    "href": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#exemplo-22.2",
+    "title": "Lei dos Grande Números",
+    "section": "Exemplo 22.2",
+    "text": "Exemplo 22.2\nSeja \\(\\{X_n,n\\ge1\\}\\) uma sequência de variáveis aleatórias independentes com \\[\nP(X_n=n)=\\frac1{n^2} \\quad \\text{e} \\quad P(X_n=0)=1-\\frac1{n^2}.\n\\] Verifique se vale a Primeira Lei Forte dos Grandes Números de Kolmogorov."
+  },
+  {
+    "objectID": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#teorema-22.2-lei-forte-dos-grandes-números-de-kolmogorov",
+    "href": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#teorema-22.2-lei-forte-dos-grandes-números-de-kolmogorov",
+    "title": "Lei dos Grande Números",
+    "section": "Teorema 22.2: Lei Forte dos Grandes Números de Kolmogorov",
+    "text": "Teorema 22.2: Lei Forte dos Grandes Números de Kolmogorov\nSejam \\(X_1,X_2,\\ldots\\) variáveis aleatórias independentes e identicamente distribuídas (i.i.d.) com \\(E(X_i)=\\mu\\). Então, \\[\n\\frac{S_n}{n}\n\\stackrel{qc}{\\longrightarrow}\n\\mu.\n\\]\n\n\n\n\n\n\nImportante\n\n\nQuando as variáveis são i.i.d., basta que exista a média finita.\nNão precisamos mais verificar a condição\n\\[\n\\sum\\frac{Var(X_n)}{n^2}&lt;\\infty.\n\\]"
+  },
+  {
+    "objectID": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#comparação-entre-as-leis-fortes-dos-grandes-números-de-kolmogorov",
+    "href": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#comparação-entre-as-leis-fortes-dos-grandes-números-de-kolmogorov",
+    "title": "Lei dos Grande Números",
+    "section": "Comparação entre as Leis Fortes dos Grandes Números de Kolmogorov",
+    "text": "Comparação entre as Leis Fortes dos Grandes Números de Kolmogorov\n\n\n\nPrimeira Lei Forte\nLei Forte i.i.d.\n\n\n\n\n✔ independência\n✔ independência\n\n\n✔ esperança finita\n✔ esperança finita\n\n\n✔ distribuições podem ser diferentes\n✔ mesma distribuição\n\n\n✔ verificar \\(\\sum Var(X_n)/n^2\\)\n✘ não precisa verificar a série"
+  },
+  {
+    "objectID": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#exemplo-22.3",
+    "href": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#exemplo-22.3",
+    "title": "Lei dos Grande Números",
+    "section": "Exemplo 22.3",
+    "text": "Exemplo 22.3\nSeja \\(X_n\\sim N(20,9)\\), i.i.d. Utilize a Lei Forte para determinar o limite de \\(\\frac{S_n}{n}\\)."
+  },
+  {
+    "objectID": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#exemplo-22.4",
+    "href": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#exemplo-22.4",
+    "title": "Lei dos Grande Números",
+    "section": "Exemplo 22.4",
+    "text": "Exemplo 22.4\nSeja \\(\\{X_n, n \\geq 1\\}\\) uma sequência de variáveis aleatórias contínuas independentes com densidade \\(f(x) = e^{−(x+a)}\\), \\(x \\geq a\\), para uma constante \\(a &gt; 0\\). Verifique se a Lei Forte dos Grandes Números de Kolmogorov é aplicável e determine o limite."
+  },
+  {
+    "objectID": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#teorema-22.3-lei-forte-dos-grandes-números-de-borel",
+    "href": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#teorema-22.3-lei-forte-dos-grandes-números-de-borel",
+    "title": "Lei dos Grande Números",
+    "section": "Teorema 22.3: Lei Forte dos Grandes Números de Borel",
+    "text": "Teorema 22.3: Lei Forte dos Grandes Números de Borel\nConsidere \\(X_n\\sim Bernoulli(p)\\), i.i.d. Então, \\[\n\\frac{S_n}{n} = \\frac{X_1+\\cdots+X_n}{n}\n\\stackrel{qc}{\\longrightarrow}\np.\n\\]\n\n\n\n\n\n\nNota\n\n\nEste resultado é um caso particular da Lei Forte de Kolmogorov."
+  },
+  {
+    "objectID": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#exemplo-22.5",
+    "href": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#exemplo-22.5",
+    "title": "Lei dos Grande Números",
+    "section": "Exemplo 22.5",
+    "text": "Exemplo 22.5\nUma moeda possui \\(P(\\text{cara})=0{,}60\\). Após muitos lançamentos, qual será o comportamento da frequência relativa de caras?"
+  },
+  {
+    "objectID": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#teorema-22.4-lei-fraca-dos-grandes-números-de-khintchine",
+    "href": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#teorema-22.4-lei-fraca-dos-grandes-números-de-khintchine",
+    "title": "Lei dos Grande Números",
+    "section": "Teorema 22.4: Lei Fraca dos Grandes Números de Khintchine",
+    "text": "Teorema 22.4: Lei Fraca dos Grandes Números de Khintchine\nSejam \\(X_1,X_2,\\ldots\\) variáveis aleatórias i.i.d. com \\(E(X_i)=\\mu\\). Então, \\[\n\\frac{S_n}{n}\n\\stackrel{P}{\\longrightarrow}\n\\mu.\n\\]\n\n\n\n\n\n\nNota\n\n\nA Lei Forte implica a Lei Fraca.\nA única diferença está no tipo de convergência."
+  },
+  {
+    "objectID": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#lei-forte-vs.-fraca",
+    "href": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#lei-forte-vs.-fraca",
+    "title": "Lei dos Grande Números",
+    "section": "Lei Forte vs. Fraca",
+    "text": "Lei Forte vs. Fraca\n\n\n\n\n\n\n\nLei Forte\nLei Fraca\n\n\n\n\n\\(\\bullet\\) quase certamente\n\\(\\bullet\\) em probabilidade\n\n\n\\(\\bullet\\) resultado mais forte\n\\(\\bullet\\) resultado mais fraco\n\n\n\\(\\bullet\\) implica a fraca\n\\(\\bullet\\) não necessariamente o contrário\n\n\n\n\n\n\n\n\n\n\n\n\n\nImportante\n\n\nAmbas afirmam que a média amostral aproxima-se da média populacional.\nA diferença está apenas no tipo de convergência."
+  },
+  {
+    "objectID": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#exemplo-22.6",
+    "href": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#exemplo-22.6",
+    "title": "Lei dos Grande Números",
+    "section": "Exemplo 22.6",
+    "text": "Exemplo 22.6\nSeja \\(X_n\\sim\\chi^2_{10}\\), i.i.d. Verifique a Lei Fraca."
+  },
+  {
+    "objectID": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#teorema-22.5-lei-fraca-dos-grandes-números-de-bernoulli",
+    "href": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#teorema-22.5-lei-fraca-dos-grandes-números-de-bernoulli",
+    "title": "Lei dos Grande Números",
+    "section": "Teorema 22.5: Lei Fraca dos Grandes Números de Bernoulli",
+    "text": "Teorema 22.5: Lei Fraca dos Grandes Números de Bernoulli\nConsidere ensaios de Bernoulli independentes com \\(P(\\text{sucesso})=p\\). Então, \\[\n\\frac{S_n}{n}\n\\stackrel{P}{\\longrightarrow}\np.\n\\]\n\n\n\n\n\n\nNota\n\n\nEste é um caso particular da Lei Fraca de Khintchine."
+  },
+  {
+    "objectID": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#exemplo-22.7",
+    "href": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#exemplo-22.7",
+    "title": "Lei dos Grande Números",
+    "section": "Exemplo 22.7",
+    "text": "Exemplo 22.7\nUma fábrica produz peças. A probabilidade de uma peça apresentar defeito é \\(p=0{,}02\\). O que acontece com a proporção de peças defeituosas produzidas?"
+  },
+  {
+    "objectID": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#section",
+    "href": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#section",
+    "title": "Lei dos Grande Números",
+    "section": "",
+    "text": "Resultado\nHipóteses\nConclusão\n\n\n\n\nPrimeira Lei Forte de Kolmogorov\nInd. + condição sobre variâncias\n\\(\\frac{S_n-E(S_n)}{n}\\xrightarrow{qc}0\\)\n\n\nLei Forte de Kolmogorov (i.i.d.)\ni.i.d. + média finita\n\\(\\overline{X}_n\\xrightarrow{qc}\\mu\\)\n\n\nLei de Borel\nBernoulli\n\\(\\frac{S_n}{n}\\xrightarrow{qc}p\\)\n\n\nLei Fraca de Khintchine\ni.i.d. + média finita\n\\(\\overline{X}_n\\xrightarrow{P}\\mu\\)\n\n\nLei Fraca de Bernoulli\nBernoulli\n\\(\\frac{S_n}{n}\\xrightarrow{P}p\\)"
+  },
+  {
+    "objectID": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#quando-utilizar-cada-resultado",
+    "href": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#quando-utilizar-cada-resultado",
+    "title": "Lei dos Grande Números",
+    "section": "Quando utilizar cada resultado?",
+    "text": "Quando utilizar cada resultado?\n\n\n\n\n\n\n\nObjetivo\nLei\n\n\n\n\nMédia amostral qualquer i.i.d.\nKolmogorov\n\n\nFrequência relativa\nBorel/Bernoulli\n\n\nVariáveis independentes com distribuições diferentes\nPrimeira Lei Forte"
+  },
+  {
+    "objectID": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#conclusões",
+    "href": "slides/22-Lei_dos_grandes_numeros/22-Lei_dos_grandes_numeros.html#conclusões",
+    "title": "Lei dos Grande Números",
+    "section": "Conclusões",
+    "text": "Conclusões\n\nA média amostral aproxima-se da média populacional.\nA Lei Forte garante convergência quase certa.\nA Lei Fraca garante convergência em probabilidade.\nAs leis de Borel e Bernoulli são casos particulares das versões gerais.\nEsses resultados fundamentam grande parte da Inferência Estatística."
+  },
+  {
+    "objectID": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#introdução",
+    "href": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#introdução",
+    "title": "O Método do Jacobiano",
     "section": "Introdução",
-    "text": "Introdução\nComo fica o valor esperado de uma variável \\(X\\) se tivermos acesso a uma nova informação sobre a ocorrência de uma variável \\(Y\\)?\nNa Prática:\n\nQual é o tempo esperado para um cliente ser atendido? (Esperança clássica).\nQual é o tempo esperado para um cliente ser atendido, sabendo que já há 5 pessoas na fila? (Esperança Condicional).\nA lógica é simples: calculamos uma esperança comum, mas o nosso espaço amostral foi “reduzido” para conter apenas os cenários onde a informação \\(Y=y\\) é verdadeira."
+    "text": "Introdução\nJá vimos como encontrar a densidade de operações simples (como soma e diferença). Mas e se precisarmos transformar múltiplas variáveis ao mesmo tempo?\n\nSeja \\(\\underset{\\widetilde{\\phantom{X}}}{X} = (X_1, \\dots, X_n)\\) um vetor aleatório conhecido.\nQueremos encontrar a densidade de um novo vetor \\(\\underset{\\widetilde{\\phantom{Y}}}{Y} = (Y_1, \\dots, Y_m)\\), gerado por um sistema de funções \\(Y_i = g_i(\\underset{\\widetilde{\\phantom{X}}}{X})\\).\nO Método direto torna-se extremamente complexo em múltiplas dimensões.\nA solução é o Método do Jacobiano."
   },
   {
-    "objectID": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#definições-o-caso-discreto-e-contínuo",
-    "href": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#definições-o-caso-discreto-e-contínuo",
-    "title": "Esperança Condicional",
-    "section": "Definições: O Caso Discreto e Contínuo",
-    "text": "Definições: O Caso Discreto e Contínuo\n1. Caso Discreto:\nSe \\(P(Y=y) &gt; 0\\), o valor esperado de \\(X\\) dado \\(Y=y\\) é: \\[E(X|Y=y) = \\sum_{x} x \\cdot P(X=x|Y=y)\\] Onde \\(P(X=x|Y=y) = \\frac{P(X=x, Y=y)}{P(Y=y)}\\).\n2. Caso Contínuo:\nSe \\(f_Y(y) &gt; 0\\), a esperança condicional é a integral: \\[E(X|Y=y) = \\int_{-\\infty}^{\\infty} x \\cdot f_{X|Y}(x|y)\\, dx\\] Onde \\(f_{X|Y}(x|y) = \\frac{f_{X,Y}(x,y)}{f_Y(y)}\\)."
+    "objectID": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#o-método-em-4-passos",
+    "href": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#o-método-em-4-passos",
+    "title": "O Método do Jacobiano",
+    "section": "O Método em 4 Passos",
+    "text": "O Método em 4 Passos\nPara aplicar o Método do Jacobiano sem erro, siga esta lógica:\n\nExpresse as variáveis antigas (\\(X\\)) em função das novas (\\(Y\\)). Ou seja, encontre \\(\\underset{\\widetilde{\\phantom{x}}}{x} = h(\\underset{\\widetilde{\\phantom{y}}}{y})\\).\nCalcule a matriz de derivadas parciais de \\(h(\\underset{\\widetilde{\\phantom{x}}}{x})\\) em relação a \\(Y\\) e obtenha o módulo do seu determinante \\(|J|\\).\nPegue a densidade original \\(f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{x}}}{x})\\) e troque todos os “\\(x\\)” pelas suas respectivas funções de \\(y\\). Multiplique o resultado por \\(|J|\\).\nSubstitua as funções de \\(y\\) nas restrições originais de \\(x\\) para descobrir o domínio válido do novo vetor \\(\\underset{\\widetilde{\\phantom{Y}}}{Y}\\)."
   },
   {
-    "objectID": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#propriedades-da-esperança-condicional",
-    "href": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#propriedades-da-esperança-condicional",
-    "title": "Esperança Condicional",
-    "section": "Propriedades da Esperança Condicional",
-    "text": "Propriedades da Esperança Condicional\n\nEsperança de uma Função: \\[E[g(X)|Y=y] = \\int_{-\\infty}^{\\infty} g(x) \\cdot f_{X|Y}(x|y)\\, dx\\] (Substitua a integral por somatório no caso discreto).\nLinearidade: A esperança da soma continua sendo a soma das esperanças: \\[E\\left(\\sum_{i=1}^n X_i \\Big| Y=y\\right) = \\sum_{i=1}^n E(X_i|Y=y)\\]"
+    "objectID": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#o-jacobiano-e-a-fórmula-geral",
+    "href": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#o-jacobiano-e-a-fórmula-geral",
+    "title": "O Método do Jacobiano",
+    "section": "O Jacobiano e a Fórmula Geral",
+    "text": "O Jacobiano e a Fórmula Geral\nA matriz Jacobiana da transformação inversa (\\(x\\) em função de \\(y\\)) é dada por:\n\\[\nJ = \\det \\begin{bmatrix}\n\\frac{\\partial x_1}{\\partial y_1} & \\cdots & \\frac{\\partial x_1}{\\partial y_n} \\\\\n\\vdots & \\ddots & \\vdots \\\\\n\\frac{\\partial x_n}{\\partial y_1} & \\cdots & \\frac{\\partial x_n}{\\partial y_n}\n\\end{bmatrix}\n\\]\nA densidade conjunta do novo vetor \\(\\underset{\\widetilde{\\phantom{Y}}}{Y}\\) é: \\[f_{\\underset{\\widetilde{\\phantom{Y}}}{Y}}(\\underset{\\widetilde{\\phantom{y}}}{y}) = f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(h(\\underset{\\widetilde{\\phantom{y}}}{y})) \\cdot |J|\\]"
   },
   {
-    "objectID": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#exemplo-6.1",
-    "href": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#exemplo-6.1",
-    "title": "Esperança Condicional",
-    "section": "Exemplo 6.1",
-    "text": "Exemplo 6.1\nSeja a densidade conjunta \\(f_{X,Y}(x,y) = \\frac{e^{-x/y}e^{-y}}{y}\\), para \\(x&gt;0\\) e \\(y&gt;0\\). Calcule \\(E(X|Y=y)\\)."
+    "objectID": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#o-jacobiano-e-a-fórmula-geral-1",
+    "href": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#o-jacobiano-e-a-fórmula-geral-1",
+    "title": "O Método do Jacobiano",
+    "section": "O Jacobiano e a Fórmula Geral",
+    "text": "O Jacobiano e a Fórmula Geral\n\nNa literatura, pode-se encontrar o Jacobiano calculado das funções originais \\(g(x)\\).\nNesse caso, a fórmula utiliza \\(|J|^{-1}\\). Calcular pela inversa costuma ser mais direto."
   },
   {
-    "objectID": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#teorema-6.1-esperança-total",
-    "href": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#teorema-6.1-esperança-total",
-    "title": "Esperança Condicional",
-    "section": "Teorema 6.1: Esperança Total",
-    "text": "Teorema 6.1: Esperança Total\n\nA partir da esperança condicional \\(E(X|Y)\\), podemos obter a esperança de \\(X\\) fazendo uma média ponderada sobre todos os valores possíveis de \\(Y\\).\n\nTeorema: \\[E(X) = E[E(X|Y)]\\]\n\nInterpretação: Calculamos a média de \\(X\\) em cada cenário (\\(Y\\)) e depois agregamos pelos pesos de \\(Y\\).\nCaso discreto: \\(E(X) = \\sum_y E(X|Y=y) P(Y=y)\\)\nCaso contínuo: \\(E(X) = \\int_{-\\infty}^{\\infty} E(X|Y=y) f_Y(y)\\, dy\\)"
+    "objectID": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#condições-e-casos-especiais",
+    "href": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#condições-e-casos-especiais",
+    "title": "O Método do Jacobiano",
+    "section": "Condições e Casos Especiais",
+    "text": "Condições e Casos Especiais\nO método exige que a função seja bijetora (um-para-um) e que as dimensões sejam iguais (\\(m = n\\)). E se não forem?\n1. A função não é bijetora (Ex: \\(Y = X^2\\)):\n\nParticionamos o domínio original em pedaços onde a função não se repete (ex: \\(x&lt;0\\) e \\(x&gt;0\\)).\nAplicamos os 4 passos para cada pedaço separadamente.\nA densidade final será a soma dos resultados."
   },
   {
-    "objectID": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#exemplo-6.2",
-    "href": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#exemplo-6.2",
-    "title": "Esperança Condicional",
-    "section": "Exemplo 6.2",
-    "text": "Exemplo 6.2\nUm ponto \\(Y\\) é escolhido de acordo com uma Uniforme em \\([0, 1]\\). A seguir, um ponto \\(X\\) é escolhido segundo uma Uniforme no intervalo \\([0, Y]\\). Obtenha a esperança de \\(X\\)."
+    "objectID": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#condições-e-casos-especiais-1",
+    "href": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#condições-e-casos-especiais-1",
+    "title": "O Método do Jacobiano",
+    "section": "Condições e Casos Especiais",
+    "text": "Condições e Casos Especiais\n2. As dimensões são diferentes (Ex: \\(\\dim(Y) &lt; \\dim(X)\\)):\n\nCriamos “variáveis artificiais” fáceis (Ex: \\(Y_2 = X_2\\)) para igualar as dimensões.\nAplicamos o método normalmente para achar a conjunta.\nNo fim, calculamos a distribuição marginal, “integrando fora” a variável artificial!"
   },
   {
-    "objectID": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#exemplo-6.3",
-    "href": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#exemplo-6.3",
-    "title": "Esperança Condicional",
-    "section": "Exemplo 6.3",
-    "text": "Exemplo 6.3\nUm minerador está preso. Ele escolhe aleatoriamente entre 3 portas(1/3 de chance cada):\n\nPorta 1: Leva à saída após 3h.\nPorta 2: Retorna à mina após 5h.\nPorta 3: Retorna à mina após 7h.\n\nQual o tempo esperado para ele sair?"
+    "objectID": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#exemplo-12.1",
+    "href": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#exemplo-12.1",
+    "title": "O Método do Jacobiano",
+    "section": "Exemplo 12.1",
+    "text": "Exemplo 12.1\nSeja \\(\\underset{\\widetilde{\\phantom{X}}}{X}\\) com densidade \\(f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{x}}}{x}) = \\lambda^3 e^{-\\lambda(x_1+x_2+x_3)}\\), para \\(x_i &gt; 0\\). Determine a densidade de \\(\\underset{\\widetilde{\\phantom{Y}}}{Y}\\) tal que \\(Y_1 = X_1\\), \\(Y_2 = X_1+X_2\\), \\(Y_3 = X_1+X_2+X_3\\)."
   },
   {
-    "objectID": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#exemplo-6.4",
-    "href": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#exemplo-6.4",
-    "title": "Esperança Condicional",
-    "section": "Exemplo 6.4",
-    "text": "Exemplo 6.4\nSe \\(X \\sim B(n,p)\\) e \\(Y \\sim B(n,p)\\) são independentes, calcule a esperança condicional \\(E(X | X+Y=m)\\). (Dica: A soma de duas binomiais independentes com mesmo p é \\(X+Y \\sim B(2n, p)\\))."
+    "objectID": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#exemplo-12.2",
+    "href": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#exemplo-12.2",
+    "title": "O Método do Jacobiano",
+    "section": "Exemplo 12.2",
+    "text": "Exemplo 12.2\nConsidere \\(\\underset{\\widetilde{\\phantom{X}}}{X}\\) com densidade \\[f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{x}}}{x}) = 4x_1x_2, \\qquad 0 &lt; x_1 &lt; 1, 0 &lt; x_2 &lt; 1.\\] Obtenha a densidade conjunta de \\(Y_1 = X_1/X_2\\) e \\(Y_2 = X_1X_2\\)."
   },
   {
-    "objectID": "slides/13-Momentos/13-Momentos.html#introdução",
-    "href": "slides/13-Momentos/13-Momentos.html#introdução",
-    "title": "Momentos",
-    "section": "Introdução",
-    "text": "Introdução\n\nAlgumas caracterı́sticas importantes das variáveis aleatórias são obtidas por meio da esperança, da variância e da correlação, por exemplo.\nDuas ferramentas bastante úteis em Probabilidade e Estatı́stica são a função geradora de momentos e a função caracterı́stica. A ideia básica do uso dessas funções é, através de transformação, facilitar alguns cálculos. Dessa forma, muitos teoremas importantes em Estatı́stica são provados com o auxı́lio dessas funções.\nVamos iniciar estudando os momentos de variáveis aleatórias."
+    "objectID": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#exemplo-12.3",
+    "href": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#exemplo-12.3",
+    "title": "O Método do Jacobiano",
+    "section": "Exemplo 12.3",
+    "text": "Exemplo 12.3\nSejam \\(X_1, X_2, X_3\\) independentes com densidade \\(N(0,1)\\). Obtenha a densidade conjunta de \\(Y_1 = X_1+X_2\\), \\(Y_2 = X_1-X_2\\), \\(Y_3 = X_1-X_3\\)."
   },
   {
-    "objectID": "slides/13-Momentos/13-Momentos.html#momentos-de-variáveis-aleatórias",
-    "href": "slides/13-Momentos/13-Momentos.html#momentos-de-variáveis-aleatórias",
-    "title": "Momentos",
-    "section": "Momentos de Variáveis Aleatórias",
-    "text": "Momentos de Variáveis Aleatórias\n\nPara \\(k = 1, 2, \\ldots\\), o momento de ordem \\(k\\) da variável \\(X\\) é definido como \\(E(X^k)\\), se a esperança existir.\nPara o caso discreto, temos que \\[E(X^k) = \\sum\\limits_{i=1}^\\infty x_i^k P(X=x_i).\\]\nPara o caso contínuo, temos que \\[E(X^k) = \\int\\limits_{-\\infty}^\\infty x^k f(x) dx.\\]"
+    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#motivação",
+    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#motivação",
+    "title": "Desigualdades em Probabilidade",
+    "section": "Motivação",
+    "text": "Motivação\nAs desigualdades que veremos serão fundamentais para:\n\nConvergência em probabilidade;\nLei dos Grandes Números;\nTeorema Central do Limite;\nInferência Estatística."
   },
   {
-    "objectID": "slides/13-Momentos/13-Momentos.html#momentos-de-variáveis-aleatórias-1",
-    "href": "slides/13-Momentos/13-Momentos.html#momentos-de-variáveis-aleatórias-1",
-    "title": "Momentos",
-    "section": "Momentos de Variáveis Aleatórias",
-    "text": "Momentos de Variáveis Aleatórias\n\nSe \\(E(X) = \\mu &lt; \\infty\\), definimos o momento central de ordem \\(k\\) por \\(\\mu_k = E[(X-\\mu)^k]\\), sempre que essa quantidade existir.\nDe modo similar, o momento absoluto de ordem \\(k\\) da variável aleatória \\(X\\) é definido por \\(E(|X_k|)\\)."
+    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#desigualdades-de-chebyshev",
+    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#desigualdades-de-chebyshev",
+    "title": "Desigualdades em Probabilidade",
+    "section": "Desigualdades de Chebyshev",
+    "text": "Desigualdades de Chebyshev\n\nAs desigualdades de Chebyshev permitem obter limites para probabilidades sem assumir uma distribuição específica.\nVantagens:\n\nGrande generalidade.\nDependem apenas de momentos.\nAplicam-se a uma ampla classe de distribuições.\nSão fundamentais na demonstração da Lei dos Grandes Números."
   },
   {
-    "objectID": "slides/13-Momentos/13-Momentos.html#momentos-de-variáveis-aleatórias-2",
-    "href": "slides/13-Momentos/13-Momentos.html#momentos-de-variáveis-aleatórias-2",
-    "title": "Momentos",
-    "section": "Momentos de Variáveis Aleatórias",
-    "text": "Momentos de Variáveis Aleatórias\n\nObs.1: Note que o momento de ordem 1 (isto é, \\(k = 1\\)) é a esperança;\nObs.2: A variância é o momento central de ordem 2;\nObs.3: A variância também pode ser obtida como a diferença entre o momento de ordem 2 e o quadrado do momento de ordem 1;\nObs.4: A existência dos momentos está relacionada a existência da integral. Isto é, o valor infinito pode ocorrer, mas operações tipo \\(\\infty - \\infty\\) são indeterminadas e levam à inexistência do momento."
+    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#teorema-19.1-desigualdade-básica-de-chebyshev",
+    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#teorema-19.1-desigualdade-básica-de-chebyshev",
+    "title": "Desigualdades em Probabilidade",
+    "section": "Teorema 19.1: Desigualdade Básica de Chebyshev",
+    "text": "Teorema 19.1: Desigualdade Básica de Chebyshev\nSeja \\(X\\) uma variável aleatória não negativa. Para qualquer e \\(a &gt; 0\\), \\[\n  P(X\\geq a) \\leq \\frac{E(X)}{a}.\n\\]\n\nInterpretação: Se a média é pequena, então valores muito grandes não podem ocorrer com probabilidade elevada."
   },
   {
-    "objectID": "slides/13-Momentos/13-Momentos.html#exemplo-13.1",
-    "href": "slides/13-Momentos/13-Momentos.html#exemplo-13.1",
-    "title": "Momentos",
-    "section": "Exemplo 13.1",
-    "text": "Exemplo 13.1\nSeja \\(X\\sim U[a, b]\\).\n\nDetermine o momento de ordem \\(k\\).\nObtenha o momento centrado em \\(E(X)\\) de ordem \\(k\\).\nA partir dos momentos calculados, obtenha a esperança e a variância de \\(X\\)."
+    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo",
+    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo",
+    "title": "Desigualdades em Probabilidade",
+    "section": "Exemplo",
+    "text": "Exemplo\nSe \\[E(X)=30\\], então \\[P(X\\geq 90)\\leq \\frac{30}{90}=0,333.\\]\n\nA desigualdade básica de Chebyshev não fornece o valor exato.\nEla fornece um teto máximo para a probabilidade."
+  },
+  {
+    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.1",
+    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.1",
+    "title": "Desigualdades em Probabilidade",
+    "section": "Exemplo 19.1",
+    "text": "Exemplo 19.1\nUma empresa possui um sistema de acesso à internet utilizado por seus 100 funcionários. Seja \\(X\\) o número de usuários conectados simultaneamente em um instante escolhido ao acaso durante o expediente. Com base em dados históricos, sabe-se apenas que \\(E(X)=30\\). A direção da empresa está preocupada com possíveis picos de utilização da rede e deseja avaliar a necessidade de ampliar a infraestrutura disponível. Use a desigualdade de Chebyshev para calcular a probabilidade máxima de haver pelo menos 30, 40, 50, 60, 70, 80 e 90 usuários simultâneos."
+  },
+  {
+    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#teorema-19.2-desigualdade-clássica-de-chebyshev",
+    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#teorema-19.2-desigualdade-clássica-de-chebyshev",
+    "title": "Desigualdades em Probabilidade",
+    "section": "Teorema 19.2: Desigualdade Clássica de Chebyshev",
+    "text": "Teorema 19.2: Desigualdade Clássica de Chebyshev\n\nA desigualdade clássica de Chebyshev apresenta limite para a probabilidade em função da variância.\nSeja \\(X\\) uma v.a. com média \\(\\mu\\) e \\(Var(X) &lt; \\infty\\). Então, para qualquer \\(t &gt; 0\\), temos \\[\nP(|X-\\mu|\\geq t) \\leq \\frac{Var(X)}{t^2}.\n\\]\nInterpretação:\n\nEssa desigualdade controla o afastamento da média.\nQuanto menor a variância, mais concentrada a distribuição e menor a probabilidade de observações extremas."
+  },
+  {
+    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.2",
+    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.2",
+    "title": "Desigualdades em Probabilidade",
+    "section": "Exemplo 19.2",
+    "text": "Exemplo 19.2\nSejam \\(E(X) = \\mu\\) e \\(Var(X) = \\sigma^2\\). Use a desigualdade clássica de Chebyshev e determine um limite para\n\n\\(P(|X - \\mu| ⩾ 2\\sigma)\\)\n\\(P(|X - \\mu| &lt; 2\\sigma)\\)"
+  },
+  {
+    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.3",
+    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.3",
+    "title": "Desigualdades em Probabilidade",
+    "section": "Exemplo 19.3",
+    "text": "Exemplo 19.3\n\nObtenha o limite da desigualdade \\(P(|X − \\mu| \\geq 32 \\sigma)\\).\nAdmita que \\(X\\) é uniformemente distribuída sobre \\(\\left( 1-\\frac{1}{\\sqrt{3}}, 1+\\frac{1}{\\sqrt{3}} \\right)\\) e calcule o limite em (a)."
+  },
+  {
+    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#teorema-19.3-desigualdade-de-markov",
+    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#teorema-19.3-desigualdade-de-markov",
+    "title": "Desigualdades em Probabilidade",
+    "section": "Teorema 19.3: Desigualdade de Markov",
+    "text": "Teorema 19.3: Desigualdade de Markov\n\nA desigualdade de Markov utiliza momentos de ordem \\(k\\).\nSeja \\(X\\) uma variável aleatória. Então, para quaisquer \\(t&gt;0\\) e para \\(k&gt;0\\) temos: \\[\nP(|X| \\geq t) \\leq \\frac{E(|X|^k)}{t^k}.\n\\]\nInterpretação: Quanto mais informações sobre os momentos de \\(X\\) estiverem disponíveis, melhor o refinamento sobre o limite para probabilidades."
+  },
+  {
+    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.4",
+    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.4",
+    "title": "Desigualdades em Probabilidade",
+    "section": "Exemplo 19.4",
+    "text": "Exemplo 19.4\nSeja \\(Y\\) uma v.a. tal que \\(E(Y^4) \\leq 100\\). Use esta informação para encontrar um limite superior para \\(P(Y \\geq 5)\\)."
+  },
+  {
+    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.5",
+    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.5",
+    "title": "Desigualdades em Probabilidade",
+    "section": "Exemplo 19.5",
+    "text": "Exemplo 19.5\nSeja \\(X\\) uma v.a. Exp(\\(1\\)). Use a desigualdade de Markov para provar que \\(P(X &gt; c) \\leq 1/c\\), em que \\(c\\) é um número positivo qualquer."
+  },
+  {
+    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#funções-convexas",
+    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#funções-convexas",
+    "title": "Desigualdades em Probabilidade",
+    "section": "Funções Convexas",
+    "text": "Funções Convexas\n\nPara a próxima desigualdade, precisamos lembrar a definição de funções convexas.\nFunções convexas: são funções cujo gráfico está abaixo de (ou coincide com) qualquer reta traçada entre dois de seus pontos. Isso é equivalente a dizer que o gráfico está acima de qualquer tangente a um de seus pontos.\nExemplos de funções convexas:\n\n\\(f(x) = x^2\\)\n\\(f(x) = e^x\\)\n\\(f(x) = |x|\\)"
+  },
+  {
+    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#funções-convexas-1",
+    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#funções-convexas-1",
+    "title": "Desigualdades em Probabilidade",
+    "section": "Funções Convexas",
+    "text": "Funções Convexas\nCritério da Segunda Derivada\n\nSe \\(f''(x)\\geq 0\\) para todo \\(x\\), então \\(f\\) é convexa.\nSe \\(f''(x) &gt; 0\\) para todo \\(x\\), então \\(f\\) é estritamente convexa."
+  },
+  {
+    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#teorema-19.4-desigualdade-de-jensen",
+    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#teorema-19.4-desigualdade-de-jensen",
+    "title": "Desigualdades em Probabilidade",
+    "section": "Teorema 19.4: Desigualdade de Jensen",
+    "text": "Teorema 19.4: Desigualdade de Jensen\n\nSeja \\(X\\) uma v.a. com \\(E(X) &lt; \\infty\\) e \\(g\\) uma função convexa. Então: \\[\nE[g(X)] \\geq g(E[X]).\n\\]"
+  },
+  {
+    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.6",
+    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.6",
+    "title": "Desigualdades em Probabilidade",
+    "section": "Exemplo 19.6",
+    "text": "Exemplo 19.6\nSe \\(g(X) = X^2\\), então, a partir da desigualdade de Jensen, temos que \\[\n  E(g(X)) \\geq g(E(X)) \\Rightarrow E(X^2) \\geq E^2(X).\n\\]\n\nConsequência:\n\n\\[ Var(X) = E(X^2)-E^2(X)\\geq 0.\\]"
+  },
+  {
+    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.7",
+    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.7",
+    "title": "Desigualdades em Probabilidade",
+    "section": "Exemplo 19.7",
+    "text": "Exemplo 19.7\nSe \\(g(X) = e^X\\), então, a partir da desigualdade de Jensen, temos que \\[\n  E(g(X)) \\geq g(E(X)) \\Rightarrow E(e^X) \\geq e^{E(X)}.\n\\]"
+  },
+  {
+    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#teorema-19.5-desigualdade-de-cauchy-schwarz",
+    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#teorema-19.5-desigualdade-de-cauchy-schwarz",
+    "title": "Desigualdades em Probabilidade",
+    "section": "Teorema 19.5: Desigualdade de Cauchy-Schwarz",
+    "text": "Teorema 19.5: Desigualdade de Cauchy-Schwarz\n\nSe as variáveis aleatórias \\(X\\) e \\(Y\\) têm segundo momento finito, então \\[\n|E(XY)| \\leq \\sqrt{E(X^2) E(Y^2)}.\n\\]\nConsequência importante: Tomando \\(U=X-E(X)\\) e \\(V=Y-E(Y)\\), obtemos\n\n\\[\n  |Cov(X,Y)|\\leq \\sqrt{Var(X)Var(Y)}.\n\\]"
+  },
+  {
+    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#resumo",
+    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#resumo",
+    "title": "Desigualdades em Probabilidade",
+    "section": "Resumo",
+    "text": "Resumo\n\n\n\nDesigualdade\nInformação necessária\n\n\n\n\nChebyshev básica\n\\(E(X)\\)\n\n\nChebyshev clássica\n\\(E(X), Var(X)\\)\n\n\nMarkov\nmomento de ordem (\\(k\\))\n\n\nJensen\nconvexidade\n\n\nCauchy-Schwarz\nsegundos momentos\n\n\n\n\n\n\n\nTodas permitem obter resultados importantes sem conhecer completamente a distribuição da variável aleatória."
   },
   {
     "objectID": "slides/05-Independencia_de_VA/05-Independencia_de_VA.html#definição-5.1-independência-de-v.a.",
@@ -803,27 +1041,51 @@
     ]
   },
   {
-    "objectID": "aulas/16-Funcao_caracteristica.html",
-    "href": "aulas/16-Funcao_caracteristica.html",
-    "title": "Conteúdo 16",
+    "objectID": "aulas/23-Teorema_central_do_limite.html",
+    "href": "aulas/23-Teorema_central_do_limite.html",
+    "title": "Conteúdo 23",
     "section": "",
-    "text": "Nesta aula, introduzimos o conceito de função característica, uma das ferramentas mais importantes da teoria da probabilidade. São apresentados os fundamentos matemáticos envolvendo números complexos, a definição formal da função característica e sua relação com outras funções associadas a distribuições de probabilidade.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 16",
+    "text": "Nesta aula estudamos o Teorema Central do Limite (TCL), que descreve como a média amostral se distribui em torno da média populacional quando o tamanho da amostra é grande. Também é apresetnado o Método Delta, utilizado para obter distribuições assintóticas de estimadores transformados.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nDemonstração dos Teoremas e Lista de Exercícios:\n\n\n Demonstração dos teoremas \n\n\n Lista 23",
     "crumbs": [
       "Aulas",
-      "Parte 2: Função de Variáveis Aleatórias",
-      "16- Função Característica"
+      "Parte 3: Cnvergência de Variáveis Aleatórias",
+      "23- Teorema Central do Limite"
     ]
   },
   {
-    "objectID": "aulas/16-Funcao_caracteristica.html#função-característica",
-    "href": "aulas/16-Funcao_caracteristica.html#função-característica",
-    "title": "Conteúdo 16",
+    "objectID": "aulas/23-Teorema_central_do_limite.html#teorema-central-do-limite",
+    "href": "aulas/23-Teorema_central_do_limite.html#teorema-central-do-limite",
+    "title": "Conteúdo 23",
     "section": "",
-    "text": "Nesta aula, introduzimos o conceito de função característica, uma das ferramentas mais importantes da teoria da probabilidade. São apresentados os fundamentos matemáticos envolvendo números complexos, a definição formal da função característica e sua relação com outras funções associadas a distribuições de probabilidade.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 16",
+    "text": "Nesta aula estudamos o Teorema Central do Limite (TCL), que descreve como a média amostral se distribui em torno da média populacional quando o tamanho da amostra é grande. Também é apresetnado o Método Delta, utilizado para obter distribuições assintóticas de estimadores transformados.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nDemonstração dos Teoremas e Lista de Exercícios:\n\n\n Demonstração dos teoremas \n\n\n Lista 23",
     "crumbs": [
       "Aulas",
-      "Parte 2: Função de Variáveis Aleatórias",
-      "16- Função Característica"
+      "Parte 3: Cnvergência de Variáveis Aleatórias",
+      "23- Teorema Central do Limite"
+    ]
+  },
+  {
+    "objectID": "aulas/22-Lei_dos_grandes_numeros.html",
+    "href": "aulas/22-Lei_dos_grandes_numeros.html",
+    "title": "Conteúdo 22",
+    "section": "",
+    "text": "Nesta aula estudamos a Lei dos Grandes Números (LGN). São apresentadas as versões forte e fraca da lei dos grandes números, destacando as diferentes formas de convergência envolvidas e as condições necessárias para sua aplicação. Também discutimos as leis de Kolmogorov, Borel, Khintchine e Bernoulli, estabelecendo suas relações e diferenças por meio de exemplos e aplicações.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nDemonstração dos Teoremas e Lista de Exercícios:\n\n\n Demonstração dos teoremas \n\n\n Lista 22",
+    "crumbs": [
+      "Aulas",
+      "Parte 3: Cnvergência de Variáveis Aleatórias",
+      "22- Lei dos Grandes Números"
+    ]
+  },
+  {
+    "objectID": "aulas/22-Lei_dos_grandes_numeros.html#lei-dos-grandes-números",
+    "href": "aulas/22-Lei_dos_grandes_numeros.html#lei-dos-grandes-números",
+    "title": "Conteúdo 22",
+    "section": "",
+    "text": "Nesta aula estudamos a Lei dos Grandes Números (LGN). São apresentadas as versões forte e fraca da lei dos grandes números, destacando as diferentes formas de convergência envolvidas e as condições necessárias para sua aplicação. Também discutimos as leis de Kolmogorov, Borel, Khintchine e Bernoulli, estabelecendo suas relações e diferenças por meio de exemplos e aplicações.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nDemonstração dos Teoremas e Lista de Exercícios:\n\n\n Demonstração dos teoremas \n\n\n Lista 22",
+    "crumbs": [
+      "Aulas",
+      "Parte 3: Cnvergência de Variáveis Aleatórias",
+      "22- Lei dos Grandes Números"
     ]
   },
   {
@@ -1208,6 +1470,30 @@
       "Aulas",
       "Parte 1: V.A. $n$-dimensionais",
       "4- Distribuição Condicional"
+    ]
+  },
+  {
+    "objectID": "aulas/16-Funcao_caracteristica.html",
+    "href": "aulas/16-Funcao_caracteristica.html",
+    "title": "Conteúdo 16",
+    "section": "",
+    "text": "Nesta aula, introduzimos o conceito de função característica, uma das ferramentas mais importantes da teoria da probabilidade. São apresentados os fundamentos matemáticos envolvendo números complexos, a definição formal da função característica e sua relação com outras funções associadas a distribuições de probabilidade.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 16",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Função de Variáveis Aleatórias",
+      "16- Função Característica"
+    ]
+  },
+  {
+    "objectID": "aulas/16-Funcao_caracteristica.html#função-característica",
+    "href": "aulas/16-Funcao_caracteristica.html#função-característica",
+    "title": "Conteúdo 16",
+    "section": "",
+    "text": "Nesta aula, introduzimos o conceito de função característica, uma das ferramentas mais importantes da teoria da probabilidade. São apresentados os fundamentos matemáticos envolvendo números complexos, a definição formal da função característica e sua relação com outras funções associadas a distribuições de probabilidade.\nSlides:\n\n\n Versão html \n\n\n Versão pdf \n\n\nLista de Exercícios:\n\n\n Lista 16",
+    "crumbs": [
+      "Aulas",
+      "Parte 2: Função de Variáveis Aleatórias",
+      "16- Função Característica"
     ]
   },
   {
@@ -1840,193 +2126,214 @@
     "text": "Exemplo 1.2\nResolva as seguintes integrais:\n\nCalcule \\(\\int_{0}^{\\infty} e^{-3x} dx\\).\nCalcule \\(\\int x \\cdot e^{-x^2} dx\\).\nCalcule \\(\\int_{0}^{\\infty} x \\cdot e^{-x} dx\\).\nCalcule \\(\\int x^2 \\cdot e^{-x} dx\\).\nDada a densidade conjunta \\(f(x, y) = c(x+y)\\) no domínio \\(0 &lt; x &lt; 1\\) e \\(0 &lt; y &lt; 1\\), calcule a integral dupla \\(\\int_{0}^{1} \\int_{0}^{1} (x+y) dy dx\\)."
   },
   {
-    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#motivação",
-    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#motivação",
-    "title": "Desigualdades em Probabilidade",
+    "objectID": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#por-que-precisamos-do-teorema-central-do-limite",
+    "href": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#por-que-precisamos-do-teorema-central-do-limite",
+    "title": "Teorema Central do Limite",
+    "section": "Por que precisamos do Teorema Central do Limite?",
+    "text": "Por que precisamos do Teorema Central do Limite?\n\nNa aula anterior vimos que, sob certas condições, \\(\\overline{X}_n \\longrightarrow \\mu\\).\nOu seja, à medida que o tamanho da amostra aumenta, a média amostral aproxima-se da média populacional.\n\nA Lei dos Grandes Números responde para onde a média amostral converge.\n\nMas ela não responde uma pergunta igualmente importante:\n\nQuão distante a média amostral ainda está de \\(\\mu\\) quando \\(n\\) é grande, mas finito?"
+  },
+  {
+    "objectID": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#motivação",
+    "href": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#motivação",
+    "title": "Teorema Central do Limite",
     "section": "Motivação",
-    "text": "Motivação\nAs desigualdades que veremos serão fundamentais para:\n\nConvergência em probabilidade;\nLei dos Grandes Números;\nTeorema Central do Limite;\nInferência Estatística."
+    "text": "Motivação\nUma pesquisa eleitoral entrevistou 2.000 eleitores.\nA proporção observada de votos para um candidato foi \\(\\widehat{p}=0{,}52\\).\nPerguntas:\n\nA verdadeira proporção da população é exatamente 52%?\nQual é o erro esperado dessa estimativa?\nQuão provável seria observarmos 55% dos votos apenas por acaso?\n\n\n\nResponder perguntas desse tipo é o objetivo do Teorema Central do Limite (TCL)."
   },
   {
-    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#desigualdades-de-chebyshev",
-    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#desigualdades-de-chebyshev",
-    "title": "Desigualdades em Probabilidade",
-    "section": "Desigualdades de Chebyshev",
-    "text": "Desigualdades de Chebyshev\n\nAs desigualdades de Chebyshev permitem obter limites para probabilidades sem assumir uma distribuição específica.\nVantagens:\n\nGrande generalidade.\nDependem apenas de momentos.\nAplicam-se a uma ampla classe de distribuições.\nSão fundamentais na demonstração da Lei dos Grandes Números."
+    "objectID": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#lei-dos-grandes-números-vs.-teorema-central-do-limite",
+    "href": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#lei-dos-grandes-números-vs.-teorema-central-do-limite",
+    "title": "Teorema Central do Limite",
+    "section": "Lei dos Grandes Números vs. Teorema Central do Limite",
+    "text": "Lei dos Grandes Números vs. Teorema Central do Limite\n\n\n\n\n\n\n\nLei dos Grandes Números\nTeorema Central do Limite\n\n\n\n\nPara onde a média converge?\nComo a média oscila em torno da média populacional?\n\n\nResultado assintótico\nDistribuição assintótica\n\n\nMédia amostral\nMédia amostral padronizada\n\n\n\n\n\n\n\n\nA LGN garante que a média converge para \\(\\mu\\).\nO TCL descreve a distribuição do erro cometido ao utilizar a média amostral."
   },
   {
-    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#teorema-19.1-desigualdade-básica-de-chebyshev",
-    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#teorema-19.1-desigualdade-básica-de-chebyshev",
-    "title": "Desigualdades em Probabilidade",
-    "section": "Teorema 19.1: Desigualdade Básica de Chebyshev",
-    "text": "Teorema 19.1: Desigualdade Básica de Chebyshev\nSeja \\(X\\) uma variável aleatória não negativa. Para qualquer e \\(a &gt; 0\\), \\[\n  P(X\\geq a) \\leq \\frac{E(X)}{a}.\n\\]\n\nInterpretação: Se a média é pequena, então valores muito grandes não podem ocorrer com probabilidade elevada."
+    "objectID": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#ideia-central-do-tcl",
+    "href": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#ideia-central-do-tcl",
+    "title": "Teorema Central do Limite",
+    "section": "Ideia central do TCL",
+    "text": "Ideia central do TCL\n\nQuando utilizamos a média amostral para estimar a média populacional, o erro cometido é \\(\\overline X_n-\\mu\\).\nPela Lei dos Grandes Números, \\(\\overline X_n-\\mu\\longrightarrow0\\).\nPara termos dimensão desse erro, precisamos considerar com a sua variabilidade.\nComo \\(Var(\\overline{X}_n)=\\frac{\\sigma^2}{n}\\), o desvio-padrão é \\(\\frac{\\sigma}{\\sqrt n}\\).\n\nEsse valor é conhecido como erro-padrão da média."
   },
   {
-    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo",
-    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo",
-    "title": "Desigualdades em Probabilidade",
-    "section": "Exemplo",
-    "text": "Exemplo\nSe \\[E(X)=30\\], então \\[P(X\\geq 90)\\leq \\frac{30}{90}=0,333.\\]\n\nA desigualdade básica de Chebyshev não fornece o valor exato.\nEla fornece um teto máximo para a probabilidade."
+    "objectID": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#ideia-central-do-tcl-1",
+    "href": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#ideia-central-do-tcl-1",
+    "title": "Teorema Central do Limite",
+    "section": "Ideia central do TCL",
+    "text": "Ideia central do TCL\n\nAssim, \\[\n\\frac{\\overline X_n-\\mu}{\\sigma/\\sqrt n} \\quad \\text{ou} \\quad \\frac{\\sqrt n(\\overline X_n-\\mu)}{\\sigma}\n\\] mede quantos desvios-padrão a média observada está distante da média populacional.\nEssa quantidade recebe o nome de erro padronizado.\nEssa é exatamente a variável cuja distribuição é estudada pelo Teorema Central do Limite."
   },
   {
-    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.1",
-    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.1",
-    "title": "Desigualdades em Probabilidade",
-    "section": "Exemplo 19.1",
-    "text": "Exemplo 19.1\nUma empresa possui um sistema de acesso à internet utilizado por seus 100 funcionários. Seja \\(X\\) o número de usuários conectados simultaneamente em um instante escolhido ao acaso durante o expediente. Com base em dados históricos, sabe-se apenas que \\(E(X)=30\\). A direção da empresa está preocupada com possíveis picos de utilização da rede e deseja avaliar a necessidade de ampliar a infraestrutura disponível. Use a desigualdade de Chebyshev para calcular a probabilidade máxima de haver pelo menos 30, 40, 50, 60, 70, 80 e 90 usuários simultâneos."
+    "objectID": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#teorema-23.1-teorema-central-do-limite-para-variáveis-i.i.d",
+    "href": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#teorema-23.1-teorema-central-do-limite-para-variáveis-i.i.d",
+    "title": "Teorema Central do Limite",
+    "section": "Teorema 23.1: Teorema Central do Limite para variáveis i.i.d",
+    "text": "Teorema 23.1: Teorema Central do Limite para variáveis i.i.d\nSejam \\(X_1,X_2,\\ldots\\) variáveis aleatórias independentes e identicamente distribuídas, com média finita \\(\\mu\\) e variância finita \\(\\sigma^2&gt;0\\). Então, \\[\n\\frac{\\overline X_n-\\mu}\n{\\sigma/\\sqrt n}\n\\stackrel{D}{\\longrightarrow}\nN(0,1).\n\\]"
   },
   {
-    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#teorema-19.2-desigualdade-clássica-de-chebyshev",
-    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#teorema-19.2-desigualdade-clássica-de-chebyshev",
-    "title": "Desigualdades em Probabilidade",
-    "section": "Teorema 19.2: Desigualdade Clássica de Chebyshev",
-    "text": "Teorema 19.2: Desigualdade Clássica de Chebyshev\n\nA desigualdade clássica de Chebyshev apresenta limite para a probabilidade em função da variância.\nSeja \\(X\\) uma v.a. com média \\(\\mu\\) e \\(Var(X) &lt; \\infty\\). Então, para qualquer \\(t &gt; 0\\), temos \\[\nP(|X-\\mu|\\geq t) \\leq \\frac{Var(X)}{t^2}.\n\\]\nInterpretação:\n\nEssa desigualdade controla o afastamento da média.\nQuanto menor a variância, mais concentrada a distribuição e menor a probabilidade de observações extremas."
+    "objectID": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#forma-equivalente",
+    "href": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#forma-equivalente",
+    "title": "Teorema Central do Limite",
+    "section": "Forma equivalente",
+    "text": "Forma equivalente\nComo \\(\\overline X_n=\\frac{S_n}{n}\\), temos \\[\n\\frac{\\overline X_n-\\mu}{\\sigma/\\sqrt n}\n=\n\\frac{S_n-n\\mu}{\\sigma\\sqrt n}.\n\\]\nAssim, o Teorema Central do Limite também pode ser escrito como \\[\n\\frac{S_n-n\\mu}{\\sigma\\sqrt n}\n\\stackrel D\\longrightarrow\nN(0,1)\n\\]"
   },
   {
-    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.2",
-    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.2",
-    "title": "Desigualdades em Probabilidade",
-    "section": "Exemplo 19.2",
-    "text": "Exemplo 19.2\nSejam \\(E(X) = \\mu\\) e \\(Var(X) = \\sigma^2\\). Use a desigualdade clássica de Chebyshev e determine um limite para\n\n\\(P(|X - \\mu| ⩾ 2\\sigma)\\)\n\\(P(|X - \\mu| &lt; 2\\sigma)\\)"
+    "objectID": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#interpretação",
+    "href": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#interpretação",
+    "title": "Teorema Central do Limite",
+    "section": "Interpretação",
+    "text": "Interpretação\nO Teorema Central do Limite afirma que, para amostras suficientemente grandes, o erro padronizado \\[\n\\frac{\\overline X_n-\\mu}\n{\\sigma/\\sqrt n}\n\\] possui aproximadamente distribuição \\(N(0,1)\\).\n\n\n\n\n\n\nNota\n\n\nAssim, probabilidades envolvendo a média amostral podem ser aproximadas utilizando a distribuição Normal padrão.\nEsse resultado explica por que a distribuição Normal desempenha um papel central na Inferência Estatística."
   },
   {
-    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.3",
-    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.3",
-    "title": "Desigualdades em Probabilidade",
-    "section": "Exemplo 19.3",
-    "text": "Exemplo 19.3\n\nObtenha o limite da desigualdade \\(P(|X − \\mu| \\geq 32 \\sigma)\\).\nAdmita que \\(X\\) é uniformemente distribuída sobre \\(\\left( 1-\\frac{1}{\\sqrt{3}}, 1+\\frac{1}{\\sqrt{3}} \\right)\\) e calcule o limite em (a)."
+    "objectID": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#exemplo-23.1",
+    "href": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#exemplo-23.1",
+    "title": "Teorema Central do Limite",
+    "section": "Exemplo 23.1",
+    "text": "Exemplo 23.1\nSejam \\(X_1,X_2,\\ldots\\) variáveis aleatórias independentes com distribuição de Bernoulli de parâmetro \\(p\\). Determine a distribuição assintótica de \\[\nS_n=X_1+\\cdots+X_n.\n\\]\n\n\n\n\n\n\nDica\n\n\n\nIdentifique a distribuição de \\(S_n\\).\nCalcule \\(E(X_i)\\) e \\(Var(X_i)\\).\nAplique diretamente o Teorema Central do Limite.\n\n\n\n\n\nEsse resultado é conhecido como Teorema de De Moivre-Laplace."
   },
   {
-    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#teorema-19.3-desigualdade-de-markov",
-    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#teorema-19.3-desigualdade-de-markov",
-    "title": "Desigualdades em Probabilidade",
-    "section": "Teorema 19.3: Desigualdade de Markov",
-    "text": "Teorema 19.3: Desigualdade de Markov\n\nA desigualdade de Markov utiliza momentos de ordem \\(k\\).\nSeja \\(X\\) uma variável aleatória. Então, para quaisquer \\(t&gt;0\\) e para \\(k&gt;0\\) temos: \\[\nP(|X| \\geq t) \\leq \\frac{E(|X|^k)}{t^k}.\n\\]\nInterpretação: Quanto mais informações sobre os momentos de \\(X\\) estiverem disponíveis, melhor o refinamento sobre o limite para probabilidades."
+    "objectID": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#aproximação-normal-da-binomial",
+    "href": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#aproximação-normal-da-binomial",
+    "title": "Teorema Central do Limite",
+    "section": "Aproximação Normal da Binomial",
+    "text": "Aproximação Normal da Binomial\n\nQuando \\(n\\) é grande, \\(S_n\\sim Binomial(n,p)\\) é aproximadamente \\(N\\!\\left(np,\\;np(1-p)\\right)\\).\nEssa aproximação simplifica cálculos de probabilidades que seriam difíceis de obter diretamente pela distribuição Binomial.\n\n\n\n\n\n\n\nImportante\n\n\nQuanto maior o tamanho da amostra e quanto mais distante (p) estiver de 0 e 1, melhor tende a ser a aproximação."
   },
   {
-    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.4",
-    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.4",
-    "title": "Desigualdades em Probabilidade",
-    "section": "Exemplo 19.4",
-    "text": "Exemplo 19.4\nSeja \\(Y\\) uma v.a. tal que \\(E(Y^4) \\leq 100\\). Use esta informação para encontrar um limite superior para \\(P(Y \\geq 5)\\)."
+    "objectID": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#exemplo-23.2",
+    "href": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#exemplo-23.2",
+    "title": "Teorema Central do Limite",
+    "section": "Exemplo 23.2",
+    "text": "Exemplo 23.2\nSejam \\(X_1,\\ldots,X_{100}\\) variáveis independentes com distribuição \\(Bernoulli(0{,}4)\\). Utilize o Teorema Central do Limite para obter um valor aproximado de \\[\nP\\!\\left(\\sum_{i=1}^{100}X_i=50\\right).\n\\]\n\n\n\n\n\n\nDica\n\n\n\nIdentifique a distribuição de \\(S_{100}\\).\nDetermine sua média e variância.\nUtilize a aproximação Normal.\nCalcule \\(P(49{,}5&lt;S_{100}&lt;50{,}5)\\) (correção de continuidade)."
   },
   {
-    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.5",
-    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.5",
-    "title": "Desigualdades em Probabilidade",
-    "section": "Exemplo 19.5",
-    "text": "Exemplo 19.5\nSeja \\(X\\) uma v.a. Exp(\\(1\\)). Use a desigualdade de Markov para provar que \\(P(X &gt; c) \\leq 1/c\\), em que \\(c\\) é um número positivo qualquer."
+    "objectID": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#observação",
+    "href": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#observação",
+    "title": "Teorema Central do Limite",
+    "section": "Observação",
+    "text": "Observação\nSempre que utilizarmos o TCL para aproximar uma distribuição discreta pela distribuição Normal, devemos utilizar a correção de continuidade. Por exemplo,\n\n\n\nProbabilidade discreta\nAproximação Normal\n\n\n\n\n\\(P(X=k)\\)\n\\(P(k-0,5&lt;X&lt;k+0,5)\\)\n\n\n\\(P(X\\le k)\\)\n\\(P(X&lt;k+0,5)\\)\n\n\n\\(P(X\\ge k)\\)\n\\(P(X&gt;k-0,5)\\)\n\n\n\n\n\n\n\nEssa correção melhora significativamente a aproximação."
   },
   {
-    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#funções-convexas",
-    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#funções-convexas",
-    "title": "Desigualdades em Probabilidade",
-    "section": "Funções Convexas",
-    "text": "Funções Convexas\n\nPara a próxima desigualdade, precisamos lembrar a definição de funções convexas.\nFunções convexas: são funções cujo gráfico está abaixo de (ou coincide com) qualquer reta traçada entre dois de seus pontos. Isso é equivalente a dizer que o gráfico está acima de qualquer tangente a um de seus pontos.\nExemplos de funções convexas:\n\n\\(f(x) = x^2\\)\n\\(f(x) = e^x\\)\n\\(f(x) = |x|\\)"
+    "objectID": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#exemplo-23.3",
+    "href": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#exemplo-23.3",
+    "title": "Teorema Central do Limite",
+    "section": "Exemplo 23.3",
+    "text": "Exemplo 23.3\nUtilize o Teorema Central do Limite para verificar que \\[\n\\lim_{n\\rightarrow\\infty}\ne^{-n}\n\\sum_{k=0}^{n}\n\\frac{n^k}{k!}\n=\n\\frac12.\n\\]\n\n\n\n\n\n\nDica\n\n\n\nObserve que \\(e^{-n}\\frac{n^k}{k!}\\) é a função de probabilidade de uma variável Poisson\\((n)\\).\nEscreva a soma como \\(P(X\\le n)\\).\nUtilize o TCL para aproximar essa probabilidade."
   },
   {
-    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#funções-convexas-1",
-    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#funções-convexas-1",
-    "title": "Desigualdades em Probabilidade",
-    "section": "Funções Convexas",
-    "text": "Funções Convexas\nCritério da Segunda Derivada\n\nSe \\(f''(x)\\geq 0\\) para todo \\(x\\), então \\(f\\) é convexa.\nSe \\(f''(x) &gt; 0\\) para todo \\(x\\), então \\(f\\) é estritamente convexa."
+    "objectID": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#section",
+    "href": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#section",
+    "title": "Teorema Central do Limite",
+    "section": "",
+    "text": "Até agora estudamos \\(\\overline{X}_n\\).\nMas e se estivermos interessados em\n\n\\(\\log(\\overline{X}_n)\\);\n\\(\\sqrt{\\overline{X}_n}\\);\n\\(\\overline{X}_n^2\\).\n\nO Teorema Central do Limite continua sendo suficiente? Não.\nNesses casos usamos o Método Delta."
   },
   {
-    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#teorema-19.4-desigualdade-de-jensen",
-    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#teorema-19.4-desigualdade-de-jensen",
-    "title": "Desigualdades em Probabilidade",
-    "section": "Teorema 19.4: Desigualdade de Jensen",
-    "text": "Teorema 19.4: Desigualdade de Jensen\n\nSeja \\(X\\) uma v.a. com \\(E(X) &lt; \\infty\\) e \\(g\\) uma função convexa. Então: \\[\nE[g(X)] \\geq g(E[X]).\n\\]"
+    "objectID": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#teorema-23.2-método-delta",
+    "href": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#teorema-23.2-método-delta",
+    "title": "Teorema Central do Limite",
+    "section": "Teorema 23.2: Método Delta",
+    "text": "Teorema 23.2: Método Delta\nSe \\[\n\\sqrt{n}(X_n-\\mu) \\stackrel D\\longrightarrow N(0,\\sigma^2),\n\\] e \\(g\\) é diferenciável em \\(\\mu\\), então \\[\n\\sqrt{n}\\left[ g(X_n)-g(\\mu) \\right]\n\\stackrel D\\longrightarrow\nN\\left(0, [g'(\\mu)]^2\\sigma^2\\right).\n\\]\n\n\n\n\n\n\nNota\n\n\nSe \\(g'(\\mu)=0\\), interpretamos \\(N(0,0)\\) como uma massa pontual em zero."
   },
   {
-    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.6",
-    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.6",
-    "title": "Desigualdades em Probabilidade",
-    "section": "Exemplo 19.6",
-    "text": "Exemplo 19.6\nSe \\(g(X) = X^2\\), então, a partir da desigualdade de Jensen, temos que \\[\n  E(g(X)) \\geq g(E(X)) \\Rightarrow E(X^2) \\geq E^2(X).\n\\]\n\nConsequência:\n\n\\[ Var(X) = E(X^2)-E^2(X)\\geq 0.\\]"
+    "objectID": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#exemplo-23.4",
+    "href": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#exemplo-23.4",
+    "title": "Teorema Central do Limite",
+    "section": "Exemplo 23.4",
+    "text": "Exemplo 23.4\nSuponha que \\[\n\\sqrt n\n(\\overline X_n-4)\n\\stackrel D\\longrightarrow\nN(0,9).\n\\]\nDetermine a distribuição assintótica de \\(\\log(\\overline X_n)\\).\n\n\n\n\n\n\nDica\n\n\n\nIdentifique \\(g(x)=\\log(x)\\).\nCalcule \\(g'(x)\\).\nAplique o Método Delta."
   },
   {
-    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.7",
-    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#exemplo-19.7",
-    "title": "Desigualdades em Probabilidade",
-    "section": "Exemplo 19.7",
-    "text": "Exemplo 19.7\nSe \\(g(X) = e^X\\), então, a partir da desigualdade de Jensen, temos que \\[\n  E(g(X)) \\geq g(E(X)) \\Rightarrow E(e^X) \\geq e^{E(X)}.\n\\]"
+    "objectID": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#exemplo-23.5",
+    "href": "slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html#exemplo-23.5",
+    "title": "Teorema Central do Limite",
+    "section": "Exemplo 23.5",
+    "text": "Exemplo 23.5\nSejam \\[\nY_n\n\\stackrel D\\longrightarrow\nN\\left(\\mu,\\frac{\\sigma^2}{n}\\right).\n\\]\nDetermine a distribuição assintótica de \\(Y_n^2\\)."
   },
   {
-    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#teorema-19.5-desigualdade-de-cauchy-schwarz",
-    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#teorema-19.5-desigualdade-de-cauchy-schwarz",
-    "title": "Desigualdades em Probabilidade",
-    "section": "Teorema 19.5: Desigualdade de Cauchy-Schwarz",
-    "text": "Teorema 19.5: Desigualdade de Cauchy-Schwarz\n\nSe as variáveis aleatórias \\(X\\) e \\(Y\\) têm segundo momento finito, então \\[\n|E(XY)| \\leq \\sqrt{E(X^2) E(Y^2)}.\n\\]\nConsequência importante: Tomando \\(U=X-E(X)\\) e \\(V=Y-E(Y)\\), obtemos\n\n\\[\n  |Cov(X,Y)|\\leq \\sqrt{Var(X)Var(Y)}.\n\\]"
-  },
-  {
-    "objectID": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#resumo",
-    "href": "slides/19-Desigualdades_em_probabilidade/19-Desigualdades_em_probabilidade.html#resumo",
-    "title": "Desigualdades em Probabilidade",
-    "section": "Resumo",
-    "text": "Resumo\n\n\n\nDesigualdade\nInformação necessária\n\n\n\n\nChebyshev básica\n\\(E(X)\\)\n\n\nChebyshev clássica\n\\(E(X), Var(X)\\)\n\n\nMarkov\nmomento de ordem (\\(k\\))\n\n\nJensen\nconvexidade\n\n\nCauchy-Schwarz\nsegundos momentos\n\n\n\n\n\n\n\nTodas permitem obter resultados importantes sem conhecer completamente a distribuição da variável aleatória."
-  },
-  {
-    "objectID": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#introdução",
-    "href": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#introdução",
-    "title": "O Método do Jacobiano",
+    "objectID": "slides/13-Momentos/13-Momentos.html#introdução",
+    "href": "slides/13-Momentos/13-Momentos.html#introdução",
+    "title": "Momentos",
     "section": "Introdução",
-    "text": "Introdução\nJá vimos como encontrar a densidade de operações simples (como soma e diferença). Mas e se precisarmos transformar múltiplas variáveis ao mesmo tempo?\n\nSeja \\(\\underset{\\widetilde{\\phantom{X}}}{X} = (X_1, \\dots, X_n)\\) um vetor aleatório conhecido.\nQueremos encontrar a densidade de um novo vetor \\(\\underset{\\widetilde{\\phantom{Y}}}{Y} = (Y_1, \\dots, Y_m)\\), gerado por um sistema de funções \\(Y_i = g_i(\\underset{\\widetilde{\\phantom{X}}}{X})\\).\nO Método direto torna-se extremamente complexo em múltiplas dimensões.\nA solução é o Método do Jacobiano."
+    "text": "Introdução\n\nAlgumas caracterı́sticas importantes das variáveis aleatórias são obtidas por meio da esperança, da variância e da correlação, por exemplo.\nDuas ferramentas bastante úteis em Probabilidade e Estatı́stica são a função geradora de momentos e a função caracterı́stica. A ideia básica do uso dessas funções é, através de transformação, facilitar alguns cálculos. Dessa forma, muitos teoremas importantes em Estatı́stica são provados com o auxı́lio dessas funções.\nVamos iniciar estudando os momentos de variáveis aleatórias."
   },
   {
-    "objectID": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#o-método-em-4-passos",
-    "href": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#o-método-em-4-passos",
-    "title": "O Método do Jacobiano",
-    "section": "O Método em 4 Passos",
-    "text": "O Método em 4 Passos\nPara aplicar o Método do Jacobiano sem erro, siga esta lógica:\n\nExpresse as variáveis antigas (\\(X\\)) em função das novas (\\(Y\\)). Ou seja, encontre \\(\\underset{\\widetilde{\\phantom{x}}}{x} = h(\\underset{\\widetilde{\\phantom{y}}}{y})\\).\nCalcule a matriz de derivadas parciais de \\(h(\\underset{\\widetilde{\\phantom{x}}}{x})\\) em relação a \\(Y\\) e obtenha o módulo do seu determinante \\(|J|\\).\nPegue a densidade original \\(f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{x}}}{x})\\) e troque todos os “\\(x\\)” pelas suas respectivas funções de \\(y\\). Multiplique o resultado por \\(|J|\\).\nSubstitua as funções de \\(y\\) nas restrições originais de \\(x\\) para descobrir o domínio válido do novo vetor \\(\\underset{\\widetilde{\\phantom{Y}}}{Y}\\)."
+    "objectID": "slides/13-Momentos/13-Momentos.html#momentos-de-variáveis-aleatórias",
+    "href": "slides/13-Momentos/13-Momentos.html#momentos-de-variáveis-aleatórias",
+    "title": "Momentos",
+    "section": "Momentos de Variáveis Aleatórias",
+    "text": "Momentos de Variáveis Aleatórias\n\nPara \\(k = 1, 2, \\ldots\\), o momento de ordem \\(k\\) da variável \\(X\\) é definido como \\(E(X^k)\\), se a esperança existir.\nPara o caso discreto, temos que \\[E(X^k) = \\sum\\limits_{i=1}^\\infty x_i^k P(X=x_i).\\]\nPara o caso contínuo, temos que \\[E(X^k) = \\int\\limits_{-\\infty}^\\infty x^k f(x) dx.\\]"
   },
   {
-    "objectID": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#o-jacobiano-e-a-fórmula-geral",
-    "href": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#o-jacobiano-e-a-fórmula-geral",
-    "title": "O Método do Jacobiano",
-    "section": "O Jacobiano e a Fórmula Geral",
-    "text": "O Jacobiano e a Fórmula Geral\nA matriz Jacobiana da transformação inversa (\\(x\\) em função de \\(y\\)) é dada por:\n\\[\nJ = \\det \\begin{bmatrix}\n\\frac{\\partial x_1}{\\partial y_1} & \\cdots & \\frac{\\partial x_1}{\\partial y_n} \\\\\n\\vdots & \\ddots & \\vdots \\\\\n\\frac{\\partial x_n}{\\partial y_1} & \\cdots & \\frac{\\partial x_n}{\\partial y_n}\n\\end{bmatrix}\n\\]\nA densidade conjunta do novo vetor \\(\\underset{\\widetilde{\\phantom{Y}}}{Y}\\) é: \\[f_{\\underset{\\widetilde{\\phantom{Y}}}{Y}}(\\underset{\\widetilde{\\phantom{y}}}{y}) = f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(h(\\underset{\\widetilde{\\phantom{y}}}{y})) \\cdot |J|\\]"
+    "objectID": "slides/13-Momentos/13-Momentos.html#momentos-de-variáveis-aleatórias-1",
+    "href": "slides/13-Momentos/13-Momentos.html#momentos-de-variáveis-aleatórias-1",
+    "title": "Momentos",
+    "section": "Momentos de Variáveis Aleatórias",
+    "text": "Momentos de Variáveis Aleatórias\n\nSe \\(E(X) = \\mu &lt; \\infty\\), definimos o momento central de ordem \\(k\\) por \\(\\mu_k = E[(X-\\mu)^k]\\), sempre que essa quantidade existir.\nDe modo similar, o momento absoluto de ordem \\(k\\) da variável aleatória \\(X\\) é definido por \\(E(|X_k|)\\)."
   },
   {
-    "objectID": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#o-jacobiano-e-a-fórmula-geral-1",
-    "href": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#o-jacobiano-e-a-fórmula-geral-1",
-    "title": "O Método do Jacobiano",
-    "section": "O Jacobiano e a Fórmula Geral",
-    "text": "O Jacobiano e a Fórmula Geral\n\nNa literatura, pode-se encontrar o Jacobiano calculado das funções originais \\(g(x)\\).\nNesse caso, a fórmula utiliza \\(|J|^{-1}\\). Calcular pela inversa costuma ser mais direto."
+    "objectID": "slides/13-Momentos/13-Momentos.html#momentos-de-variáveis-aleatórias-2",
+    "href": "slides/13-Momentos/13-Momentos.html#momentos-de-variáveis-aleatórias-2",
+    "title": "Momentos",
+    "section": "Momentos de Variáveis Aleatórias",
+    "text": "Momentos de Variáveis Aleatórias\n\nObs.1: Note que o momento de ordem 1 (isto é, \\(k = 1\\)) é a esperança;\nObs.2: A variância é o momento central de ordem 2;\nObs.3: A variância também pode ser obtida como a diferença entre o momento de ordem 2 e o quadrado do momento de ordem 1;\nObs.4: A existência dos momentos está relacionada a existência da integral. Isto é, o valor infinito pode ocorrer, mas operações tipo \\(\\infty - \\infty\\) são indeterminadas e levam à inexistência do momento."
   },
   {
-    "objectID": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#condições-e-casos-especiais",
-    "href": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#condições-e-casos-especiais",
-    "title": "O Método do Jacobiano",
-    "section": "Condições e Casos Especiais",
-    "text": "Condições e Casos Especiais\nO método exige que a função seja bijetora (um-para-um) e que as dimensões sejam iguais (\\(m = n\\)). E se não forem?\n1. A função não é bijetora (Ex: \\(Y = X^2\\)):\n\nParticionamos o domínio original em pedaços onde a função não se repete (ex: \\(x&lt;0\\) e \\(x&gt;0\\)).\nAplicamos os 4 passos para cada pedaço separadamente.\nA densidade final será a soma dos resultados."
+    "objectID": "slides/13-Momentos/13-Momentos.html#exemplo-13.1",
+    "href": "slides/13-Momentos/13-Momentos.html#exemplo-13.1",
+    "title": "Momentos",
+    "section": "Exemplo 13.1",
+    "text": "Exemplo 13.1\nSeja \\(X\\sim U[a, b]\\).\n\nDetermine o momento de ordem \\(k\\).\nObtenha o momento centrado em \\(E(X)\\) de ordem \\(k\\).\nA partir dos momentos calculados, obtenha a esperança e a variância de \\(X\\)."
   },
   {
-    "objectID": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#condições-e-casos-especiais-1",
-    "href": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#condições-e-casos-especiais-1",
-    "title": "O Método do Jacobiano",
-    "section": "Condições e Casos Especiais",
-    "text": "Condições e Casos Especiais\n2. As dimensões são diferentes (Ex: \\(\\dim(Y) &lt; \\dim(X)\\)):\n\nCriamos “variáveis artificiais” fáceis (Ex: \\(Y_2 = X_2\\)) para igualar as dimensões.\nAplicamos o método normalmente para achar a conjunta.\nNo fim, calculamos a distribuição marginal, “integrando fora” a variável artificial!"
+    "objectID": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#introdução",
+    "href": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#introdução",
+    "title": "Esperança Condicional",
+    "section": "Introdução",
+    "text": "Introdução\nComo fica o valor esperado de uma variável \\(X\\) se tivermos acesso a uma nova informação sobre a ocorrência de uma variável \\(Y\\)?\nNa Prática:\n\nQual é o tempo esperado para um cliente ser atendido? (Esperança clássica).\nQual é o tempo esperado para um cliente ser atendido, sabendo que já há 5 pessoas na fila? (Esperança Condicional).\nA lógica é simples: calculamos uma esperança comum, mas o nosso espaço amostral foi “reduzido” para conter apenas os cenários onde a informação \\(Y=y\\) é verdadeira."
   },
   {
-    "objectID": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#exemplo-12.1",
-    "href": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#exemplo-12.1",
-    "title": "O Método do Jacobiano",
-    "section": "Exemplo 12.1",
-    "text": "Exemplo 12.1\nSeja \\(\\underset{\\widetilde{\\phantom{X}}}{X}\\) com densidade \\(f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{x}}}{x}) = \\lambda^3 e^{-\\lambda(x_1+x_2+x_3)}\\), para \\(x_i &gt; 0\\). Determine a densidade de \\(\\underset{\\widetilde{\\phantom{Y}}}{Y}\\) tal que \\(Y_1 = X_1\\), \\(Y_2 = X_1+X_2\\), \\(Y_3 = X_1+X_2+X_3\\)."
+    "objectID": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#definições-o-caso-discreto-e-contínuo",
+    "href": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#definições-o-caso-discreto-e-contínuo",
+    "title": "Esperança Condicional",
+    "section": "Definições: O Caso Discreto e Contínuo",
+    "text": "Definições: O Caso Discreto e Contínuo\n1. Caso Discreto:\nSe \\(P(Y=y) &gt; 0\\), o valor esperado de \\(X\\) dado \\(Y=y\\) é: \\[E(X|Y=y) = \\sum_{x} x \\cdot P(X=x|Y=y)\\] Onde \\(P(X=x|Y=y) = \\frac{P(X=x, Y=y)}{P(Y=y)}\\).\n2. Caso Contínuo:\nSe \\(f_Y(y) &gt; 0\\), a esperança condicional é a integral: \\[E(X|Y=y) = \\int_{-\\infty}^{\\infty} x \\cdot f_{X|Y}(x|y)\\, dx\\] Onde \\(f_{X|Y}(x|y) = \\frac{f_{X,Y}(x,y)}{f_Y(y)}\\)."
   },
   {
-    "objectID": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#exemplo-12.2",
-    "href": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#exemplo-12.2",
-    "title": "O Método do Jacobiano",
-    "section": "Exemplo 12.2",
-    "text": "Exemplo 12.2\nConsidere \\(\\underset{\\widetilde{\\phantom{X}}}{X}\\) com densidade \\[f_{\\underset{\\widetilde{\\phantom{X}}}{X}}(\\underset{\\widetilde{\\phantom{x}}}{x}) = 4x_1x_2, \\qquad 0 &lt; x_1 &lt; 1, 0 &lt; x_2 &lt; 1.\\] Obtenha a densidade conjunta de \\(Y_1 = X_1/X_2\\) e \\(Y_2 = X_1X_2\\)."
+    "objectID": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#propriedades-da-esperança-condicional",
+    "href": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#propriedades-da-esperança-condicional",
+    "title": "Esperança Condicional",
+    "section": "Propriedades da Esperança Condicional",
+    "text": "Propriedades da Esperança Condicional\n\nEsperança de uma Função: \\[E[g(X)|Y=y] = \\int_{-\\infty}^{\\infty} g(x) \\cdot f_{X|Y}(x|y)\\, dx\\] (Substitua a integral por somatório no caso discreto).\nLinearidade: A esperança da soma continua sendo a soma das esperanças: \\[E\\left(\\sum_{i=1}^n X_i \\Big| Y=y\\right) = \\sum_{i=1}^n E(X_i|Y=y)\\]"
   },
   {
-    "objectID": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#exemplo-12.3",
-    "href": "slides/12-Metodo_jacobiano/12-Metodo_jacobiano.html#exemplo-12.3",
-    "title": "O Método do Jacobiano",
-    "section": "Exemplo 12.3",
-    "text": "Exemplo 12.3\nSejam \\(X_1, X_2, X_3\\) independentes com densidade \\(N(0,1)\\). Obtenha a densidade conjunta de \\(Y_1 = X_1+X_2\\), \\(Y_2 = X_1-X_2\\), \\(Y_3 = X_1-X_3\\)."
+    "objectID": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#exemplo-6.1",
+    "href": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#exemplo-6.1",
+    "title": "Esperança Condicional",
+    "section": "Exemplo 6.1",
+    "text": "Exemplo 6.1\nSeja a densidade conjunta \\(f_{X,Y}(x,y) = \\frac{e^{-x/y}e^{-y}}{y}\\), para \\(x&gt;0\\) e \\(y&gt;0\\). Calcule \\(E(X|Y=y)\\)."
+  },
+  {
+    "objectID": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#teorema-6.1-esperança-total",
+    "href": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#teorema-6.1-esperança-total",
+    "title": "Esperança Condicional",
+    "section": "Teorema 6.1: Esperança Total",
+    "text": "Teorema 6.1: Esperança Total\n\nA partir da esperança condicional \\(E(X|Y)\\), podemos obter a esperança de \\(X\\) fazendo uma média ponderada sobre todos os valores possíveis de \\(Y\\).\n\nTeorema: \\[E(X) = E[E(X|Y)]\\]\n\nInterpretação: Calculamos a média de \\(X\\) em cada cenário (\\(Y\\)) e depois agregamos pelos pesos de \\(Y\\).\nCaso discreto: \\(E(X) = \\sum_y E(X|Y=y) P(Y=y)\\)\nCaso contínuo: \\(E(X) = \\int_{-\\infty}^{\\infty} E(X|Y=y) f_Y(y)\\, dy\\)"
+  },
+  {
+    "objectID": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#exemplo-6.2",
+    "href": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#exemplo-6.2",
+    "title": "Esperança Condicional",
+    "section": "Exemplo 6.2",
+    "text": "Exemplo 6.2\nUm ponto \\(Y\\) é escolhido de acordo com uma Uniforme em \\([0, 1]\\). A seguir, um ponto \\(X\\) é escolhido segundo uma Uniforme no intervalo \\([0, Y]\\). Obtenha a esperança de \\(X\\)."
+  },
+  {
+    "objectID": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#exemplo-6.3",
+    "href": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#exemplo-6.3",
+    "title": "Esperança Condicional",
+    "section": "Exemplo 6.3",
+    "text": "Exemplo 6.3\nUm minerador está preso. Ele escolhe aleatoriamente entre 3 portas(1/3 de chance cada):\n\nPorta 1: Leva à saída após 3h.\nPorta 2: Retorna à mina após 5h.\nPorta 3: Retorna à mina após 7h.\n\nQual o tempo esperado para ele sair?"
+  },
+  {
+    "objectID": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#exemplo-6.4",
+    "href": "slides/06-Esperanca_condicional/06-Esperanca_condicional.html#exemplo-6.4",
+    "title": "Esperança Condicional",
+    "section": "Exemplo 6.4",
+    "text": "Exemplo 6.4\nSe \\(X \\sim B(n,p)\\) e \\(Y \\sim B(n,p)\\) são independentes, calcule a esperança condicional \\(E(X | X+Y=m)\\). (Dica: A soma de duas binomiais independentes com mesmo p é \\(X+Y \\sim B(2n, p)\\))."
   },
   {
     "objectID": "slides/02-Vetores_aleatorios_discretos/02-Vetores_aleatorios_discretos.html#definição-2.1-vetor-aleatório-discreto",
@@ -2171,7 +2478,7 @@
   {
     "objectID": "info/ementa.html",
     "href": "info/ementa.html",
-    "title": "Probabliidade III",
+    "title": "Probabilidade III",
     "section": "",
     "text": "Distribuições marginais e condicionais. Esperanças condicionais. Função geratriz de momentos. Função característica. Distribuição de funções de variáveis aleatórias. Método do Jacobiano e aplicações. Sequências de eventos e lema de Borel-Cantelli. Convergências de variáveis aleatórias. Leis dos Grandes Números. Teorema Central do Limite.",
     "crumbs": [
@@ -2182,7 +2489,7 @@
   {
     "objectID": "info/ementa.html#ementa",
     "href": "info/ementa.html#ementa",
-    "title": "Probabliidade III",
+    "title": "Probabilidade III",
     "section": "",
     "text": "Distribuições marginais e condicionais. Esperanças condicionais. Função geratriz de momentos. Função característica. Distribuição de funções de variáveis aleatórias. Método do Jacobiano e aplicações. Sequências de eventos e lema de Borel-Cantelli. Convergências de variáveis aleatórias. Leis dos Grandes Números. Teorema Central do Limite.",
     "crumbs": [
@@ -2193,7 +2500,7 @@
   {
     "objectID": "info/ementa.html#objetivos",
     "href": "info/ementa.html#objetivos",
-    "title": "Probabliidade III",
+    "title": "Probabilidade III",
     "section": "Objetivos",
     "text": "Objetivos\nCapacitar o aluno na utilização e compreensão da teoria probabilística. Identificando e reconhecendo os problemas que necessitam da utilização de distribuições condicionadas, Função Característica e teorema do limite central.",
     "crumbs": [
@@ -2204,7 +2511,7 @@
   {
     "objectID": "info/ementa.html#metodologia",
     "href": "info/ementa.html#metodologia",
-    "title": "Probabliidade III",
+    "title": "Probabilidade III",
     "section": "Metodologia",
     "text": "Metodologia\nSerão ministradas aulas teóricas expositivas; utilizados recursos visuais; resolução de exercícios em sala de aula; solicitação de atividades extraclasse.",
     "crumbs": [
@@ -2215,7 +2522,7 @@
   {
     "objectID": "info/ementa.html#habilidades-e-competências",
     "href": "info/ementa.html#habilidades-e-competências",
-    "title": "Probabliidade III",
+    "title": "Probabilidade III",
     "section": "Habilidades e Competências",
     "text": "Habilidades e Competências\nAo final da disciplina o aluno estará apto a desenvolver a teoria envolvendo distribuições \\(n\\)-dimensionais, estimar momentos a partir de funções geradoras de momentos e conhecer os conceitos de convergência de variáveis aleatórias.",
     "crumbs": [
@@ -2226,7 +2533,7 @@
   {
     "objectID": "info/ementa.html#avaliação",
     "href": "info/ementa.html#avaliação",
-    "title": "Probabliidade III",
+    "title": "Probabilidade III",
     "section": "Avaliação",
     "text": "Avaliação\nSerão realizadas três avaliações ao longo do semestre. As avaliações poderão ser provas, trabalhos ou outras atividades solicitadas pelo professor.",
     "crumbs": [
@@ -2237,7 +2544,7 @@
   {
     "objectID": "info/bibliografia.html",
     "href": "info/bibliografia.html",
-    "title": "Probabliidade III",
+    "title": "Probabilidade III",
     "section": "",
     "text": "MAGALHÃES, Marcos Nascimento. Probabilidade e variáveis aleatórias. Edusp, 2006.\nROSS, Sheldon. Probabilidade: um curso moderno com aplicações. Bookman Editora, 2009.\nJAMES, Barry R. Probabilidade: um curso em nível intermediário. 1996.\nMEYER, Paul L. Probabilidade: Aplicações à Estatística. 2. ed. Livros Técnicos e Científicos Editora SA, 1983.\nSPIEGEL, Murray R; SCHILLER, John J; SRINIVASAN, R. Alu. Probabilidade e estatística. 3. ed. Porto Alegre: Bookman, 2013.\n\n\n\n\n\nDANTAS, Carlos A. B. Probabilidade: um curso introdutório. 3. ed. rev. São Paulo: EDUSP, 2008.",
     "crumbs": [
@@ -2248,7 +2555,7 @@
   {
     "objectID": "info/bibliografia.html#bibliografia",
     "href": "info/bibliografia.html#bibliografia",
-    "title": "Probabliidade III",
+    "title": "Probabilidade III",
     "section": "",
     "text": "MAGALHÃES, Marcos Nascimento. Probabilidade e variáveis aleatórias. Edusp, 2006.\nROSS, Sheldon. Probabilidade: um curso moderno com aplicações. Bookman Editora, 2009.\nJAMES, Barry R. Probabilidade: um curso em nível intermediário. 1996.\nMEYER, Paul L. Probabilidade: Aplicações à Estatística. 2. ed. Livros Técnicos e Científicos Editora SA, 1983.\nSPIEGEL, Murray R; SCHILLER, John J; SRINIVASAN, R. Alu. Probabilidade e estatística. 3. ed. Porto Alegre: Bookman, 2013.\n\n\n\n\n\nDANTAS, Carlos A. B. Probabilidade: um curso introdutório. 3. ed. rev. São Paulo: EDUSP, 2008.",
     "crumbs": [

@@ -1,0 +1,50 @@
+---
+title: "Conteúdo 23"
+format:
+  html:
+    toc: false
+    anchor-sections: false
+---
+
+## Teorema Central do Limite
+
+Nesta aula estudamos o Teorema Central do Limite (TCL), que descreve como a média amostral se distribui em torno da média populacional quando o tamanho da amostra é grande. Também é apresetnado o Método Delta, utilizado para obter distribuições assintóticas de estimadores transformados.
+
+
+Slides:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/slides/23-Teorema_central_do_limite/23-Teorema_central_do_limite.html" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide23_html.png)<br>Versão html
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/slides/23-Teorema_central_do_limite.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/slides/slide23_pdf.png)<br>Versão pdf
+</a>
+:::
+
+::::
+
+Demonstração dos Teoremas e Lista de Exercícios:
+
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/demonstracao_teoremas_23.1_23.2.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/demonstracao_teoremas_23.1_23.2.png){width=80%}<br>Demonstração dos teoremas
+</a>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<a href="/PDFs/listas/Prob3_Lista23.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+![](/PDFs/listas/lista23.png){width=80%}<br>Lista 23
+</a>
+:::
+
+::::
+
+

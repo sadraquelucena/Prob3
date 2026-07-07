@@ -1,0 +1,311 @@
+---
+title: "Lei dos Grande Números"
+subtitle: "ESTAT0075 -- Probabilidade III"
+author:
+  name: | # indica que o campo name terá múltiplas linhas
+    Prof. Dr. Sadraque E. F. Lucena<br>
+    <span style="font-size:.8em;">sadraquelucena@academico.ufs.br</span>
+    <br>
+    <a href="http://sadraquelucena.github.io/Prob3" style="font-size:.8em;">http://sadraquelucena.github.io/Prob3</a>
+  
+format:
+  revealjs:
+    theme: meutema.scss
+    width: 1024
+    height: 768
+    margin: 0.1         # margem em torno do conteúdo
+    min-scale: 0.2       # escala mínima permitida
+    max-scale: 2.0       # escala máxima permitida
+    slide-number: true
+    code-line-numbers: false # sem numero das linhas nos code chunks
+    subtitle-style: "font-size: 2em; font-weight: bold;"  # Aqui é onde aumentamos o subtítulo
+    logo: imagens/ufs_horizontal_positiva.png
+    transition: fade
+    transition-speed: fast
+    scss: meutema.scss
+
+lang: pt-BR
+---
+
+## Por que a Lei dos Grandes Números é importante?
+
+- Como pesquisas conseguem prever o resultado de eleições entrevistando apenas algumas milhares de pessoas?
+- Por que um cassino consegue estimar seu lucro mensal antes mesmo de abrir as portas?
+- Como sabemos que uma moeda equilibrada produz aproximadamente metade de caras quando lançada muitas vezes?
+- **Todos esses fenômenos têm algo em comum:** à medida que repetimos um experimento muitas vezes, o comportamento observado torna-se previsível. A Lei dos Grandes Números formaliza essa ideia.
+
+
+
+## Exemplo
+
+Considere uma moeda equilibrada: $P(\text{Cara})=P(\text{Coroa})=\frac12.$
+
+Suponha que realizamos sucessivos lançamentos:
+
+:::: {.columns}
+
+::: {.column width="45%"}
+
+| Lançamentos | Frequência de caras |
+|------------:|--------------------:|
+| 10          | 0,70                |
+| 20          | 0,55                |
+| 100         | 0,51                |
+| 1000        | 0,498               |
+|             |                     |
+:::
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="45%"}
+
+À medida que aumentamos o número de lançamentos, a frequência relativa de caras aproxima-se da probabilidade teórica:
+$$
+f_A \longrightarrow P(A).
+$$
+
+:::
+
+::::
+
+
+- **A Lei dos Grandes Números formaliza exatamente esse comportamento.**.
+
+
+## Ideia Central
+
+- Toda a Lei dos Grandes Números gira em torno do **comportamento da média amostral
+$$
+  \overline{X}_n = \frac{X_1+\cdots+X_n}{n} = \frac{S_n}{n}
+$$
+quando $n$ cresce**.
+- **Ideia:** Quanto maior o tamanho da amostra, mais próxima a média amostral fica da média populacional.
+- Há duas versões principais:
+
+    - **Lei Forte:** Utiliza convergência quase certa $\left(\overline{X}_n \stackrel{qc}{\longrightarrow}\mu\right)$.
+    - **Lei Fraca:** Utiliza converg. em probabilidade
+ $\left( \overline{X}_n \stackrel{P}{\longrightarrow}\mu \right)$.
+
+
+
+## Teorema 22.1: Primeira Lei Forte dos Grandes Números de Kolmogorov
+
+Seja $X_1,X_2,\ldots$ uma sequência de variáveis aleatórias independentes com esperança finita e $\sum\limits_{n=1}^{\infty}
+\frac{\operatorname{Var}(X_n)}{n^2}<\infty.$ Se $S_n=X_1+\cdots+X_n$, então
+
+$$
+\frac{S_n}{n}
+-
+\frac{E(S_n)}{n}
+\stackrel{qc}{\longrightarrow}
+0.
+$$
+
+::: {.callout-note}
+- Observe que esse resultado afirma que a média observada aproxima-se da média esperada quando o tamanho da amostra cresce.
+
+- Essa versão da Lei Forte é bastante geral e permite que as variáveis tenham distribuições diferentes, desde que satisfaçam uma condição sobre suas variâncias.
+:::
+
+
+
+
+## Exemplo 22.1
+
+Considere a sequência de variáveis aleatórias independentes
+$$
+X_n\sim N\left(0, \frac{1}{n}\right),\qquad n=1,2,\ldots
+$$
+
+A Primeira Lei Forte é aplicável? Justifique.
+
+
+:::{.callout-tip}
+1. Determine $E(X_n)$.
+
+2. Determine $Var(X_n)$.
+
+3. Verifique $\sum\frac{Var(X_n)}{n^2}$.
+:::
+
+
+## Exemplo 22.2
+
+Seja $\{X_n,n\ge1\}$ uma sequência de variáveis aleatórias independentes com
+$$
+P(X_n=n)=\frac1{n^2} \quad \text{e} \quad P(X_n=0)=1-\frac1{n^2}.
+$$
+Verifique se vale a Primeira Lei Forte dos Grandes Números de Kolmogorov.
+
+
+
+## Teorema 22.2: Lei Forte dos Grandes Números de Kolmogorov
+
+Sejam $X_1,X_2,\ldots$ variáveis aleatórias independentes e identicamente distribuídas (i.i.d.) com $E(X_i)=\mu$. Então,
+$$
+\frac{S_n}{n}
+\stackrel{qc}{\longrightarrow}
+\mu.
+$$
+
+::: {.callout-important}
+Quando as variáveis são i.i.d., basta que exista a média finita.
+
+Não precisamos mais verificar a condição
+
+$$
+\sum\frac{Var(X_n)}{n^2}<\infty.
+$$
+:::
+
+
+
+## Comparação entre as Leis Fortes dos Grandes Números de Kolmogorov
+
+| Primeira Lei Forte | Lei Forte i.i.d. |
+|:-------------------:|:-----------------:|
+| ✔ independência    | ✔ independência  |
+| ✔ esperança finita | ✔ esperança finita |
+| ✔ distribuições podem ser diferentes | ✔ mesma distribuição |
+| ✔ verificar $\sum Var(X_n)/n^2$ | ✘ não precisa verificar a série |
+|                    |                  |
+
+
+
+## Exemplo 22.3
+
+Seja $X_n\sim N(20,9)$, i.i.d. Utilize a Lei Forte para determinar o limite de $\frac{S_n}{n}$.
+
+
+
+## Exemplo 22.4
+
+Seja $\{X_n, n \geq 1\}$ uma sequência de variáveis aleatórias contínuas independentes com densidade $f(x) = e^{−(x+a)}$, $x \geq a$, para uma constante $a > 0$. Verifique se a Lei Forte dos Grandes Números de Kolmogorov é aplicável e determine o limite.
+
+
+
+## Teorema 22.3: Lei Forte dos Grandes Números de Borel
+
+Considere $X_n\sim Bernoulli(p)$, i.i.d. Então,
+$$
+\frac{S_n}{n} = \frac{X_1+\cdots+X_n}{n}
+\stackrel{qc}{\longrightarrow}
+p.
+$$
+
+::: {.callout-note}
+Este resultado é um caso particular da Lei Forte de Kolmogorov.
+:::
+
+
+
+## Exemplo 22.5
+
+Uma moeda possui $P(\text{cara})=0{,}60$. Após muitos lançamentos, qual será o comportamento da frequência relativa de caras?
+
+
+
+## Teorema 22.4: Lei Fraca dos Grandes Números de Khintchine
+
+Sejam $X_1,X_2,\ldots$ variáveis aleatórias i.i.d. com $E(X_i)=\mu$. Então,
+$$
+\frac{S_n}{n}
+\stackrel{P}{\longrightarrow}
+\mu.
+$$
+
+::: {.callout-note}
+A Lei Forte implica a Lei Fraca.
+
+A única diferença está no tipo de convergência.
+:::
+
+
+
+## Lei Forte vs. Fraca
+
+| Lei Forte            | Lei Fraca                       |
+| :-------------------- | :------------------------------- |
+| $\bullet$ quase certamente     | $\bullet$ em probabilidade                |
+| $\bullet$ resultado mais forte | $\bullet$ resultado mais fraco            |
+| $\bullet$ implica a fraca      | $\bullet$ não necessariamente o contrário |
+|                      |                                 |
+
+::: {.callout-important}
+
+Ambas afirmam que a média amostral aproxima-se da média populacional.
+
+A diferença está apenas no tipo de convergência.
+
+:::
+
+
+
+## Exemplo 22.6
+
+Seja $X_n\sim\chi^2_{10}$, i.i.d. Verifique a Lei Fraca.
+
+
+
+
+## Teorema 22.5: Lei Fraca dos Grandes Números de Bernoulli
+
+Considere ensaios de Bernoulli independentes com $P(\text{sucesso})=p$. Então,
+$$
+\frac{S_n}{n}
+\stackrel{P}{\longrightarrow}
+p.
+$$
+
+::: {.callout-note}
+Este é um caso particular da Lei Fraca de Khintchine.
+:::
+
+
+
+## Exemplo 22.7
+
+Uma fábrica produz peças. A probabilidade de uma peça apresentar defeito é $p=0{,}02$. O que acontece com a proporção de peças defeituosas produzidas?
+
+
+
+##
+
+| Resultado               | Hipóteses                                 | Conclusão                               |
+| :----------------------------------------- | :---------------------------- | :---------------------------: |
+| Primeira Lei Forte de Kolmogorov     | Ind. + condição sobre variâncias | $\frac{S_n-E(S_n)}{n}\xrightarrow{qc}0$ |
+| Lei Forte de Kolmogorov (i.i.d.)      | i.i.d. + média finita                     | $\overline{X}_n\xrightarrow{qc}\mu$           |
+| Lei de Borel            | Bernoulli                                 | $\frac{S_n}{n}\xrightarrow{qc}p$        |
+| Lei Fraca de Khintchine | i.i.d. + média finita                     | $\overline{X}_n\xrightarrow{P}\mu$            |
+| Lei Fraca de Bernoulli  | Bernoulli                                 | $\frac{S_n}{n}\xrightarrow{P}p$         |
+| | | |
+
+
+
+## Quando utilizar cada resultado?
+
+| Objetivo                       | Lei             |
+| :------------------------------ | :--------------- |
+| Média amostral qualquer i.i.d. | Kolmogorov      |
+| Frequência relativa            | Borel/Bernoulli |
+| Variáveis independentes com distribuições diferentes | Primeira Lei Forte |
+|                                |                 |
+
+
+## Conclusões
+
+- A média amostral aproxima-se da média populacional.
+
+- A Lei Forte garante convergência quase certa.
+
+- A Lei Fraca garante convergência em probabilidade.
+
+- As leis de Borel e Bernoulli são casos particulares das versões gerais.
+
+- Esses resultados fundamentam grande parte da Inferência Estatística.
+
+
+
+# Fim
